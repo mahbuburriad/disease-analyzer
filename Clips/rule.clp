@@ -104,6 +104,30 @@
 (retract ?feeling)
 (printout t "Do you have headache? : yes or no : " crlf)
 (assert (headache (read)))
+(printout t "Do you have Diarrhea? : yes or no : " crlf)
+(assert (diarrhea (read)))
+(printout t "Do you have Sudden Fever? : yes or no : " crlf)
+(assert (suddenfever (read)))
+
+(printout t "Do you have Muscle Pain? : yes or no : " crlf)
+(assert (musclepain (read)))
+(printout t "Do you have Vomiting? : yes or no : " crlf)
+(assert (vomiting (read)))
+(printout t "Do you have Sweating? : yes or no : " crlf)
+(assert (sweating (read)))
+)
+
+(defrule feeling-suddenfever
+?feeling <-
+(feeling ?feeling-read&suddenfever|musclepain|sweating)
+=>
+(retract ?feeling)
+(printout t "Do you have headache? : yes or no : " crlf)
+(assert (headache (read)))
+
+)
+
+
 
 (defrule viralfever
 ?feeling <-
