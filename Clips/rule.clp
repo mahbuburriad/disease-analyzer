@@ -1,11 +1,23 @@
+(defrule database
+=>
+(printout t "Thanks for using our app, we are still upgrading our app" crlf)
+(printout t "please choose first feel about your disease from the database the providing below" crlf)
+(printout t "1. headache, temperature, vomiting
+2. weakness, allergy, eyesbleeding
+3. fascesbleeding, urinebleeding, nosebleeding, rashes
+4. suddenfever, musclepain, sweating
+5. jointswelling, abdominalpain, stomachpain, poorappetites" crlf)
+)
+
+
 (defrule felling
 =>
-(printout t "What do you feel? (headache, temperature, vomiting, weakness) " crlf)
+(printout t "What do you feel? (Please Choose From Database) " crlf)
 (assert (feeling (read))))
 
 (defrule feeling-headache-temp
 ?feeling <-
-(feeling ?feeling-read&headache|tempurature|vomiting)
+(feeling ?feeling-read&headache|temperature|vomiting)
 =>
 (retract ?feeling)
 (printout t "Do you feel any temperature? : yes or no : " crlf)
@@ -136,6 +148,44 @@
 (assert (rashes (read)))
 (printout t "Do you have Joint Sweelling? : yes or no : " crlf)
 (assert (jointswelling (read)))
+)
+
+(defrule feeling-poorappetites
+?feeling <-
+(feeling ?feeling-read&poorappetites)
+=>
+(retract ?feeling)
+(printout t "Do you have headache? : yes or no : " crlf)
+(assert (headache (read)))
+(printout t "Do your temperature increasing? : yes or no : " crlf)
+(assert (temp (read)))
+(printout t "Do you Diarrhea? : yes or no : " crlf)
+(assert (diarrhea (read)))
+(printout t "Do you feel weakness? : yes or no : " crlf)
+(assert (weakness (read)))
+(printout t "Do you have Poor Appetites? : yes or no : " crlf)
+(assert (poorappetites (read)))
+(printout t "Do you feel abdominal Pain? : yes or no : " crlf)
+(assert (abdominalpain (read)))
+)
+
+(defrule feeling-ulcer
+?feeling <-
+(feeling ?feeling-read&abdominalpain|stomachpain)
+=>
+(retract ?feeling)
+(printout t "Do you feel Vomiting? : yes or no : " crlf)
+(assert (vomiting (read)))
+
+(printout t "Do you feel weightloss? : yes or no : " crlf)
+(assert (weightloss (read)))
+
+(printout t "Do you feel Heart Burn? : yes or no : " crlf)
+(assert (heartburn (read)))
+
+(printout t "Do you feel Empty Stomach pain? : yes or no : " crlf)
+(assert (stomachpain (read)))
+
 )
 
 
