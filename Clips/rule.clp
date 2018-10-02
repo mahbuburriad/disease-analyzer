@@ -117,14 +117,25 @@
 (assert (sweating (read)))
 )
 
-(defrule feeling-suddenfever
+(defrule feeling-jointswelling
 ?feeling <-
-(feeling ?feeling-read&suddenfever|musclepain|sweating)
+(feeling ?feeling-read&jointswelling)
 =>
 (retract ?feeling)
 (printout t "Do you have headache? : yes or no : " crlf)
 (assert (headache (read)))
-
+(printout t "Do you have High Temperature? : yes or no : " crlf)
+(assert (temp (read)))
+(printout t "Do you have Body Pain? : yes or no : " crlf)
+(assert (bodypain (read)))
+(printout t "Do you have Vomiting? : yes or no : " crlf)
+(assert (vomiting (read)))
+(printout t "Do you feel weakness? : yes or no : " crlf)
+(assert (weakness (read)))
+(printout t "Do you have Rashes? : yes or no : " crlf)
+(assert (rashes (read)))
+(printout t "Do you have Joint Sweelling? : yes or no : " crlf)
+(assert (jointswelling (read)))
 )
 
 
