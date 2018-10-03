@@ -32,6 +32,10 @@
    (id temperature)
    (text "Is your temperature high above 100 degree?"))
    
+   (text-for-id 
+   (id vomiting)
+   (text "Do you vomiting after few moment?"))
+   
    
       (text-for-id 
    (id bodypain)
