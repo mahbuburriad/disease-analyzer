@@ -89,67 +89,93 @@
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id suddenfever)
+   (text "Do you feel sudden fever after few days?"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id musclepain)
+   (text "Do you feel any muscle pain?"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id diarrhea)
+   (text "Do you feel loose-motion or Diarrhea?"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id sweating)
+   (text "Do you more sweat than other time?"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id jointswelling)
+   (text "Is Your Joint are swelling?"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id constipation)
+   (text "Do you have Constipation?"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id poorappetites)
+   (text "Do you have poor appetites"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id abdominalpain)
+   (text "Do you have abdominal pain?"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id hurtburn)
+   (text "Do your hurts are burning from inside?"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id weightloss)
+   (text "Are you loss the weight"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id stomachpain)
+   (text "Do you feel pain with Empty stomach?"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id viralfever)
+   (text "Analyze Report: You have Viral Fever"))
    
    
       (text-for-id 
-   (id )
-   (text ""))
+   (id dengue)
+   (text "Analyze Report: You are in Dengue"))
+   
+   (text-for-id 
+   (id malaria)
+   (text "Analyze Report: You are in Malaria"))
+   
+   
+      (text-for-id 
+   (id chikungunya)
+   (text "Analyze Report: You are in Chikungunya"))
+   
+   (text-for-id 
+   (id typhoid)
+   (text "Analyze Report: You are in Typhoid"))
+   
+   
+      (text-for-id 
+   (id peptic)
+   (text "Analyze Report: You have Peptic Ulcer"))
+   
+   (text-for-id 
+   (id duodenal)
+   (text "Analyze Report: You have duodenal"))
+   
+    (text-for-id 
+   (id sorry)
+   (text "We are very sorry we are not initial your disease, please go to doctor"))
    
    
