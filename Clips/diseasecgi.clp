@@ -1,6 +1,6 @@
 
 ;;;======================================================
-;;;   Virtual Doctor - sDisease Analyzer
+;;;   Virtual Doctor - Disease Analyzer
 ;;;
 ;;;     This expert system diagnoses some simple
 ;;;     disease analyze by web and android phone.
@@ -230,253 +230,196 @@
 ;;;* QUERY RULES *
 ;;;***************
 
-(defrule determine-engine-state ""
+(defrule determine-headache-state ""
 
    (greeting yes)
-   (not (engine-starts ?))
+   (not (headache ?))
    
    =>
 
    (bind ?answers (create$ no yes))
    (handle-state interview
                  ?*target*
-                 (find-text-for-id StartQuestion)
-                 engine-starts
+                 (find-text-for-id headache)
+                 headache
                  (nth$ 1 ?answers)
                  ?answers
                  (translate-av ?answers)))
    
-(defrule determine-runs-normally ""
-
-   (engine-starts yes)
-   (not (runs-normally ?))
-   
-   =>
-
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id RunQuestion)
-                 runs-normally
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-
-(defrule determine-rotation-state ""
-
-   (engine-starts no)
-   (not (engine-rotates ?))
-
-   =>
-
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id RotateQuestion)
-                 engine-rotates
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-   
-(defrule determine-sluggishness ""
-
-   (runs-normally no)
-   (not (engine-sluggish ?))
-
-   =>
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id SluggishQuestion)
-                 engine-sluggish
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-   
-(defrule determine-misfiring ""
-
-   (runs-normally no)
-   (not (engine-misfires ?))
-
-   =>
-   
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id MisfireQuestion)
-                 engine-misfires
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-
-(defrule determine-knocking ""
-
-   (runs-normally no)
-   (not (engine-knocks ?))
-
-   =>
-   
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id KnockQuestion)
-                 engine-knocks
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-
-(defrule determine-low-output ""
-
-   (runs-normally no)
-   (not (engine-output-low ?))
-
-   =>
-   
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id OutputQuestion)
-                 engine-output-low
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-
-(defrule determine-gas-level ""
-
-   (engine-starts no)
-   (engine-rotates yes)
-   (not (tank-has-gas ?))
-
-   =>
-
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id GasQuestion)
-                 tank-has-gas
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-
-(defrule determine-battery-state ""
-  
-   (engine-rotates no)
-   (not (battery-has-charge ?))
-
-   =>
-   
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id BatteryQuestion)
-                 battery-has-charge
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-
-(defrule determine-point-surface-state ""
-
-   (or (and (engine-starts no)  
-            (engine-rotates yes))
-       (engine-output-low yes))
-   (not (point-surface-state ?))
-   
-   =>
-
-   (bind ?answers (create$ normal burned contaminated))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id PointsQuestion)
-                 point-surface-state
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-
-(defrule determine-conductivity-test ""
-   
-   (engine-starts no)  
-   (engine-rotates no)
-   (battery-has-charge yes)
-   (not (conductivity-test-positive ?))
+(defrule determine-vomiting-normally ""
+(headache yes)
+   (not (vomiting ?))
    
    =>
 
    (bind ?answers (create$ no yes))
    (handle-state interview
                  ?*target*
-                 (find-text-for-id CoilQuestion)
-                 conductivity-test-positive
+                 (find-text-for-id vomiting)
+                 vomiting
                  (nth$ 1 ?answers)
                  ?answers
                  (translate-av ?answers)))
+                 
+                 (defrule determine-suddenfever-normally ""
+(headache no)
+   (not (suddenfever ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id suddenfever)
+                 suddenfever
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-musclepain-normally ""
+(suddenfever yes)
+   (not (musclepain ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id musclepain)
+                 musclepain
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-diarrhea-normally ""
+(musclepain yes)
+   (not (diarrhea ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id diarrhea)
+                 diarrhea
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 
+                 (defrule determine-sweating-normally ""
+(diarrhea yes)
+   (not (sweating ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id sweating)
+                 sweating
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 
+                 (defrule determine-temperature-normally ""
+(suddenfever no)
+   (not (temperature ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id temperature)
+                 temperature
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 
+                 (defrule determine-bodypain-normally ""
+(temperature yes)
+   (not (bodypain ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id bodypain)
+                 bodypain
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 
+                 (defrule determine-weakness-normally ""
+(bodypain yes)
+   (not (weakness ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id weakness)
+                 weakness
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 
+                 (defrule determine-rashes-normally ""
+(weakness yes)
+   (not (rashes ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id rashes)
+                 rashes
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-jointswelling-normally ""
+(rashes yes)
+   (not (jointswelling ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id jointswelling)
+                 jointswelling
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 
+
+
 
 ;;;****************
 ;;;* REPAIR RULES *
 ;;;****************
 
-(defrule normal-engine-state-conclusions ""
+(defrule sweating-state-conclusions ""
    (declare (salience 10))
-   (runs-normally yes)
+   (sweating yes)
    =>
-   (handle-state conclusion ?*target* (find-text-for-id NoRepair)))
- 
-(defrule engine-sluggish ""
-   (declare (salience 10))
-   (engine-sluggish yes)
-   =>
-   (handle-state conclusion ?*target* (find-text-for-id FuelLineRepair)))
-
-(defrule engine-misfires ""
-   (declare (salience 10))
-   (engine-misfires yes)
-   =>
-   (handle-state conclusion ?*target* (find-text-for-id PointGapRepair)))
-
-(defrule engine-knocks ""
-   (declare (salience 10))
-   (engine-knocks yes)
-   =>
-   (handle-state conclusion ?*target* (find-text-for-id AdjustTimingRepair)))
-
-(defrule tank-out-of-gas ""
-   (declare (salience 10))
-   (tank-has-gas no)
-   =>
-   (handle-state conclusion ?*target* (find-text-for-id AddGasRepair)))
+   (handle-state conclusion ?*target* (find-text-for-id malaria)))
    
-(defrule battery-dead ""
+   (defrule jointswelling-state-conclusions ""
    (declare (salience 10))
-   (battery-has-charge no)
+   (jointswelling yes)
    =>
-   (handle-state conclusion ?*target* (find-text-for-id ReplaceBatteryRepair)))
-
-(defrule point-surface-state-burned ""
-   (declare (salience 10))
-   (point-surface-state burned)
-   =>
-   (handle-state conclusion ?*target* (find-text-for-id ReplacePointsRepair)))
-
-(defrule point-surface-state-contaminated ""
-   (declare (salience 10))
-   (point-surface-state contaminated)
-   =>
-   (handle-state conclusion ?*target* (find-text-for-id CleanPointsRepair)))
-
-(defrule conductivity-test-positive-yes ""
-   (declare (salience 10))
-   (conductivity-test-positive yes)
-   =>
-   (handle-state conclusion ?*target* (find-text-for-id LeadWireRepair)))
-                     
-(defrule conductivity-test-positive-no ""
-   (declare (salience 10))
-   (conductivity-test-positive no)
-   =>
-   (handle-state conclusion ?*target* (find-text-for-id CoilRepair)))
-                     
-(defrule no-repairs ""
-   (declare (salience -10))
-   (not (conclusion))
-   =>
-   (handle-state conclusion ?*target* (find-text-for-id MechanicRepair)))
+   (handle-state conclusion ?*target* (find-text-for-id chikungunya)))
+   
+   
   
