@@ -2,7 +2,7 @@
 
 (text-for-id 
    (id AutoDemo)
-   (text "Auto Demo"))
+   (text "Virtual Doctor - Disease Analyzer"))
 (text-for-id 
    (id Next)
    (text "Next"))
@@ -18,81 +18,138 @@
 (text-for-id 
    (id yes)
    (text "yes"))
-(text-for-id 
-   (id normal)
-   (text "normal"))
-(text-for-id 
-   (id burned)
-   (text "burned"))
-(text-for-id 
-   (id contaminated)
-   (text "contaminated"))
+
 (text-for-id 
    (id WelcomeMessage)
-   (text "Welcome to the Engine Diagnosis Expert System."))
-(text-for-id 
-   (id StartQuestion)
-   (text "Does the engine start?"))
-(text-for-id 
-   (id RunQuestion)
-   (text "Does the engine run normally?"))
-(text-for-id 
-   (id RotateQuestion)
-   (text "Does the engine rotate?"))
-(text-for-id 
-   (id SluggishQuestion)
-   (text "Is the engine sluggish?"))
-(text-for-id 
-   (id MisfireQuestion)
-   (text "Does the engine misfire?"))
-(text-for-id 
-   (id KnockQuestion)
-   (text "Does the engine knock?"))
-(text-for-id 
-   (id OutputQuestion)
-   (text "Is the output of the engine low?"))
-(text-for-id 
-   (id GasQuestion)
-   (text "Does the tank have any gas in it?"))
-(text-for-id 
-   (id BatteryQuestion)
-   (text "Is the battery charged?"))
-(text-for-id 
-   (id PointsQuestion)
-   (text "What is the surface state of the points?"))
-(text-for-id 
-   (id CoilQuestion)
-   (text "Is the conductivity test for the ignition coil positive?"))
-(text-for-id 
-   (id NoRepair)
-   (text "Suggested Repair: None."))
-(text-for-id 
-   (id FuelLineRepair)
-   (text "Suggested Repair: Clean the fuel line."))
-(text-for-id 
-   (id PointGapRepair)
-   (text "Suggested Repair: Adjust point gap."))
-(text-for-id 
-   (id AdjustTimingRepair)
-   (text "Suggested Repair: Adjust timing."))
-(text-for-id 
-   (id AddGasRepair)
-   (text "Suggested Repair: Add gas."))
-(text-for-id 
-   (id ReplaceBatteryRepair)
-   (text "Suggested Repair: Charge the battery."))
-(text-for-id 
-   (id ReplacePointsRepair)
-   (text "Suggested Repair: Replace the points."))
-(text-for-id 
-   (id CleanPointsRepair)
-   (text "Suggested Repair: Clean the points."))
-(text-for-id 
-   (id LeadWireRepair)
-   (text "Suggested Repair: Replace the distributor lead wire."))
-(text-for-id 
-   (id CoilRepair)
-   (text "Suggested Repair: Replace the ignition coil."))
-(text-for-id 
-   (id MechanicRepair)
-   (text "Suggested Repair: Take your car to a mechanic."))
+   (text "Thanks for using our app, we are still upgrading our app. please choose first feel about your disease from the database the providing below. headache, temperature, vomiting, weakness, allergy, eyesbleeding, fascesbleeding, urinebleeding, nosebleeding, rashes, suddenfever, musclepain, sweating, jointswelling, abdominalpain, stomachpain, poorappetites"))
+   
+   (text-for-id 
+   (id headache)
+   (text "Do You feel headache?"))
+   
+   
+      (text-for-id 
+   (id temperature)
+   (text "Is your temperature high above 100 degree?"))
+   
+   
+      (text-for-id 
+   (id bodypain)
+   (text "Do you feel any body pain?"))
+   
+   
+      (text-for-id 
+   (id shivering)
+   (text "Do you feel Shivering?"))
+   
+   
+      (text-for-id 
+   (id chills)
+   (text "Do you feel Chills?"))
+   
+   
+      (text-for-id 
+   (id weakness)
+   (text "Do you feel weakness in any body area or full body?"))
+   
+   
+      (text-for-id 
+   (id allergy)
+   (text "Do you see any Allergic Reaction in your body?"))
+   
+   
+      (text-for-id 
+   (id eyesbleeding)
+   (text "Do your Eyes are bleeding sometimes?"))
+   
+   
+      (text-for-id 
+   (id rashes)
+   (text "Do you see any rashes in your body?"))
+   
+   
+      (text-for-id 
+   (id nonstopbleeding)
+   (text "In your injured place not stoping bleeding?"))
+   
+   
+      (text-for-id 
+   (id nosebleeding)
+   (text "From your nose is it come any blood?"))
+   
+   
+      (text-for-id 
+   (id fascesbleeding)
+   (text "Is there any blood comes from fasces?"))
+   
+   
+      (text-for-id 
+   (id urinebleeding)
+   (text "Is there any blood comes from your urine"))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
+      (text-for-id 
+   (id )
+   (text ""))
+   
+   
