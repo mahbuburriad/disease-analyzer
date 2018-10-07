@@ -247,7 +247,7 @@
                  (translate-av ?answers)))
    
 (defrule determine-vomiting-normally ""
-(headache yes)
+(or (headache yes) (headache no))
    (not (vomiting ?))
    
    =>
@@ -261,102 +261,13 @@
                  ?answers
                  (translate-av ?answers)))
                  
-                 (defrule determine-suddenfever-normally ""
-(headache no)
-   (not (suddenfever ?))
-   
-   =>
-
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id suddenfever)
-                 suddenfever
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-                 
-                 (defrule determine-musclepain-normally ""
-(suddenfever yes)
-   (not (musclepain ?))
-   
-   =>
-
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id musclepain)
-                 musclepain
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-                 
-                 (defrule determine-diarrhea-normally ""
-(musclepain yes)
-   (not (diarrhea ?))
-   
-   =>
-
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id diarrhea)
-                 diarrhea
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
                  
                  
-                 (defrule determine-sweating-normally ""
-(diarrhea yes)
-   (not (sweating ?))
-   
-   =>
-
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id sweating)
-                 sweating
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
                  
-                 
-                 (defrule determine-temperature-normally ""
-(suddenfever no)
-   (not (temperature ?))
-   
-   =>
-
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id temperature)
-                 temperature
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
-                 
-                 
-                 (defrule determine-bodypain-normally ""
-(temperature yes)
-   (not (bodypain ?))
-   
-   =>
-
-   (bind ?answers (create$ no yes))
-   (handle-state interview
-                 ?*target*
-                 (find-text-for-id bodypain)
-                 bodypain
-                 (nth$ 1 ?answers)
-                 ?answers
-                 (translate-av ?answers)))
                  
                  
                  (defrule determine-weakness-normally ""
-(bodypain yes)
+(or (vomiting no) (vomiting yes))
    (not (weakness ?))
    
    =>
@@ -370,9 +281,105 @@
                  ?answers
                  (translate-av ?answers)))
                  
+                 (defrule determine-hurtburn-normally ""
+(vomiting yes)
+   (not (hurtburn ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id hurtburn)
+                 hurtburn
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-stomachpain-normally ""
+(hurtburn yes)
+   (not (stomachpain ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id stomachpain)
+                 stomachpain
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-temperature-normally ""
+                 (or (and (headache yes)
+                 (stomachpain no)) (hurtburn no))
+
+   (not (temperature ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id temperature)
+                 temperature
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-bodypain-normally ""
+                 (or (and (headache yes) (weakness yes)
+                 (stomachpain no)) (hurtburn no) (weakness yes))
+
+   (not (bodypain ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id bodypain)
+                 bodypain
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-chills-normally ""
+                 (and (bodypain yes) (vomiting yes) )
+
+   (not (chills ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id chills)
+                 chills
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-shivering-normally ""
+                 (chills yes)
+
+   (not (shivering ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id shivering)
+                 shivering
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
                  
                  (defrule determine-rashes-normally ""
-(weakness yes)
+                 (or (chills no) (bodypain yes))
+
    (not (rashes ?))
    
    =>
@@ -387,7 +394,8 @@
                  (translate-av ?answers)))
                  
                  (defrule determine-jointswelling-normally ""
-(rashes yes)
+                (or(and (headache yes) (bodypain yes) (rashes yes)) (rashes yes))
+
    (not (jointswelling ?))
    
    =>
@@ -401,6 +409,222 @@
                  ?answers
                  (translate-av ?answers)))
                  
+
+                 
+                 (defrule determine-eyesbleeding-normally ""
+                (and (rashes yes) (jointswelling no))
+
+   (not (eyesbleeding ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id eyesbleeding)
+                 eyesbleeding
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-nonstopbleeding-normally ""
+                (and (rashes yes) (jointswelling no))
+
+   (not (nonstopbleeding ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id nonstopbleeding)
+                 nonstopbleeding
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-nosebleeding-normally ""
+                (and (rashes yes) (jointswelling no))
+
+   (not (nosebleeding ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id nosebleeding)
+                 nosebleeding
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-fascesbleeding-normally ""
+                (and (rashes yes) (jointswelling no))
+
+   (not (fascesbleeding ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id fascesbleeding)
+                 fascesbleeding
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 
+                 (defrule determine-urinebleeding-normally ""
+                (and (rashes yes) (jointswelling no))
+
+   (not (urinebleeding ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id urinebleeding)
+                 urinebleeding
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                                  (defrule determine-allergy-normally ""
+                (and (rashes yes) (jointswelling no))
+
+   (not (allergy ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id allergy)
+                 allergy
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-suddenfever-normally ""
+                (or (allergy no) (temperature no) (bodypain no) (weakness no) (stomachpain no))
+
+   (not (suddenfever ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id suddenfever)
+                 suddenfever
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-musclepain-normally ""
+                (suddenfever yes)
+
+   (not (musclepain ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id musclepain)
+                 musclepain
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 
+                 (defrule determine-diarrhea-normally ""
+                (or (suddenfever yes) (vomiting yes))
+
+   (not (diarrhea ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id diarrhea)
+                 diarrhea
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-sweating-normally ""
+                (and (suddenfever yes) (diarrhea yes))
+
+   (not (sweating ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id sweating)
+                 sweating
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-abdominalpain-normally ""
+                (or(and (sweating no) (or (diarrhea yes)(diarrhea no))) (diarrhea no))
+
+   (not (abdominalpain ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id abdominalpain)
+                 abdominalpain
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-poorappetites-normally ""
+                (or (and (sweating no) (diarrhea yes))(or(abdominalpain yes) (abdominalpain no) ))
+
+   (not (poorappetites ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id poorappetites)
+                 poorappetites
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 (defrule determine-weightloss-normally ""
+                (and (poorappetites no)(abdominalpain yes))
+
+   (not (weightloss ?))
+   
+   =>
+
+   (bind ?answers (create$ no yes))
+   (handle-state interview
+                 ?*target*
+                 (find-text-for-id weightloss)
+                 weightloss
+                 (nth$ 1 ?answers)
+                 ?answers
+                 (translate-av ?answers)))
+                 
+                 
+                 
+                 
+                 
                  
 
 
@@ -409,17 +633,53 @@
 ;;;* REPAIR RULES *
 ;;;****************
 
-(defrule sweating-state-conclusions ""
+(defrule stomachpain-state-conclusions ""
+   (declare (salience 10))
+   (stomachpain yes)
+   =>
+   (handle-state conclusion ?*target* (find-text-for-id duodenal)))
+   
+   (defrule shivering-state-conclusions ""
+   (declare (salience 10))
+   (shivering yes)
+   =>
+   (handle-state conclusion ?*target* (find-text-for-id viralfever)))
+   
+   (defrule shivering-jointswelling-conclusions ""
+   (declare (salience 10))
+   (jointswelling yes)
+   =>
+   (handle-state conclusion ?*target* (find-text-for-id chikungunya)))
+   
+   (defrule shivering-dengue-conclusions ""
+   (declare (salience 10))
+   (allergy yes)
+   =>
+   (handle-state conclusion ?*target* (find-text-for-id dengue)))
+   
+   (defrule shivering-malaria-conclusions ""
    (declare (salience 10))
    (sweating yes)
    =>
    (handle-state conclusion ?*target* (find-text-for-id malaria)))
    
-   (defrule jointswelling-state-conclusions ""
+   (defrule shivering-poorappetites-conclusions ""
    (declare (salience 10))
-   (jointswelling yes)
+   (poorappetites yes)
    =>
-   (handle-state conclusion ?*target* (find-text-for-id chikungunya)))
+   (handle-state conclusion ?*target* (find-text-for-id typhoid)))   
+   
+   (defrule shivering-poorappetites-conclusions ""
+   (declare (salience 10))
+   (weightloss yes)
+   =>
+   (handle-state conclusion ?*target* (find-text-for-id peptic)))
+   
+   (defrule shivering-sorry-conclusions ""
+   (declare (salience 10))
+   (abdominalpain no)
+   =>
+   (handle-state conclusion ?*target* (find-text-for-id sorry)))
    
    
   
