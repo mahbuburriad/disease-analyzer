@@ -217,10 +217,10 @@ if ($info{variable})
 
 print $q->start_table({-border=>0});
 
-print $q->Tr({-align=>'CENTER',},
+print $q->Tr({-align=>'CENTER',-valign=>'MIDDLE'},
              $q->td($q->h2($info{autoDemoLabel})));
 
-print $q->Tr({-align=>'CENTER',},
+print $q->Tr({-align=>'CENTER',-valign=>'MIDDLE'},
              $q->td($info{display}));
 
 if ($info{displayAnswers})
