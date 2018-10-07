@@ -509,7 +509,7 @@
                  (translate-av ?answers)))
                  
                  (defrule determine-suddenfever-normally ""
-                (or (allergy no) (temperature no) (bodypain no) (weakness no) (stomachpain no))
+                (or (allergy no) (temperature no) (bodypain no) (weakness no) (stomachpain no) (rashes no))
 
    (not (suddenfever ?))
    
@@ -574,7 +574,7 @@
                  (translate-av ?answers)))
                  
                  (defrule determine-abdominalpain-normally ""
-                (or(and (sweating no) (or (diarrhea yes)(diarrhea no))) (diarrhea no))
+                (or(and (sweating no) (or (diarrhea yes)(diarrhea no))) (diarrhea no) (suddenfever no))
 
    (not (abdominalpain ?))
    
