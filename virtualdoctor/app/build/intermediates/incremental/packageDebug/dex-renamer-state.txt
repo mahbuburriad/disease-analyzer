@@ -1,4 +1,4 @@
-#Wed Oct 10 03:21:50 BDT 2018
+#Wed Oct 10 03:46:52 BDT 2018
 base.0=C\:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_fb72000ab22000cef34d4dd4b389ba12fc5d59f1
 renamed.1=classes2.dex
 renamed.0=classes.dex

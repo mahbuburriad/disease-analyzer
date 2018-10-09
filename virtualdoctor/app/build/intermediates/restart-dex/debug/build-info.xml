@@ -5,36 +5,36 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.1"
-    timestamp="468925649856400"
+    timestamp="470299135567600"
     token="-7409899064030670220"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="207" />
+        duration="311" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="30" />
+        duration="21" />
     <task
         name="verifier"
-        duration="6" />
+        duration="2" />
 
     <artifact
         location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="468502296256800"
+        timestamp="470005772495600"
         verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="468925649856400"
+        timestamp="470299135567600"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"

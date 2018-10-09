@@ -8,12 +8,12 @@
         "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
@@ -86,6 +86,10 @@
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sign_up.xml",
+        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
