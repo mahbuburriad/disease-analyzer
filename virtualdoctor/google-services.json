@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "1011442890440-c6cqccrbcqtd3pcv99q945gi2d19tr9s.apps.googleusercontent.com",
+          "client_id": "1011442890440-hoihjb8pl544lvh4p1qem8e82pkrgul4.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.mahbuburriad.virtualdoctor",
-            "certificate_hash": "5e33a8ce4fc23ee1b74dbde3db721585d67024e7"
+            "certificate_hash": "80deac3c18e39c35becc896c5e29b2a29bc21d72"
           }
         },
         {
