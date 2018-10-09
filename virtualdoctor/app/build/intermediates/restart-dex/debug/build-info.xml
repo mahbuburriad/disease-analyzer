@@ -5,61 +5,37 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.1"
-    timestamp="465044252776900"
+    timestamp="468741344463400"
     token="-7409899064030670220"
-    verifier="R_CLASS_CHANGE" >
+    verifier="CLASS_ADDED" >
 
     <task
         name="javac"
-        duration="267" />
+        duration="272" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="49" />
+        duration="47" />
     <task
         name="verifier"
-        duration="21" />
+        duration="11" />
 
-    <artifact
-        location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-        type="DEX" />
     <artifact
         location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="464753114601600"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="468502296256800"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="465044252776900"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-            type="DEX" />
+        timestamp="468741344463400"
+        verifier="CLASS_ADDED" >
         <artifact
             location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
             type="DEX" />

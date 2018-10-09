@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="4f4cb0f319bdb11c8d2dc8764c3dcc793d3615b4">
+        sha1="e8216fe8c0557780609001ed10b0355e86691721">
         <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_659c715c711db6b80f022c7baa7d0759ff2d6b49\classes.dex" />
     </item>
     <item
