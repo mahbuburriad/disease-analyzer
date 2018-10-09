@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1011442890440",
+    "firebase_url": "https://virtualdoctor1.firebaseio.com",
+    "project_id": "virtualdoctor1",
+    "storage_bucket": "virtualdoctor1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011442890440:android:f188fa142e83ca27",
+        "android_client_info": {
+          "package_name": "com.mahbuburriad.virtualdoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011442890440-c6cqccrbcqtd3pcv99q945gi2d19tr9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mahbuburriad.virtualdoctor",
+            "certificate_hash": "5e33a8ce4fc23ee1b74dbde3db721585d67024e7"
+          }
+        },
+        {
+          "client_id": "1011442890440-8fe2nmts20aj7la1d89atf8iql20ic2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChwNuUOX68sXCMPXaS0k84j4LZ0mNu2EI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011442890440-8fe2nmts20aj7la1d89atf8iql20ic2l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
