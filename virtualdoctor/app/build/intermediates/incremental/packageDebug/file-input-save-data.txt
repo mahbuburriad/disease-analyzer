@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Oct 10 23:35:54 BDT 2018
+#Wed Oct 10 23:53:30 BDT 2018
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=C\:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\assets\\debug\\fonts\\riad.TTF

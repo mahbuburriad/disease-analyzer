@@ -5,33 +5,29 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.1"
-    timestamp="26094395594500"
-    token="-7409899064030670220"
-    verifier="MANIFEST_FILE_CHANGE" >
+    timestamp="27748476525500"
+    token="-7409899064030670220" >
 
     <task
         name="javac"
-        duration="579" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="199" />
+        duration="0" />
     <task
         name="verifier"
-        duration="79" />
-
-    <artifact
-        location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        duration="0" />
 
     <build
-        timestamp="26094395594500"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="27150602397900"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
+    <build timestamp="27748476525500" />
 
 </instant-run>
