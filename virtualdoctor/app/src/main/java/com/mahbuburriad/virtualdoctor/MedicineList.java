@@ -1,5 +1,6 @@
 package com.mahbuburriad.virtualdoctor;
 
+import android.content.Intent;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -63,7 +64,11 @@ public class MedicineList extends AppCompatActivity {
                 viewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-                        Toast.makeText(MedicineList.this, ""+local.getName(), Toast.LENGTH_SHORT).show();
+                        //start New activity
+                        Intent medicineDetail = new Intent(MedicineList.this, MedicineDetail.class);
+                        medicineDetail.putExtra("MedicineId", adapter.getRef(position).getKey());
+                        startActivity(medicineDetail);
+
                     }
                 });
 

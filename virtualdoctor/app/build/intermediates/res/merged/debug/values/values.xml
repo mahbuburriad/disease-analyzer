@@ -1714,6 +1714,17 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
+    <style name="CollapsedAppbar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+    <style name="ExpandedAppbar" parent="@android:style/TextAppearance.Material.Title">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 

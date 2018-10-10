@@ -1,25 +1,5 @@
 [
     {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_check_circle_black_24dp.png",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_check_circle_black_24dp.png"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_keyboard_backspace_black_24dp.png",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_keyboard_backspace_black_24dp.png"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_local_mall_black_24dp.png",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_local_mall_black_24dp.png"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_add_circle_outline_black_24dp.png",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_add_circle_outline_black_24dp.png"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_layers_black_24dp.png",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_layers_black_24dp.png"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\met_ic_clear.png",
         "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.rengwuxian.materialedittext\\library\\2.1.4\\res\\drawable-xhdpi\\met_ic_clear.png"
     }

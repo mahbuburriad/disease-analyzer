@@ -1,15 +1,15 @@
 [
     {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_template_media_custom.xml"
+        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_item_separator.xml"
+        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_template_media_custom.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
@@ -22,10 +22,6 @@
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
         "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_menu_item.xml"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_template_icon_group.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_medicine_list.xml",
@@ -78,10 +74,6 @@
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_action_tombstone.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout.xml",
@@ -206,10 +198,6 @@
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sign_up.xml",
         "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_action.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\medicine_item.xml",

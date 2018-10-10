@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86,armeabi-v7a"
-    api-level="19"
-    density="hdpi"
+    abi="x86_64,x86"
+    api-level="23"
+    density="xxhdpi"
     format="8"
     plugin-version="2.2.1"
-    timestamp="27748476525500"
-    token="-7409899064030670220" >
+    timestamp="32551400713700"
+    token="-7409899064030670220"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="727" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="1015" />
     <task
         name="verifier"
-        duration="0" />
+        duration="588" />
+
+    <artifact
+        location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="27150602397900"
+        timestamp="32551400713700"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="27748476525500" />
 
 </instant-run>
