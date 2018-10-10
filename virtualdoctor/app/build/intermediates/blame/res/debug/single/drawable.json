@@ -128,12 +128,12 @@
         "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\notification_tile_bg.xml"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
         "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",

@@ -38,6 +38,10 @@ public class Home extends AppCompatActivity
     RecyclerView recycler_menu;
     RecyclerView.LayoutManager layoutManager;
 
+    FirebaseRecyclerAdapter<Category,MenuViewHolder> adapter;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,7 +101,7 @@ public class Home extends AppCompatActivity
 
     private void loadMenu() {
 
-        FirebaseRecyclerAdapter<Category,MenuViewHolder> adapter = new FirebaseRecyclerAdapter<Category, MenuViewHolder>(Category.class,R.layout.menu_item,MenuViewHolder.class,category) {
+        adapter = new FirebaseRecyclerAdapter<Category, MenuViewHolder>(Category.class,R.layout.menu_item,MenuViewHolder.class,category) {
             @Override
             protected void populateViewHolder(MenuViewHolder viewHolder, Category model, int position) {
                 viewHolder.txtMenuName.setText(model.getName());
@@ -108,6 +112,11 @@ public class Home extends AppCompatActivity
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
                         Toast.makeText(Home.this, ""+clickItem.getName(), Toast.LENGTH_SHORT).show();
+
+                        //get categoryId and send to new Activity
+                        Intent medicineList= new Intent(Home.this, MedicineList.class);
+                        medicineList.putExtra("CategoryId", adapter.getRef(position).getKey());
+                        startActivity(medicineList);
                     }
                 });
             }

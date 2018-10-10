@@ -40,6 +40,7 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
         <activity android:name="com.mahbuburriad.virtualdoctor.disease_analyzer" />
+        <activity android:name="com.mahbuburriad.virtualdoctor.MedicineList" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

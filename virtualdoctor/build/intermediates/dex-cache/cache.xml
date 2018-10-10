@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="015169a3dae111de159546be33b0e512adfc79bf">
+        sha1="cf93938f7c6e458c4fa745838c59916617e55597">
         <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_659c715c711db6b80f022c7baa7d0759ff2d6b49\classes.dex" />
     </item>
     <item
@@ -241,7 +241,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="ebfa26cb0db3d062af6415dc2c1d9e611adb2c66">
+        sha1="9b3b762ab88ee676ec17c3808e9b72b0e2accc03">
         <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_fb72000ab22000cef34d4dd4b389ba12fc5d59f1\classes.dex" />
     </item>
     <item
