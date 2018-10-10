@@ -5,40 +5,33 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.1"
-    timestamp="29243927410900"
+    timestamp="40442088119700"
     token="-7409899064030670220"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="942" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="810" />
     <task
         name="verifier"
-        duration="0" />
+        duration="463" />
 
     <artifact
-        location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="29020109481800"
+        timestamp="40442088119700"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="29243927410900"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

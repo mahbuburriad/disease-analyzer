@@ -3,4 +3,10 @@
     <string name="signup">Sign Up</string>
     <string name="signin">Sign In</string>
     <string name="slogan">No matter where you are: wheather you are ta home or in the office or on the beach, you can predict your disease, order medicine and hire doctor</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
