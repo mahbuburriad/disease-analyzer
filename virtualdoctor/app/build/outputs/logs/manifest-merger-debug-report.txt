@@ -40,7 +40,7 @@ MERGED from [com.android.support:animated-vector-drawable:24.0.0] C:\xampp\htdoc
 	android:allowBackup
 		ADDED from C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\src\main\AndroidManifest.xml:8:9-35
 	android:icon
-		ADDED from C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\src\main\AndroidManifest.xml:9:9-38
 	android:theme
 		ADDED from C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\src\main\AndroidManifest.xml:12:9-40
 activity#com.mahbuburriad.virtualdoctor.MainActivity

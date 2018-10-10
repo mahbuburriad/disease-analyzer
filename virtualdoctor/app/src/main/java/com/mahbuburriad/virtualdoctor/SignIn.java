@@ -29,7 +29,7 @@ public class SignIn extends AppCompatActivity {
         btnSignIn = (Button)findViewById(R.id.btnSignIn);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference table_user = database.getReference("User");
+        final DatabaseReference table_user = database.getReference("user");
 
         btnSignIn.setOnClickListener(new View.OnClickListener(){
 
