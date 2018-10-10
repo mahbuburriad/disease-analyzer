@@ -41,6 +41,7 @@
             android:theme="@style/AppTheme" />
         <activity android:name="com.mahbuburriad.virtualdoctor.disease_analyzer" />
         <activity android:name="com.mahbuburriad.virtualdoctor.MedicineList" />
+        <activity android:name="com.mahbuburriad.virtualdoctor.MedicineDetail" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

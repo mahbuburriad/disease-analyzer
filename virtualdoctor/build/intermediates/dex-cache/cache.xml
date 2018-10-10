@@ -2,256 +2,499 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.0.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-11.0.4_4e5effb6c3d810f9d69d8dc659e0838eb93e9db3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_ba908eb8d1f06cb931afd34b17abffacf7c4106a.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\info.hoang8f\fbutton\1.0.5\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="2c12397a785c3b1868fbebeffc9553457b27803f">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\info.hoang8f-fbutton-1.0.5_04cb6badcb6053f0575fc81bc7cb141d61a79e2e\classes.dex" />
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\info.hoang8f-fbutton-1.0.5_04cb6badcb6053f0575fc81bc7cb141d61a79e2e.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.0.4\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-11.0.4_de9216a739f25456a2635e85d31e1f59138f37d6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.0.4\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-11.0.4_a93597502d6782632037d0512655d4f75f948b10\classes.dex" />
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-11.0.4_a93597502d6782632037d0512655d4f75f948b10.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.0.4\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-11.0.4_217c2ebd9aa8d27539678833a5afd7b4591de14e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_1a01e04b0052af86ad73cab7f9e566ce61811d00\classes.dex" />
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.1_1a01e04b0052af86ad73cab7f9e566ce61811d00.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.0.4\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.2.0_fca3703913e3d01f5f297c97bf2a9bb30aa230a1\classes.dex" />
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-11.0.4_de9216a739f25456a2635e85d31e1f59138f37d6.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.0"
-        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.2.1_fae69eb2cc5a7b5dba323016075ae0f8695a6c12\classes.dex" />
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.2.0_e206ab50138ac5d0d7bd2d7ef9343cfa6e7f24df.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.0"
-        sha1="cf93938f7c6e458c4fa745838c59916617e55597">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_659c715c711db6b80f022c7baa7d0759ff2d6b49\classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.2.0_9471494d02e9821f1cfb2b39727c777203ae89b2.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\mahbu\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_e974ec41a4021d48199b875a3d48649a4563cbac\classes.dex" />
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_e974ec41a4021d48199b875a3d48649a4563cbac.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.2.0_81ca23f07f3ceb3aadf9a5cf60fc5f6ee8394e22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.2.0_a1112ea00f3b2cb87daa0e822a358c845f01e7c8\classes.dex" />
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.2.0_fca3703913e3d01f5f297c97bf2a9bb30aa230a1.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.0.4\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-11.0.4_da45b0a20f653baf237b50a3545602a6979403a9\classes.dex" />
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-11.0.4_da45b0a20f653baf237b50a3545602a6979403a9.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\11.0.4\jars\classes.jar"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-11.0.4_2a9f7994a0db60dbf2fd9eaa67511a7726963e85\classes.dex" />
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-24.2.1_fae69eb2cc5a7b5dba323016075ae0f8695a6c12.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\mahbu\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-database\1.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f5bcd9cbfeedc58f493339841a7c5d0347a39f0b">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.firebaseui-firebase-ui-database-1.2.0_a20c2f39888caf490f1271d34e5e637240c71148.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\11.0.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="1b12397bc9f342b29d9e9108978828f99a6da579">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-11.0.4_c8d3b3337412ee268b6f803a0421360d58c7a908.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\library-2.4.0_1a0b631c7a40b346623e1330ba894b4963aa1846.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_d47b775392683ce119c3ddcd875593bc0b290f1b\classes.dex" />
+        sha1="64667f72180369b22e2a0ab669b1f0837453b195">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_659c715c711db6b80f022c7baa7d0759ff2d6b49.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.0.4\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-11.0.4_ecbfb7b98629fd9b259cd9a7f3e587be0f8b9533\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.1_67e04856353b648c95f2e5357feb5a9b342ee689\classes.dex" />
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.1.1_67e04856353b648c95f2e5357feb5a9b342ee689.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.2.0_e206ab50138ac5d0d7bd2d7ef9343cfa6e7f24df\classes.dex" />
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.2.0_a1112ea00f3b2cb87daa0e822a358c845f01e7c8.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\11.0.4\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.2.0_9471494d02e9821f1cfb2b39727c777203ae89b2\classes.dex" />
+        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-11.0.4_2a9f7994a0db60dbf2fd9eaa67511a7726963e85.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.0.4\jars\classes.jar"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_da3e1e52fc9bb8ab2d7f7da9b0acaea501002080.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.0.4\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="e5b429c146094a612134910688d169ec08deeefb">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-11.0.4_4e5effb6c3d810f9d69d8dc659e0838eb93e9db3\classes.dex" />
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-11.0.4_217c2ebd9aa8d27539678833a5afd7b4591de14e.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_ee19318f8a185d9e63ad08bd5cb9ca0e1a25cf79.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.2.0_81ca23f07f3ceb3aadf9a5cf60fc5f6ee8394e22\classes.dex" />
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_d47b775392683ce119c3ddcd875593bc0b290f1b.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.2.0_c38a721cb4a0ce0e7b3968c634808ee5c7a56a1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.rengwuxian.materialedittext\library\2.1.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="288913b440a3c61c30aa171095453a605432277a">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.rengwuxian.materialedittext-library-2.1.4_3f0858955d744d6790997b171bf0ad331e181755.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-11.0.4_ecbfb7b98629fd9b259cd9a7f3e587be0f8b9533.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\mahbu\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_1a0b631c7a40b346623e1330ba894b4963aa1846\classes.dex" />
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\library-2.4.0_1a0b631c7a40b346623e1330ba894b4963aa1846.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.0.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-11.0.4_de9216a739f25456a2635e85d31e1f59138f37d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\info.hoang8f\fbutton\1.0.5\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2c12397a785c3b1868fbebeffc9553457b27803f">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\info.hoang8f-fbutton-1.0.5_04cb6badcb6053f0575fc81bc7cb141d61a79e2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_ba908eb8d1f06cb931afd34b17abffacf7c4106a\classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.2.0_9471494d02e9821f1cfb2b39727c777203ae89b2.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-database\1.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="f5bcd9cbfeedc58f493339841a7c5d0347a39f0b">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-database-1.2.0_a20c2f39888caf490f1271d34e5e637240c71148\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\11.0.4\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="1b12397bc9f342b29d9e9108978828f99a6da579">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-11.0.4_c8d3b3337412ee268b6f803a0421360d58c7a908\classes.dex" />
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-11.0.4_c8d3b3337412ee268b6f803a0421360d58c7a908.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.2.0_81ca23f07f3ceb3aadf9a5cf60fc5f6ee8394e22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-11.0.4_4e5effb6c3d810f9d69d8dc659e0838eb93e9db3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="67566e0adb3012b8154308de5c064f67e0a9e26a">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\instant-run_fb72000ab22000cef34d4dd4b389ba12fc5d59f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.2.0_e206ab50138ac5d0d7bd2d7ef9343cfa6e7f24df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.0.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-11.0.4_a93597502d6782632037d0512655d4f75f948b10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_ba908eb8d1f06cb931afd34b17abffacf7c4106a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.0.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-11.0.4_217c2ebd9aa8d27539678833a5afd7b4591de14e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.1_1a01e04b0052af86ad73cab7f9e566ce61811d00.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.2.0_fca3703913e3d01f5f297c97bf2a9bb30aa230a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-24.2.1_fae69eb2cc5a7b5dba323016075ae0f8695a6c12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\11.0.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-11.0.4_2a9f7994a0db60dbf2fd9eaa67511a7726963e85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.cepheuen.elegant-number-button\lib\1.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="701711f6654cffea5adc92ac21767340edf7ef02">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.cepheuen.elegant-number-button-lib-1.0.2_b5feab7e7b92a7fc5df09e393b55a4d5f4e86a12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-database\1.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f5bcd9cbfeedc58f493339841a7c5d0347a39f0b">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.firebaseui-firebase-ui-database-1.2.0_a20c2f39888caf490f1271d34e5e637240c71148.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_e974ec41a4021d48199b875a3d48649a4563cbac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.2.0_a1112ea00f3b2cb87daa0e822a358c845f01e7c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.0.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-11.0.4_da45b0a20f653baf237b50a3545602a6979403a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_ee19318f8a185d9e63ad08bd5cb9ca0e1a25cf79\classes.dex" />
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_ee19318f8a185d9e63ad08bd5cb9ca0e1a25cf79.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_da3e1e52fc9bb8ab2d7f7da9b0acaea501002080\classes.dex" />
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_da3e1e52fc9bb8ab2d7f7da9b0acaea501002080.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.2.0_c38a721cb4a0ce0e7b3968c634808ee5c7a56a1f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="9b3b762ab88ee676ec17c3808e9b72b0e2accc03">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_fb72000ab22000cef34d4dd4b389ba12fc5d59f1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.rengwuxian.materialedittext\library\2.1.4\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="288913b440a3c61c30aa171095453a605432277a">
-        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.rengwuxian.materialedittext-library-2.1.4_3f0858955d744d6790997b171bf0ad331e181755\classes.dex" />
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.rengwuxian.materialedittext-library-2.1.4_3f0858955d744d6790997b171bf0ad331e181755.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_d47b775392683ce119c3ddcd875593bc0b290f1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.0.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-11.0.4_ecbfb7b98629fd9b259cd9a7f3e587be0f8b9533.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.1.1_67e04856353b648c95f2e5357feb5a9b342ee689.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\xampp\htdocs\disease-analyzer\virtualdoctor\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.2.0_c38a721cb4a0ce0e7b3968c634808ee5c7a56a1f.jar" />
     </item>
 
 </items>

@@ -37,6 +37,7 @@
     <color name="colorAccent">#39796b</color>
     <color name="colorPrimary">#004d40</color>
     <color name="colorPrimaryDark">#00251a</color>
+    <color name="colorText">#FFFFFF</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
     <color name="design_fab_shadow_start_color">#44000000</color>
@@ -308,6 +309,7 @@
         </attr></declare-styleable>
     <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="color" name="textColorError"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
+    <declare-styleable name="ElegantNumberButton"><attr format="color" name="backGroundColor"/><attr format="integer" name="initialNumber"/><attr format="integer" name="finalNumber"/><attr format="color" name="textColor"/><attr format="dimension" name="textSize"/><attr format="reference" name="backgroundDrawable"/></declare-styleable>
     <declare-styleable name="FButton"><attr format="boolean" name="shadowEnabled"/><attr format="color" name="buttonColor"/><attr format="color" name="shadowColor"/><attr format="dimension" name="shadowHeight"/><attr format="dimension" name="cornerRadius"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize">
             
