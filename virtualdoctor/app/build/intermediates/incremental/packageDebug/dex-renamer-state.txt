@@ -1,7 +1,7 @@
-#Thu Oct 11 01:23:45 BDT 2018
-base.0=C\:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_fb72000ab22000cef34d4dd4b389ba12fc5d59f1
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_659c715c711db6b80f022c7baa7d0759ff2d6b49\\classes.dex
-base.1=C\:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_659c715c711db6b80f022c7baa7d0759ff2d6b49
-file.0=C\:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_fb72000ab22000cef34d4dd4b389ba12fc5d59f1\\classes.dex
+#Thu Oct 11 23:50:11 BDT 2018
+base.0=C\:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_fb72000ab22000cef34d4dd4b389ba12fc5d59f1
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_659c715c711db6b80f022c7baa7d0759ff2d6b49\\classes.dex
+base.1=C\:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_659c715c711db6b80f022c7baa7d0759ff2d6b49
+file.0=C\:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_fb72000ab22000cef34d4dd4b389ba12fc5d59f1\\classes.dex

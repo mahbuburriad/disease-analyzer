@@ -1,10 +1,10 @@
 [
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\605848e3c6fd0fc1d05c32712e2a711a46f53c23\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\xampp\\htdocs\\disease-analyzer\\virtualdoctor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\605848e3c6fd0fc1d05c32712e2a711a46f53c23\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

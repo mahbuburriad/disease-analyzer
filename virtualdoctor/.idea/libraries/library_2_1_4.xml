@@ -4,8 +4,8 @@
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/2038e2b40f7833b5f28512b01f92ef17638fb943/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/2038e2b40f7833b5f28512b01f92ef17638fb943/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

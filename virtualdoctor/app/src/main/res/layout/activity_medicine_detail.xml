@@ -28,6 +28,7 @@
             android:layout_height="350dp">
 
             <ImageView
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/img_medicine"
@@ -116,7 +117,7 @@
                         <ImageView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_add_circle_outline_black_24dp"
+                            android:src="@drawable/ic_attach_money_black_24dp"
                             android:layout_weight="1"
                             />
 
