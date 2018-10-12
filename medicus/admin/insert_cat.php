@@ -118,13 +118,17 @@ $cat_title = $_POST['cat_title'];
 
 $cat_top = $_POST['cat_top'];
 
-$cat_image = $_FILES['cat_image']['name'];
+#$cat_image = $_FILES['cat_image']['name'];
 
-$temp_name = $_FILES['cat_image']['tmp_name'];
+#$temp_name = $_FILES['cat_image']['tmp_name'];
 
-move_uploaded_file($temp_name,"other_images/$cat_image");
+#move_uploaded_file($temp_name,"other_images/$cat_image");
+    
+    $temp = explode(".", $_FILES['cat_image']['name']);
+$newfilename = round(microtime(true)) . '.' . end($temp);
+move_uploaded_file($_FILES['cat_image']['tmp_name'], "other_images/" . $newfilename);
 
-$insert_cat = "insert into categories (cat_title,cat_top,cat_image) values ('$cat_title','$cat_top','$cat_image')";
+$insert_cat = "insert into categories (cat_title,cat_top,cat_image) values ('$cat_title','$cat_top','$newfilename')";
 
 $run_cat = mysqli_query($con,$insert_cat);
 
