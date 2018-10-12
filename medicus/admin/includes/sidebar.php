@@ -355,7 +355,7 @@
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">
+                                    <a href="index.php?insert_p_cat" class="sidebar-link">
                                         <i class="fas fa-th-list"></i>
                                         <span class="hide-menu">Insert Product Categories </span>
                                     </a>
@@ -376,7 +376,7 @@
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="index.php?insert_product" class="sidebar-link">
+                                    <a href="index.php" class="sidebar-link">
                                         <i class="fas fa-th-list"></i>
                                         <span class="hide-menu">Insert Product Categories</span>
                                     </a>
