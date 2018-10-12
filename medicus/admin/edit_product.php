@@ -7,6 +7,89 @@ if(!isset($_SESSION['admin_email'])){
 else{
 
 ?>
+
+<?php
+
+if(isset($_GET['edit_product'])){
+
+$edit_id = $_GET['edit_product'];
+
+$get_p = "select * from products where product_id='$edit_id'";
+
+$run_edit = mysqli_query($con,$get_p);
+
+$row_edit = mysqli_fetch_array($run_edit);
+
+$p_id = $row_edit['product_id'];
+
+$p_title = $row_edit['product_title'];
+
+$p_cat = $row_edit['p_cat_id'];
+
+$cat = $row_edit['cat_id'];
+
+$m_id = $row_edit['manufacturer_id'];
+
+$p_image1 = $row_edit['product_img1'];
+
+$p_image2 = $row_edit['product_img2'];
+
+$p_image3 = $row_edit['product_img3'];
+
+$new_p_image1 = $row_edit['product_img1'];
+
+$new_p_image2 = $row_edit['product_img2'];
+
+$new_p_image3 = $row_edit['product_img3'];
+
+$p_price = $row_edit['product_price'];
+
+$p_desc = $row_edit['product_desc'];
+
+$p_keywords = $row_edit['product_keywords'];
+
+$psp_price = $row_edit['product_psp_price'];
+
+$p_label = $row_edit['product_label'];
+
+$p_url = $row_edit['product_url'];
+
+$p_features = $row_edit['product_features'];
+
+$p_video = $row_edit['product_video'];
+
+}
+
+$get_manufacturer = "select * from manufacturers where manufacturer_id='$m_id'";
+
+$run_manufacturer = mysqli_query($con,$get_manufacturer);
+
+$row_manfacturer = mysqli_fetch_array($run_manufacturer);
+
+$manufacturer_id = $row_manfacturer['manufacturer_id'];
+
+$manufacturer_title = $row_manfacturer['manufacturer_title'];
+
+
+$get_p_cat = "select * from product_categories where p_cat_id='$p_cat'";
+
+$run_p_cat = mysqli_query($con,$get_p_cat);
+
+$row_p_cat = mysqli_fetch_array($run_p_cat);
+
+$p_cat_title = $row_p_cat['p_cat_title'];
+
+$get_cat = "select * from categories where cat_id='$cat'";
+
+$run_cat = mysqli_query($con,$get_cat);
+
+$row_cat = mysqli_fetch_array($run_cat);
+
+$cat_title = $row_cat['cat_title'];
+
+?>
+
+
 <!-- Page wrapper  -->
 <!-- ============================================================== -->
 <div class="page-wrapper">
@@ -50,7 +133,8 @@ else{
                        <center>
                         <h4 class="card-title">General Form</h4>
                         <h6 class="card-subtitle"> All with bootstrap element classies </h6>
-                               <form class="form-horizontal" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
+
+<form class="form-horizontal" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
 
 <div class="form-group" ><!-- form-group Starts -->
 
@@ -58,7 +142,7 @@ else{
 
 <div class="col-md-6" >
 
-<input type="text" name="product_title" class="form-control" required >
+<input type="text" name="product_title" class="form-control" required value="<?php echo $p_title; ?>">
 
 </div>
 
@@ -71,7 +155,7 @@ else{
 
 <div class="col-md-6" >
 
-<input type="text" name="product_url" class="form-control" required >
+<input type="text" name="product_url" class="form-control" required value="<?php echo $p_url; ?>" >
 
 <br>
 
@@ -85,39 +169,45 @@ Product Url Example : navy-blue-t-shirt
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group" ><!-- form-group Starts -->
 
 <label class="col-md-3 control-label" > Select A Manufacturer </label>
 
 <div class="col-md-6" >
 
-<select class="form-control" name="manufacturer"><!-- select manufacturer Starts -->
+<select name="manufacturer" class="form-control">
 
-<option> Select A Manufacturer </option>
+<option value="<?php echo $manufacturer_id; ?>">
+<?php echo $manufacturer_title; ?>
+</option>
 
 <?php
 
 $get_manufacturer = "select * from manufacturers";
-$run_manufacturer = mysqli_query($con,$get_manufacturer);
-while($row_manufacturer= mysqli_fetch_array($run_manufacturer)){
-$manufacturer_id = $row_manufacturer['manufacturer_id'];
-$manufacturer_title = $row_manufacturer['manufacturer_title'];
 
-echo "<option value='$manufacturer_id'>
+$run_manufacturer = mysqli_query($con,$get_manufacturer);
+
+while($row_manfacturer = mysqli_fetch_array($run_manufacturer)){
+
+$manufacturer_id = $row_manfacturer['manufacturer_id'];
+
+$manufacturer_title = $row_manfacturer['manufacturer_title'];
+
+echo "
+<option value='$manufacturer_id'>
 $manufacturer_title
-</option>";
+</option>
+";
 
 }
 
 ?>
 
-</select><!-- select manufacturer Ends -->
+</select>
 
 </div>
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group" ><!-- form-group Starts -->
 
@@ -127,7 +217,7 @@ $manufacturer_title
 
 <select name="product_cat" class="form-control" >
 
-<option> Select  a Product Category </option>
+<option value="<?php echo $p_cat; ?>" > <?php echo $p_cat_title; ?> </option>
 
 
 <?php
@@ -165,7 +255,7 @@ echo "<option value='$p_cat_id' >$p_cat_title</option>";
 
 <select name="cat" class="form-control" >
 
-<option> Select a Category </option>
+<option value="<?php echo $cat; ?>" > <?php echo $cat_title; ?> </option>
 
 <?php
 
@@ -198,7 +288,8 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <div class="col-md-6" >
 
-<input type="file" name="product_img1" class="form-control" required >
+<input type="file" name="product_img1" class="form-control" >
+<br><img src="product_images/<?php echo $p_image1; ?>" width="70" height="70" >
 
 </div>
 
@@ -210,7 +301,8 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <div class="col-md-6" >
 
-<input type="file" name="product_img2" class="form-control" required >
+<input type="file" name="product_img2" class="form-control" >
+<br><img src="product_images/<?php echo $p_image2; ?>" width="70" height="70" >
 
 </div>
 
@@ -222,7 +314,8 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <div class="col-md-6" >
 
-<input type="file" name="product_img3" class="form-control" required >
+<input type="file" name="product_img3" class="form-control" >
+<br><img src="product_images/<?php echo $p_image3; ?>" width="70" height="70" >
 
 </div>
 
@@ -234,7 +327,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <div class="col-md-6" >
 
-<input type="text" name="product_price" class="form-control" required >
+<input type="text" name="product_price" class="form-control" required value="<?php echo $p_price; ?>" >
 
 </div>
 
@@ -246,7 +339,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <div class="col-md-6" >
 
-<input type="text" name="psp_price" class="form-control" required >
+<input type="text" name="psp_price" class="form-control" required value="<?php echo $psp_price; ?>">
 
 </div>
 
@@ -258,7 +351,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <div class="col-md-6" >
 
-<input type="text" name="product_keywords" class="form-control" required >
+<input type="text" name="product_keywords" class="form-control" required value="<?php echo $p_keywords; ?>" >
 
 </div>
 
@@ -300,6 +393,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <textarea name="product_desc" class="form-control" rows="15" id="product_desc">
 
+<?php echo $p_desc; ?>
 
 </textarea>
 
@@ -312,6 +406,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <textarea name="product_features" class="form-control" rows="15" id="product_features">
 
+<?php echo $p_features; ?>
 
 </textarea>
 
@@ -324,6 +419,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <textarea name="product_video" class="form-control" rows="15">
 
+<?php echo $p_video; ?>
 
 </textarea>
 
@@ -342,7 +438,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <div class="col-md-6" >
 
-<input type="text" name="product_label" class="form-control" required >
+<input type="text" name="product_label" class="form-control" required value="<?php echo $p_label; ?>">
 
 </div>
 
@@ -354,15 +450,89 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <div class="col-md-6" >
 
-<input type="submit" name="submit" value="Insert Product" class="btn btn-primary form-control" >
+<input type="submit" name="update" value="Update Product" class="btn btn-primary form-control" >
 
 </div>
 
 </div><!-- form-group Ends -->
 
 </form><!-- form-horizontal Ends -->
-                                
-                                                </div>
+
+
+
+<?php
+
+if(isset($_POST['update'])){
+
+$product_title = $_POST['product_title'];
+$product_cat = $_POST['product_cat'];
+$cat = $_POST['cat'];
+$manufacturer_id = $_POST['manufacturer'];
+$product_price = $_POST['product_price'];
+$product_desc = $_POST['product_desc'];
+$product_keywords = $_POST['product_keywords'];
+
+$psp_price = $_POST['psp_price'];
+
+$product_label = $_POST['product_label'];
+
+$product_url = $_POST['product_url'];
+
+$product_features = $_POST['product_features'];
+
+$product_video = $_POST['product_video'];
+
+$status = "product";
+
+$product_img1 = $_FILES['product_img1']['name'];
+$product_img2 = $_FILES['product_img2']['name'];
+$product_img3 = $_FILES['product_img3']['name'];
+
+$temp_name1 = $_FILES['product_img1']['tmp_name'];
+$temp_name2 = $_FILES['product_img2']['tmp_name'];
+$temp_name3 = $_FILES['product_img3']['tmp_name'];
+
+if(empty($product_img1)){
+
+$product_img1 = $new_p_image1;
+
+}
+
+
+if(empty($product_img2)){
+
+$product_img2 = $new_p_image2;
+
+}
+
+if(empty($product_img3)){
+
+$product_img3 = $new_p_image3;
+
+}
+
+
+move_uploaded_file($temp_name1,"product_images/$product_img1");
+move_uploaded_file($temp_name2,"product_images/$product_img2");
+move_uploaded_file($temp_name3,"product_images/$product_img3");
+
+$update_product = "update products set p_cat_id='$product_cat',cat_id='$cat',manufacturer_id='$manufacturer_id',date=NOW(),product_title='$product_title',product_url='$product_url',product_img1='$product_img1',product_img2='$product_img2',product_img3='$product_img3',product_price='$product_price',product_psp_price='$psp_price',product_desc='$product_desc',product_features='$product_features',product_video='$product_video',product_keywords='$product_keywords',product_label='$product_label',status='$status' where product_id='$p_id'";
+
+$run_product = mysqli_query($con,$update_product);
+
+if($run_product){
+
+echo "<script> alert('Product has been updated successfully') </script>";
+
+echo "<script>window.open('index.php?view_products','_self')</script>";
+
+}
+
+}
+
+?>
+
+                    </div>
                 </div>
             </div>
         </div>

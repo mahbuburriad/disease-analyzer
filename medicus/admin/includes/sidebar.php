@@ -248,8 +248,8 @@
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="assets/images/users/2.jpg" alt="user" class="rounded-circle" width="40">
-                                <span class="m-l-5 font-medium d-none d-sm-inline-block">Jonathan Doe <i class="mdi mdi-chevron-down"></i></span>
+                                <img src="admin_images/<?php echo $admin_image;?>" alt="user" class="rounded-circle" width="40">
+                                <span class="m-l-5 font-medium d-none d-sm-inline-block"><?php echo $admin_name;?> <i class="mdi mdi-chevron-down"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
                                 <span class="with-arrow">
@@ -257,11 +257,11 @@
                                 </span>
                                 <div class="d-flex no-block align-items-center p-15 bg-primary text-white m-b-10">
                                     <div class="">
-                                        <img src="assets/images/users/2.jpg" alt="user" class="rounded-circle" width="60">
+                                        <img src="admin_images/<?php echo $admin_image;?>" alt="user" class="rounded-circle" width="60">
                                     </div>
                                     <div class="m-l-10">
-                                        <h4 class="m-b-0">Jonathan Doe</h4>
-                                        <p class=" m-b-0">jon@gmail.com</p>
+                                        <h4 class="m-b-0"><?php echo $admin_name;?></h4>
+                                        <p class="m-b-0"><?php echo $admin_email;?></p>
                                     </div>
                                 </div>
                                 <div class="profile-dis scrollable">
@@ -334,7 +334,7 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="index.php?view_product" class="sidebar-link">
+                                    <a href="index.php?view_products" class="sidebar-link">
                                         <i class="fab fa-avianex"></i>
                                         <span class="hide-menu">View Products</span>
                                     </a>
@@ -361,7 +361,7 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="index.php?view_product" class="sidebar-link">
+                                    <a href="index.php?view_p_cats" class="sidebar-link">
                                         <i class="fab fa-avianex"></i>
                                         <span class="hide-menu">View Product Categories</span>
                                     </a>
@@ -376,15 +376,79 @@
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="index.php" class="sidebar-link">
+                                    <a href="index.php?insert_cat" class="sidebar-link">
                                         <i class="fas fa-th-list"></i>
-                                        <span class="hide-menu">Insert Product Categories</span>
+                                        <span class="hide-menu">Insert Category</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="index.php?view_product" class="sidebar-link">
+                                    <a href="index.php?view_cats" class="sidebar-link">
                                         <i class="fab fa-avianex"></i>
-                                        <span class="hide-menu">View Product Categories</span>
+                                        <span class="hide-menu">View Categories</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-th-list"></i>
+                                <span class="hide-menu">Bundles</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="index.php?insert_bundle" class="sidebar-link">
+                                        <i class="fas fa-th-list"></i>
+                                        <span class="hide-menu">Insert Bundle</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="index.php?view_bundles" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Bundles</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-th-list"></i>
+                                <span class="hide-menu">Bundles Relations</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="index.php?insert_rel" class="sidebar-link">
+                                        <i class="fas fa-th-list"></i>
+                                        <span class="hide-menu">Insert Relation</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="index.php?view_rel" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Relations</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-th-list"></i>
+                                <span class="hide-menu">Icons</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="index.php?insert_icon" class="sidebar-link">
+                                        <i class="fas fa-th-list"></i>
+                                        <span class="hide-menu">Insert Icon</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="index.php?view_icons" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Icons</span>
                                     </a>
                                 </li>
                             </ul>
@@ -402,15 +466,53 @@
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="index.php?insert_product" class="sidebar-link">
+                                    <a href="index.php?insert_manufacturer" class="sidebar-link">
                                         <i class="fas fa-th-list"></i>
                                         <span class="hide-menu">Manufacturers Registration</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="index.php?view_product" class="sidebar-link">
+                                    <a href="index.php?view_manufacturers" class="sidebar-link">
                                         <i class="fab fa-avianex"></i>
                                         <span class="hide-menu">View Manufacturers</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="index.php?view_product" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Manufacturers Product</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-small-cap">
+                            <i class="mdi mdi-dots-horizontal"></i>
+                            <span class="hide-menu">Admin Users</span>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-th-list"></i>
+                                <span class="hide-menu">Users</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="index.php?insert_user" class="sidebar-link">
+                                        <i class="fas fa-th-list"></i>
+                                        <span class="hide-menu">Insert User</span>
+                                    </a>
+                                </li>
+                                   <li class="sidebar-item">
+                                    <a href="index.php?user_profile=<?php echo $admin_id; ?>" class="sidebar-link">
+                                        <i class="fas fa-th-list"></i>
+                                        <span class="hide-menu">Edit Profile</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="index.php?view_users" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Users</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
@@ -434,19 +536,39 @@
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="index.php?insert_product" class="sidebar-link">
+                                    <a href="index.php?insert_coupon" class="sidebar-link">
                                         <i class="fas fa-th-list"></i>
                                         <span class="hide-menu">Insert Coupons</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="index.php?view_product" class="sidebar-link">
+                                    <a href="index.php?view_coupons" class="sidebar-link">
                                         <i class="fab fa-avianex"></i>
                                         <span class="hide-menu">View Coupons</span>
                                     </a>
                                 </li>
+                                   <li class="sidebar-item">
+                                    <a href="index.php?view_customers" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Customers</span>
+                                    </a>
+                                </li>
+                                   <li class="sidebar-item">
+                                    <a href="index.php?view_orders" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Orders</span>
+                                    </a>
+                                </li>
+                                   <li class="sidebar-item">
+                                    <a href="index.php?view_payments" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Payments</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
+                        
+                        
                         <li class="nav-small-cap">
                             <i class="mdi mdi-dots-horizontal"></i>
                             <span class="hide-menu">Other Page and CSS</span>
@@ -454,19 +576,31 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                                 <i class="fas fa-th-list"></i>
-                                <span class="hide-menu">Other Pages</span>
+                                <span class="hide-menu">Contact Us Section</span>
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="index.php?insert_product" class="sidebar-link">
+                                    <a href="index.php?edit_contact_us" class="sidebar-link">
                                         <i class="fas fa-th-list"></i>
-                                        <span class="hide-menu">Insert pages</span>
+                                        <span class="hide-menu">Edit Contact Us</span>
+                                    </a>
+                                </li>
+                                   <li class="sidebar-item">
+                                    <a href="index.php?edit_css" class="sidebar-link">
+                                        <i class="fas fa-th-list"></i>
+                                        <span class="hide-menu">Edit Css File</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="index.php?view_product" class="sidebar-link">
+                                    <a href="index.php?insert_enquiry" class="sidebar-link">
                                         <i class="fab fa-avianex"></i>
-                                        <span class="hide-menu">View pages</span>
+                                        <span class="hide-menu">Insert Enquiry Type</span>
+                                    </a>
+                                </li>
+                                   <li class="sidebar-item">
+                                    <a href="index.php?view_enquiry" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Enquiry Types</span>
                                     </a>
                                 </li>
                             </ul>
