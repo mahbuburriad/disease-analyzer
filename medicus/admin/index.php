@@ -98,6 +98,12 @@ $count_pending_orders = mysqli_num_rows($run_pending_orders);
                     if(isset($_GET['dashboard'])){
                         include("dashboard.php");
                     }
+    if(isset($_GET['insert_product'])){
+                        include("insert_product.php");
+                    } 
+    if(isset($_GET['view_product'])){
+                        include("view_product.php");
+                    }
     ?>
             <!-- ============================================================== -->
             <!-- ============================================================== -->

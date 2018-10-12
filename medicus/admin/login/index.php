@@ -89,7 +89,6 @@ $count = mysqli_num_rows($run_admin);
 if($count==1){
 $_SESSION['admin_email']=$admin_email;
     
-echo "<script>alert('Congratulation! You are Logged in into admin panel')</script>";
 echo "<script>window.open('../index.php?dashboard','_self')</script>";
 }
     
