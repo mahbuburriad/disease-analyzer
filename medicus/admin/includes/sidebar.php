@@ -348,6 +348,131 @@
                             </ul>
                         </li>
                         
+                         <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-th-list"></i>
+                                <span class="hide-menu">Product Categories</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">
+                                        <i class="fas fa-th-list"></i>
+                                        <span class="hide-menu">Insert Product Categories </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="index.php?view_product" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Product Categories</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-th-list"></i>
+                                <span class="hide-menu">Categories</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="index.php?insert_product" class="sidebar-link">
+                                        <i class="fas fa-th-list"></i>
+                                        <span class="hide-menu">Insert Product Categories</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="index.php?view_product" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Product Categories</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-small-cap">
+                            <i class="mdi mdi-dots-horizontal"></i>
+                            <span class="hide-menu">Manufacturers</span>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-th-list"></i>
+                                <span class="hide-menu">Manufactures</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="index.php?insert_product" class="sidebar-link">
+                                        <i class="fas fa-th-list"></i>
+                                        <span class="hide-menu">Manufacturers Registration</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="index.php?view_product" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Manufacturers</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="index.php?view_product" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Manufacturers Product</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-small-cap">
+                            <i class="mdi mdi-dots-horizontal"></i>
+                            <span class="hide-menu">Coupons</span>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-th-list"></i>
+                                <span class="hide-menu">Coupons</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="index.php?insert_product" class="sidebar-link">
+                                        <i class="fas fa-th-list"></i>
+                                        <span class="hide-menu">Insert Coupons</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="index.php?view_product" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View Coupons</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-small-cap">
+                            <i class="mdi mdi-dots-horizontal"></i>
+                            <span class="hide-menu">Other Page and CSS</span>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-th-list"></i>
+                                <span class="hide-menu">Other Pages</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="index.php?insert_product" class="sidebar-link">
+                                        <i class="fas fa-th-list"></i>
+                                        <span class="hide-menu">Insert pages</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="index.php?view_product" class="sidebar-link">
+                                        <i class="fab fa-avianex"></i>
+                                        <span class="hide-menu">View pages</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
                         <li class="nav-small-cap">
                             <i class="mdi mdi-dots-horizontal"></i>
                             <span class="hide-menu">Logout</span>
