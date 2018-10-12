@@ -1,0 +1,418 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Shield Theme
+Version:	1.0
+Last change:	
+Assigned to: 20/06/2016
+Primary use:
+	
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Layout]
+
+* body
+
+	+ Global
+		- Padding/Margin
+		- OW pull-left/pull-right
+		- Section Padding
+	+ Fonts Settings
+		- Montserrat
+		- Open Sans
+	+ Header
+	+ Footer
+	+ Page Banner
+	
+	+ Responsive
+		- min-width: 1200
+		- min-width: 992
+		- max-width: 1366
+		- max-width: 1200
+		- min-width: 992 to max-width: 1200
+		- max-width: 991
+		- min-width: 768 to max-width: 991
+		- max-width: 767
+		- max-width: 639
+		- max-width: 479
+-------------------------------------------------------------------*/
+body {
+	font-family: 'Droid Serif', serif;
+	font-size: 14px;
+	color: #000;
+	background-color: #fff;
+	position: relative;
+	overflow-x: hidden;
+	/*min-height: 2500px;*/
+}
+img {
+    max-width: 100%;
+	height: auto;
+}
+a {
+    outline: 0 !important;
+}
+
+/* + Global */
+	/* - Padding/Margin */
+	.no-padding {
+		padding: 0;
+	}
+	.no-left-padding{
+		padding-left: 0;
+	}
+	.no-right-padding {
+		padding-right: 0;
+	}
+	.no-top-padding {
+		padding-top: 0;
+	}
+	.no-bottom-padding {
+		padding-bottom: 0;
+	}
+	.no-margin {
+		margin: 0;
+	}
+	.no-left-margin {
+		margin-left: 0;
+	}
+	.no-right-margin {
+		margin-right: 0;
+	}
+	.no-top-margin {
+		padding-top: 0;
+	}
+	.no-bottom-margin {
+		margin-bottom: 0;
+	}
+
+	/* - OW pull-left/pull-right */
+	.ow-pull-right {
+		float: right;
+	}
+	.ow-pull-left {
+		float: left;
+	}
+
+main {
+	overflow: hidden;
+}
+
+/* - Section Padding */
+.section-padding {
+	padding-bottom: 75px;
+	padding-top: 75px;
+}
+.padding-30 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.padding-50 {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.padding-60 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.padding-100 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/* - Page Bradcrumb */
+.page-breadcrumb {
+	background-color: #f6f6f6;
+	padding: 105px 0;
+	text-align: center;
+}
+.page-breadcrumb h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	letter-spacing: 1.25px;
+	margin-bottom: 15px;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+.page-breadcrumb .breadcrumb {
+	background-color: transparent;
+	margin-bottom: 0;
+	padding: 0;
+}
+.page-breadcrumb .breadcrumb li {
+	font-size: 14px;
+	font-family: 'Droid Serif', serif;
+	letter-spacing: 0.35px;
+	color: #333;
+	text-transform: capitalize;
+}
+.page-breadcrumb .breadcrumb li a,
+.page-breadcrumb .breadcrumb > li + li::before {
+	color: #999;
+	text-decoration: none;
+}
+
+/* - Section Header */
+.section-header {
+	display: inline-block;
+	width: 100%
+}
+.section-header h3 {
+	margin-top: 0;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif; 
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	position: relative;
+}
+.section-header2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.section-header2 h3 {
+	background-image: url("../images/header-seprator.png");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+}
+.section-header2 p {
+	font-size: 16px;
+	font-style: italic;
+	line-height: 26px;
+	color: #999999;
+}
+.section-header2 p b {
+	color: #666666;
+	display: block;
+}
+.section-header3 h3 {
+	color: #fff;
+}
+.section-header3 p span,
+.section-header-white-color p b {
+	font-weight: bold;
+	color: #cccccc;
+}
+.section-header4 p span {
+	font-weight: bold;
+	color: #666666;
+}
+.section-header-white-color h3 {
+	color: #fff;
+}
+.section-header5 h3 {
+	background-image: none;
+	padding-bottom: 32px;
+}
+.section-header5 h3::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	height: 1px;
+	width: 100px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	border: 1px dashed #999999;
+}
+.section-header6 h3 {
+	background-image: url("../images/header-seprator-2.png");
+}
+
+/* - Page Banner */
+.page-banner {
+	background-image: url("http://placehold.it/1920x613/000");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 200px 0;
+	position: relative; 
+	text-align: center;
+	z-index: 1;
+	min-height: 613px;
+ }
+.page-banner::after {
+	background-color: rgba(0,0,0,0.2);
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.page-banner{
+	position: relative;
+}
+.page-banner .page-banner-content {	
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	padding: 0 15px;
+}
+.page-banner .page-banner-content h3 {
+	color: #fff;
+	font-size: 60px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+.page-banner .page-banner-content p {
+	color: #fff;
+	font-size: 18px;
+	font-style: italic;
+	letter-spacing: 0.45px;
+}
+.contact-banner {
+	background-image: url("http://placehold.it/1920x613/000");
+}
+.contact-banner::after {
+	background-color: rgba(0,0,0,0.35);
+}
+.about-us-banner-1 {
+	background-image: url("http://placehold.it/1920x717/000");
+	height: 717px;;
+}
+.about-us-banner-2 {
+	background-image: url("http://placehold.it/1920x613/000");
+	height: 717px;;
+}
+.about-us-banner-1::after,
+.about-us-banner-2::after {
+	background-color: rgba(0,0,0,0.65);
+}
+.about-banner {
+	background-image: url("http://placehold.it/1920x889/000");
+	height: 889px;
+}
+.about-banner::after {
+	background-color: rgba(0,0,0,0.65);
+}
+.services-banner{
+	background-image: url("http://placehold.it/1920x613/000");
+}
+.services-banner::after {
+	background-color: rgba(0,0,0,0.55);
+}
+
+/* - Corporate Home Dark */
+.corporate-home-dark {
+	background-color: #2b2b2b;
+}
+.ele-sec {
+	overflow: hidden;
+}
+.bg-gray-ed {
+	background-color: #ededed;
+}
+.no-bg  {
+	background-color: transparent !important;
+}
+.no-border {
+	border: none !important;
+}
+.ow-text-left {
+	text-align: left !important;
+}
+
+
+/* - Latest Post Widget */
+/*------------------------------------------------------------------
+	+ Responsive
+-------------------------------------------------------------------*/
+
+/* - min-width: 1200 */
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
+	
+	/* - Corporate Home */
+	.corporate-home {
+		padding: 30px;
+		position: relative;
+	}
+	.corporate-home .header-section.header-position {
+		margin-top: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.corporate-home .header-section.header-border {
+		border-bottom: 1px solid #e5e5e5;
+	}
+	.corporate-home .header-section.navbar-fixed-top {
+		margin-top: 0;
+	}
+	.content-area-ele-space-right {
+		padding-right: 60px;
+	}
+	.widget-area-ele-space-left {
+		padding-left: 60px;
+	}
+}
+
+/* - min-width: 992 */
+@media (min-width: 992px) {
+	
+}
+/* - max-width: 1366 */
+@media (max-width: 1366px) {	
+	
+}
+
+/* - max-width: 1200 */
+@media (max-width: 1200px) {	
+	
+}
+
+/* - min-width: 992 to max-width: 1200 */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+/* - max-width: 991 */
+@media (max-width: 991px) {	
+	.header-bg-dark-fix {
+		background-color: #2b2b2b;
+	}
+}
+
+/* - min-width: 768 to max-width: 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/* - max-width: 767 */
+@media (max-width: 767px) {
+	.page-banner .page-banner-content h3 {
+		font-size: 30px;
+	}	
+}
+
+/* - max-width: 639 */
+@media (max-width: 639px) {
+	
+}
+
+/* - max-width: 479 */
+@media (max-width: 479px) {
+	/* - Section Header */
+	.section-header h3 {
+		font-size: 26px;
+	}
+	.page-breadcrumb h3 {
+		font-size: 20px;
+	}
+}
