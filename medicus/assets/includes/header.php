@@ -17,6 +17,18 @@
 	<!-- RS5.0 Layers and Navigation Styles -->
 	<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
 	<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css"> 
+	<link rel="stylesheet" type="text/css" href="libraries/lightslider/lightslider.min.css" />
+	<link rel="stylesheet" type="text/css" href="libraries/lib.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/header.css" />
+	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/plugins.css" />
+	<link rel="stylesheet" type="text/css" href="css/shortcodes.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/woocommerce.css" />
+	
+	
 	
 	<!-- Custom - Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="styles.css" />

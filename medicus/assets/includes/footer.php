@@ -79,7 +79,7 @@
 	<script src="js/jquery.min.js"></script>
 	<!-- Library JS -->
 	<script src="libraries/lib.js"></script>
-	<script src="js/mailchip.js"></script>
+
 	<!-- RS5.0 Core JS Files -->
 	<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
 	<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
@@ -89,6 +89,19 @@
 	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>	
 	<!-- Library - Theme JS -->	
 	<script src="js/functions.js"></script>
+	
+	<!-- Library JS -->
+
+	<script src="js/mailchip.js"></script>
+	<script src="libraries/jquery.countdown.min.js"></script>
+	<script src="libraries/jquery.knob.js"></script>
+	<script src="libraries/lightslider/lightslider.min.js"></script>
+	
+	<!-- Library - Google Map API -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW40y4kdsjsz714OVTvrw7woVCpD8EbLE"></script>
+	
+	<!-- Library - Theme JS -->	
+
 
 </body>
 </html>
