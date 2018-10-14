@@ -53,11 +53,11 @@ include("../assets/function/function.php");
                                 ?>
       
           <li>
-          <div class="shop_thumb"><a href="shop-item.html"><img src="../admin/product_images/<?php echo $pro_img1;?>" alt="" title="" /></a></div>
+          <div class="shop_thumb"><a href="details.php?pro_id=<?php echo $pro_id;?>"><img src="../admin/product_images/<?php echo $pro_img1;?>" alt="" title="" /></a></div>
           <div class="shop_item_details">
-          <h4><a href="shop-item.html"><?php echo $pro_title;?></a></h4>
+          <h4><a href="details.php?pro_id=<?php echo $pro_id;?>"><?php echo $pro_title;?></a></h4>
           <div class="shop_item_price"><?php echo $pro_price;?></div>
-          <a href="cart.html" id="addtocart">ADD TO CART</a>
+          <a href="cart.php" id="addtocart">ADD TO CART</a>
           <a href="#" data-popup=".popup-social" class="open-popup shopfav"><img src="images/icons/black/love.png" alt="" title="" /></a>
           </div>
           </li> 

@@ -25,25 +25,25 @@ include("assets/function/function.php");
 
 	<!-- Standard Favicon -->
 	<link rel="icon" type="image/x-icon" href="admin/assets/logos/logo.png" />
-	
+
 	<!-- For iPhone 4 Retina display: -->
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="admin/assets/logos/rsz_logo.png">
-	
+
 	<!-- For iPad: -->
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="admin/assets/logos/rsz_1rsz_1logo.png">
-	
+
 	<!-- For iPhone: -->
-	<link rel="apple-touch-icon-precomposed" href="admin/assets/logos/rsz_1rsz_1logo.png">	
-		
+	<link rel="apple-touch-icon-precomposed" href="admin/assets/logos/rsz_1rsz_1logo.png">
+
 	<link rel="stylesheet" type="text/css" href="libraries/lightslider/lightslider.min.css" />
-	
+
 	<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
- 
+
 	<!-- RS5.0 Layers and Navigation Styles -->
 	<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
-	<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css"> 
+	<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
 		<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
-	<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css"> 
+	<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
 	<link rel="stylesheet" type="text/css" href="libraries/lightslider/lightslider.min.css" />
 	<link rel="stylesheet" type="text/css" href="libraries/lib.css" />
 	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
@@ -54,9 +54,9 @@ include("assets/function/function.php");
 	<link rel="stylesheet" type="text/css" href="css/shortcodes.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/woocommerce.css" />
-	
-	
-	
+
+
+
 	<!-- Custom - Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 
@@ -64,19 +64,19 @@ include("assets/function/function.php");
 	<!--[if lt IE 9]>
 		<script src="js/html5/respond.min.js"></script>
     <![endif]-->
-	
+
 </head>
 
 <body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
-	
+
 	<a id="top"></a>
-		
-	
+
+
 	<div class="corporate-home">
-		
+
 		<!-- Header Section -->
 		<header id="header" class="header-section header-section1 header-transparent header-position header-responsive-bg-dark container-fluid no-padding">
-		
+
 			<!-- Container -->
 			<div class="container">
 				<div class="row">
@@ -92,28 +92,28 @@ include("assets/function/function.php");
 							<a href="index.php" class="navbar-brand"><img src="admin/assets/logos/rsz_1logo.png" alt="Logo" />Medicus</a>
 						</div>
 						<div class="menu-icon">
-							<div class="cart">							
+							<div class="cart">
 							<button aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" title="Cart" id="language" type="button" class="btn dropdown-toggle"><i class="fa fa-shopping-cart"></i></button>
 							<?php
-                        
+
                         $ip_add = getRealUserIp();
                         $select_cart = "SELECT * FROM cart WHERE ip_add='$ip_add'";
                         $run_cart = mysqli_query($con, $select_cart);
                         $count = mysqli_num_rows($run_cart);
-                        
-                        
+
+
                         ?>
 							<ul class="dropdown-menu no-padding">
 							<?php
-                                        
-                                        
+
+
                                         $total = 0;
                                         while($row_cart = mysqli_fetch_array($run_cart)){
                                                 $pro_id = $row_cart['p_id'];
                                                 $pro_size = $row_cart['size'];
                                                 $pro_qty = $row_cart['qty'];
                                                 $only_price = $row_cart['p_price'];
-                                            
+
                                                 $get_products = "select * from products where product_id='$pro_id'";
                                                 $run_products = mysqli_query($con,$get_products);
                                                 while($row_products = mysqli_fetch_array($run_products)){
@@ -122,13 +122,13 @@ include("assets/function/function.php");
                                                     $sub_total = $only_price*$pro_qty;
                                                     $_SESSION['pro_qty'] = $pro_qty;
                                                     $total += $sub_total;
-                                                    
+
                                                     $per_product = ($sub_total*2.25)/100;
                                                     $per_product_price = $per_product+50+$sub_total;
                                                     $tax = ($total*2.25)/100;
                                                     $total_charge = $tax+50+$total;
-                                            
-                                        
+
+
                                         ?>
 								<li class="mini_cart_item">
 									<a href="#" class="cart-item-image">
@@ -141,7 +141,7 @@ include("assets/function/function.php");
 									</div>
 								</li>
 								<?php } } ?>
-								
+
 								<li class="subtotal">
 									<h5>subtotal <span><?php
                                        if(empty($only_price)){
@@ -155,10 +155,10 @@ include("assets/function/function.php");
 								</li>
 							</ul>
 						</div>
-						<?php	
+						<?php
                             if(isset($_SESSION['customer_email'])){
     $customer_session = $_SESSION['customer_email'];
-        
+
         $get_customer = "select * from customers where customer_email='$customer_session'";
         $run_customer = mysqli_query($con,$get_customer);
         $row_customer = mysqli_fetch_array($run_customer);
@@ -172,11 +172,11 @@ include("assets/function/function.php");
         $customer_address = $row_customer['customer_address'];
         $customer_contact = $row_customer['customer_contact'];
             echo"
-                                
-                                
-                                <div style='margin-left:20px;' class='cart'>							
+
+
+                                <div style='margin-left:20px;' class='cart'>
 							<button aria-expanded='true' aria-haspopup='true' data-toggle='dropdown' title='Cart' id='language' type='button' class='btn dropdown-toggle'><i class='fa fa-sign-out'></i></button>
-							
+
 							<ul class='dropdown-menu no-padding'>
 							
 								<li class='mini_cart_item'>
@@ -186,41 +186,41 @@ include("assets/function/function.php");
 									<div class='cart-detail'>
 										<a href='customer/my_account.php?profile'>$customer_name</a>
 										<span class='quantity'>$customer_email</span>
-										
+
 									</div>
 								</li>
-								
-								
+
+
 								<li class='button'>
 									<a href='logout.php' title=='Logout'>Logout</a>
 									<a href='customer/my_account.php?profile' title='Profile'>Profile</a>
 								</li>
 							</ul>
 						</div>";
-                                
+
                             }
                             else{
                                 echo"
                                 <div class='Login'>
 								<a href='customer/customer_login.php' id='login' title='Login'><i class='fa fa-sign-in'></i></a>
 							</div>";
-                                
+
                             }
-                            
+
                                 ?>
-						
-                           
-                                
-                                
-							<div class="search">	
+
+
+
+
+							<div class="search">
 								<a href="#" id="search" title="Search"><i class="fa fa-search"></i></a>
 							</div>
-							
-							
+
+
 						</div>
 						<div class="navbar-collapse collapse navbar-right" id="navbar">
 							<ul class="nav navbar-nav navbar-right">
-								<?php 
+								<?php
                                 include "assets/includes/menu.php";
                                 ?>
 							</ul>
@@ -237,153 +237,153 @@ include("assets/function/function.php");
 				</div><!-- Row /- -->
 			</div><!-- Container /- -->
 		</header><!-- Header Section /- -->
-		
+
 		<!-- Slider Section -->
 		<div id="slider-section1" class="slider-section container-fluid no-padding">
 			<!-- START REVOLUTION SLIDER 5.0 -->
 			<div class="rev_slider_wrapper">
 				<div id="slider-light1" class="rev_slider" data-version="5.0">
-					<ul> 
-						<li data-transition="fade"> 
+					<ul>
+						<li data-transition="fade">
 							<!-- MAIN IMAGE -->
-							<img src="admin/slides_images/1.jpg"  alt=""  width="1920" height="1280"> 
+							<img src="admin/slides_images/1.jpg"  alt=""  width="1920" height="1280">
 							<!-- LAYER NR. 1 -->
-							<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" id="slide-1-layer-1" 
-								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+							<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" id="slide-1-layer-1"
+								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
 								data-fontsize="['60','60','60','45']"
 								data-lineheight="['60','60','60','50']"
 								data-width="none"
 								data-height="none"
 								data-whitespace="nowrap"
 								data-transform_idle="o:1;"
-								data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
-								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-								data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-								data-start="1000" 
-								data-splitin="chars" 
-								data-splitout="none" 
+								data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+								data-start="1000"
+								data-splitin="chars"
+								data-splitout="none"
 								data-responsive_offset="on"
-								data-elementdelay="0.05"							
+								data-elementdelay="0.05"
 								style="z-index: 5; text-transform:uppercase;">We <b>Care</b> for <b>You</b>
 							</div>
 
 							<!-- LAYER NR. 2 -->
-							<div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0" 
-								id="slide-1-layer-2" 
-								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['65','65','65','65']" 
+							<div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
+								id="slide-1-layer-2"
+								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['65','65','65','65']"
 								data-fontsize="['18','16','14','35']"
 								data-width="auto"
 								data-height="none"
 								data-whitespace="noraml"
 								data-transform_idle="o:1;"
-								data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-								data-start="1500" 
-								data-splitin="none" 
-								data-splitout="none"							
-								data-responsive_offset="on"	
+								data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+								data-start="1500"
+								data-splitin="none"
+								data-splitout="none"
+								data-responsive_offset="on"
 								style="z-index: 6; font-style: italic; font-family: 'Droid Serif', serif;">We are here to care your health. you can find doctor and buy medicine here
 							</div>
-							
+
 							<!-- LAYER NR. 3 -->
-							<div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" 
-								id="slide-1-layer-3" 
-								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['95','95','95','95']" 
+							<div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
+								id="slide-1-layer-3"
+								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['95','95','95','95']"
 								data-fontsize="['18','16','14','35']"
 								data-width="auto"
 								data-height="none"
 								data-whitespace="noraml"
 								data-transform_idle="o:1;"
-								data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-								data-start="1500" 
-								data-splitin="none" 
-								data-splitout="none"							
-								data-responsive_offset="on"	
+								data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+								data-start="1500"
+								data-splitin="none"
+								data-splitout="none"
+								data-responsive_offset="on"
 								style="z-index: 6; font-style: italic; font-family: 'Droid Serif', serif;">A perfect place for you
 							</div>
 						</li>
-				 
-						<li data-transition="fade"> 
+
+						<li data-transition="fade">
 							<!-- MAIN IMAGE -->
-							<img src="admin/slides_images/2.jpg"  alt=""  width="1920" height="1280"> 
+							<img src="admin/slides_images/2.jpg"  alt=""  width="1920" height="1280">
 							<!-- LAYER NR. 1 -->
-							<div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-3" id="slide-2-layer-1" 
-								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+							<div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-3" id="slide-2-layer-1"
+								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
 								data-fontsize="['70','70','70','45']"
 								data-lineheight="['70','70','70','50']"
 								data-width="none"
 								data-height="none"
 								data-whitespace="nowrap"
-								data-transform_idle="o:1;"				 
-								data-transform_in="y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
-								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-								data-mask_in="x:0px;y:0px;" 
-								data-mask_out="x:inherit;y:inherit;" 
-								data-start="1000" 
-								data-splitin="chars" 
-								data-splitout="none" 
-								data-responsive_offset="on" 
-								data-elementdelay="0.05" 							
+								data-transform_idle="o:1;"
+								data-transform_in="y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:0px;"
+								data-mask_out="x:inherit;y:inherit;"
+								data-start="1000"
+								data-splitin="chars"
+								data-splitout="none"
+								data-responsive_offset="on"
+								data-elementdelay="0.05"
 								style="z-index: 5; white-space: nowrap; text-transform:uppercase;">You can buy medicine here easily from here
 							</div>
 
 							<!-- LAYER NR. 2 -->
-							<div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0" 
-								id="slide-2-layer-2" 
-								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['65','65','65','65']" 
+							<div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
+								id="slide-2-layer-2"
+								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['65','65','65','65']"
 								data-fontsize="['18','16','14','35']"
 								data-width="auto"
 								data-height="none"
 								data-whitespace="noraml"
 								data-transform_idle="o:1;"
-								data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-								data-start="1500" 
-								data-splitin="none" 
-								data-splitout="none"							
-								data-responsive_offset="on"	
+								data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+								data-start="1500"
+								data-splitin="none"
+								data-splitout="none"
+								data-responsive_offset="on"
 								style="z-index: 6; font-style: italic; font-family: 'Droid Serif', serif;">Please Upload your prescription too.
 							</div>
-							
+
 							<!-- LAYER NR. 3 -->
-							<div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" 
+							<div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
 								id="slide-2-layer-3"
-								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['95','95','95','95']" 
+								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['95','95','95','95']"
 								data-fontsize="['18','16','14','35']"
 								data-width="auto"
 								data-height="none"
 								data-whitespace="noraml"
 								data-transform_idle="o:1;"
-								data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-								data-start="1500" 
-								data-splitin="none" 
-								data-splitout="none"							
-								data-responsive_offset="on"	
+								data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+								data-start="1500"
+								data-splitin="none"
+								data-splitout="none"
+								data-responsive_offset="on"
 								style="z-index: 6; font-style: italic; font-family: 'Droid Serif', serif;">You can find almost any medicine from here
 							</div>
 						</li>
-					</ul> 
+					</ul>
 				</div><!-- END REVOLUTION SLIDER -->
 			</div><!-- END OF SLIDER WRAPPER -->
 		</div><!-- Slider Section -->
-		
+
 		<!-- History Section -->
 		<div id="history-section" class="history-section">
 			<div class="padding-100"></div>
@@ -400,9 +400,9 @@ include("assets/function/function.php");
 				</div>
 			</div><!-- Container /- -->
 		</div><!-- History Section /- -->
-		
+
 		<div class="padding-100"></div>
-		
+
 				<!-- Fact Section -->
 		<div class="fact-section corporate-home-fact container-fluid no-padding">
 		<div class="padding-60"></div>
@@ -412,9 +412,9 @@ include("assets/function/function.php");
 				</div>
 				<div class="padding-10"></div>
 		</div><!-- Fact Section /- -->
-		
 
-		
+
+
 		<!-- Team Section -->
             <div id="product-section" class="product-section woocommerce container-fluid no-padding">
 
@@ -423,19 +423,19 @@ include("assets/function/function.php");
 			<div class="container">
 									<div class="content-area">
 
-						
+
 						<ul class="products row">
 <?php getProIndex(); ?>
 						</ul>
-						
+
                     </div>
 					</div><!-- Content Area /- -->
 
 			</div><!-- Container /- -->
 
-		
+
 		<div class="padding-100"></div>
-		
+
 		<!-- Fact Section -->
 		<div class="fact-section corporate-home-fact container-fluid no-padding">
 			<div class="padding-60"></div>
@@ -463,9 +463,9 @@ include("assets/function/function.php");
 			</div>
 			<div class="padding-30"></div>
 		</div><!-- Fact Section /- -->
-		
 
-		
+
+
 		<!-- Team Section -->
 		<div class="team-section container-fluid no-padding">
 			<div class="padding-60"></div>
@@ -490,7 +490,7 @@ include("assets/function/function.php");
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<div class="team-img-hover">
 							<img src="http://placehold.it/333x603" alt="team" width="330" height="607" />
@@ -505,7 +505,7 @@ include("assets/function/function.php");
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 			</div><!-- Container /- -->
 		</div><!-- Team Section /- -->

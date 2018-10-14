@@ -111,17 +111,10 @@ global $db;
                                 
                                 echo"
     <li>
-          <div class='shop_thumb'><a href='shop-item.html'><img src='images/photos/photo1.jpg' alt='' title='' /></a></div>
+          <div class='shop_thumb'><a href='shop-item.html'><img src='../admin/product_images/$pro_img1' alt='' title='' /></a></div>
           <div class='shop_item_details'>
-          <h4><a href='shop-item.html'>Blue Bike</a></h4>
-          <div class='shop_item_price'>$100</div>
-            <div class='item_qnty_shop'>
-                <form id='myform' method='POST' action='#'>
-                    <input type='button' value='-' class='qntyminusshop' field='quantity' />
-                    <input type='text' name='quantity' value='1' class='qntyshop' />
-                    <input type='button' value='+' class='qntyplusshop' field='quantity' />
-                </form>
-            </div>
+          <h4><a href='shop-item.html'>$pro_title</a></h4>
+          <div class='shop_item_price'>$pro_price</div>
           <a href='cart.html' id='addtocart'>ADD TO CART</a>
           <a href='#' data-popup='.popup-social' class='open-popup shopfav'><img src='images/icons/black/love.png' alt='' title='' /></a>
           </div>

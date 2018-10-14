@@ -226,7 +226,7 @@ main {
 
 /* - Page Banner */
 .page-banner {
-	background-image: url("../images/login-banner/login-banner.jpg");
+	background-image: url("http://placehold.it/1920x613/000");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -276,17 +276,17 @@ main {
 	letter-spacing: 0.45px;
 }
 .contact-banner {
-	background-image: url("../images/about/contact-banner.jpg");
+	background-image: url("http://placehold.it/1920x613/000");
 }
 .contact-banner::after {
 	background-color: rgba(0,0,0,0.35);
 }
 .about-us-banner-1 {
-	background-image: url("../images/about/about-us-banner.jpg");
+	background-image: url("http://placehold.it/1920x717/000");
 	height: 717px;;
 }
 .about-us-banner-2 {
-	background-image: url("../images/about/about-us-banner-1.jpg");
+	background-image: url("http://placehold.it/1920x613/000");
 	height: 717px;;
 }
 .about-us-banner-1::after,
@@ -294,14 +294,14 @@ main {
 	background-color: rgba(0,0,0,0.65);
 }
 .about-banner {
-	background-image: url("../images/about/about-me-banner.jpg");
+	background-image: url("http://placehold.it/1920x889/000");
 	height: 889px;
 }
 .about-banner::after {
 	background-color: rgba(0,0,0,0.65);
 }
 .services-banner{
-	background-image: url("../images/about/services-banner.jpg");
+	background-image: url("http://placehold.it/1920x613/000");
 }
 .services-banner::after {
 	background-color: rgba(0,0,0,0.55);

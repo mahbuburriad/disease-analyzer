@@ -3675,7 +3675,7 @@ Last change:
 	font-size: 30px;
 }
 .fact-section-1 {
-	background-image: url("../images/counter/counter-bg.jpg");
+	background-image: url("http://placehold.it/1920x421/ddd");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -4054,7 +4054,7 @@ Last change:
 }
 
 .parallax-bg {
-	background-image: url("../images/callout/callout-bg.jpg");
+	background-image: url("http://placehold.it/1920x284/ddd");
 	background-position: center center;
 	background-repeat: no-repeat; 
     background-size: cover;
@@ -4220,7 +4220,7 @@ Last change:
 	content: "\35";
 }
 .carousel-section-1 {
-	background-image: url("../images/carousel/carousel-bg.jpg");
+	background-image: url("http://placehold.it/1920x588/ddd");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -4612,7 +4612,7 @@ Last change:
 
 /* - Corporate Home Brands */
 .corporate-home-brands {
-	background-image: url("../images/client/corporate-home-brand1.jpg");
+	background-image: url("http://placehold.it/1920x868/ddd");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -4932,7 +4932,7 @@ Last change:
 	border-right: none;
 }
 .counter-section-1 {
-	background-image: url("../images/countdown/countdown-bg.jpg");
+	background-image: url("http://placehold.it/1920x400/000");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -5270,7 +5270,7 @@ Last change:
 }
 
 .icon-box-1 {
-	background-image: url("../images/icon-box/icon-box-bg.jpg");
+	background-image: url("http://placehold.it/1920x398/000");
 	background-repeat: no-repeat; 
     background-size: cover;
 	position: relative;
@@ -6223,7 +6223,7 @@ Last change:
 	background-color: #cc9900;
 }
 .text-block-img {
-	background-image: url("../images/textblock/text-block-1.jpg");
+	background-image: url("http://placehold.it/770x172/000");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
@@ -6243,7 +6243,7 @@ Last change:
 	color: #333;
 }
 .text-block-img-1 {
-	background-image: url("../images/textblock/text-block-2.jpg");
+	background-image: url("http://placehold.it/770x172/ddd");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -7344,7 +7344,7 @@ Last change:
 
 /* - Parallax Shop */
 .parallax-shop {
-	background-image: url("../images/parallax/parallax-1.jpg");
+	background-image: url("http://placehold.it/1920x910/000");
 	background-position: center center;
 	background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -7405,13 +7405,13 @@ Last change:
 }
 
 .parallax-shop-1 {
-	background-image: url("../images/parallax/parallax-2.jpg");
+	background-image: url("http://placehold.it/1920x910/ddd");
 }
 .parallax-shop-2 {
-	background-image: url("../images/parallax/parallax-3.jpg");
+	background-image: url("http://placehold.it/1920x910/000");
 }
 .parallax-shop-3 {
-	background-image: url("../images/parallax/parallax-4.jpg");
+	background-image: url("http://placehold.it/1920x910/ddd");
 }
 
 /* - Login Page 1 */
@@ -7732,7 +7732,7 @@ Last change:
 
 /* - Comingsoon Page */
 .comingsoon-page {
-	background-image: url("../images/comingsoon/commingsoon-bg.jpg");
+	background-image: url("http://placehold.it/1920x1100/000");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -8933,7 +8933,7 @@ Last change:
 
 /* - Shop Tesimonial */ 
 .shop-testimonial {
-	background-image: url("../images/shop/shop-testimonial.jpg");
+	background-image: url("http://placehold.it/1920x588/000");
 	position: relative;
 }
 .shop-testimonial::before {
