@@ -150,17 +150,72 @@ include("assets/function/function.php");
                                                else{ echo "$total"; } ?></span></h5>
 								</li>
 								<li class="button">
-									<a href="#" title="View Cart">View Cart</a>
-									<a href="#" title="Check Out">Check out</a>
+									<a href="cart.php" title="View Cart">View Cart</a>
+									<a href="checkout.php" title="Check Out">Check out</a>
 								</li>
 							</ul>
 						</div>
-						<div class="Login">	
-								<a href="customer/customer_login.php" id="login" title="Login"><i class="fa fa-sign-in"></i></a>
-							</div>
+						<?php	
+                            if(isset($_SESSION['customer_email'])){
+    $customer_session = $_SESSION['customer_email'];
+        
+        $get_customer = "select * from customers where customer_email='$customer_session'";
+        $run_customer = mysqli_query($con,$get_customer);
+        $row_customer = mysqli_fetch_array($run_customer);
+        $customer_image = $row_customer['customer_image'];
+        $customer_name = $row_customer['customer_name'];
+        $customer_email = $row_customer['customer_email'];
+        $customer_country = $row_customer['customer_country'];
+        $customer_city = $row_customer['customer_city'];
+        $customer_gender = $row_customer['customer_gender'];
+        $customer_zipcode = $row_customer['customer_zipcode'];
+        $customer_address = $row_customer['customer_address'];
+        $customer_contact = $row_customer['customer_contact'];
+            echo"
+                                
+                                
+                                <div style='margin-left:20px;' class='cart'>							
+							<button aria-expanded='true' aria-haspopup='true' data-toggle='dropdown' title='Cart' id='language' type='button' class='btn dropdown-toggle'><i class='fa fa-sign-out'></i></button>
+							
+							<ul class='dropdown-menu no-padding'>
+							
+								<li class='mini_cart_item'>
+									<a href='#' class='cart-item-image'>
+										<img width='70' height='70' alt='Profile pic' class='attachment-shop_thumbnail'  src='customer/customer_images/$customer_image'>
+									</a>
+									<div class='cart-detail'>
+										<a href='customer/my_account.php?profile'>$customer_name</a>
+										<span class='quantity'>$customer_email</span>
+										
+									</div>
+								</li>
+								
+								
+								<li class='button'>
+									<a href='logout.php' title=='Logout'>Logout</a>
+									<a href='customer/my_account.php?profile' title='Profile'>Profile</a>
+								</li>
+							</ul>
+						</div>";
+                                
+                            }
+                            else{
+                                echo"
+                                <div class='Login'>
+								<a href='customer/customer_login.php' id='login' title='Login'><i class='fa fa-sign-in'></i></a>
+							</div>";
+                                
+                            }
+                            
+                                ?>
+						
+                           
+                                
+                                
 							<div class="search">	
 								<a href="#" id="search" title="Search"><i class="fa fa-search"></i></a>
 							</div>
+							
 							
 						</div>
 						<div class="navbar-collapse collapse navbar-right" id="navbar">

@@ -35,7 +35,7 @@ include("assets/function/function.php");
 
 	<title>Customer Login</title>
 
-	<?php include "../assets/includes/header.php";?>
+	<?php include "assets/includes/header.php";?>
 		<main class="site-main page-spacing">
 		<!-- Login Page 1 -->
 		<div class="login-page-1 container-fluid no-padding">
