@@ -69,29 +69,18 @@ include("assets/function/function.php");
 
                             <div class="table-responsive">
 
-                                <table class="table">
-
-                                    <thead>
-
-                                        <tr>
-                                            <th colspan="2"> Product </th>
-                                            <th>Quantity</th>
-
-                                            <th>Unit Price</th>
-
-                                            <th> Size </th>
-
-                                            <th colspan="1"> Delete </th>
-
-                                            <th colspan="2"> Sub Total</th>
-                                        </tr>
-
-                                    </thead>
-
-
-                                    <tbody>
-
-                                        <?php
+						<div class="order-summary-content">
+							<table class="shop_cart">
+								<thead>
+									<tr>
+										<th colspan="3" class="product-thumbnail">Product</th>
+										<th class="product-price">Price</th>
+										<th class="product-quantity">Quantity</th>
+										<th class="product-subtotal">Total</th>
+									</tr>
+								</thead>
+								<tbody>
+								<?php
                                         
                                         
                                         $total = 0;
@@ -117,114 +106,113 @@ include("assets/function/function.php");
                                             
                                         
                                         ?>
-
-
-                                            <tr>
-
-
-                                                <td>
-
-                                                    <img src="admin/product_images/<?php echo $product_img1; ?>">
-
-                                                </td>
-
-                                                <td>
-
-                                                    <a href="#">
-                                                        <?php echo $product_title; ?> </a>
-
-                                                </td>
-
-                                                <td>
-                                                    <input type="text" name="quantity" value="<?php echo $_SESSION['pro_qty']; ?>" data-product_id="<?php echo $pro_id; ?>" class="quantity form-control">
-                                                </td>
-
-                                                <td>
-
-
-                                                    <?php echo $only_price; ?> /=
-
-                                                </td>
-
-                                                <td>
-
-                                                    <?php echo $pro_size; ?>
-
-                                                </td>
-
-                                                <td>
+									<tr class="cart_item">
+									 <td>
                                                     <input type="checkbox" name="remove[]" value="<?php echo $pro_id; ?>">
                                                 </td>
+										<td data-title="Product" class="product-thumbnail">
+											<a title="Product Thumbnail" href=""><img style="width: 100px; height: 128px;" class="attachment-shop_thumbnail wp-post-image" src="admin/product_images/<?php echo $product_img1; ?>" alt="thumb-1" /></a>					
+										</td>
+										<td data-title="Product Name" class="product-name">
+											<a title="Product Name" href="#"><?php echo $product_title; ?></a>
+										</td>
+										<td data-title="Total" class="product-price">
+											<span><?php echo $only_price; ?> </span>
+										</td>										
+										<td data-title="Quantity" class="product-quantity">
+											<div class="quantity"><input type="text" title="remove" name="quantity" value="<?php echo $_SESSION['pro_qty']; ?>" data-product_id="<?php echo $pro_id; ?>" class="quantity form-control">"></div>
+										</td>
+										<td data-title="Total" class="product-price">
+											<span><?php echo $sub_total; ?></span>
+										</td>
+									</tr>
+									<?php } } ?>
+																
+								</tbody>
+							</table>
+						</div>
+						<div>
 
-                                                <td>
-
-
-                                                    <?php echo $sub_total; ?> /=
-
-                                                </td>
-
-                                            </tr>
-
-
-                                            <?php } } ?>
-
-
-
-                                    </tbody>
-
-                                    <tfoot>
-
-                                        <tr>
-                                            <th colspan="5"> Total </th>
-                                            <th colspan="2">
-
-                                                <?php echo $total; ?> BDT</th>
-
-
-                                        </tr>
-
-                                    </tfoot>
-
-
-
-                                </table>
-                                <div class="form-inline pull-right">
-                                    <div class="form-group">
-                                        <label>Coupon Code : </label>
-
-                                        <input type="text" name="code" class="form-control">
-
-                                    </div>
-
-
-                                    <input class="btn btn-primary" type="submit" name="apply_coupon" value="Apply Coupon Code">
-
-                                </div>
+	
+<aside class="widget widget-coupon">
+							<h3>Coupon Codes</h3>
+							<div class="coupon">
+								<form>
+									<input type="text" name="code" class="form-control" placeholder="Enter your code here !" />
+									
+									<input name="apply_coupon" type="submit" value="apply coupon"/>
+								</form>
+							</div>
+						</aside>
+						
+						
+					</div><!-- Order Summary /- -->
+					</div><!-- Order Summary /- -->
+					</div><!-- Order Summary /- -->
 
 
-                            </div>
+                               					<!-- Widget Area -->
+					
 
-                            <div class="box-footer">
 
-                                <div class="pull-left">
-                                    <a href="index.php" class="btn btn-default"><i class="fas fa-chevron-circle-left"></i> Continue Shopping</a>
+		
+                                        <div class="col-md-4 col-sm-5 col-xs-12 widget-area">
+											<aside class="widget widget-proceed-checkout">
+							<h3>cart totals</h3>
+							<div class="wc-proceed-to-checkout">
+								<table>
+									<tr>
+										<td>Cart Subtotal</td>
+										<td><?php echo $total; ?></td>
+									</tr>
+									<tr>
+										<td>Shipping</td>
+										<td>50.00</td>
+									</tr>
+									<tr>
 
-                                </div>
+                                    <td>Tax(2.25%)</td>
+                                    <th>
+                                        <?php
+                                       if(empty($only_price)){
+                                               echo "0.00";
+                                               }
+                                               else{ echo "$tax"; } ?>
+                                    </th>
 
-                                <div class="pull-right">
-                                    <button class="btn btn-default" type="submit" name="update" value="Update Cart">
+
+                                </tr>
+									<tr>
+										<td>Totals</td>
+										                                    <th>
+
+                                        <?php
+                                       if(empty($only_price)){
+                                               echo "0.00";
+                                               }
+                                               else{ echo "$total_charge"; } ?>
+
+                                    </th>
+									</tr>
+								</table>
+							</div>
+							<button class="btn btn-default" type="submit" name="update" value="Update Cart">
                                   <i class="fas fa-retweet"></i> Update Cart
                                    
                                </button>
+							<a href="checkout.php" class="proceed-to-checkout">proceed to checkout</a>
+						</aside>
+					</div><!-- Widget Area /- -->
 
-                                    <a href="checkout.php" class="btn btn-primary">Proceed to Checkout <i class="fas fa-chevron-circle-right"></i></a>
 
 
 
-                                </div>
+                                                                         
+                                                  						
 
-                            </div>
-
+                            
+                          
+                          
 
                     </form>
                     </div>
@@ -302,105 +290,10 @@ include("assets/function/function.php");
 
 
 
-
-            </div>
-
-
-
-            <div class="col-md-3">
-
-                <div class="box" id="order-summary">
-
-                    <div class="box-header">
-
-                        <h3>Order Summary</h3>
-
-                    </div>
-
-                    <p class="text-muted">
-
-                        Shipping and additional costs are calculated based on the values you have entered
-                    </p>
-
-                    <div class="table-responsive">
-
-                        <table class="table">
-
-                            <tbody>
-
-                                <tr>
-                                    <td>Order Subtotal</td>
-
-                                    <th>
-                                        <?php echo $total; ?>
-                                    </th>
-
-                                </tr>
-
-                                <tr>
-                                    <td>Shipping Charge</td>
-
-                                    <td>50.00</td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td>Tax(2.25%)</td>
-                                    <th>
-                                        <?php
-                                       if(empty($only_price)){
-                                               echo "0.00";
-                                               }
-                                               else{ echo "$tax"; } ?>
-                                    </th>
-
-
-                                </tr>
-
-                                <tr class="total">
-
-                                    <td>Total</td>
-                                    <th>
-
-                                        <?php
-                                       if(empty($only_price)){
-                                               echo "0.00";
-                                               }
-                                               else{ echo "$total_charge"; } ?>
-
-                                    </th>
-
-                                </tr>
-
-                            </tbody>
-
-                        </table>
-
-
-                    </div>
-
-
-                </div>
-
-
-   
-
-
-
-
-
-
-
-
-
-
- 
-
-				</div>
 			</div><!-- Container /- -->
 			<div class="padding-100"></div>
 		</div><!-- Shop Header /- -->
+	
 	</main>
 	<script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.min.js"></script>
