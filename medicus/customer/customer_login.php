@@ -28,45 +28,53 @@ include("assets/function/function.php");
 			<div class="padding-100"></div>
 			<!-- Container -->
 			<div class="container">
-            <div class="col-md-9">
-
-
-
-                <div class="box">
-
-                    <div class="box-header">
-
-                        <center>
-
-                            <h2>Sign Up For A New Account</h2>
-
-                            <!--  <p class="text-muted">
-                                If You have any Question............................
-
-                            </p>-->
-                        </center>
-
-                    </div>
-
-
-
-                    <form method="post" action="customer_login.php" enctype="multipart/form-data">
-
-                        <div class="form-group">
-                            <div class="col-md-6">
-                                <label for="">Full Name</label>
-
-                                <input type="text" class="form-control" name="c_name" required placeholder="Enter Your Name">
-
-                            </div>
-                            <div class="col-md-6">
-                                <label for="">Email</label>
-                                <input type="email" class="form-control" name="c_email" required placeholder="Enter Your Email">
-
-                            </div>
-
-                        </div>
-                        <?php
+				<div class="col-md-6 col-sm-8 col-xs-12">
+					<div class="login-tab">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#login" title="Login" role="tab" data-toggle="tab">Login</a></li>
+							<li role="presentation"><a href="#register" title="Register" role="tab" data-toggle="tab">register</a></li>
+						</ul><!-- Nav tabs /- -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="login">
+								<form class="login-form">
+									<h3>login to your account</h3>
+									<div class="form-group col-md-12 no-padding">
+										<input type="text" class="form-control" placeholder="Login" required>
+									</div>
+									<div class="form-group col-md-12 no-padding">
+										<input type="text" class="form-control" placeholder="Password" required>
+									</div>
+									<div class="checkbox">
+										<label>
+										  <input type="checkbox">Keep me logged in 
+										</label>
+										<a href="#">forgot Your password?</a>
+									</div>
+									<a href="#" title="LogIn">Login<i class="arrow_right"></i></a>
+								</form>
+								<div class="login-social">
+									<h3>LogIn With Social</h3>
+									<ul>
+										<li><a href="#" title="twitter"><i class="social_twitter"></i>twitter</a></li>
+										<li><a href="#" title="Facebook"><i class="social_facebook"></i>Facebook</a></li>
+										<li><a href="#" title="pinterest"><i class="social_pinterest"></i>pinterest</a></li>
+										<li><a href="#" title="dribbble"><i class="social_dribbble"></i>dribbble</a></li>
+									</ul>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="register">
+								<form class="login-form" method="post" action="customer_login.php#register" enctype="multipart/form-data">
+									<h3>REGISTER TO YOUR ACCOUNT</h3>
+									<div class="form-group col-md-12 no-padding">
+										<input type="text" class="form-control" name="c_name" required placeholder="Enter Your Name">
+									</div>
+									
+									
+									<div class="form-group col-md-12 no-padding">
+										<input type="email" class="form-control" name="c_email" required placeholder="Enter Your Email">
+									</div>
+									<?php
                         $ipn = getRealUserIp();
              
  $json  = file_get_contents("http://api.ipstack.com/$ipn?access_key=a6df04d294a0fb365fe76ad6b58723cf");
@@ -76,117 +84,40 @@ $regionss= $json['region_name'];
  $cityss = $json['city'];
  $zip_codes = $json['zip'];
       ?>
-
-
-
-                            <div class="form-group">
-                                <div class="col-md-6">
-
-                                    <label for="">Password</label>
-                                    <input type="password" id="pass" class="form-control" name="c_pass" required placeholder="Enter Password">
-                                </div>
-
-                                <div class="col-md-6">
-
-                                    <label for="">Confirm Password</label>
-                                    <input type="password" id="cpass" class="form-control" name="conf_pass" required placeholder="Enter Password Again">
-                                </div>
-
-
-                            </div>
-                            <p id="text"></p>
-
-
-                            <div class="form-group">
-                                <div class="col-md-6">
-                                    <label for="">Country</label>
-                                    <input type="text" class="form-control" name="c_country" value="<?php echo $countryip;?>" required placeholder="Enter Your County">
-
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="">City</label>
-                                    <input type="text" class="form-control" name="c_city" value="<?php echo $cityss; ?>" required placeholder="Enter Your City">
-                                </div>
-
-                            </div>
-
-                            <div class="form-group">
-                                <div class="col-md-6">
-                                    <label for="">Enter Mobile No</label>
-                                    <input type="text" class="form-control" name="c_contact" required placeholder="Enter Mobile No">
-                                </div>
-                                <!--<div class="col-md-6">
-                                    <label for="">Gender</label>
-                                    <input type="text" class="form-control" name="c_gender" required placeholder="Enter Your Gender">
-
-                                </div>-->
-
-                                <div class="col-md-6">
-                                    <label for="">Gender</label>
-                                    <select class="form-control" name="c_gender">
+									<div class="form-group col-md-12 no-padding">
+										<input type="password" id="pass" class="form-control" name="c_pass" required placeholder="Enter Password">
+									</div>
+									<div class="form-group col-md-12 no-padding">
+										<input type="text" class="form-control" name="c_country" value="<?php echo $countryip;?>" required placeholder="Enter Your County">
+									</div>
+									<div class="form-group col-md-12 no-padding">
+										<input type="text" class="form-control" name="c_city" value="<?php echo $cityss; ?>" required placeholder="Enter Your City">
+									</div>
+									<div class="form-group col-md-12 no-padding">
+										<input type="text" class="form-control" name="c_contact" required placeholder="Enter Mobile No">
+									</div><div class="form-group col-md-12 no-padding">
+										<input type="text" class="form-control" name="c_address" required placeholder="Enter Your Address">
+									</div><div class="form-group col-md-12 no-padding">
+										<input type="file" class="form-control" name="c_image" required>
+									</div>
+									<div class="form-group col-md-12 no-padding">
+										<select class="form-control" name="c_gender">
   <option>Male</option>
   <option>Female</option>
   <option>Other</option>
 </select>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    <label for="">Address</label>
-                                    <input type="text" class="form-control" name="c_address" required placeholder="Enter Your Address">
-
-                                </div>
-
-
-                            </div>
-
-                            <div class="form-group">
-                                <div class="col-md-6">
-                                    <label for="">Zip Code</label>
-                                    <input type="text" class="form-control" value="<?php echo $zip_codes; ?>" name="c_zipcode" required placeholder="Enter Your Zipcode">
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="">Image</label>
-                                    <input type="file" class="form-control" name="c_image" required>
-
-                                </div>
-
-
-
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-
-                            <div class="text-center">
-                                <button id="submit" type="submit" name="register" class="btn btn-primary">
+									</div>
+									<div class="checkbox">
+										<label>
+										  <input type="checkbox">Keep me logged in 
+										</label>
+										<a href="#">forgot Your password?</a>
+									</div>
+									 <button id="submit" type="submit" name="register" class="btn btn-primary">
                              <i class="fas fa-user-plus"></i> Sign Up
                              
                          </button>
-                            </div>
-                    </form>
-
-                    <script type="text/javascript">
-                        $("#submit").submit(function() {
-                            var pass = $("#pass").val();
-                            var cpass = $("#cpass").val();
-
-                            if (pass != cpass) {
-                                alert("ds");
-
-                            }
-
-                        });
-
-                    </script>
-                </div>
-            </div>
+								</form>
 									
 <?php
 

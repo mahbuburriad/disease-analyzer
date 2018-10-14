@@ -141,13 +141,13 @@ include("assets/function/function.php");
 									<input type="text" name="code" class="form-control" placeholder="Enter your code here !" />
 									
 									<input name="apply_coupon" type="submit" value="apply coupon"/>
-								</form>
-							</div>
-						</aside>
-						<button class="btn btn-default" type="submit" name="update" value="Update Cart">
+									<button class="btn btn-default" type="submit" name="update" value="Update Cart">
                                   <i class="fas fa-retweet"></i> Update Cart
                                    
                                </button>
+								</form>
+							</div>
+						</aside>
 						
 						
 					</div><!-- Order Summary /- -->
