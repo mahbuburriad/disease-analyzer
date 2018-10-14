@@ -144,6 +144,10 @@ include("assets/function/function.php");
 								</form>
 							</div>
 						</aside>
+						<button class="btn btn-default" type="submit" name="update" value="Update Cart">
+                                  <i class="fas fa-retweet"></i> Update Cart
+                                   
+                               </button>
 						
 						
 					</div><!-- Order Summary /- -->
@@ -196,10 +200,7 @@ include("assets/function/function.php");
 									</tr>
 								</table>
 							</div>
-							<button class="btn btn-default" type="submit" name="update" value="Update Cart">
-                                  <i class="fas fa-retweet"></i> Update Cart
-                                   
-                               </button>
+							
 							<a href="checkout.php" class="proceed-to-checkout">proceed to checkout</a>
 						</aside>
 					</div><!-- Widget Area /- -->
