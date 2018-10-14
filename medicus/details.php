@@ -45,9 +45,11 @@ include("assets/function/function.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<title>Medicus | Details</title>
+	<title>Shield Theme</title>
 
-	 <?php include "assets/includes/header.php" ?>
+	<?php 
+    include "assets/includes/header.php" 
+    ?>
 	
 	<main>
 		<!-- Page Breadcrumb -->
@@ -95,23 +97,10 @@ include("assets/function/function.php");
                                 
                                 ?>
 							</div>
-                            <h4><span class="amount"><?php echo $pro_price;  ?> BDT</span></h4>
+							<h4><span class="amount">৳ <?php echo $pro_price;  ?></span></h4>
 							<p>Coupling a blended linen construction with tailored style, the River Island HR Jasper Blazer will imprint a touch of dapper charm into your after-dark wardrobe.</p>
 							
-							
-                                        
-							<div class="quantity-cart">
-								<div class="quantity">
-									<input type="button" data-field="quantity1" class="qtyminus btn" value="-">
-									<input type="text" class="qty btn" value="0" name="quantity1">
-									<input type="button" data-field="quantity1" class="qtyplus btn" value="+">
-								</div>
-								<a title="Add To Cart" href="#" class="button product_type_simple add_to_cart_button">Add to cart</a>
-
-							</div>
-
-                                   
-<form action="details.php?add_cart=<?php echo $product_id;?>" method="post" class="form-horizontal">
+							<form action="details.php?add_cart=<?php echo $product_id;?>" method="post" class="form-horizontal">
 
 
                                         <div class="form-group">
@@ -124,28 +113,32 @@ include("assets/function/function.php");
 
 
                                             </div>
-
-
-
-                                        </div>
-                                        <p class="text-center buttons quantity-cart">
-
-                                            <button class="btn button product_type_simple add_to_cart_button" type="submit" name="add_cart">
+                                </div>
+                                           <div class="form-group">
+                                            <div class="quantity-cart">
+								<div class="quantity">
+									<input type="button" data-field="quantity1" class="qtyminus btn" value="-">
+									<input type="text" class="qty btn" value="0" name="product_qty">
+									<input type="button" data-field="quantity1" class="qtyplus btn" value="+">
+								</div>
+								<button class="btn button product_type_simple add_to_cart_button" type="submit" name="add_cart">
                                      <i class="fa fa-shopping-cart"></i>
                                      Add To Cart
                                      
                                  </button>
-<button class="btn btn-primary" type="submit" name="add_wishlist">
+                                 <button class="btn btn-primary" type="submit" name="add_wishlist">
 
 <i class="fa fa-heart" ></i> Add to Wishlist
 
 </button>
+								<a href="#" class="wishlist"><i class="icon_heart"></i></a>
+							</div>
 
 
-</p><!-- text-center buttons Ends -->
 
+                                        </div>
+                                        
 </form><!-- form-horizontal Ends -->
-			
 							<div class="product-content">
 								<p><span>sku:</span> 11E25A-068</p>
 								<p><span>Categories:</span> <a href="#">Men</a><a href="#">Hipster</a><a href="#">T-shirt</a><a href="#">Short T-Shirt</a></p>
@@ -179,10 +172,10 @@ include("assets/function/function.php");
 									</li>
 								</ul>
 								<div id="tab-description" class="panel entry-content wc-tab">
-									<?php echo $pro_desc; ?>
+                                    <p><?php echo $pro_desc; ?></p>
 								</div>
 								<div id="information" class="panel entry-content wc-tab">
-									<?php echo $pro_features; ?>
+									<p><?php echo $pro_features; ?></p>
 								</div>
 								<div id="tab-reviews" class="panel entry-content wc-tab">
 									<p>Coupling a blended linen construction with tailored style, the River Island HR Jasper Blazer will imprint a touch of dapper charm into your after-dark wardrobe. Our model is wearing a size medium blazer, and usually takes a size medium/38L shirt. He is 6’2 1/2” (189cm) tall with a 38” (96 cm) chest and a 31” (78 cm) waist..</p>
@@ -196,7 +189,7 @@ include("assets/function/function.php");
 										<li>Centre-back vent</li>
 										<li>Please refer to the garment for care instructions.</li>
 										<li>Length: 74cm</li>
-										<li>Material: Outer: 50% Linen &amp; 50% Polyamide; Body Lining: 100% Cotton; Lining: 100% Acetate</li>
+										<li>Material: Outer: 50% Linen & 50% Polyamide; Body Lining: 100% Cotton; Lining: 100% Acetate</li>
 									</ul>
 								</div>
 							</div><!-- Tabs /- -->
@@ -206,9 +199,7 @@ include("assets/function/function.php");
 							<div class="padding-60"></div>
 							<h4>related products</h4>
 							<ul class="products row">
-				
-
-                        <?php
+								<?php
                         
                         $get_products = "SELECT * FROM products order by rand() LIMIT 0,2";
                         
@@ -248,10 +239,6 @@ include("assets/function/function.php");
 
 
 ?>
-
-                            
-    
-
 							</ul>
 						</div>						
 					</div><!-- Content Area /- -->
@@ -260,10 +247,8 @@ include("assets/function/function.php");
 			<div class="padding-100"></div>
 		</div><!-- Shop Example /- -->
 	</main>
-	  ?>
 
 	<?php
-    include "admin/assets/includes/footer.php"
+    include "assets/includes/footer.php"
     
     ?>
-    
