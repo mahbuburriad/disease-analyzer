@@ -335,13 +335,12 @@ function getcatpro(){
             
             <h1>$cat_title</h1>
             
-            
+            <p>$cat_desc</p>
             
             
             </div>
             
             ";
-            #<p>$cat_desc</p>
             
         }
         
