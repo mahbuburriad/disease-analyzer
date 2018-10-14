@@ -29,7 +29,6 @@
 	<link rel="stylesheet" type="text/css" href="css/woocommerce.css" />
 	
 	
-	
 	<!-- Custom - Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 
@@ -64,29 +63,60 @@
 					<div class="menu-icon">
 						<div class="cart">							
 							<button aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" title="Cart" id="language" type="button" class="btn dropdown-toggle"><i class="fa fa-shopping-cart"></i></button>
+							<?php
+                        
+                        $ip_add = getRealUserIp();
+                        $select_cart = "SELECT * FROM cart WHERE ip_add='$ip_add'";
+                        $run_cart = mysqli_query($con, $select_cart);
+                        $count = mysqli_num_rows($run_cart);
+                        
+                        
+                        ?>
 							<ul class="dropdown-menu no-padding">
+							<?php
+                                        
+                                        
+                                        $total = 0;
+                                        while($row_cart = mysqli_fetch_array($run_cart)){
+                                                $pro_id = $row_cart['p_id'];
+                                                $pro_size = $row_cart['size'];
+                                                $pro_qty = $row_cart['qty'];
+                                                $only_price = $row_cart['p_price'];
+                                            
+                                                $get_products = "select * from products where product_id='$pro_id'";
+                                                $run_products = mysqli_query($con,$get_products);
+                                                while($row_products = mysqli_fetch_array($run_products)){
+                                                    $product_title = $row_products['product_title'];
+                                                    $product_img1 = $row_products['product_img1'];
+                                                    $sub_total = $only_price*$pro_qty;
+                                                    $_SESSION['pro_qty'] = $pro_qty;
+                                                    $total += $sub_total;
+                                                    
+                                                    $per_product = ($sub_total*2.25)/100;
+                                                    $per_product_price = $per_product+50+$sub_total;
+                                                    $tax = ($total*2.25)/100;
+                                                    $total_charge = $tax+50+$total;
+                                            
+                                        
+                                        ?>
 								<li class="mini_cart_item">
 									<a href="#" class="cart-item-image">
-										<img width="70" height="70" alt="poster_2_up" class="attachment-shop_thumbnail" src="http://placehold.it/70x70/ddd">
+										<img width="70" height="70" alt="poster_2_up" class="attachment-shop_thumbnail" style="height:70px; width:70px;" src="admin/product_images/<?php echo $product_img1; ?>">
 									</a>
 									<div class="cart-detail">
-										<a href="#">denim dots t-shirt</a>
-										<span class="quantity">$105.25</span>
+										<a href="#"><?php echo $product_title; ?></a>
+										<span class="quantity"><?php echo $sub_total; ?></span>
 										<a href="#" class="remove-cart"><i class="fa fa-trash" aria-hidden="true"></i></a>
 									</div>
 								</li>
-								<li class="mini_cart_item">
-									<a href="#" class="cart-item-image">
-										<img width="70" height="70" alt="poster_2_up" class="attachment-shop_thumbnail" src="http://placehold.it/70x70/ddd">
-									</a>
-									<div class="cart-detail">
-										<a href="#">denim dots t-shirt</a>
-										<span class="quantity">$105.25</span>
-										<a href="#" class="remove-cart"><i class="fa fa-trash" aria-hidden="true"></i></a>
-									</div>
-								</li>
+								<?php } } ?>
+								
 								<li class="subtotal">
-									<h5>subtotal <span>$12,99</span></h5>
+									<h5>subtotal <span><?php
+                                       if(empty($only_price)){
+                                               echo "0.00";
+                                               }
+                                               else{ echo "$total"; } ?></span></h5>
 								</li>
 								<li class="button">
 									<a href="#" title="View Cart">View Cart</a>

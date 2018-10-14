@@ -14,10 +14,10 @@
 
 
 <li class="dropdown mega-dropdown">
-    <a href="../../#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Doctor Appointment</a>
+    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Doctor Appointment</a>
 </li>
 
 
 <li class="ropdown mega-dropdown">
-    <a href="../../#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+    <a href="contact.php" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Contact Us</a>
 </li>

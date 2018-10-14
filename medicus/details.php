@@ -20,9 +20,6 @@ include("assets/function/function.php");
         $pro_img3 = $row_product['product_img3'];
         $pro_desc = $row_product['product_desc'];
         $pro_features = $row_product['product_features'];
-        
-        
-        
         $get_p_cat = "select * from product_categories where p_cat_id='$p_cat_id'";
         $run_p_cat = mysqli_query($con,$get_p_cat);
         $row_p_cat = mysqli_fetch_array($run_p_cat);
@@ -118,7 +115,7 @@ include("assets/function/function.php");
                                             <div class="quantity-cart">
 								<div class="quantity">
 									<input type="button" data-field="quantity1" class="qtyminus btn" value="-">
-									<input type="text" class="qty btn" value="0" name="product_qty">
+									<input type="text" class="qty btn" value="1" name="product_qty">
 									<input type="button" data-field="quantity1" class="qtyplus btn" value="+">
 								</div>
 								<button class="btn button product_type_simple add_to_cart_button" type="submit" name="add_cart">
@@ -189,7 +186,7 @@ include("assets/function/function.php");
 										<li>Centre-back vent</li>
 										<li>Please refer to the garment for care instructions.</li>
 										<li>Length: 74cm</li>
-										<li>Material: Outer: 50% Linen & 50% Polyamide; Body Lining: 100% Cotton; Lining: 100% Acetate</li>
+										<li>Material: Outer: 50% Linen &amp; 50% Polyamide; Body Lining: 100% Cotton; Lining: 100% Acetate</li>
 									</ul>
 								</div>
 							</div><!-- Tabs /- -->

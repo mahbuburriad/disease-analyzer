@@ -73,6 +73,7 @@
 		</footer>
 	</div>
 
+
 	
 	<!-- JQuery v1.11.3 -->
 	<script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><!-- MailChimp -->
@@ -98,7 +99,7 @@
 	<script src="libraries/lightslider/lightslider.min.js"></script>
 	
 	<!-- Library - Google Map API -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW40y4kdsjsz714OVTvrw7woVCpD8EbLE"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvybibU7s23-D58Z4_4basp0_C24KIHXc"></script>
 	
 	<!-- Library - Theme JS -->	
 

@@ -1,5 +1,4 @@
 <?php
-session_start();
 include("assets/includes/connection.php");
 include("assets/function/function.php");
 ?>
@@ -37,13 +36,13 @@ include("assets/function/function.php");
 						</ul><!-- Nav tabs /- -->
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="login">
-								<form class="login-form">
+								<form class="login-form" method="post" action="../checkout.php">
 									<h3>login to your account</h3>
 									<div class="form-group col-md-12 no-padding">
-										<input type="text" class="form-control" placeholder="Login" required>
+										<input type="text" class="form-control" placeholder="Login" name="c_email" required>
 									</div>
 									<div class="form-group col-md-12 no-padding">
-										<input type="text" class="form-control" placeholder="Password" required>
+										<input type="text" class="form-control" placeholder="Password" name="c_pass" required>
 									</div>
 									<div class="checkbox">
 										<label>
@@ -51,7 +50,9 @@ include("assets/function/function.php");
 										</label>
 										<a href="#">forgot Your password?</a>
 									</div>
-									<a href="#" title="LogIn">Login<i class="arrow_right"></i></a>
+									<button name="login" class="btn btn-primary" value="Login">
+              <i class="fas fa-sign-in-alt"></i> Sign In
+           </button>
 								</form>
 								<div class="login-social">
 									<h3>LogIn With Social</h3>
@@ -228,6 +229,61 @@ mail($c_email,$subject,$message,$headers);
 
 
         }
+
+        ?>
+        
+        
+<?php
+
+                if(isset($_POST['login'])){
+
+                $customer_email = $_POST['c_email'];
+
+                $customer_pass = $_POST['c_pass'];
+
+                $select_customer = "select * from customers where customer_email='$customer_email' AND customer_pass='$customer_pass'";
+
+                $run_customer = mysqli_query($con,$select_customer);
+
+                $get_ip = getRealUserIp();
+
+                $check_customer = mysqli_num_rows($run_customer);
+
+                $select_cart = "select * from cart where ip_add='$get_ip'";
+
+                $run_cart = mysqli_query($con,$select_cart);
+
+                $check_cart = mysqli_num_rows($run_cart);
+
+                if($check_customer==0){
+
+                echo "<script>alert('password or email is wrong')</script>";
+
+                exit();
+
+                }
+
+                if($check_customer==1 AND $check_cart==0){
+
+                $_SESSION['customer_email']=$customer_email;
+
+                echo "<script>alert('You are Logged In')</script>";
+
+                echo "<script>window.open('customer/my_account.php?profile','_self')</script>";
+
+                }
+                else {
+
+                $_SESSION['customer_email']=$customer_email;
+
+                echo "<script>alert('You are Logged In')</script>";
+
+                echo "<script>window.open('checkout.php','_self')</script>";
+
+                } 
+
+
+                }
 
         ?>
 								<div class="login-social">

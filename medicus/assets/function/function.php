@@ -561,6 +561,46 @@ function getProductCategory(){
     
 }
 
+function getProIndex(){
+    global $db;
+    
+    $get_products = "SELECT * FROM products order by 1 DESC LIMIT 0,8";
+    
+    $run_products = mysqli_query($db, $get_products);
+    while($row_products = mysqli_fetch_array($run_products))
+    {
+        $pro_id = $row_products['product_id'];
+        $pro_title = $row_products['product_title'];
+        $pro_price = $row_products['product_price'];
+        $pro_img1 = $row_products['product_img1'];
+        
+        echo"
+                                
+                                    <li class='product'>							
+								<a href='details.php?pro_id=$pro_id' title='$pro_title'>
+									<div class='product-img-box'>
+										<img style='height: 200px; width:150px;' alt='$pro_title' src='admin/product_images/$pro_img1'/>
+									</div>
+									<div class='detail-box'>
+                                    
+										<h3>$pro_title</h3>
+										<span class='price'>
+											<span class='amount'>৳ $pro_price</span>
+										</span>
+									</div>
+								</a>
+								<a class='button product_type_simple add_to_cart_button' href='#' title='Add To Cart'>Add to cart</a>
+								<div class='whishlist-btn'>
+									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Add to wishlist'><i class='icon_heart'></i></a>
+									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Expand'><i class='arrow_expand_alt'></i></a>
+								</div>
+							</li>
+ 
+                                ";
+        
+    }
+}
+
 
 
 
