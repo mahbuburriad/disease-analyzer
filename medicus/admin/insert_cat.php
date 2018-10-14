@@ -50,63 +50,45 @@ else{
                        <center>
                         <h4 class="card-title">General Form</h4>
                         <h6 class="card-subtitle"> All with bootstrap element classies </h6>
-<form class="form-horizontal" action="" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
+                    <form class="form-horizontal" action="" method="post">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Category Title</label>
 
-<div class="form-group"><!-- form-group Starts -->
+                            <div class="col-md-6">
 
-<label class="col-md-3 control-label">Category Title</label>
+                                <input type="text" name="cat_title" class="form-control">
 
-<div class="col-md-6">
+                            </div>
 
-<input type="text" name="cat_title" class="form-control">
+                        </div>
 
-</div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Category Description</label>
 
-</div><!-- form-group Ends -->
+                            <div class="col-md-6">
 
-<div class="form-group"><!-- form-group Starts -->
+                                <textarea type="text" name="cat_desc" class="form-control">
 
-<label class="col-md-3 control-label">Show as Category Top</label>
 
-<div class="col-md-6">
+</textarea>
 
-<input type="radio" name="cat_top" value="yes">
+                            </div>
 
-<label>Yes</label>
+                        </div>
 
-<input type="radio" name="cat_top" value="no">
+                        <div class="form-group">
 
-<label>No</label>
+                            <label class="col-md-3 control-label"></label>
 
-</div>
+                            <div class="col-md-6">
 
-</div><!-- form-group Ends -->
+                                <input type="submit" name="submit" value="Insert Category" class="btn btn-primary form-control">
 
-<div class="form-group"><!-- form-group Starts -->
+                            </div>
 
-<label class="col-md-3 control-label">Select Category Image</label>
+                        </div>
 
-<div class="col-md-6">
-
-<input type="file" name="cat_image" class="form-control">
-
-</div>
-
-</div><!-- form-group Ends -->
-
-<div class="form-group"><!-- form-group Starts -->
-
-<label class="col-md-3 control-label"></label>
-
-<div class="col-md-6">
-
-<input type="submit" name="submit" value="Insert Category" class="btn btn-primary form-control">
-
-</div>
-
-</div><!-- form-group Ends -->
-
-</form><!-- form-horizontal Ends -->
+                    </form>
 
 
 
@@ -115,28 +97,12 @@ else{
 if(isset($_POST['submit'])){
 
 $cat_title = $_POST['cat_title'];
-
-$cat_top = $_POST['cat_top'];
-
-#$cat_image = $_FILES['cat_image']['name'];
-
-#$temp_name = $_FILES['cat_image']['tmp_name'];
-
-#move_uploaded_file($temp_name,"other_images/$cat_image");
-    
-    $temp = explode(".", $_FILES['cat_image']['name']);
-$newfilename = round(microtime(true)) . '.' . end($temp);
-move_uploaded_file($_FILES['cat_image']['tmp_name'], "other_images/" . $newfilename);
-
-$insert_cat = "insert into categories (cat_title,cat_top,cat_image) values ('$cat_title','$cat_top','$newfilename')";
-
+$cat_desc = $_POST['cat_desc'];
+$insert_cat = "insert into categories (cat_title,cat_desc) values ('$cat_title','$cat_desc')";
 $run_cat = mysqli_query($con,$insert_cat);
-
 if($run_cat){
-
 echo "<script> alert('New Category Has Been Inserted')</script>";
-
-echo "<script> window.open('index.php?view_cats','_self') </script>";
+echo "<script> window.open('index.php?view_cat','_self') </script>";
 
 }
 

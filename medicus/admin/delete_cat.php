@@ -11,7 +11,7 @@ else {
 
 ?>
 
-<?php
+    <?php
 
 if(isset($_GET['delete_cat'])){
 
@@ -25,7 +25,7 @@ if($run_delete){
 
 echo "<script> alert('One Category Has Been Deleted') </script>";
 
-echo "<script>window.open('index.php?view_cats','_self')</script>";
+echo "<script>window.open('index.php?view_cat','_self')</script>";
 
 }
 
@@ -33,4 +33,4 @@ echo "<script>window.open('index.php?view_cats','_self')</script>";
 
 ?>
 
-<?php } ?>
+        <?php } ?>

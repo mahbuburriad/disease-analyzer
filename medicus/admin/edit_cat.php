@@ -9,26 +9,16 @@ else{
 ?>
 
 <?php
-
 if(isset($_GET['edit_cat'])){
-
 $edit_id = $_GET['edit_cat'];
-
 $edit_cat = "select * from categories where cat_id='$edit_id'";
-
 $run_edit = mysqli_query($con,$edit_cat);
-
 $row_edit = mysqli_fetch_array($run_edit);
-
 $c_id = $row_edit['cat_id'];
-
 $c_title = $row_edit['cat_title'];
+$c_desc = $row_edit['cat_desc'];
 
-$c_top = $row_edit['cat_top'];
 
-$c_image = $row_edit['cat_image'];
-
-$new_c_image = $row_edit['cat_image'];
 
 }
 
@@ -78,110 +68,64 @@ $new_c_image = $row_edit['cat_image'];
                        <center>
                         <h4 class="card-title">General Form</h4>
                         <h6 class="card-subtitle"> All with bootstrap element classies </h6>
-
-<form class="form-horizontal" action="" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
-
-<div class="form-group"><!-- form-group Starts -->
-
-<label class="col-md-3 control-label">Category Title</label>
-
-<div class="col-md-6">
-
-<input type="text" name="cat_title" class="form-control" value="<?php echo $c_title; ?>">
-
-</div>
-
-</div><!-- form-group Ends -->
-
-<div class="form-group"><!-- form-group Starts -->
-
-<label class="col-md-3 control-label">Show as Category Top</label>
-
-<div class="col-md-6">
-
-<input type="radio" name="cat_top" value="yes" 
-<?php if($c_top == 'no'){}else{ echo "checked='checked'"; } ?>>
-
-<label>Yes</label>
-
-<input type="radio" name="cat_top" value="no" 
-<?php if($c_top == 'no'){ echo "checked='checked'"; }else{} ?>>
-
-<label>No</label>
-
-</div>
-
-</div><!-- form-group Ends -->
-
-<div class="form-group"><!-- form-group Starts -->
-
-<label class="col-md-3 control-label">Select Category Image</label>
-
-<div class="col-md-6">
-
-<input type="file" name="cat_image" class="form-control">
-
-<br>
-
-<img src="other_images/<?php echo $c_image; ?>" width="70" height="70" >
-
-</div>
-
-</div><!-- form-group Ends -->
+ <form class="form-horizontal" action="" method="post">
 
 
-<div class="form-group"><!-- form-group Starts -->
+                            <div class="form-group">
 
-<label class="col-md-3 control-label"></label>
 
-<div class="col-md-6">
+                                <label class="col-md-3 control-label">Category Title</label>
 
-<input type="submit" name="update" value="Update Category" class="btn btn-primary form-control">
+                                <div class="col-md-6">
 
-</div>
+                                    <input type="text" name="cat_title" class="form-control" value="<?php echo $c_title; ?>">
 
-</div><!-- form-group Ends -->
+                                </div>
 
-</form><!-- form-horizontal Ends -->
+                            </div>
+
+
+                            <div class="form-group">
+
+
+                                <label class="col-md-3 control-label">Category Description</label>
+
+                                <div class="col-md-6">
+
+                                    <textarea type="text" name="cat_desc" class="form-control">
+
+<?php echo $c_desc; ?>
+
+</textarea>
+
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label"></label>
+                                <div class="col-md-6">
+                                    <input type="submit" name="update" value="Update Category" class="btn btn-primary form-control">
+                                </div>
+                            </div>
+
+                        </form>
 
 
 
 <?php
 
 if(isset($_POST['update'])){
-
 $cat_title = $_POST['cat_title'];
-
-$cat_top = $_POST['cat_top'];
-
-$cat_image = $_FILES['cat_image']['name'];
-
-$temp_name = $_FILES['cat_image']['tmp_name'];
-
-move_uploaded_file($temp_name,"other_images/$cat_image");
-
-if(empty($cat_image)){
-
-$cat_image= $new_c_image;
-
-}
-
-$update_cat = "update categories set cat_title='$cat_title',cat_top='$cat_top',cat_image='$cat_image' where cat_id='$c_id'";
-
+$cat_desc = $_POST['cat_desc'];
+$update_cat = "update categories set cat_title='$cat_title',cat_desc='$cat_desc' where cat_id='$c_id'";
 $run_cat = mysqli_query($con,$update_cat);
 
 if($run_cat){
-
 echo "<script>alert('One Category Has Been Updated')</script>";
-
-echo "<script>window.open('index.php?view_cats','_self')</script>";
-
-}
+echo "<script>window.open('index.php?view_cat','_self')</script>";
 
 }
-
-
-
+}
 ?>
                     </div>
                 </div>

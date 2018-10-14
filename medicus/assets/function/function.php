@@ -299,7 +299,7 @@ function getcatpro(){
         $row_cat = mysqli_fetch_array($run_cat);
         
         $cat_title = $row_cat['cat_title'];
-        $cat_desc = $row_cat['cat_desc'];
+        #$cat_desc = $row_cat['cat_desc'];
         
        
         
@@ -335,12 +335,13 @@ function getcatpro(){
             
             <h1>$cat_title</h1>
             
-            <p>$cat_desc</p>
+            
             
             
             </div>
             
             ";
+            #<p>$cat_desc</p>
             
         }
         
@@ -513,6 +514,55 @@ function total_price(){
     echo $total;
     
 }
+
+function getCategory(){
+    
+    global $db;
+    
+    $get_cats = "SELECT * FROM categories";
+    
+    $run_cats = mysqli_query($db, $get_cats);
+    while($row_cats = mysqli_fetch_array($run_cats))
+    {
+        $cat_id = $row_cats['cat_id'];
+        $cat_title = $row_cats['cat_title'];
+        
+        echo"
+        
+        <li><a href='pharmacy.php?cat=$cat_id'>$cat_title</a></li>
+        
+        ";
+    }
+    
+    
+    
+}
+
+
+function getProductCategory(){
+    
+    global $db;
+    
+    $get_p_cats = "SELECT * FROM product_categories";
+    
+    $run_p_cats = mysqli_query($db, $get_p_cats);
+    while($row_p_cats = mysqli_fetch_array($run_p_cats))
+    {
+        $p_cat_id = $row_p_cats['p_cat_id'];
+        $p_cat_title = $row_p_cats['p_cat_title'];
+        
+        echo"
+        
+        <li><a href='pharmacy.php?p_cat=$p_cat_id'>$p_cat_title</a></li>
+        
+        ";
+    }
+    
+    
+    
+}
+
+
 
 
 

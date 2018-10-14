@@ -11,24 +11,14 @@ else{
 <?php
 
 if(isset($_GET['edit_p_cat'])){
-
 $edit_p_cat_id = $_GET['edit_p_cat'];
-
 $edit_p_cat_query = "select * from product_categories where p_cat_id='$edit_p_cat_id'";
-
 $run_edit = mysqli_query($con,$edit_p_cat_query);
-
 $row_edit = mysqli_fetch_array($run_edit);
-
 $p_cat_id = $row_edit['p_cat_id'];
-
 $p_cat_title = $row_edit['p_cat_title'];
+$p_cat_desc = $row_edit['p_cat_desc'];
 
-$p_cat_top = $row_edit['p_cat_top'];
-
-$p_cat_image = $row_edit['p_cat_image'];
-
-$new_p_cat_image = $row_edit['p_cat_image'];
 
 }
 
@@ -78,69 +68,53 @@ $new_p_cat_image = $row_edit['p_cat_image'];
                         <h4 class="card-title">General Form</h4>
                         <h6 class="card-subtitle"> All with bootstrap element classies </h6>
 
-<form class="form-horizontal" action="" method="post" enctype="multipart/form-data" ><!-- form-horizontal Starts -->
+                        <form class="form-horizontal" action="" method="post">
 
-<div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" >Product Category Title</label>
+                            <div class="form-group">
 
-<div class="col-md-6" >
 
-<input type="text" name="p_cat_title" class="form-control" value="<?php echo $p_cat_title; ?>" >
+                                <label class="col-md-3 control-label">Product Category Title</label>
 
-</div>
+                                <div class="col-md-6">
 
-</div><!-- form-group Ends -->
+                                    <input type="text" name="p_cat_title" class="form-control" value="<?php echo $p_cat_title; ?>">
 
-<div class="form-group" ><!-- form-group Starts -->
+                                </div>
 
-<label class="col-md-3 control-label" >Show as Top Product Category</label>
+                            </div>
 
-<div class="col-md-6" >
 
-<input type="radio" name="p_cat_top" value="yes" 
-<?php if($p_cat_top == 'no'){}else{ echo "checked='checked'"; } ?>>
+                            <div class="form-group">
 
-<label> Yes </label>
 
-<input type="radio" name="p_cat_top" value="no" 
-<?php if($p_cat_top == 'no'){ echo "checked='checked'"; }else{} ?>>
+                                <label class="col-md-3 control-label">Product Category Description</label>
 
-<label> No </label>
+                                <div class="col-md-6">
 
-</div>
+                                    <textarea type="text" name="p_cat_desc" class="form-control">
+<?php echo $p_cat_desc; ?>
+</textarea>
 
-</div><!-- form-group Ends -->
+                                </div>
 
-<div class="form-group" ><!-- form-group Starts -->
+                            </div>
 
-<label class="col-md-3 control-label" > Select Product Category Image</label>
 
-<div class="col-md-6" >
+                            <div class="form-group">
 
-<input type="file" name="p_cat_image" class="form-control" >
 
-<br>
+                                <label class="col-md-3 control-label"></label>
 
-<img src="other_images/<?php echo $p_cat_image; ?>" width="70" height="70" >
+                                <div class="col-md-6">
 
-</div>
+                                    <input type="submit" name="update" value="Update Now" class="btn btn-primary form-control">
 
-</div><!-- form-group Ends -->
+                                </div>
 
-<div class="form-group" ><!-- form-group Starts -->
+                            </div>
 
-<label class="col-md-3 control-label" ></label>
-
-<div class="col-md-6" >
-
-<input type="submit" name="update" value="Update Now" class="btn btn-primary form-control" >
-
-</div>
-
-</div><!-- form-group Ends -->
-
-</form><!-- form-horizontal Ends -->
+                        </form>
 
 
 <?php
@@ -149,22 +123,10 @@ if(isset($_POST['update'])){
 
 $p_cat_title = $_POST['p_cat_title'];
 
-$p_cat_top = $_POST['p_cat_top'];
-
-$p_cat_image = $_FILES['p_cat_image']['name'];
-
-$temp_name = $_FILES['p_cat_image']['tmp_name'];
+$p_cat_desc = $_POST['p_cat_desc'];
 
 
-move_uploaded_file($temp_name,"other_images/$p_cat_image");
-
-if(empty($p_cat_image)){
-
-$p_cat_image = $new_p_cat_image;
-
-}
-
-$update_p_cat = "update product_categories set p_cat_title='$p_cat_title',p_cat_top='$p_cat_top',p_cat_image='$p_cat_image' where p_cat_id='$p_cat_id'";
+$update_p_cat = "update product_categories set p_cat_title='$p_cat_title',p_cat_desc='$p_cat_desc' where p_cat_id='$p_cat_id'";
 
 $run_p_cat = mysqli_query($con,$update_p_cat);
 
@@ -172,7 +134,7 @@ if($run_p_cat){
 
 echo "<script>alert('Product Category has been Updated')</script>";
 
-echo "<script>window.open('index.php?view_p_cats','_self')</script>";
+echo "<script>window.open('index.php?view_p_cat','_self')</script>";
 
 }
 

@@ -58,11 +58,11 @@ include("assets/function/function.php");
 						<aside class="product-widget product-widget-categories">
 							<h3 class="widget-title">Select Product</h3>
 							<ul>
-								<li><a href="#">Women <span>(12)</span></a></li>
-								<li><a href="#">men <span>(22)</span></a></li>
-								<li><a href="#">footwear <span>(15)</span></a></li>
-								<li><a href="#">Bags and Backpacks <span>(09)</span></a></li>
-								<li><a href="#">Accessories  <span>(07)</span></a></li>
+								<?php
+            
+            getCategory();
+            
+            ?>
 							</ul>
 						</aside><!-- Widget Select Product /- -->
 						<!-- Widget Filter Price -->
@@ -83,11 +83,11 @@ include("assets/function/function.php");
 						<aside class="product-widget product-widget-categories">
 							<h3 class="widget-title">Select Product</h3>
 							<ul>
-								<li><a href="#">Black <span>(07)</span></a></li>
-								<li><a href="#">Blue <span>(05)</span></a></li>
-								<li><a href="#">Grey <span>(11)</span></a></li>
-								<li><a href="#">Red <span>(09)</span></a></li>
-								<li><a href="#">White  <span>(03)</span></a></li>
+            <?php
+            
+            getProductCategory();
+            
+            ?>
 							</ul>
 						</aside><!-- Widget Select Product /- -->
 						<!-- Widget Best Sellers -->

@@ -51,93 +51,67 @@ else{
                         <h4 class="card-title">General Form</h4>
                         <h6 class="card-subtitle"> All with bootstrap element classies </h6>
                         
-                        <form class="form-horizontal m-t-30" action="" method="post" enctype="multipart/form-data">
-                            <!-- form-horizontal Starts -->
+                      
+                    <form class="form-horizontal" action="" method="post">
 
-                            <div class="form-group">
-                                <!-- form-group Starts -->
 
-                                <label class="col-md-3 control-label">Product Category Title</label>
+                        <div class="form-group">
 
-                                <div class="col-md-6">
 
-                                    <input type="text" name="p_cat_title" class="form-control">
+                            <label class="col-md-3 control-label">Product Category Title</label>
 
-                                </div>
+                            <div class="col-md-6">
 
-                            </div><!-- form-group Ends -->
+                                <input type="text" name="p_cat_title" class="form-control">
 
-                            <div class="form-group">
-                                <!-- form-group Starts -->
+                            </div>
 
-                                <label class="col-md-3 control-label">Show as Top Product Category</label>
+                        </div>
 
-                                <div class="col-md-6">
 
-                                    <input type="radio" name="p_cat_top" value="yes">
+                        <div class="form-group">
 
-                                    <label> Yes </label>
 
-                                    <input type="radio" name="p_cat_top" value="no">
+                            <label class="col-md-3 control-label">Product Category Description</label>
 
-                                    <label> No </label>
+                            <div class="col-md-6">
 
-                                </div>
+                                <textarea type="text" name="p_cat_desc" class="form-control">
 
-                            </div><!-- form-group Ends -->
+</textarea>
 
-                            <div class="form-group">
-                                <!-- form-group Starts -->
+                            </div>
 
-                                <label class="col-md-3 control-label"> Select Product Category Image</label>
+                        </div>
 
-                                <div class="col-md-6">
 
-                                    <input type="file" name="p_cat_image" class="form-control">
+                        <div class="form-group">
 
-                                </div>
 
-                            </div><!-- form-group Ends -->
+                            <label class="col-md-3 control-label"></label>
 
-                            <div class="form-group">
-                                <!-- form-group Starts -->
+                            <div class="col-md-6">
 
-                                <label class="col-md-3 control-label"></label>
+                                <input type="submit" name="submit" value="Submit Now" class="btn btn-primary form-control">
 
-                                <div class="col-md-6">
+                            </div>
 
-                                    <input type="submit" name="submit" value="Submit Now" class="btn btn-primary form-control">
+                        </div>
 
-                                </div>
 
-                            </div><!-- form-group Ends -->
-
-                        </form>
+                    </form>
                         </center><!-- form-horizontal Ends -->
                         <?php
 
 if(isset($_POST['submit'])){
+    $p_cat_title = $_POST['p_cat_title'];
+    $p_cat_desc = $_POST['p_cat_desc'];
+    $insert_p_cat = "insert into product_categories (p_cat_title,p_cat_desc) values ('$p_cat_title','$p_cat_desc')";
+    $run_p_cat = mysqli_query($con,$insert_p_cat);
 
-$p_cat_title = $_POST['p_cat_title'];
-
-$p_cat_top = $_POST['p_cat_top'];
-
-$p_cat_image = $_FILES['p_cat_image']['name'];
-
-$temp_name = $_FILES['p_cat_image']['tmp_name'];
-
-move_uploaded_file($temp_name,"other_images/$p_cat_image");
-    
-
-$insert_p_cat = "insert into product_categories (p_cat_title,p_cat_top,p_cat_image) values ('$p_cat_title','$p_cat_top','$p_cat_image')";
-
-$run_p_cat = mysqli_query($con,$insert_p_cat);
-
-if($run_p_cat){
-
-echo "<script>alert('New Product Category Has been Inserted')</script>";
-
-echo "<script>window.open('index.php?view_p_cats','_self')</script>";
+    if($run_p_cat){
+            echo "<script>alert('New Product Category Has been Inserted')</script>";
+            echo "<script>window.open('index.php?view_p_cat','_self')</script>";
 
 }
 
