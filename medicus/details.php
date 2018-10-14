@@ -4,13 +4,13 @@ include("assets/includes/connection.php");
 include("assets/function/function.php");
 ?>
 <?php
-    
+
     if(isset($_GET['pro_id'])){
         $product_id = $_GET['pro_id'];
         $get_product = "select * from products where product_id='$product_id'";
         $run_product = mysqli_query($con,$get_product);
         $row_product = mysqli_fetch_array($run_product);
-        
+
         $p_cat_id = $row_product['p_cat_id'];
         $pro_title = $row_product['product_title'];
         $pro_price = $row_product['product_price'];
@@ -23,9 +23,9 @@ include("assets/function/function.php");
         $get_p_cat = "select * from product_categories where p_cat_id='$p_cat_id'";
         $run_p_cat = mysqli_query($con,$get_p_cat);
         $row_p_cat = mysqli_fetch_array($run_p_cat);
-        $p_cat_title = $row_p_cat['p_cat_title'];    
+        $p_cat_title = $row_p_cat['p_cat_title'];
     }
-    
+
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
@@ -42,12 +42,12 @@ include("assets/function/function.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<title>Shield Theme</title>
+	<title>Medicus Product Details</title>
 
-	<?php 
-    include "assets/includes/header.php" 
+	<?php
+    include "assets/includes/header.php"
     ?>
-	
+
 	<main>
 		<!-- Page Breadcrumb -->
 		<div class="page-breadcrumb container-fluid no-padding">
@@ -89,14 +89,14 @@ include("assets/function/function.php");
 							<div class="product-title">
 								<h4><?php echo $pro_title; ?></h4>
 								<?php
-                                
+
                                 add_cart();
-                                
+
                                 ?>
 							</div>
 							<h4><span class="amount">৳ <?php echo $pro_price;  ?></span></h4>
 							<p>Coupling a blended linen construction with tailored style, the River Island HR Jasper Blazer will imprint a touch of dapper charm into your after-dark wardrobe.</p>
-							
+
 							<form action="details.php?add_cart=<?php echo $product_id;?>" method="post" class="form-horizontal">
 
 
@@ -121,7 +121,7 @@ include("assets/function/function.php");
 								<button class="btn button product_type_simple add_to_cart_button" type="submit" name="add_cart">
                                      <i class="fa fa-shopping-cart"></i>
                                      Add To Cart
-                                     
+
                                  </button>
                                  <button class="btn btn-primary" type="submit" name="add_wishlist">
 
@@ -134,7 +134,7 @@ include("assets/function/function.php");
 
 
                                         </div>
-                                        
+
 </form><!-- form-horizontal Ends -->
 							<div class="product-content">
 								<p><span>sku:</span> 11E25A-068</p>
@@ -152,7 +152,7 @@ include("assets/function/function.php");
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="col-md-12 col-xs-12 col-xs-12 type-product">
 							<div class="padding-60"></div>
 							<!-- Tabs -->
@@ -191,32 +191,32 @@ include("assets/function/function.php");
 								</div>
 							</div><!-- Tabs /- -->
 						</div>
-						
+
 						<div class="related-products col-md-12 col-sm-12 col-xs-12">
 							<div class="padding-60"></div>
 							<h4>related products</h4>
 							<ul class="products row">
 								<?php
-                        
+
                         $get_products = "SELECT * FROM products order by rand() LIMIT 0,2";
-                        
+
                         $run_products = mysqli_query($con, $get_products);
-                        
+
                         while($row_products = mysqli_fetch_array($run_products)){
                             $pro_id = $row_products['product_id'];
                                 $pro_title = $row_products['product_title'];
                                 $pro_price = $row_products['product_price'];
                                 $pro_img1 = $row_products['product_img1'];
-                                
-                                
+
+
                                echo"
-                                <li class='product'>							
+                                <li class='product'>
 								<a href='details.php?pro_id=$pro_id' title='$pro_title'>
 									<div class='product-img-box'>
 										<img alt='$pro_title' src='admin/product_images/$pro_img1'/>
 									</div>
 									<div class='detail-box'>
-                                    
+
 										<h3>$pro_title</h3>
 										<span class='price'>
 											<span class='amount'>৳ $pro_price</span>
@@ -230,14 +230,14 @@ include("assets/function/function.php");
 								</div>
 							</li>
 
- 
+
                                 ";
                             }
 
 
 ?>
 							</ul>
-						</div>						
+						</div>
 					</div><!-- Content Area /- -->
 				</div>
 			</div><!-- Container /- -->
@@ -247,5 +247,5 @@ include("assets/function/function.php");
 
 	<?php
     include "assets/includes/footer.php"
-    
+
     ?>

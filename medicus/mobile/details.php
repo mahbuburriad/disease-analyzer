@@ -1,10 +1,39 @@
-<div class="pages">
+<?php
+session_start();
+include("../assets/includes/connection.php");
+include("../assets/function/function.php");
+?>
+<?php
+    
+    if(isset($_GET['pro_id'])){
+        $product_id = $_GET['pro_id'];
+        $get_product = "select * from products where product_id='$product_id'";
+        $run_product = mysqli_query($con,$get_product);
+        $row_product = mysqli_fetch_array($run_product);
+        
+        $p_cat_id = $row_product['p_cat_id'];
+        $pro_title = $row_product['product_title'];
+        $pro_price = $row_product['product_price'];
+        $pro_desc = $row_product['product_desc'];
+        $pro_img1 = $row_product['product_img1'];
+        $pro_desc = $row_product['product_desc'];
+        $pro_features = $row_product['product_features'];
+        $get_p_cat = "select * from product_categories where p_cat_id='$p_cat_id'";
+        $run_p_cat = mysqli_query($con,$get_p_cat);
+        $row_p_cat = mysqli_fetch_array($run_p_cat);
+        $p_cat_title = $row_p_cat['p_cat_title'];    
+    }
+    
+?>
+ 
+
+ <div class="pages">
   <div data-page="shopitem" class="page no-toolbar no-navbar">
     <div class="page-content">
     
 	<div class="navbarpages">
 		<div class="navbar_left">
-			<div class="logo_text"><a href="index.html"><span>up</span>mobile</a></div>
+			<div class="logo_text"><a href="index.html"><span>Medi</span>cus</a></div>
 		</div>			
 		<a href="#" data-panel="left" class="open-panel">
 			<div class="navbar_right"><img src="images/icons/green/menu.png" alt="" title="" /></div>
@@ -14,20 +43,21 @@
      <div id="pages_maincontent">  
     
      <h2 class="page_title">SHOP PRODUCT</h2>
- <a href="shop.html" class="backtoshop"><img src="images/icons/black/back.png" alt="" title="" /></a>  
+ <a href="shop.php" class="backtoshop"><img src="images/icons/black/back.png" alt="" title="" /></a>  
 	<div class="page_single layout_fullwidth_padding">
       
       <div class="shop_item">
 
           <div class="shop_thumb">
-          <a rel="gallery-3" href="images/photos/photo1.jpg" title="Photo title" class="swipebox"><img src="images/photos/photo1.jpg" alt="" title="" /></a>
-          <div class="shop_item_price">$100</div>
+          <h1><?php echo $pro_title;?></h1>
+          <a rel="gallery-3" href=".#" title="Photo title" class="swipebox"><img src="../admin/product_images/<?php echo $pro_img1;?>" alt="" title="" /></a>
+          <div class="shop_item_price"><?php echo $pro_price;?></div>
           <a href="#" data-popup=".popup-social" class="open-popup shopfav"><img src="images/icons/white/love.png" alt="" title="" /></a>
           <a href="#" data-popup=".popup-social" class="open-popup shopfriend"><img src="images/icons/white/users.png" alt="" title="" /></a>
           </div>
           <div class="shop_item_details">
           <h3>PRODUCT DESCRIPTION</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          <p><?php echo $pro_desc;?></p>
           <p><strong>CATEGORY:</strong> <a href="shop.html">cars</a></p>
           <h3>SELECT QUANTITY</h3>
             <div class="item_qnty_shopitem">
