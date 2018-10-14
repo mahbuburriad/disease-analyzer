@@ -1,6 +1,9 @@
 <div class="box">
+    
+    
 
     <?php
+    
     
     $session_email = $_SESSION['customer_email'];
     $select_customer = "SELECT * FROM customers WHERE customer_email='$session_email'";

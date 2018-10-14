@@ -56,7 +56,7 @@ include("assets/function/function.php");
 					<div class="col-md-3 col-sm-4 col-xs-12 widget-area">
 						<!-- Widget Select Product -->
 						<aside class="product-widget product-widget-categories">
-							<h3 class="widget-title">Select Product</h3>
+							<h3 class="widget-title">Select Category</h3>
 							<ul>
 								<?php
             
@@ -81,7 +81,7 @@ include("assets/function/function.php");
 						</aside><!-- Widget Filter Price /- -->
 						<!-- Widget Select Product -->
 						<aside class="product-widget product-widget-categories">
-							<h3 class="widget-title">Select Product</h3>
+							<h3 class="widget-title">Select Product Category</h3>
 							<ul>
             <?php
             
@@ -94,20 +94,12 @@ include("assets/function/function.php");
 						<aside class="product-widget widget-best-seller">
 							<h3 class="widget-title">recent products</h3>
 							<!-- Seller Box -->
-							<div class="seller-box">
-								<div class="product-img"><a href="#" title="Product"><img src="http://placehold.it/77x98/ddd" alt="Seller" /></a></div>
-								<h4><a href="#">duranior t-shrit</a> <span>$75.25</span></h4>
-							</div><!-- Seller Box /- -->
-							<!-- Seller Box -->
-							<div class="seller-box">
-								<div class="product-img"><a href="#" title="Product"><img src="http://placehold.it/77x98/ddd" alt="Seller" /></a></div>
-								<h4><a href="#">grey shirt denim</a> <span>$92.35</span></h4>								
-							</div><!-- Seller Box /- -->
-							<!-- Seller Box -->
-							<div class="seller-box">
-								<div class="product-img"><a href="#" title="Product"><img src="http://placehold.it/77x98/ddd" alt="Seller" /></a></div>
-								<h4><a href="#">staple t-shirt</a> <span>$92.35</span></h4>
-							</div><!-- Seller Box /- -->
+							<?php 
+                            getRP();
+                            
+                            ?>
+							
+							<!-- Seller Box /- -->
 						</aside><!-- Widget Best Sellers /- -->
 					</div><!-- Widget Area /- -->
 					<!-- Content Area /- -->

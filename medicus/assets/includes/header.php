@@ -124,6 +124,9 @@
 								</li>
 							</ul>
 						</div>
+						<div class="Login">	
+								<a href="customer/customer_login.php" id="login" title="Login"><i class="fa fa-sign-in"></i></a>
+							</div>
 						<div class="search">	
 							<a href="#" id="search" title="Search"><i class="fa fa-search"></i></a>
 						</div>

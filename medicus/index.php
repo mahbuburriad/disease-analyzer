@@ -59,9 +59,7 @@ include("assets/function/function.php");
 	
 	<!-- Custom - Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="styles.css" />
-	
-	<!-- Custom - Theme CSS -->
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+
 
 	<!--[if lt IE 9]>
 		<script src="js/html5/respond.min.js"></script>
@@ -157,9 +155,13 @@ include("assets/function/function.php");
 								</li>
 							</ul>
 						</div>
+						<div class="Login">	
+								<a href="customer/customer_login.php" id="login" title="Login"><i class="fa fa-sign-in"></i></a>
+							</div>
 							<div class="search">	
 								<a href="#" id="search" title="Search"><i class="fa fa-search"></i></a>
 							</div>
+							
 						</div>
 						<div class="navbar-collapse collapse navbar-right" id="navbar">
 							<ul class="nav navbar-nav navbar-right">

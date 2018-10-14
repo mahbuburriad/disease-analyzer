@@ -77,6 +77,52 @@ global $db;
     
 
 }
+function getRP(){
+
+/// getProducts function Code Starts ///
+
+global $db;
+    
+    if(!isset($_GET['p_cat'])){
+                        if(!isset($_GET['cat'])){
+                            
+                            $per_page=6;
+                            if(isset($_GET['page'])){
+                                $page = $_GET['page'];
+                            }
+                            else
+                            {
+                                $page = 1;
+                                
+                            }
+                            
+                            $start_from = ($page-1) * $per_page;
+                            $get_products = "SELECT * FROM products order by 1 DESC LIMIT 0,3";
+                            
+                            $run_products = mysqli_query($db, $get_products);
+                            
+                            while($row_products = mysqli_fetch_array($run_products)){
+                                $pro_id = $row_products['product_id'];
+                                $pro_title = $row_products['product_title'];
+                                $pro_price = $row_products['product_price'];
+                                $pro_img1 = $row_products['product_img1'];
+                                
+                                
+                                echo"
+    <div class='seller-box'>
+								<div class='product-img'><a href='details.php?pro_id=$pro_id' title='$pro_title'><img style='width: 77px; height: 98px;' src='admin/product_images/$pro_img1' alt='$pro_title' /></a></div>
+								<h4><a href='details.php?pro_id=$pro_id'>$pro_title</a> <span>$pro_price</span></h4>
+							</div>
+ 
+                                ";
+                            }
+                            
+                        }
+                    }
+    
+    
+
+}
 
 
 /// getPaginator Function Starts ///
