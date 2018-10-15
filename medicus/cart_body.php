@@ -132,6 +132,10 @@ include("assets/function/function.php");
 							</table>
 						</div>
 						<div>
+						<button class="btn btn-default" type="submit" name="update" value="Update Cart">
+                                  <i class="fas fa-retweet"></i> Delete Product
+                                   
+                               </button>
 
 	
 <aside class="widget widget-coupon">
@@ -141,6 +145,7 @@ include("assets/function/function.php");
 									<input type="text" name="code" class="form-control" placeholder="Enter your code here !" />
 									
 									<input name="apply_coupon" type="submit" value="apply coupon"/>
+									
 								</form>
 							</div>
 						</aside>
@@ -196,23 +201,11 @@ include("assets/function/function.php");
 									</tr>
 								</table>
 							</div>
-							<button class="btn btn-default" type="submit" name="update" value="Update Cart">
-                                  <i class="fas fa-retweet"></i> Update Cart
-                                   
-                               </button>
+							
 							<a href="checkout.php" class="proceed-to-checkout">proceed to checkout</a>
 						</aside>
 					</div><!-- Widget Area /- -->
 
-
-
-
-                                                                         
-                                                  						
-
-                            
-                          
-                          
 
                     </form>
                     </div>

@@ -40,36 +40,34 @@
     <div class="panel-body">
 
         <ul class="nav nav-pills nav-stacked">
-            <li class="<?php if(isset($_GET['my_orders'])) {echo " active "; } ?>">
-                <a href="my_account.php?my_orders"><i class="fas fa-cart-plus"></i> My Order List</a>
+            <li style="background-color: #CC9900; color: white;" class="<?php if(isset($_GET['my_orders'])) {echo " active "; } ?>">
+                <a href="my_account.php?my_orders"><i class="fa fa-cart-plus"></i> My Order List</a>
             </li>
-            <li class="<?php if(isset($_GET['profile'])) {echo " active "; } ?>">
-                <a href="my_account.php?profile"><i class="fas fa-user-edit"></i> Profile</a>
-            </li>
-
-
-
-            <li class="<?php if(isset($_GET['edit_account'])) {echo " active "; } ?>">
-                <a href="my_account.php?edit_account"><i class="fas fa-user-edit"></i> Edit Account</a>
+            <li style="background-color: #CC9900; color: white;" class="<?php if(isset($_GET['profile'])) {echo " active "; } ?>">
+                <a href="my_account.php?profile"><i class="fa fa-user-edit"></i> Profile</a>
             </li>
 
-            <li class="<?php if(isset($_GET['pay_offline'])) {echo " active "; } ?>">
-                <a href="my_account.php?pay_offline"><i class="fab fa-cc-amazon-pay"></i> Pay Offline</a>
-            </li>
-            <li class="<?php if(isset($_GET['chat'])) {echo " active "; } ?>">
-                <a href="my_account.php?chat"><i class="fas fa-trash"></i> Chat</a>
+
+
+            <li style="background-color: #CC9900; color: white;" class="<?php if(isset($_GET['edit_account'])) {echo " active "; } ?>">
+                <a href="my_account.php?edit_account"><i class="fa fa-user-edit"></i> Edit Account</a>
             </li>
 
-            <li class="<?php if(isset($_GET['change_pass'])) {echo " active "; } ?>">
-                <a href="my_account.php?change_pass"><i class="fas fa-unlock-alt"></i> Change Password</a>
+            <li style="background-color: #CC9900;" class="<?php if(isset($_GET['pay_offline'])) {echo " active "; } ?>">
+                <a href="my_account.php?pay_offline"><i class="fa fa-cc-amazon-pay"></i> Pay Offline</a>
             </li>
 
-            <li class="<?php if(isset($_GET['delete_account'])) {echo " active "; } ?>">
-                <a href="my_account.php?delete_account"><i class="fas fa-trash"></i> Delete Account</a>
+
+            <li style="background-color: #CC9900;" class="<?php if(isset($_GET['change_pass'])) {echo " active "; } ?>">
+                <a href="my_account.php?change_pass"><i class="fa fa-unlock-alt"></i> Change Password</a>
             </li>
 
-            <li>
-                <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            <li style="background-color: #CC9900;" class="<?php if(isset($_GET['delete_account'])) {echo " active "; } ?>">
+                <a href="my_account.php?delete_account"><i class="fa fa-trash"></i> Delete Account</a>
+            </li>
+
+            <li style="background-color: #CC9900;">
+                <a href="../logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
             </li>
 
         </ul>

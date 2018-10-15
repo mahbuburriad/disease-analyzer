@@ -61,7 +61,7 @@ global $db;
 										</span>
 									</div>
 								</a>
-								<a class='button product_type_simple add_to_cart_button' href='#' title='Add To Cart'>Add to cart</a>
+								<a class='button product_type_simple add_to_cart_button' href='details.php?pro_id=$pro_id' title='Add To Cart'>Add to cart</a>
 								<div class='whishlist-btn'>
 									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Add to wishlist'><i class='icon_heart'></i></a>
 									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Expand'><i class='arrow_expand_alt'></i></a>
@@ -480,7 +480,7 @@ function getpcatpro(){
 										</span>
 									</div>
 								</a>
-								<a class='button product_type_simple add_to_cart_button' href='#' title='Add To Cart'>Add to cart</a>
+								<a class='button product_type_simple add_to_cart_button' href='details.php?pro_id=$pro_id' title='Add To Cart'>Add to cart</a>
 								<div class='whishlist-btn'>
 									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Add to wishlist'><i class='icon_heart'></i></a>
 									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Expand'><i class='arrow_expand_alt'></i></a>
@@ -574,7 +574,7 @@ function getcatpro(){
 										</span>
 									</div>
 								</a>
-								<a class='button product_type_simple add_to_cart_button' href='#' title='Add To Cart'>Add to cart</a>
+								<a class='button product_type_simple add_to_cart_button' href='details.php?pro_id=$pro_id' title='Add To Cart'>Add to cart</a>
 								<div class='whishlist-btn'>
 									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Add to wishlist'><i class='icon_heart'></i></a>
 									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Expand'><i class='arrow_expand_alt'></i></a>
@@ -797,7 +797,7 @@ function getProIndex(){
 										</span>
 									</div>
 								</a>
-								<a class='button product_type_simple add_to_cart_button' href='#' title='Add To Cart'>Add to cart</a>
+								<a class='button product_type_simple add_to_cart_button' href='details.php?pro_id=$pro_id' title='Add To Cart'>Add to cart</a>
 								<div class='whishlist-btn'>
 									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Add to wishlist'><i class='icon_heart'></i></a>
 									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Expand'><i class='arrow_expand_alt'></i></a>

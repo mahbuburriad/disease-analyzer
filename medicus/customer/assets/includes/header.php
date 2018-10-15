@@ -58,7 +58,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a href="index.html" class="navbar-brand"><img src="admin/assets/logos/rsz_1rsz_1logo.png" alt="Logo" />Medicus</a>
+						<a href="index.html" class="navbar-brand"><img src="../admin/assets/logos/rsz_1rsz_1logo.png" alt="Logo" />Medicus</a>
 					</div>
 					<div class="menu-icon">
 						<div class="cart">							

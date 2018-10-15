@@ -19,7 +19,7 @@
 
     <div class="text-center">
 
-        <button type="submit" name="submit" class="btn btn-primary">
+        <button type="submit" name="submit" class="btn btn-warning">
            <i class="fas fa-key"></i> Change Password
             
         </button>

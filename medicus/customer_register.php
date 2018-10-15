@@ -28,9 +28,8 @@ include("assets/function/function.php");
 			<div class="padding-100"></div>
 			<!-- Container -->
 			<div class="container">
-				<div class="col-md-6 col-sm-8 col-xs-12">
-				
-			<form method="post" action="customer_register.php" enctype="multipart/form-data">
+								<div class="col-md-8 col-sm-6 col-xs-6 right-bg">
+					<form method="post" action="customer_login.php" class="login-form login-form-1 login-form-2" enctype="multipart/form-data">
 
                         <div class="form-group">
                             <div class="col-md-6">
@@ -263,9 +262,12 @@ mail($c_email,$subject,$message,$headers);
         }
 
         ?>
-                </div>
+				</div>
             </div>
         </div>
+          
+           
+     
     </main>
     
    <?php include "assets/includes/footer.php"?>

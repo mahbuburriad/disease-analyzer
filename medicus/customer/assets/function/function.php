@@ -78,6 +78,104 @@ global $db;
 
 }
 
+function getMobileProduct(){
+
+/// getProducts function Code Starts ///
+
+global $db;
+    
+    if(!isset($_GET['p_cat'])){
+                        if(!isset($_GET['cat'])){
+                            
+                            $per_page=6;
+                            if(isset($_GET['page'])){
+                                $page = $_GET['page'];
+                            }
+                            else
+                            {
+                                $page = 1;
+                                
+                            }
+                            
+                            $start_from = ($page-1) * $per_page;
+                            $get_products = "SELECT * FROM products order by 1 DESC LIMIT $start_from,$per_page";
+                            
+                            $run_products = mysqli_query($db, $get_products);
+                            
+                            while($row_products = mysqli_fetch_array($run_products)){
+                                $pro_id = $row_products['product_id'];
+                                $pro_title = $row_products['product_title'];
+                                $pro_price = $row_products['product_price'];
+                                $pro_img1 = $row_products['product_img1'];
+                                
+                                
+                                echo"
+    <li>
+          <div class='shop_thumb'><a href='shop-item.html'><img src='../admin/product_images/$pro_img1' alt='' title='' /></a></div>
+          <div class='shop_item_details'>
+          <h4><a href='shop-item.html'>$pro_title</a></h4>
+          <div class='shop_item_price'>$pro_price</div>
+          <a href='cart.html' id='addtocart'>ADD TO CART</a>
+          <a href='#' data-popup='.popup-social' class='open-popup shopfav'><img src='images/icons/black/love.png' alt='' title='' /></a>
+          </div>
+          </li> 
+ 
+                                ";
+                            }
+                            
+                        }
+                    }
+    
+    
+
+}
+function getRP(){
+
+/// getProducts function Code Starts ///
+
+global $db;
+    
+    if(!isset($_GET['p_cat'])){
+                        if(!isset($_GET['cat'])){
+                            
+                            $per_page=6;
+                            if(isset($_GET['page'])){
+                                $page = $_GET['page'];
+                            }
+                            else
+                            {
+                                $page = 1;
+                                
+                            }
+                            
+                            $start_from = ($page-1) * $per_page;
+                            $get_products = "SELECT * FROM products order by 1 DESC LIMIT 0,3";
+                            
+                            $run_products = mysqli_query($db, $get_products);
+                            
+                            while($row_products = mysqli_fetch_array($run_products)){
+                                $pro_id = $row_products['product_id'];
+                                $pro_title = $row_products['product_title'];
+                                $pro_price = $row_products['product_price'];
+                                $pro_img1 = $row_products['product_img1'];
+                                
+                                
+                                echo"
+    <div class='seller-box'>
+								<div class='product-img'><a href='details.php?pro_id=$pro_id' title='$pro_title'><img style='width: 77px; height: 98px;' src='admin/product_images/$pro_img1' alt='$pro_title' /></a></div>
+								<h4><a href='details.php?pro_id=$pro_id'>$pro_title</a> <span>$pro_price</span></h4>
+							</div>
+ 
+                                ";
+                            }
+                            
+                        }
+                    }
+    
+    
+
+}
+
 
 /// getPaginator Function Starts ///
 
@@ -180,6 +278,116 @@ echo "<li class='next'><a title='' href='pharmacy.php?page=$total_pages";
 if(!empty($aPath)){ echo "&".$aPath; }
 
 echo "' >".'<i class="fa fa-angle-right"></i>'."</a></li>";
+
+/// getPaginator Function Code Ends ///
+
+}
+
+/// getPaginator Function Ends ///
+
+
+/// getPaginator Function Starts ///
+
+function getMobilePaginator(){
+
+/// getPaginator Function Code Starts ///
+
+$per_page = 6;
+
+global $db;
+
+$aWhere = array();
+
+$aPath = '';
+
+/// Manufacturers Code Starts ///
+
+if(isset($_REQUEST['man'])&&is_array($_REQUEST['man'])){
+
+foreach($_REQUEST['man'] as $sKey=>$sVal){
+
+if((int)$sVal!=0){
+
+$aWhere[] = 'manufacturer_id='.(int)$sVal;
+
+$aPath .= 'man[]='.(int)$sVal.'&';
+
+}
+
+}
+
+}
+
+/// Manufacturers Code Ends ///
+
+/// Products Categories Code Starts ///
+
+if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
+
+foreach($_REQUEST['p_cat'] as $sKey=>$sVal){
+
+if((int)$sVal!=0){
+
+$aWhere[] = 'p_cat_id='.(int)$sVal;
+
+$aPath .= 'p_cat[]='.(int)$sVal.'&';
+
+}
+
+}
+
+}
+
+/// Products Categories Code Ends ///
+
+/// Categories Code Starts ///
+
+if(isset($_REQUEST['cat'])&&is_array($_REQUEST['cat'])){
+
+foreach($_REQUEST['cat'] as $sKey=>$sVal){
+
+if((int)$sVal!=0){
+
+$aWhere[] = 'cat_id='.(int)$sVal;
+
+$aPath .= 'cat[]='.(int)$sVal.'&';
+
+}
+
+}
+
+}
+
+/// Categories Code Ends ///
+
+$sWhere = (count($aWhere)>0?' WHERE '.implode(' or ',$aWhere):'');
+
+$query = "select * from products ".$sWhere;
+
+$result = mysqli_query($db,$query);
+
+$total_records = mysqli_num_rows($result);
+
+$total_pages = ceil($total_records / $per_page);
+
+echo "<a class='prev-page' title='First Page' href=shop.php?page=1";
+
+if(!empty($aPath)){ echo "&".$aPath; }
+
+echo "' >".'<i class="fa fa-angle-left"></i>'."</a>";
+
+for ($i=1; $i<=$total_pages; $i++){
+
+echo "<a href='shop.php?page=".$i.(!empty($aPath)?'&'.$aPath:'')."' >".$i."</a>";
+
+};
+
+echo "<a title='' href='shop.php?page=$total_pages";
+
+if(!empty($aPath)){ echo "&".$aPath; }
+
+echo "' >".'<i class="fa fa-angle-right"></i>'."</a>";
+
 
 /// getPaginator Function Code Ends ///
 
@@ -299,7 +507,7 @@ function getcatpro(){
         $row_cat = mysqli_fetch_array($run_cat);
         
         $cat_title = $row_cat['cat_title'];
-        $cat_desc = $row_cat['cat_desc'];
+        #$cat_desc = $row_cat['cat_desc'];
         
        
         
@@ -513,6 +721,95 @@ function total_price(){
     echo $total;
     
 }
+
+function getCategory(){
+    
+    global $db;
+    
+    $get_cats = "SELECT * FROM categories";
+    
+    $run_cats = mysqli_query($db, $get_cats);
+    while($row_cats = mysqli_fetch_array($run_cats))
+    {
+        $cat_id = $row_cats['cat_id'];
+        $cat_title = $row_cats['cat_title'];
+        
+        echo"
+        
+        <li><a href='pharmacy.php?cat=$cat_id'>$cat_title</a></li>
+        
+        ";
+    }
+    
+    
+    
+}
+
+
+function getProductCategory(){
+    
+    global $db;
+    
+    $get_p_cats = "SELECT * FROM product_categories";
+    
+    $run_p_cats = mysqli_query($db, $get_p_cats);
+    while($row_p_cats = mysqli_fetch_array($run_p_cats))
+    {
+        $p_cat_id = $row_p_cats['p_cat_id'];
+        $p_cat_title = $row_p_cats['p_cat_title'];
+        
+        echo"
+        
+        <li><a href='pharmacy.php?p_cat=$p_cat_id'>$p_cat_title</a></li>
+        
+        ";
+    }
+    
+    
+    
+}
+
+function getProIndex(){
+    global $db;
+    
+    $get_products = "SELECT * FROM products order by 1 DESC LIMIT 0,8";
+    
+    $run_products = mysqli_query($db, $get_products);
+    while($row_products = mysqli_fetch_array($run_products))
+    {
+        $pro_id = $row_products['product_id'];
+        $pro_title = $row_products['product_title'];
+        $pro_price = $row_products['product_price'];
+        $pro_img1 = $row_products['product_img1'];
+        
+        echo"
+                                
+                                    <li class='product'>							
+								<a href='details.php?pro_id=$pro_id' title='$pro_title'>
+									<div class='product-img-box'>
+										<img style='height: 200px; width:150px;' alt='$pro_title' src='admin/product_images/$pro_img1'/>
+									</div>
+									<div class='detail-box'>
+                                    
+										<h3>$pro_title</h3>
+										<span class='price'>
+											<span class='amount'>৳ $pro_price</span>
+										</span>
+									</div>
+								</a>
+								<a class='button product_type_simple add_to_cart_button' href='#' title='Add To Cart'>Add to cart</a>
+								<div class='whishlist-btn'>
+									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Add to wishlist'><i class='icon_heart'></i></a>
+									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Expand'><i class='arrow_expand_alt'></i></a>
+								</div>
+							</li>
+ 
+                                ";
+        
+    }
+}
+
+
 
 
 

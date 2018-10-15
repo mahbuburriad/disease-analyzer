@@ -21,7 +21,7 @@
                 <th>Due Amount</th>
                 <th>Invoice No</th>
                 <th>Quantity</th>
-                <th>Size</th>
+
                 <th>Order Date</th>
                 <th>Paid/Unpaid</th>
                 <th>Status</th>
@@ -38,7 +38,7 @@
             $row_customer = mysqli_fetch_array($run_customer);
             
             $customer_id = $row_customer['customer_id'];
-            $get_order = "SELECT * FROM customer_orders WHERE customer_id = '$customer_id'";
+            $get_order = "SELECT * FROM customer_orders WHERE customer_id = '$customer_id' ORDER BY order_id DESC";
             $run_orders = mysqli_query($con, $get_order);
             
             $i=0;
@@ -78,16 +78,14 @@
                     <td>
                         <?php echo $qty; ?>
                     </td>
-                    <td>
-                        <?php echo $size; ?>
-                    </td>
+
                     <td>
                         <?php echo $order_date; ?>
                     </td>
                     <td>
                         <?php echo $order_status; ?>
                     </td>
-                    <td><a href="confirm.php?order_id=<?php echo $order_id; ?>" target="blank" class="btn btn-primary btn-sm"> Confirm If Paid</a></td>
+                    <td><a href="confirm.php?order_id=<?php echo $order_id; ?>" target="blank" class="btn btn-warning btn-sm"> Confirm If Paid</a></td>
 
                 </tr>
                 <?php } ?>

@@ -71,7 +71,7 @@ $customer_image = $row_customer['customer_image'];
 
 
         <div class="form-group">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <label for="">Address</label>
                 <input type="text" class="form-control" name="c_address" value="<?php echo $customer_address; ?>" required placeholder="Enter Your Address">
 
@@ -101,7 +101,7 @@ $customer_image = $row_customer['customer_image'];
         <div class="text-center">
 
 
-            <button name="update" class="btn btn-primary">
+            <button name="update" class="btn btn-warning">
 
 <i class="fa fa-user-md" ></i> Update Now
 

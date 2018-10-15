@@ -69,7 +69,7 @@
                 <input type="hidden" name="cmd" value="_cart">
                 <input type="hidden" name="upload" value="1">
                 <input type="hidden" name="currency_code" value="USD">
-                <input type="hidden" name="return" value="http://localhost/shopcart/paypal_order.php?c_id=<?php echo $customer_id;?>">
+                <input type="hidden" name="return" value="http://localhost/virtualdoctor/medicus/paypal_order.php?c_id=<?php echo $customer_id;?>">
                 <input type="hidden" name="cance_return" value="http://localhost/shopcart/index.php">
 
                 <?php 
@@ -119,10 +119,10 @@ $i++;
             
             if(!empty($customer_confirm_code)){
                 ?>
-                    <input type="image" name="submit" width="500" height="270" src="images/paypal.png" disabled>
+                    <input type="image" name="submit" width="500" height="270" src="images/paypal.jpg" disabled>
 
                     <?php } else{  ?>
-                    <input type="image" name="submit" width="500" height="270" src="images/paypal.png">
+                    <input type="image" name="submit" width="500" height="270" src="images/paypal.jpg">
                     <?php  }?>
 
 

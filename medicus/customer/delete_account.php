@@ -8,7 +8,7 @@
 
 
         <input class="btn btn-danger" type="submit" name="yes" value=" Yes, I want to delete">
-        <input class="btn btn-primary" type="submit" name="no" value=" No, I dont want to delete, Thanks">
+        <input class="btn btn-warning" type="submit" name="no" value=" No, I dont want to delete, Thanks">
 
     </form>
 

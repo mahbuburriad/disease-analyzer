@@ -1,8 +1,6 @@
 <?php
 session_start();
 
- 
-
 
     if(!isset($_SESSION['customer_email']))
     { echo "
@@ -16,297 +14,44 @@ session_start();
 
     </script>"; }
 else{
-    include("../includes/connection.php");
-    include("../functions/functions.php");
+    include("assets/includes/connection.php");
+include("assets/function/function.php");
 
     if(isset($_GET['order_id']))
     { $order_id = $_GET['order_id']; } ?>
 
 
 
-
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <link rel="shortcut icon" href="images/logo-small.PNG">
-
-        <title>ShopCart ! E-Commerce Store</title>
-
-
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400, 500, 700, 300, 100" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/bootstrap.min.css">
-        <link rel="stylesheet" href="../font-awesome/css/fontawesome-all.min.css">
-        <link rel="stylesheet" type="text/css" href="../styles/style.css">
-        <script src="../js/bootstrap.min.js"></script>
-        <script src="../js/jquery.min.js"></script>
-
-
-    </head>
-
-    <body>
-
-        <div id="top">
-            <!--top starts-->
-
-            <div class="container">
-                <!--container starts-->
-
-                <div class="row">
-                    <!--row starts-->
-
-                    <div class="col-md-6 login-details">
-                        <!-- col-md-6 login-details starts-->
-                        <a href="#" class="btn btn-primary btn-sm">
-
-                            <?php
-    
-    if(!isset($_SESSION['customer_email'])){
-        echo "Welcome:Guest";
-    }
-else
-{
-    echo "Hello! ".$_SESSION['customer_email']."";
-}
-                            ?>
-                        </a>
-
-                        <a href="#">Shopping Cart Total Price: <?php total_price();?>/=, Total Items <?php items(); ?></a>
-
-                    </div>
-                    <!-- col-md-6 login-details ends-->
-
-                    <div class="col-md-6">
-                        <!-- col-md-6  starts-->
-
-                        <ul class="menu">
-                            <!--menu starts-->
-
-                            <li><a href="../customer_register.php">Registers</a></li>
-                            <li>
-                                <?php
-                            if(!isset($_SESSION['customer_email'])){
-                                echo "<a href='checkout.php'>My Account</a>";
-                            }
-                            else
-                            {
-                                echo "<a href='customer/my_account.php?my_orders'>CheckOut</a>";
-                            }
-                            ?></li>
-                            <li><a href="../cart.php">Go to Cart</a></li>
-                            <li>
-                                <?php
-                            if(!isset($_SESSION['customer_email'])){ echo "<a href='../checkout.php'>Sign in</a>"; } else{ echo "<a href='../logout.php'>Sign out</a>"; }
-                            
-                            ?>
-
-
-                            </li>
-
-                        </ul>
-                        <!--menu ends-->
-                    </div>
-                    <!-- col-md-6 ends-->
-                </div>
-                <!-- row ends-->
-
-            </div>
-            <!--container ends-->
-
-        </div>
-        <!--top ends-->
-
-        <div class="navbar navbar-default" id="navbar">
-
-            <div class="container">
-
-
-                <div class="navbar-header">
-
-
-                    <a class="navbar-brand home" href="../index.php">
-                   
-
-                    <img src="../images/logo-large.PNG"  class="hidden-xs">
-                    <img src="../images/logo-small.png"  class="visible-xs">
-
-                </a>
-
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
-
-                <span class="sr-only" >Toggle Navigation </span>
-
-                <i class="fa fa-align-justify"></i>
-
-            </button>
-
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#search">
-
-                <span class="sr-only" >Toggle Search</span>
-
-                <i class="fa fa-search" ></i>
-
-            </button>
-
-
-                </div>
-
-
-                <div class="navbar-collapse collapse" id="navigation">
-
-
-                    <div class="padding-nav">
-
-
-                        <ul class="nav navbar-nav navbar-left">
-
-
-                            <li>
-                                <a href="../index.php"> Home </a>
-                            </li>
-
-                            <li>
-                                <a href="../shop.php"> Shop </a>
-                            </li>
-
-                            <li class="active">
-                                <a href="my_account.php"> My Account </a>
-                            </li>
-                            <li>
-                                <a href="../cart.php"> Shopping Cart </a>
-                            </li>
-                            <li>
-                                <a href="../contact.php"> Contact Us</a>
-                            </li>
-                            <li>
-                                <a href="../app/shopcart.apk">Site APP</a>
-                            </li>
-
-                        </ul>
-
-
-
-
-                    </div>
-
-                    <a class="btn btn-primary navbar-btn right" href="../cart.php">
-                   
-
-                    <i class="fa fa-shopping-cart"></i>
-                    <span><?php items(); ?> items in Cart</span>
-                </a>
-
-                    <div class="navbar-collapse collapse right">
-
-
-                        <button class="btn navbar-btn btn-primary" type="button" data-toggle="collapse" data-target="#search">
-
-<span class="sr-only">Toggle Search</span>
-
-<i class="fa fa-search"></i>
-
-</button>
-
-                    </div>
-
-
-                    <div class="collapse clearfix" id="search">
-
-
-                        <form class="navbar-form" method="get" action="results.php">
-
-
-                            <div class="input-group">
-
-
-                                <input class="form-control" type="text" placeholder="Search" name="user_query" required>
-
-                                <span class="input-group-btn">
-
-<button type="submit" value="Search" name="search" class="btn btn-primary">
-
-<i class="fa fa-search"></i>
-
-</button>
-        </span>
-
-                            </div>
-
-                        </form>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-        </div>
-
-
-
-        <div id="content">
-
-            <div class="container">
-
-                <div class="col-md-12">
-
-                    <ul class="breadcrumb">
-
-                        <li><a href="index.php">Home</a></li>
-                        <li>My Account</li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="col-md-3">
-
-                    <?php
-                
-                include("includes/sidebar.php");
-                
-                ?>
-
-
-                </div>
-
-
-
-
-
-
-
-                <div class="col-md-9">
-                    <div class="box">
-                        <?php/*
-            $customer_session= $_SESSION['customer_email'];
-            $get_customer = "SELECT * FROM customers WHERE customer_email='$customer_session'";
-            $run_customer = mysqli_query($con, $get_customer);
-            $row_customer = mysqli_fetch_array($run_customer);
-            $customer_id = $row_customer['customer_id'];
-    
-            $get_o_order = "SELECT * FROM customer_orders WHERE customer_id = '$customer_id' AND order_id='$order_id'";
-            $run_o_orders = mysqli_query($con, $get_o_order);
-            $row_o_orders = mysqli_fetch_array($run_o_orders);
-    $order_ids= $row_o_orders['order_id'];
-    
-    
-    
-    $get_p_order = "SELECT * FROM pending_orders WHERE customer_id = '$customer_id' AND order_id='$order_ids'";
-            $run_p_order = mysqli_query($con, $get_p_order);
-            $row_p_order = mysqli_fetch_array($run_p_order);
-            $invoice_no = $row_p_order['invoice_no'];
-    
-            $get_order = "SELECT * FROM customer_orders WHERE invoice_no = '$invoice_no'";
-            $run_orders = mysqli_query($con, $get_order);
-            while($row_orders = mysqli_fetch_array($run_orders)){
-                $due_amount = $row_orders['due_amount'];*/
-            ?>
-
-
-
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Customer Login</title>
+
+	<?php include "assets/includes/header.php" ?>
+
+
+
+     
+                  <div class="content-area">
+		<!-- Login Page 2 -->
+		<div class="login-page-1 login-page-2 container-fluid no-padding">
+			<div class="padding-100"></div>
+			<div class="left-background"></div>
+			<!-- Container -->
+			<div class="container">
+				<div class="col-md-12 col-sm-12 col-xs-12">
 
                             <h1 align="center"> Please Confirm Your Payment </h1>
 
@@ -356,7 +101,7 @@ else
 
 
                                 <div class="text-center">
-                                    <button type="submit" name="confirm_payment" class="btn btn-primary btn-lg">
+                                    <button type="submit" name="confirm_payment" class="btn btn-warning btn-lg">
                                <i class="fas fa-money-bill-alt"></i> Confirm Payment
                                
                            </button>
@@ -412,19 +157,16 @@ else
 
 
             </div>
+    
         </div>
+ 
 
 
         <?php
     
-    include("../includes/footer.php");
+    include("assets/includes/footer.php");
     
     ?>
-
-
-
-            <script src="../js/bootstrap.min.js"></script>
-            <script src="../js/jquery.min.js"></script>
 
     </body>
 
