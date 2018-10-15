@@ -4,7 +4,7 @@
     
 	<div class="navbarpages">
 		<div class="navbar_left">
-			<div class="logo_text"><a href="index.html"><span>up</span>mobile</a></div>
+			<div class="logo_text"><a href="index.php"><span>Medi</span>cus</a></div>
 		</div>			
 		<a href="#" data-panel="left" class="open-panel">
 			<div class="navbar_right"><img src="images/icons/green/menu.png" alt="" title="" /></div>
@@ -14,38 +14,14 @@
      <div id="pages_maincontent">
       
          <h2 class="page_title">OUR TEAM</h2>
-      <div class="page_single layout_fullwidth_padding">
   
-		  <div class="swiper-container-team swiper-init" data-effect="slide" data-space-between="10" data-pagination=".swiper-pagination-team" data-slides-per-view="2">
-			
-			<div class="swiper-wrapper">
-			  <div class="swiper-slide team-block">
-			  <a href="about.html" data-view=".view-main"><img src="images/avatar.jpg" alt="" title="" /></a><strong>John Doe</strong><span>CEO</span>
-			  </div>
-			  <div class="swiper-slide team-block">
-			  <a href="about.html" data-view=".view-main"><img src="images/avatar2.jpg" alt="" title="" /></a><strong>Jack Aleck</strong><span>PROGRAMMER</span>
-			  </div>
-			  <div class="swiper-slide team-block">
-			  <a href="about.html" data-view=".view-main"><img src="images/avatar3.jpg" alt="" title="" /></a><strong>Alexa Patterson</strong><span>MANAGER</span>
-			  </div>
-			  <div class="swiper-slide team-block">
-			  <a href="about.html" data-view=".view-main"><img src="images/avatar4.jpg" alt="" title="" /></a><strong>Michael Sanderson</strong><span>ACCOUNTANT</span>
-			  </div>
-			  <div class="swiper-slide team-block">
-			  <a href="about.html" data-view=".view-main"><img src="images/avatar.jpg" alt="" title="" /></a><strong>John Doe</strong><span>DESIGNER</span>
-			  </div>
-			</div>
-			<div class="swiper-pagination-team"></div>
-		  </div>
-   </div>
-	 <h2 class="page_title">TEAM BIGGER VIEW</h2>	  
    <div class="page_single layout_fullwidth_padding">  
 		  <div class="swiper-container-team swiper-init" data-effect="slide" data-space-between="0" data-pagination=".swiper-pagination-teambigger" data-slides-per-view="1">
 			
 			<div class="swiper-wrapper">
 			  <div class="swiper-slide team-block">
 			  <a href="about.html" data-view=".view-main"><img src="images/avatar.jpg" alt="" title="" /></a>
-			  <strong>John Doe</strong>
+			  <strong>Mahbubur Riad</strong>
 			  <ul class="team_socials">
 			  <li><a href="https://twitter.com/" class="external"><img src="images/icons/black/twitter.png" alt="" title="" /></a></li>
 			   <li><a href="https://facebook.com/" class="external"><img src="images/icons/black/facebook.png" alt="" title="" /></a></li>
@@ -55,23 +31,13 @@
 			  </div>
 			  <div class="swiper-slide team-block">
 			  <a href="about.html" data-view=".view-main"><img src="images/avatar2.jpg" alt="" title="" /></a>
-			  <strong>Jack Aleck</strong>
+			  <strong>Mysha Rahman</strong>
 			  <ul class="team_socials">
 			  <li><a href="https://twitter.com/" class="external"><img src="images/icons/black/twitter.png" alt="" title="" /></a></li>
 			   <li><a href="https://plus.google.com" class="external"><img src="images/icons/black/gplus.png" alt="" title="" /></a></li>
 			    <li><a href="https://linkedin.com/" class="external"><img src="images/icons/black/linkedin.png" alt="" title="" /></a></li>
 			  </ul>
-			  <span>PROGRAMMER</span>
-			  </div>
-			  <div class="swiper-slide team-block">
-			  <a href="about.html" data-view=".view-main"><img src="images/avatar3.jpg" alt="" title="" /></a>
-			  <strong>Alexa Patterson</strong>
-			  <ul class="team_socials">
-			  <li><a href="https://twitter.com/" class="external"><img src="images/icons/black/twitter.png" alt="" title="" /></a></li>
-			   <li><a href="https://facebook.com/" class="external"><img src="images/icons/black/facebook.png" alt="" title="" /></a></li>
-			    <li><a href="https://dribbble.com/" class="external"><img src="images/icons/black/dribbble.png" alt="" title="" /></a></li>
-			  </ul>
-			  <span>MANAGER</span>
+			  <span>Managing Director</span>
 			  </div>
 			</div>
 			<div class="swiper-pagination-teambigger"></div>

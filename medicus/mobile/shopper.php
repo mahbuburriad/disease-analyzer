@@ -1,29 +1,9 @@
+
 <?php
 session_start();
 include("../assets/includes/connection.php");
 include("../assets/function/function.php");
-?>
-<?php
-    
-    if(isset($_GET['pro_id'])){
-        $product_id = $_GET['pro_id'];
-        $get_product = "select * from products where product_id='$product_id'";
-        $run_product = mysqli_query($con,$get_product);
-        $row_product = mysqli_fetch_array($run_product);
-        
-        $p_cat_id = $row_product['p_cat_id'];
-        $pro_title = $row_product['product_title'];
-        $pro_price = $row_product['product_price'];
-        $pro_desc = $row_product['product_desc'];
-        $pro_img1 = $row_product['product_img1'];
-        $pro_desc = $row_product['product_desc'];
-        $pro_features = $row_product['product_features'];
-        $get_p_cat = "select * from product_categories where p_cat_id='$p_cat_id'";
-        $run_p_cat = mysqli_query($con,$get_p_cat);
-        $row_p_cat = mysqli_fetch_array($run_p_cat);
-        $p_cat_title = $row_p_cat['p_cat_title'];    
-    }
-    
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -135,63 +115,81 @@ include("../assets/function/function.php");
     <div class="views">
 
       <div class="view view-main">
-    <div class="statusbar-overlay"></div>
-
-    <div class="panel-overlay"></div>
- 
-
  <div class="pages">
-  <div data-page="shopitem" class="page no-toolbar no-navbar">
+  <div data-page="shop" class="page no-toolbar no-navbar">
     <div class="page-content">
     
 	<div class="navbarpages">
 		<div class="navbar_left">
-			<div class="logo_text"><a href="index.html"><span>Medi</span>cus</a></div>
+			<div class="logo_text"><a href="index.php"><span>Medi</span>cus</a></div>
 		</div>			
 		<a href="#" data-panel="left" class="open-panel">
 			<div class="navbar_right"><img src="images/icons/green/menu.png" alt="" title="" /></div>
 		</a>					
 	</div>
      
-     <div id="pages_maincontent">  
-    
-     <h2 class="page_title">SHOP PRODUCT</h2>
-     <form action="shopper.php" method="post">
-         <button class="btn btn-success"><img src="images/icons/black/back.png" alt="" title="" /></button>
-     </form>
+     <div id="pages_maincontent">
+      
+     <h2 class="page_title">SHOP</h2>
+      
 	<div class="page_single layout_fullwidth_padding">
       
-      <div class="shop_item">
+      <ul class="shop_items">
+      <?php
+       if(!isset($_GET['p_cat'])){
+                        if(!isset($_GET['cat'])){
+                            
+                            $per_page=6;
+                            if(isset($_GET['page'])){
+                                $page = $_GET['page'];
+                            }
+                            else
+                            {
+                                $page = 1;
+                                
+                            }
+                            
+                            $start_from = ($page-1) * $per_page;
+                            $get_products = "SELECT * FROM products order by 1 DESC LIMIT $start_from,$per_page";
+                            
+                            $run_products = mysqli_query($con, $get_products);
+                            
+                            while($row_products = mysqli_fetch_array($run_products)){
+                                $pro_id = $row_products['product_id'];
+                                $pro_title = $row_products['product_title'];
+                                $pro_price = $row_products['product_price'];
+                                $pro_img1 = $row_products['product_img1'];
+                                
+                                ?>
+      
+          <li>
+          <?php
 
-          <div class="shop_thumb">
-          <h1><?php echo $pro_title;?></h1>
-          <a rel="gallery-3" href=".#" title="Photo title" class="swipebox"><img src="../admin/product_images/<?php echo $pro_img1;?>" alt="" title="" /></a>
-          <div class="shop_item_price"><?php echo $pro_price;?></div>
-          <a href="#" data-popup=".popup-social" class="open-popup shopfav"><img src="images/icons/white/love.png" alt="" title="" /></a>
-          <a href="#" data-popup=".popup-social" class="open-popup shopfriend"><img src="images/icons/white/users.png" alt="" title="" /></a>
-          </div>
+                                add_cart();
+
+                                ?>
+          <div class="shop_thumb"><a href="details.php?pro_id=<?php echo $pro_id;?>"><img src="../admin/product_images/<?php echo $pro_img1;?>" alt="" title="" /></a></div>
           <div class="shop_item_details">
-          <h3>PRODUCT DESCRIPTION</h3>
-          <p><?php echo $pro_desc;?></p>
-          <p><strong>CATEGORY:</strong> <a href="shop.html">cars</a></p>
-          <h3>SELECT QUANTITY</h3>
-            <div class="item_qnty_shopitem">
-               
-                <form id="myform" method="POST" action="#">
-                    <input type="button" value="-" class="qntyminusshop" field="quantity" />
-                    <input type="text" name="quantity" value="1" class="qntyshop" />
-                    <input type="button" value="+" class="qntyplusshop" field="quantity" />
+          <h4><a href="details.php?pro_id=<?php echo $pro_id;?>"><?php echo $pro_title;?></a></h4>
+          <div class="shop_item_price"><?php echo $pro_price;?></div>
+          <div class="item_qnty_shop">
+                <form id="myform" method="post" action="details.php?pro_id=<?php echo $pro_id;?>">
+                    <button class="btn btn-success" id="addtocart">VIEW PORDUCT</button>
                 </form>
             </div>
-          
-       
-          <a href="cart.html" class="button_full btyellow">ADD TO CART</a>
-          
+          <a href="#" data-popup=".popup-social" class="open-popup shopfav"><img src="images/icons/black/love.png" alt="" title="" /></a>
           </div>
-
+          </li> 
           
-      </div>
+          <?php }}} ?>
+          
+         
+          
+      </ul>
       
+          <div class="shop_pagination">
+          <?php getMobilePaginator(); ?>
+          </div>
       
       
       </div>
@@ -204,8 +202,6 @@ include("../assets/function/function.php");
 </div>
 
 
-
-    
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js" ></script>
 <script type="text/javascript" src="js/framework7.js"></script>
@@ -219,5 +215,8 @@ include("../assets/function/function.php");
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        </div>
+</div>
+ 
   </body>
 </html>

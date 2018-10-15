@@ -63,15 +63,8 @@ include("../assets/function/function.php");
           <h4><a href="details.php?pro_id=<?php echo $pro_id;?>"><?php echo $pro_title;?></a></h4>
           <div class="shop_item_price"><?php echo $pro_price;?></div>
           <div class="item_qnty_shop">
-                <form id="myform" method="post" action="cart.php?pro_id=<?php echo $pro_id;?>">
-                    <input type="button" value="-" class="qntyminusshop" field="quantity4" />
-                    <input type="text" name="quantity4" value="1" class="qntyshop" />
-                    <input type="button" value="+" class="qntyplusshop" field="quantity4" />
-                    <button class="btn button product_type_simple add_to_cart_button" id="addtocart" type="submit" name="add_cart">
-                                     <i class="fa fa-shopping-cart"></i>
-                                     Add To Cart
-
-                                 </button>
+                <form id="myform" method="post" action="details.php?pro_id=<?php echo $pro_id;?>">
+                    <button class="btn btn-success" id="addtocart">VIEW PORDUCT</button>
                 </form>
             </div>
           <a href="#" data-popup=".popup-social" class="open-popup shopfav"><img src="images/icons/black/love.png" alt="" title="" /></a>

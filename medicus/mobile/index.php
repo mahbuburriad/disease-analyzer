@@ -40,7 +40,7 @@ include("../assets/function/function.php");
 					<li><a href="features.php" class="close-panel"><img src="images/icons/white/features.png" alt="" title="" /><span>Features</span></a></li>
 					<li><a href="#" data-popup=".popup-login" class="open-popup close-panel"><img src="images/icons/white/lock.png" alt="" title="" /><span>Login</span></a></li>
 					<li><a href="team.php" class="close-panel"><img src="images/icons/white/users.png" alt="" title="" /><span>Team</span></a></li>
-					<li><a href="blog.php" class="close-panel"><img src="images/icons/white/blog.png" alt="" title="" /><span>Blog</span></a></li>		
+<!--					<li><a href="blog.php" class="close-panel"><img src="images/icons/white/blog.png" alt="" title="" /><span>Blog</span></a></li>		
 					<li><a href="photos.php" class="close-panel"><img src="images/icons/white/photos.png" alt="" title="" /><span>Photos</span></a></li>
 					<li><a href="videos.php" class="close-panel"><img src="images/icons/white/video.png" alt="" title="" /><span>Videos</span></a></li>
 					<li><a href="music.php" class="close-panel"><img src="images/icons/white/music.png" alt="" title="" /><span>Music</span></a></li>
@@ -49,7 +49,7 @@ include("../assets/function/function.php");
 					<li><a href="tables.php" class="close-panel"><img src="images/icons/white/tables.png" alt="" title="" /><span>Tables</span></a></li>
 					<li><a href="toggle.php" class="close-panel"><img src="images/icons/white/toggle.png" alt="" title="" /><span>Toggle</span></a></li>
 					<li><a href="tabs.php" class="close-panel"><img src="images/icons/white/tabs.png" alt="" title="" /><span>Tabs</span></a></li>
-					<li><a href="form.php" class="close-panel"><img src="images/icons/white/form.png" alt="" title="" /><span>Forms</span></a></li>
+					<li><a href="form.php" class="close-panel"><img src="images/icons/white/form.png" alt="" title="" /><span>Forms</span></a></li>-->
 					<li><a href="contact.php" class="close-panel"><img src="images/icons/white/contact.png" alt="" title="" /><span>Contact</span></a></li>
 				</ul>
 			</nav>
@@ -156,22 +156,22 @@ include("../assets/function/function.php");
 			
 			<nav class="main-nav">
 			<ul>
-				<li><a href="index.html"><img src="images/icons/white/home.png" alt="" title="" /><span>HOME</span></a></li>
-				<li><a href="about.html"><img src="images/icons/white/user.png" alt="" title="" /><span>ABOUT</span></a></li>
-				<li><a href="features.html"><img src="images/icons/white/settings.png" alt="" title="" /><span>FEATURES</span></a></li>
+				<li><a href="index.php"><img src="images/icons/white/home.png" alt="" title="" /><span>HOME</span></a></li>
+				<li><a href="about.php"><img src="images/icons/white/user.png" alt="" title="" /><span>ABOUT</span></a></li>
+				<li><a href="features.php"><img src="images/icons/white/settings.png" alt="" title="" /><span>FEATURES</span></a></li>
 				
-				<li><a href="blog.html"><img src="images/icons/white/blog.png" alt="" title="" /><span>JOURNAL</span></a></li>	
-				<li><a href="photos.html"><img src="images/icons/white/photos.png" alt="" title="" /><span>PHOTOS</span></a></li>
-				<li><a href="videos.html"><img src="images/icons/white/video.png" alt="" title="" /><span>VIDEOS</span></a></li>
+				<li><a href="blog.html"><img src="images/icons/white/blog.png" alt="" title="" /><span>FIRST AID</span></a></li>	
+				<li><a href="photos.html"><img src="images/icons/white/photos.png" alt="" title="" /><span>VIRTUAL DOCTOR</span></a></li>
+				<li><a href="videos.html"><img src="images/icons/white/video.png" alt="" title="" /><span>DOC APPOINTMENT</span></a></li>
 				
 
 				<li><a href="shop.php"><img src="images/icons/white/shop.png" alt="" title="" /><span>SHOP</span></a></li>
 				<li><a href="cart.php"><img src="images/icons/white/cart.png" alt="" title="" /><span>CART</span></a></li>
-				<li><a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/white/twitter.png" alt="" title="" /><span>SOCIAL</span></a></li>
+				<li><a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/white/twitter.png" alt="" title="" /><span>Share</span></a></li>
 				
 				<li><a href="#" data-popup=".popup-login" class="open-popup"><img src="images/icons/white/lock.png" alt="" title="" /><span>LOGIN</span></a></li>
 				<li><a href="#" data-panel="right" class="open-panel"><img src="images/icons/white/users.png" alt="" title="" /><span>MY ACCOUNT</span></a></li>
-				<li><a href="contact.html"><img src="images/icons/white/contact.png" alt="" title="" /><span>CONTACT</span></a></li>
+				<li><a href="contact.php"><img src="images/icons/white/contact.png" alt="" title="" /><span>CONTACT</span></a></li>
 			</ul>
 			</nav>	
     
