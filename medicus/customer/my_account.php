@@ -211,11 +211,7 @@ echo "<script>window.open('my_account.php?my_orders','_self')</script>";
                        
                    }
     
-    if(isset($_GET['chat'])){
-                       
-                       include("chat/chat.php");
-                       
-                   }
+
     
       if(isset($_GET['profile'])){
                        

@@ -28,10 +28,10 @@ include("assets/function/function.php");
 		<!-- Page Breadcrumb -->
 		<div class="page-breadcrumb container-fluid no-padding">
 			<div class="container">
-				<h3>shopping cart</h3>
+				<h3>Checkout Your Product</h3>
 				<ol class="breadcrumb">
 					<li><a href="#">Home</a></li>
-					<li class="active">shopping cart</li>
+					<li>Checkout</li>
 				</ol>
 			</div>
 		</div><!-- Page Breadcrumb /- -->

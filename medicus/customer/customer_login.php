@@ -1,4 +1,7 @@
-<div class="content-area">
+
+    <div style="margin-left: 300px;" class="content-area">
+
+    <h1 style="margin-bottom:10px;">Login Form - Please fill up credintial</h1>
 		<!-- Login Page 2 -->
 		<div class="login-page-1 login-page-2 container-fluid no-padding">
 			<div class="padding-100"></div>
@@ -6,6 +9,7 @@
 			<!-- Container -->
 			<div class="container">
 				<div class="col-md-4 col-sm-6 col-xs-6">
+				<center>
 					<form action="checkout.php" class="login-form login-form-1" method="post">
 
             <div class="form-group">
@@ -25,6 +29,9 @@
 
             </div>
         </form>
+        </center>
+        <center>  <button style="margin-top: 20px;" class="btn btn-primary"><a style="color: white;" href="customer_register.php">Dont Have Account? Please Register</a></button></center>
+      
         <?php
 
                 if(isset($_POST['login'])){

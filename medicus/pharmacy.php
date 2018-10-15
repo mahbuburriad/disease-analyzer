@@ -40,7 +40,27 @@ include("assets/function/function.php");
                         ";
                         
                     }
+                    else{
+                        echo"
+
+                        <h1>Shop By Category</h1>
+                        
+                        <p>Shopping with fun and Trust. Every product condition is good. we keep the value of customer's trust</p>
+
+                        ";
+                        
+                    }
                 }
+    else{
+                        echo"
+
+                        <h1>Shop By Product Category</h1>
+                        
+                        <p>Shopping with fun and Trust. Every product condition is good. we keep the value of customer's trust</p>
+
+                        ";
+                        
+                    }
                 
                 ?>
 
@@ -55,7 +75,7 @@ include("assets/function/function.php");
 <?php include "assets/sidebar/sidebar.php";?>
 					<!-- Content Area /- -->
 					<div class="content-area col-md-9 col-sm-8 col-xs-12">
-						<p class="woocommerce-result-count">show all 9 results</p>
+<!--						<p class="woocommerce-result-count">show all 9 results</p>
 						<form method="get" class="woocommerce-ordering">
 							<select class="orderby" name="orderby">
 								<option selected="selected" value="menu_order">Default sorting</option>
@@ -65,7 +85,7 @@ include("assets/function/function.php");
 								<option value="price">Sort by price: low to high</option>
 								<option value="price-desc">Sort by price: high to low</option>
 							</select>
-						</form>
+						</form>-->
 						
 						<ul class="products row">
 <?php getProducts(); ?>

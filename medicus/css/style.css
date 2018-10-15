@@ -38,10 +38,6 @@ Primary use:
 		- max-width: 639
 		- max-width: 479
 -------------------------------------------------------------------*/
-.active{
-    background-color: #CC9900 !important;
-    
-}
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #CC9900 !important;

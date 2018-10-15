@@ -101,7 +101,7 @@
                                         ?>
 								<li class="mini_cart_item">
 									<a href="#" class="cart-item-image">
-										<img width="70" height="70" alt="poster_2_up" class="attachment-shop_thumbnail" style="height:70px; width:70px;" src="admin/product_images/<?php echo $product_img1; ?>">
+										<img width="70" height="70" alt="poster_2_up" class="attachment-shop_thumbnail" style="height:70px; width:70px;" src="../admin/product_images/<?php echo $product_img1; ?>">
 									</a>
 									<div class="cart-detail">
 										<a href="#"><?php echo $product_title; ?></a>
@@ -161,8 +161,8 @@
 								
 								
 								<li class='button'>
-									<a href='logout.php' title=='Logout'>Logout</a>
-									<a href='customer/my_account.php?profile' title='Profile'>Profile</a>
+									<a href='../logout.php' title=='Logout'>Logout</a>
+									<a href='my_account.php?profile' title='Profile'>Profile</a>
 								</li>
 							</ul>
 						</div>";
@@ -171,7 +171,7 @@
                             else{
                                 echo"
                                 <div class='Login'>
-								<a href='customer/customer_login.php' id='login' title='Login'><i class='fa fa-sign-in'></i></a>
+								<a href='customer_login.php' id='login' title='Login'><i class='fa fa-sign-in'></i></a>
 							</div>";
                                 
                             }

@@ -106,7 +106,7 @@
 									<div class="cart-detail">
 										<a href="#"><?php echo $product_title; ?></a>
 										<span class="quantity"><?php echo $sub_total; ?></span>
-										<a href="#" class="remove-cart"><i class="fa fa-trash" aria-hidden="true"></i></a>
+								
 									</div>
 								</li>
 								<?php } } ?>
@@ -171,7 +171,7 @@
                             else{
                                 echo"
                                 <div class='Login'>
-								<a href='customer/customer_login.php' id='login' title='Login'><i class='fa fa-sign-in'></i></a>
+								<a href='checkout.php' id='login' title='Login'><i class='fa fa-sign-in'></i></a>
 							</div>";
                                 
                             }

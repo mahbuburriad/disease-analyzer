@@ -135,8 +135,7 @@ function getRP(){
 
 global $db;
     
-    if(!isset($_GET['p_cat'])){
-                        if(!isset($_GET['cat'])){
+
                             
                             $per_page=6;
                             if(isset($_GET['page'])){
@@ -169,9 +168,7 @@ global $db;
                                 ";
                             }
                             
-                        }
-                    }
-    
+                
     
 
 }
@@ -507,7 +504,7 @@ function getcatpro(){
         $row_cat = mysqli_fetch_array($run_cat);
         
         $cat_title = $row_cat['cat_title'];
-        #$cat_desc = $row_cat['cat_desc'];
+        $cat_desc = $row_cat['cat_desc'];
         
        
         
