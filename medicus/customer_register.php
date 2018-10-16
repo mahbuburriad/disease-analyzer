@@ -21,26 +21,32 @@ include("assets/function/function.php");
 	<title>Customer Login</title>
 
 	<?php include "assets/includes/header.php" ?>
+	
+	   
+	
 
-	<main class="site-main page-spacing">
+
 		<!-- Login Page 1 -->
 		<div class="login-page-1 container-fluid no-padding">
 			<div class="padding-100"></div>
 			<!-- Container -->
 			<div class="container">
-								<div class="col-md-8 col-sm-6 col-xs-6 right-bg">
-					<form method="post" action="customer_login.php" class="login-form login-form-1 login-form-2" enctype="multipart/form-data">
+                           <center><h1>Customer Registration</h1></center>
+                            
+								<div class="col-md-12">
+					<form method="post" action="customer_register.php" class="login-form login-form-1 login-form-2" enctype="multipart/form-data">
 
                         <div class="form-group">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <label for="">Full Name</label>
 
-                                <input type="text" class="form-control" name="c_name" required placeholder="Enter Your Name">
+                                <input type="text" class="form-control" name="c_name" required>
 
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <label for="">Email</label>
-                                <input type="email" class="form-control" name="c_email" required placeholder="Enter Your Email">
+                                <input type="email" class="form-control" name="c_email" required 
+                                                                                       >
 
                             </div>
 
@@ -59,16 +65,16 @@ $regionss= $json['region_name'];
 
 
                             <div class="form-group">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
 
                                     <label for="">Password</label>
-                                    <input type="password" id="pass" class="form-control" name="c_pass" required placeholder="Enter Password">
+                                    <input type="password" id="pass" class="form-control" name="c_pass" required >
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-12">
 
                                     <label for="">Confirm Password</label>
-                                    <input type="password" id="cpass" class="form-control" name="conf_pass" required placeholder="Enter Password Again">
+                                    <input type="password" id="cpass" class="form-control" name="conf_pass" required >
                                 </div>
 
 
@@ -77,23 +83,23 @@ $regionss= $json['region_name'];
 
 
                             <div class="form-group">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label for="">Country</label>
-                                    <input type="text" class="form-control" name="c_country" value="<?php echo $countryip;?>" required placeholder="Enter Your County">
+                                    <input type="text" class="form-control" name="c_country" value="<?php echo $countryip;?>" required >
 
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label for="">City</label>
-                                    <input type="text" class="form-control" name="c_city" value="<?php echo $cityss; ?>" required placeholder="Enter Your City">
+                                    <input type="text" class="form-control" name="c_city" value="<?php echo $cityss; ?>" required >
                                 </div>
 
                             </div>
 
                             <div class="form-group">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label for="">Enter Mobile No</label>
-                                    <input type="text" class="form-control" name="c_contact" required placeholder="Enter Mobile No">
+                                    <input type="text" class="form-control" name="c_contact" required >
                                 </div>
                                 <!--<div class="col-md-6">
                                     <label for="">Gender</label>
@@ -101,7 +107,7 @@ $regionss= $json['region_name'];
 
                                 </div>-->
 
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label for="">Gender</label>
                                     <select class="form-control" name="c_gender">
   <option>Male</option>
@@ -117,7 +123,7 @@ $regionss= $json['region_name'];
                             <div class="form-group">
                                 <div class="col-md-12">
                                     <label for="">Address</label>
-                                    <input type="text" class="form-control" name="c_address" required placeholder="Enter Your Address">
+                                    <input type="text" class="form-control" name="c_address" required >
 
                                 </div>
 
@@ -125,12 +131,12 @@ $regionss= $json['region_name'];
                             </div>
 
                             <div class="form-group">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label for="">Zip Code</label>
-                                    <input type="text" class="form-control" value="<?php echo $zip_codes; ?>" name="c_zipcode" required placeholder="Enter Your Zipcode">
+                                    <input type="text" class="form-control" value="<?php echo $zip_codes; ?>" name="c_zipcode" required >
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label for="">Image</label>
                                     <input type="file" class="form-control" name="c_image" required>
 
@@ -139,11 +145,9 @@ $regionss= $json['region_name'];
 
 
                             </div>
-                            <br>
-                            <br>
-                            <br>
+                         
 
-                            <div class="text-center">
+                            <div style="margin-top: 20px;" class="text-center">
                                 <button id="submit" type="submit" name="register" class="btn btn-primary">
                              <i class="fas fa-user-plus"></i> Sign Up
                              
@@ -266,8 +270,5 @@ mail($c_email,$subject,$message,$headers);
             </div>
         </div>
           
-           
-     
-    </main>
-    
+        
    <?php include "assets/includes/footer.php"?>

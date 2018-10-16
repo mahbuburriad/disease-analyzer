@@ -1,14 +1,11 @@
 <?php
 
-
-
 if(!isset($_SESSION['admin_email'])){
-
-echo "<script>window.open('login.php','_self')</script>";
-
+    echo "<script>window.open('login/index.php', '_self')</script>";
 }
 
-else {
+else{
+
 
 ?>
 
@@ -52,46 +49,49 @@ $admin_about = $row_admin['admin_about'];
 
 ?>
 
-
-<div class="row" ><!-- 1  row Starts -->
-
-<div class="col-lg-12" ><!-- col-lg-12 Starts -->
-
-<ol class="breadcrumb" ><!-- breadcrumb Starts -->
-
-<li class="active" >
-
-<i class="fa fa-dashboard" ></i> Dashboard / Edit Profile
-
-</li>
-
-
-
-</ol><!-- breadcrumb Ends -->
-
-</div><!-- col-lg-12 Ends -->
-
-</div><!-- 1  row Ends -->
-
-<div class="row" ><!-- 2 row Starts -->
-
-<div class="col-lg-12" ><!-- col-lg-12 Starts -->
-
-<div class="panel panel-default" ><!-- panel panel-default Starts -->
-
-<div class="panel-heading" ><!-- panel-heading Starts -->
-
-<h3 class="panel-title" >
-
-<i class="fa fa-money fa-fw" ></i> Edit Profile
-
-</h3>
-
-
-</div><!-- panel-heading Ends -->
-
-
-<div class="panel-body"><!-- panel-body Starts -->
+<!-- Page wrapper  -->
+<!-- ============================================================== -->
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-5 align-self-center">
+                <h4 class="page-title">Dashboard</h4>
+            </div>
+            <div class="col-7 align-self-center">
+                <div class="d-flex align-items-center justify-content-end">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <!-- row -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                       <center>
+                        <h4 class="card-title">General Form</h4>
+                        <h6 class="card-subtitle"> All with bootstrap element classies </h6>
 
 <form class="form-horizontal" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
 
@@ -262,7 +262,7 @@ if($run_admin){
 
 echo "<script>alert('User Has Been Updated successfully and login again')</script>";
 
-echo "<script>window.open('login.php','_self')</script>";
+echo "<script>window.open('login/index.php','_self')</script>";
 
 session_destroy();
 
@@ -273,6 +273,10 @@ session_destroy();
 
 ?>
 
-
-
-<?php }  ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php } ?>

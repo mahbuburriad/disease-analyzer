@@ -70,7 +70,7 @@
                 <input type="hidden" name="upload" value="1">
                 <input type="hidden" name="currency_code" value="USD">
                 <input type="hidden" name="return" value="http://localhost/virtualdoctor/medicus/paypal_order.php?c_id=<?php echo $customer_id;?>">
-                <input type="hidden" name="cance_return" value="http://localhost/shopcart/index.php">
+                <input type="hidden" name="cance_return" value="http://localhost/virtualdoctor/medicus/index.php">
 
                 <?php 
                 
@@ -90,6 +90,7 @@ $pro_id = $row_cart['p_id'];
 $pro_qty = $row_cart['qty'];
 
 $pro_price = $row_cart['p_price'];
+    $bd_price = $pro_price/84.44;
 
 $get_products = "select * from products where product_id='$pro_id'";
 
@@ -108,7 +109,7 @@ $i++;
 
                 <input type="hidden" name="item_number_<?php echo $i; ?>" value="<?php echo $i; ?>">
 
-                <input type="hidden" name="amount_<?php echo $i; ?>" value="<?php echo $pro_price; ?>">
+                <input type="hidden" name="amount_<?php echo $i; ?>" value="<?php echo $bd_price; ?>">
 
                 <input type="hidden" name="quantity_<?php echo $i; ?>" value="<?php echo $pro_qty; ?>">
 

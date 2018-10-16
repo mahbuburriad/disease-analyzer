@@ -16,16 +16,23 @@
 					<aside class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ftr-widget ftr-widget-tag">
 						<h4 class="ftr-widget-title">Popular Medicines Category </h4>
 						<div class="tags">
-							<a href="#">Amazing</a>
-							<a href="#">Shield</a>
-							<a href="#">Themes</a>
-							<a href="#">Clean</a>
-							<a href="#">Wordpress</a>
-							<a href="#">Creative</a>
-							<a href="#">Multipurpose</a>
-							<a href="#">Retina Ready</a>
-							<a href="#">Twitter</a>
-							<a href="#">Responsive</a>
+						<?php
+
+$get_p_cats = "select * from product_categories";
+
+$run_p_cats = mysqli_query($con,$get_p_cats);
+
+while($row_p_cats = mysqli_fetch_array($run_p_cats)){
+
+$p_cat_id = $row_p_cats['p_cat_id'];
+
+$p_cat_title = $row_p_cats['p_cat_title'];
+
+echo "<a href='pharmacy.php?p_cat=$p_cat_id'> $p_cat_title </a>";
+
+}
+
+?>
 						</div>
 					</aside>
 					<aside class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ftr-widget ftr-widget-rnt-post">
@@ -66,7 +73,7 @@
 			</div><!-- Container /- -->
 			<div class="copyright">
 				<div class="container">
-					<p>Copyrights &copy; 2016 by <span><a href="#">Shield</a></span>. All Rights Reserved </p>
+					<p>Copyrights &copy; 2018 by <span><a href="#">Medicus</a></span>. All Rights Reserved </p>
 					<a class="backto-top" id="back-to-top" href="#"><i class="fa fa-long-arrow-up"></i></a>
 				</div>
 			</div>
