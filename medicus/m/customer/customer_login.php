@@ -16,7 +16,7 @@
                             <em>(required)</em>
                         </div>
                         <div class="page-login-links bottom-20">
-                            <a class="forgot float-right" href="../customer_register.php"><i class="fa fa-user float-right"></i>Create Account</a>
+                            <a class="forgot float-right" href="customer_register.php"><i class="fa fa-user float-right"></i>Create Account</a>
                             <a class="create float-left" href="#"><i class="fa fa-eye"></i>Forgot Password</a>
                             <div class="clear"></div>
                         </div>

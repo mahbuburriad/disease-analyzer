@@ -62,6 +62,15 @@ include("../assets/function/function.php");
         <!--pharmacy section-->
         <div class="page-content header-clear-small">
 <?php getmProducts();?>
+       
+
+                        <?php
+                        getMpcatpro();
+                        getMcatpro();
+                        
+                        ?>
+
+              
             <div class="decoration bottom-0"></div>
             <div class="page-content header-clear-medium">
 <div class="content">
