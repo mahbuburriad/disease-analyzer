@@ -1,19 +1,15 @@
 
 <?php
 session_start();
-include("assets/includes/connection.php");
-include("assets/function/function.php");
-
+include("../assets/includes/connection.php");
+include("../assets/function/function.php");
 ?>
 
 <?php
     
     if(isset($_GET['c_id'])){
-        $customer_id = $_GET['c_id'];
-        
+        $customer_id = $_GET['c_id'];    
     }
-
-
 
 $ip_add = getRealUserIp();
 $status = "pending";
@@ -40,7 +36,6 @@ while($row_cart = mysqli_fetch_array($run_cart)){
 
         $insert_customer_order = "insert into customer_orders (customer_id,due_amount,invoice_no,qty,size,order_date,order_status) values ('$customer_id','$total_charge','$invoice_no','$pro_qty','$pro_size',NOW(),'$status')";
         $run_customer_order = mysqli_query($con,$insert_customer_order);
-
         $insert_pending_order = "insert into pending_orders (customer_id,invoice_no,product_id,qty,size,order_status) values ('$customer_id','$invoice_no','$pro_id','$pro_qty','$pro_size','$status')";
         $run_pending_order = mysqli_query($con,$insert_pending_order);
 
@@ -49,8 +44,7 @@ while($row_cart = mysqli_fetch_array($run_cart)){
 
         echo "<script>alert('Your order has been submitted,Thanks ')</script>";
         echo "<script>window.open('customer/my_account.php?my_orders','_self')</script>";
-        
-        
+          
         
     }
 }

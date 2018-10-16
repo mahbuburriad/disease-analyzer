@@ -1,8 +1,8 @@
 <?php
 
 
-include("assets/includes/connection.php");
-include("assets/function/function.php");
+include("../assets/includes/connection.php");
+include("../assets/function/function.php");
 
 ?>
 

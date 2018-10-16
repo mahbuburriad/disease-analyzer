@@ -1,8 +1,4 @@
-<div class="box">
-    
-    
-
-    <?php
+<?php
     
     
     $session_email = $_SESSION['customer_email'];
@@ -13,12 +9,12 @@
     
     
     ?>
-
-
-        <h1 class="text-center">Payment Options</h1>
-
-        <div class="col-md-12">
-            <?php
+              
+                       <div class="page-login content-boxed content-boxed-padding top-0 bottom-0 bg-white">
+                        <img class="preload-image login-bg responsive-image bottom-0 shadow-small" src="images/pictures/american-express-89024_640.jpg" data-src="images/pictures/american-express-89024_640.jpg" alt="img">
+                        <img class="preload-image login-image shadow-small" data-src="logos/rsz_1rsz_1logo.png" alt="img">
+                        <p class="smaller-text bottom-15">Choose Payment option</p>
+                        <?php
         
         if(!isset($_SESSION['customer_email'])){
         
@@ -45,11 +41,9 @@
 
                 </div>
                 <?php } }?>
-
-
-        </div>
-
-        <p class="lead text-center">
+                       
+                       
+                       <p class="lead text-center">
             <?php
             
             if(!empty($customer_confirm_code)){
@@ -62,15 +56,13 @@
 
 
         </p>
-
-        <center>
-            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                       <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="business" value="mahbubur.riad-facilitator@gmail.com">
                 <input type="hidden" name="cmd" value="_cart">
                 <input type="hidden" name="upload" value="1">
                 <input type="hidden" name="currency_code" value="USD">
-                <input type="hidden" name="return" value="http://localhost/virtualdoctor/medicus/paypal_order.php?c_id=<?php echo $customer_id;?>">
-                <input type="hidden" name="cance_return" value="http://localhost/virtualdoctor/medicus/index.php">
+                <input type="hidden" name="return" value="http://localhost/virtualdoctor/medicus/m/paypal_order.php?c_id=<?php echo $customer_id;?>">
+                <input type="hidden" name="cance_return" value="http://localhost/virtualdoctor/medicus/m/index.php">
 
                 <?php 
                 
@@ -90,6 +82,7 @@ $pro_id = $row_cart['p_id'];
 $pro_qty = $row_cart['qty'];
 
 $pro_price = $row_cart['p_price'];
+
     $bd_price = $pro_price/84.44;
 
 $get_products = "select * from products where product_id='$pro_id'";
@@ -103,7 +96,6 @@ $product_title = $row_products['product_title'];
 $i++;
 
 ?>
-
 
                 <input type="hidden" name="item_name_<?php echo $i; ?>" value="<?php echo $product_title; ?>">
 
@@ -120,10 +112,10 @@ $i++;
             
             if(!empty($customer_confirm_code)){
                 ?>
-                    <input type="image" name="submit" width="500" height="270" src="images/paypal.jpg" disabled>
+                    <input type="image" name="submit" width="200" height="200" src="../images/paypal.jpg" disabled>
 
                     <?php } else{  ?>
-                    <input type="image" name="submit" width="500" height="270" src="images/paypal.jpg">
+                    <input type="image" name="submit" width="200" height="200" src="../images/paypal.jpg">
                     <?php  }?>
 
 
@@ -131,10 +123,5 @@ $i++;
 
             </form>
             <!-- form Ends -->
-
-
-
-        </center>
-
-
-</div>
+                        
+                       </div>

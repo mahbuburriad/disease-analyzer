@@ -1,58 +1,63 @@
-
 <?php
 session_start();
-include("assets/includes/connection.php");
-include("assets/function/function.php");
-
+include("../assets/includes/connection.php");
+include("../assets/function/function.php");
 ?>
+<!DOCTYPE HTML>
+<html lang="en">
 
-
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
 <head>
-	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>Medicus | Cart</title>
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/framework.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+</head>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-	<title>Medicus | Shopping Cart</title>
-	
-<?php include "assets/includes/header.php" ?>
-
-
-<main>
-		<!-- Page Breadcrumb -->
-		<div class="page-breadcrumb container-fluid no-padding">
-			<div class="container">
-				<h3>shopping cart</h3>
-				<ol class="breadcrumb">
-					<li><a href="#">Home</a></li>
-					<li class="active">shopping cart</li>
-				</ol>
-			</div>
-		</div><!-- Page Breadcrumb /- -->
-		<div class="padding-100"></div>
-		<!-- Shop Section -->
-		<div id="product-cart" class="product-cart woocommerce container-fluid no-padding">
-			<!-- Container -->
-			<div class="container">
-				<div class="row">
-					<!-- Order Summary -->
-					<div class="col-md-7 col-sm-7 order-summary">
-					
-						<h3>your shopping cart</h3>
-                    <form action="cart.php" method="post" enctype="multipart-form-data">
-
-                        <h1>Shopping Cart</h1>
-
-                        <?php
+<body>
+    <div id="page-transitions" class="page-build light-skin highlight-blue">
+        <link rel="stylesheet" type="text/css" href="styles/framework-store.css">
+        <div id="menu-hider"></div>
+        <div id="menu-list" data-selected="menu-pages" data-load="menu-list.html" data-height="415" class="menu-box menu-load menu-bottom"></div>
+        <div id="menu-demo" data-load="menu-demo.html" data-height="210" class="menu-box menu-load menu-bottom"></div>
+        <div class="header header-scroll-effect">
+            <div class="header-line-1 header-hidden header-logo-app">
+                <a href="pharmacy.php" class="back-button header-logo-title">Back to Store</a>
+                <a href="#" class="back-button header-icon header-icon-1"><i class="fa fa-angle-left"></i></a>
+                <a href="#" data-menu="menu-cart" class="header-icon header-icon-2"><i class="fa fa-shopping-bag"></i></a>
+                <a href="#" data-menu="menu-list" class="header-icon header-icon-4"><i class="fa fa-bars"></i></a>
+                <a href="#" data-menu="menu-demo" class="header-icon header-icon-3"><i class="fa fa-cog"></i></a>
+            </div>
+            <div class="header-line-2 header-scroll-effect">
+                <a href="#" class="header-pretitle header-date color-highlight"></a>
+                <a href="#" class="header-title">Cart</a>
+                <a href="#" data-menu="menu-list" class="header-icon header-icon-1"><i class="fa fa-bars"></i></a>
+                <a href="#" data-menu="menu-cart" class="header-icon header-icon-3"><i class="fa fa-shopping-bag"></i></a>
+                <a href="#" data-menu="menu-demo" class="header-icon header-icon-2"><i class="fa fa-cog"></i></a>
+            </div>
+        </div>
+               <div id="menu-cart" data-height="420" class="menu-box menu-bottom">
+            <div class="menu-title">
+                <span class="color-highlight">Your Products</span>
+                <h1>Your Cart</h1>
+                
+                <a href="#" class="menu-hide"><i class="fa fa-times"></i></a>
+            </div>
+            <form action="cart.php" method="post" enctype="multipart-form-data">
+            <div class="content bottom-0">
+     <?php  mCart();?>
+            </div>
+            <button style="margin-top: 50px;" class="button button-blue button-icon button-full button-sm shadow-small top-15 button-rounded uppercase ultrabold"><a style="color: white" href="checkout.php">
+                            <i class="fa fa-shopping-bag"></i>
+                            Checkout</a>
+                        </button>
+        </div>
+        
+        <div class="page-content header-clear-medium">
+            <div class="content">
+               <?php
                         
                         $ip_add = getRealUserIp();
                         $select_cart = "SELECT * FROM cart WHERE ip_add='$ip_add'";
@@ -61,26 +66,30 @@ include("assets/function/function.php");
                         
                         
                         ?>
-
-
-
-                            <p class="text-muted"> You Currently have
-                                <?php items(); ?> item(s) in you cart </p>
-
-                            <div class="table-responsive">
-
-						<div class="order-summary-content">
-							<table class="shop_cart">
-								<thead>
-									<tr>
-										<th colspan="3" class="product-thumbnail">Product</th>
-										<th class="product-price">Price</th>
-										<th class="product-quantity">Quantity</th>
-										<th class="product-subtotal">Total</th>
-									</tr>
-								</thead>
-								<tbody>
-								<?php
+                        
+                <?php mCartm(); ?>
+                
+                <aside class="widget widget-coupon">
+							<h3>Coupon Codes</h3>
+							<div class="coupon">
+								<form>
+									<input type="text" name="code" class="form-control" placeholder="Enter your code here !" />
+									
+									<input name="apply_coupon" type="submit" value="apply coupon"/>
+									
+<!--									<button class="btn btn-default" type="submit" name="update" value="Update Cart">
+                                  <i class="fas fa-retweet"></i> Delete Product
+                                   
+                               </button>-->
+									
+								</form>
+							</div>
+						</aside>
+               
+                </form>
+                
+                <div class="decoration"></div>
+                <?php
                                         
                                         
                                         $total = 0;
@@ -103,114 +112,39 @@ include("assets/function/function.php");
                                                     $per_product_price = $per_product+50+$sub_total;
                                                     $tax = ($total*2.25)/100;
                                                     $total_charge = $tax+50+$total;
-                                            
                                         
                                         ?>
-									<tr class="cart_item">
-									 <td>
-                                                    <input type="checkbox" name="remove[]" value="<?php echo $pro_id; ?>">
-                                                </td>
-										<td data-title="Product" class="product-thumbnail">
-											<a title="Product Thumbnail" href=""><img style="width: 100px; height: 128px;" class="attachment-shop_thumbnail wp-post-image" src="admin/product_images/<?php echo $product_img1; ?>" alt="thumb-1" /></a>					
-										</td>
-										<td data-title="Product Name" class="product-name">
-											<a title="Product Name" href="#"><?php echo $product_title; ?></a>
-										</td>
-										<td data-title="Total" class="product-price">
-											<span><?php echo $only_price; ?> </span>
-										</td>										
-										<td data-title="Quantity" class="product-quantity">
-											<div class="quantity"><input type="text" title="remove" name="quantity" value="<?php echo $_SESSION['pro_qty']; ?>" data-product_id="<?php echo $pro_id; ?>" class="quantity form-control">"></div>
-										</td>
-										<td data-title="Total" class="product-price">
-											<span><?php echo $sub_total; ?></span>
-										</td>
-									</tr>
-									<?php } } ?>
-																
-								</tbody>
-							</table>
-						</div>
-						<div>
-						<button class="btn btn-default" type="submit" name="update" value="Update Cart">
-                                  <i class="fas fa-retweet"></i> Delete Product
-                                   
-                               </button>
-
-	
-<aside class="widget widget-coupon">
-							<h3>Coupon Codes</h3>
-							<div class="coupon">
-								<form>
-									<input type="text" name="code" class="form-control" placeholder="Enter your code here !" />
-									
-									<input name="apply_coupon" type="submit" value="apply coupon"/>
-									
-								</form>
-							</div>
-						</aside>
-						
-						
-					</div><!-- Order Summary /- -->
-					</div><!-- Order Summary /- -->
-					</div><!-- Order Summary /- -->
-
-
-                               					<!-- Widget Area -->
-					
-
-
-		
-                                        <div class="col-md-4 col-sm-5 col-xs-12 widget-area">
-											<aside class="widget widget-proceed-checkout">
-							<h3>cart totals</h3>
-							<div class="wc-proceed-to-checkout">
-								<table>
-									<tr>
-										<td>Cart Subtotal</td>
-										<td><?php echo $total; ?></td>
-									</tr>
-									<tr>
-										<td>Shipping</td>
-										<td>50.00</td>
-									</tr>
-									<tr>
-
-                                    <td>Tax(2.25%)</td>
-                                    <th>
-                                        <?php
+                                        <?php } } ?>
+                <div class="store-cart-total">
+                    <strong class="font-14">Subtotal</strong>
+                    <span class="font-14"><?php echo $total; ?></span>
+                    <div class="clear"></div>
+                </div>
+                <div class="store-cart-total">
+                    <strong class="font-14">Shipping</strong>
+                    <span class="font-14">50.00</span>
+                    <div class="clear"></div>
+                </div>
+                <div class="store-cart-total">
+                    <strong class="font-14 color-highlight">Tax(2.25%)</strong>
+                    <span class="font-14 color-highlight"><?php
                                        if(empty($only_price)){
                                                echo "0.00";
                                                }
-                                               else{ echo "$tax"; } ?>
-                                    </th>
-
-
-                                </tr>
-									<tr>
-										<td>Totals</td>
-										                                    <th>
-
-                                        <?php
-                                       if(empty($only_price)){
+                                               else{ echo "$tax"; } ?></span>
+                    <div class="clear"></div>
+                </div>
+                
+                <div class="store-cart-total top-20 bottom-30">
+                    <strong class="font-16 uppercase ultrabold">Grand Total</strong>
+                    <span class="font-16 uppercase ultrabold"> <?php if(empty($only_price)){
                                                echo "0.00";
                                                }
-                                               else{ echo "$total_charge"; } ?>
-
-                                    </th>
-									</tr>
-								</table>
-							</div>
-							
-							<a href="checkout.php" class="proceed-to-checkout">proceed to checkout</a>
-						</aside>
-					</div><!-- Widget Area /- -->
-
-
-                    </form>
-                    </div>
-					
-					 <?php
+                                               else{ echo "$total_charge"; } ?></span>
+                    <div class="clear"></div>
+                </div>
+                
+                <?php
 
             if(isset($_POST['apply_coupon'])){
              $code = $_POST['code'];
@@ -280,18 +214,10 @@ include("assets/function/function.php");
                 echo @$up_cart = update_cart();
                 
                 ?>
-
-
-
-			</div><!-- Container /- -->
-			<div class="padding-100"></div>
-		</div><!-- Shop Header /- -->
-	
-	</main>
-	<script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.min.js"></script>
-
-        <script>
+                	
+                <div class="decoration"></div>
+                <a href="checkout.php" class="button button-blue button-rounded button-full button-sm ultrabold uppercase shadow-small">Proceed to Checkout</a>
+                  <script>
             $(document).ready(function(data) {
                 $(document).on('keyup', '.quantity', function() {
                     var id = $(this).data("product_id");
@@ -313,6 +239,43 @@ include("assets/function/function.php");
             });
 
         </script>
-	
-<?php include "assets/includes/footer.php" ?>
+            </div>
+            <div class="footer">
+                <a href="#" class="footer-logo"></a>
+                <p class="footer-text">There's nothing that comes close to Apptastic<br> It's the best Mobile Template on Envato</p>
+                <div class="footer-socials">
+                    <a href="#" class="scale-hover icon icon-round no-border icon-xs bg-facebook border-teal-3d"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="scale-hover icon icon-round no-border icon-xs bg-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="scale-hover icon icon-round no-border icon-xs bg-google"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="scale-hover icon icon-round no-border icon-xs bg-phone"><i class="fa fa-phone"></i></a>
+                    <a href="#" data-menu="menu-share" class="scale-hover icon icon-round no-border icon-xs bg-teal-dark"><i class="fa fa-retweet font-15"></i></a>
+                    <a href="#" class="scale-hover icon icon-round no-border icon-xs back-to-top bg-blue-dark"><i class="fa fa-angle-up font-16"></i></a>
+                </div>
+                <p class="footer-copyright">Copyright &copy; Enabled <span id="copyright-year">2017</span>. All Rights Reserved.</p>
+            </div>
+        </div>
+        <a href="#" class="back-to-top-badge back-to-top-small bg-highlight"><i class="fa fa-angle-up"></i>Back to Top</a>
+        <div id="menu-share" data-height="420" class="menu-box menu-bottom">
+            <div class="menu-title">
+                <span class="color-highlight">Just tap to share</span>
+                <h1>Sharing is Caring</h1>
+                <a href="#" class="menu-hide"><i class="fa fa-times"></i></a>
+            </div>
+            <div class="sheet-share-list">
+                <a href="#" class="shareToFacebook"><i class="fab fa-facebook-f bg-facebook"></i><span>Facebook</span><i class="fa fa-angle-right"></i></a>
+                <a href="#" class="shareToTwitter"><i class="fab fa-twitter bg-twitter"></i><span>Twitter</span><i class="fa fa-angle-right"></i></a>
+                <a href="#" class="shareToLinkedIn"><i class="fab fa-linkedin-in bg-linkedin"></i><span>LinkedIn</span><i class="fa fa-angle-right"></i></a>
+                <a href="#" class="shareToGooglePlus"><i class="fab fa-google-plus-g bg-google"></i><span>Google +</span><i class="fa fa-angle-right"></i></a>
+                <a href="#" class="shareToPinterest"><i class="fab fa-pinterest-p bg-pinterest"></i><span>Pinterest</span><i class="fa fa-angle-right"></i></a>
+                <a href="#" class="shareToWhatsApp"><i class="fab fa-whatsapp bg-whatsapp"></i><span>WhatsApp</span><i class="fa fa-angle-right"></i></a>
+                <a href="#" class="shareToMail no-border bottom-5"><i class="fas fa-envelope bg-mail"></i><span>Email</span><i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+  
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</body>
 
+</html>

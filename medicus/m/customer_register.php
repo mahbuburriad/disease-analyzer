@@ -1,56 +1,62 @@
 <?php
 session_start();
-include("assets/includes/connection.php");
-include("assets/function/function.php");
+include("../assets/includes/connection.php");
+include("../assets/function/function.php");
+
 ?>
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppTastic</title>
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="stylesheet" type="text/css" href="styles/framework.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+</head>
+<body>
+<div id="page-transitions" class="page-build light-skin highlight-blue">
+<div id="menu-hider"></div>
+<div id="menu-list" data-selected="menu-pages" data-load="menu-list.html" data-height="415" class="menu-box menu-load menu-bottom"></div>
+<div id="menu-demo" data-load="menu-demo.html" data-height="210" class="menu-box menu-load menu-bottom"></div>
+<div id="menu-find" data-load="menu-find.html" data-height="420" class="menu-box menu-load menu-bottom"></div>
+<div class="header header-scroll-effect">
+<div class="header-line-1 header-hidden header-logo-app">
+<a href="#" class="back-button header-logo-title">Back to Pages</a>
+<a href="#" class="back-button header-icon header-icon-1"><i class="fa fa-angle-left"></i></a>
+<a href="#" data-menu="menu-find" class="header-icon header-icon-3"><i class="fa fa-search"></i></a>
+<a href="#" data-menu="menu-list" class="header-icon header-icon-4"><i class="fa fa-bars"></i></a>
+<a href="#" data-menu="menu-demo" class="header-icon header-icon-2"><i class="fa fa-cog"></i></a>
+</div>
+<div class="header-line-2 header-scroll-effect">
+<a href="#" class="header-pretitle header-date color-highlight"></a>
+<a href="#" class="header-title">Register</a>
+<a href="#" data-menu="menu-list" class="header-icon header-icon-1"><i class="fa fa-bars"></i></a>
+<a href="#" data-menu="menu-find" class="header-icon header-icon-2"><i class="fa fa-search"></i></a>
+<a href="#" data-menu="menu-demo" class="header-icon header-icon-3"><i class="fa fa-cog"></i></a>
+</div>
+</div>
+<div class="page-content header-clear-large">
+<div class="page-login page-login-full bottom-20">
+<img class="preload-image login-bg responsive-image bottom-30 shadow-medium" src="images/empty.png" data-src="images/pictures/10w.jpg" alt="img">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <form method="post" action="customer_register.php" class="login-form login-form-1 login-form-2" enctype="multipart/form-data">
 
-    <meta name="description" content="">
-    <meta name="author" content="">
+                       
+                            <div class="page-login-field top-15">
 
-	<title>Customer Login</title>
-
-	<?php include "assets/includes/header.php" ?>
-	
-	   
-	
-
-
-		<!-- Login Page 1 -->
-		<div class="login-page-1 container-fluid no-padding">
-			<div class="padding-100"></div>
-			<!-- Container -->
-			<div class="container">
-                           <center><h1>Customer Registration</h1></center>
-                            
-								<div class="col-md-12">
-					<form method="post" action="customer_register.php" class="login-form login-form-1 login-form-2" enctype="multipart/form-data">
-
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <label for="">Full Name</label>
-
-                                <input type="text" class="form-control" name="c_name" required>
+                                <input type="text" name="c_name" placeholder="Full Name" required>
 
                             </div>
-                            <div class="col-md-12">
-                                <label for="">Email</label>
-                                <input type="email" class="form-control" name="c_email" required 
-                                                                                       >
+                            <div class="page-login-field top-15">
+
+                                <input type="email" name="c_email" placeholder="Email" required >
+                                                                                       
 
                             </div>
 
-                        </div>
+                      
                         <?php
                         $ipn = getRealUserIp();
              
@@ -64,42 +70,40 @@ $regionss= $json['region_name'];
 
 
 
-                            <div class="form-group">
-                                <div class="col-md-12">
+           
+                                <div class="page-login-field top-15">
 
-                                    <label for="">Password</label>
-                                    <input type="password" id="pass" class="form-control" name="c_pass" required >
+
+                                    <input type="password" id="pass" placeholder="Password" name="c_pass" required >
                                 </div>
 
-                                <div class="col-md-12">
+                                <div class="page-login-field top-15">
 
-                                    <label for="">Confirm Password</label>
-                                    <input type="password" id="cpass" class="form-control" name="conf_pass" required >
+                    
+                                    <input type="password" id="cpass" placeholder="Confirm Password" name="conf_pass" required >
                                 </div>
 
 
-                            </div>
-                            <p id="text"></p>
 
 
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    <label for="">Country</label>
-                                    <input type="text" class="form-control" name="c_country" value="<?php echo $countryip;?>" required >
+
+
+
+                                <div class="page-login-field top-15">
+
+                                    <input type="text" class="form-control" placeholder="Country" value="<?php echo $countryip;?>" required >
 
                                 </div>
 
-                                <div class="col-md-12">
-                                    <label for="">City</label>
-                                    <input type="text" class="form-control" name="c_city" value="<?php echo $cityss; ?>" required >
+                                <div class="page-login-field top-15">
+                                    <input type="text" class="form-control"  placeholder="City" value="<?php echo $cityss; ?>" required >
                                 </div>
 
-                            </div>
+                            
+ 
+                                <div class="page-login-field top-15">
 
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    <label for="">Enter Mobile No</label>
-                                    <input type="text" class="form-control" name="c_contact" required >
+                                    <input type="text"  name="c_contact" placeholder="Enter Mobile No" required >
                                 </div>
                                 <!--<div class="col-md-6">
                                     <label for="">Gender</label>
@@ -107,9 +111,9 @@ $regionss= $json['region_name'];
 
                                 </div>-->
 
-                                <div class="col-md-12">
-                                    <label for="">Gender</label>
-                                    <select class="form-control" name="c_gender">
+                                <div class="page-login-field top-15">
+
+                                    <select  name="c_gender">
   <option>Male</option>
   <option>Female</option>
   <option>Other</option>
@@ -117,38 +121,39 @@ $regionss= $json['region_name'];
 
                                 </div>
 
-                            </div>
+ 
 
 
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    <label for="">Address</label>
-                                    <input type="text" class="form-control" name="c_address" required >
+ 
+                                <div class="page-login-field top-15">
+
+                                    <input type="text"  placeholder="Address" name="c_address" required >
 
                                 </div>
+                                <div class="page-login-field top-15">
 
-
-                            </div>
-
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    <label for="">Zip Code</label>
-                                    <input type="text" class="form-control" value="<?php echo $zip_codes; ?>" name="c_zipcode" required >
-                                </div>
-
-                                <div class="col-md-12">
-                                    <label for="">Image</label>
-                                    <input type="file" class="form-control" name="c_image" required>
+                                    <input type="file" placeholder="Image" name="c_image" required>
 
                                 </div>
 
 
 
-                            </div>
+
+                
+                                <div class="page-login-field top-15">
+                    
+                                    <input type="text" placeholder="Zip Code" value="<?php echo $zip_codes; ?>" name="c_zipcode" required >
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+
+
                          
 
                             <div style="margin-top: 20px;" class="text-center">
-                                <button id="submit" type="submit" name="register" class="btn btn-primary">
+                                <button id="submit" type="submit" name="register" class="button button-blue button-icon button-full button-sm shadow-small top-15 button-rounded uppercase ultrabold">
                              <i class="fas fa-user-plus"></i> Sign Up
                              
                          </button>
@@ -266,9 +271,40 @@ mail($c_email,$subject,$message,$headers);
         }
 
         ?>
-				</div>
-            </div>
-        </div>
-          
-        
-   <?php include "assets/includes/footer.php"?>
+                   <div class="footer">
+<a href="#" class="footer-logo"></a>
+<p class="footer-text">There's nothing that comes close to Apptastic<br> It's the best Mobile Template on Envato</p>
+<div class="footer-socials">
+<a href="#" class="scale-hover icon icon-round no-border icon-xs bg-facebook border-teal-3d"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="scale-hover icon icon-round no-border icon-xs bg-twitter"><i class="fab fa-twitter"></i></a>
+<a href="#" class="scale-hover icon icon-round no-border icon-xs bg-google"><i class="fab fa-google-plus-g"></i></a>
+<a href="#" class="scale-hover icon icon-round no-border icon-xs bg-phone"><i class="fa fa-phone"></i></a>
+<a href="#" data-menu="menu-share" class="scale-hover icon icon-round no-border icon-xs bg-teal-dark"><i class="fa fa-retweet font-15"></i></a>
+<a href="#" class="scale-hover icon icon-round no-border icon-xs back-to-top bg-blue-dark"><i class="fa fa-angle-up font-16"></i></a>
+</div>
+<p class="footer-copyright">Copyright &copy; Enabled <span id="copyright-year">2017</span>. All Rights Reserved.</p>
+</div>
+</div>
+<a href="#" class="back-to-top-badge back-to-top-small bg-highlight"><i class="fa fa-angle-up"></i>Back to Top</a>
+<div id="menu-share" data-height="420" class="menu-box menu-bottom">
+<div class="menu-title">
+<span class="color-highlight">Just tap to share</span>
+<h1>Sharing is Caring</h1>
+<a href="#" class="menu-hide"><i class="fa fa-times"></i></a>
+</div>
+<div class="sheet-share-list">
+<a href="#" class="shareToFacebook"><i class="fab fa-facebook-f bg-facebook"></i><span>Facebook</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToTwitter"><i class="fab fa-twitter bg-twitter"></i><span>Twitter</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToLinkedIn"><i class="fab fa-linkedin-in bg-linkedin"></i><span>LinkedIn</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToGooglePlus"><i class="fab fa-google-plus-g bg-google"></i><span>Google +</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToPinterest"><i class="fab fa-pinterest-p bg-pinterest"></i><span>Pinterest</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToWhatsApp"><i class="fab fa-whatsapp bg-whatsapp"></i><span>WhatsApp</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToMail no-border bottom-5"><i class="fas fa-envelope bg-mail"></i><span>Email</span><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
+</html>

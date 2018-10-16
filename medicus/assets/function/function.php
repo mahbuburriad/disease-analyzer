@@ -106,29 +106,34 @@ global $db;
                                 $pro_title = $row_products['product_title'];
                                 $pro_price = $row_products['product_price'];
                                 $pro_img1 = $row_products['product_img1'];
+                                $pro_p_cat_id = $row_products['p_cat_id'];
+                                
+                                $get_p_cat = "SELECT * FROM product_categories where p_cat_id = '$pro_p_cat_id'";
+                            
+                            $run_p_cat = mysqli_query($db, $get_p_cat);
+                            
+                            $row_p_cat = mysqli_fetch_array($run_p_cat);
+                            $p_cat_title = $row_p_cat['p_cat_title'];
+                                
+                                
                                 
                                 
                                 echo"
-    <li class='product' style='height: 120px; width: 80px;'>							
-								<a href='details.php?pro_id=$pro_id' title='$pro_title'>
-									<div class='product-img-box'>
-										<img alt='$pro_title' src='../admin/product_images/$pro_img1'/>
-									</div>
-									<div class='detail-box'>
-                                    
-										<h3>$pro_title</h3>
-										<span class='price'>
-											<span class='amount'>৳ $pro_price</span>
-										</span>
-									</div>
-								</a>
-								<a class='button product_type_simple add_to_cart_button' href='details.php?pro_id=$pro_id' title='Add To Cart'>Add to cart</a>
-								<div class='whishlist-btn'>
-									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Add to wishlist'><i class='icon_heart'></i></a>
-									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Expand'><i class='arrow_expand_alt'></i></a>
-								</div>
-							</li>
- 
+                        <div style='margin-bottom:15px;' class='store-slide-2'>
+                <a href='details.php?pro_id=$pro_id' class='store-slide-image'>
+                    <img class='preload-image' src='images/empty.png' data-src='../admin/product_images/$pro_img1' alt='img'>
+                </a>
+                <div class='store-slide-title'>
+                    <strong>$pro_title</strong>
+                    <em class='color-gray-dark'>$p_cat_title</em>
+                </div>
+                <div class='store-slide-button'>
+                    <strong><del class='color-blue-light font-10'>Was $250</del> $pro_price</strong>
+                    <a href='details.php?pro_id=$pro_id'><i class='fa fa-shopping-cart color-highlight'></i></a>
+                    <a href='details.php?pro_id=$pro_id'><i class='fa fa-heart color-red-dark'></i></a>
+                </div>
+            </div>
+            <hr>
                                 ";
                             }
                             
@@ -674,6 +679,100 @@ function total_price(){
     echo $total;
     
 }
+
+function mCart(){
+    
+    global $db;
+    
+    $ip_add = getRealUserIp();
+                        $select_cart = "SELECT * FROM cart WHERE ip_add='$ip_add'";
+                        $run_cart = mysqli_query($db, $select_cart);
+                        $count = mysqli_num_rows($run_cart);
+    $total = 0;
+                                        while($row_cart = mysqli_fetch_array($run_cart)){
+                                               $pro_id = $row_cart['p_id'];
+                                                $pro_size = $row_cart['size'];
+                                                $pro_qty = $row_cart['qty'];
+                                                $only_price = $row_cart['p_price'];
+                                            
+                                                $get_products = "select * from products where product_id='$pro_id'";
+                                                $run_products = mysqli_query($db,$get_products);
+                                                while($row_products = mysqli_fetch_array($run_products)){
+                                                    $product_title = $row_products['product_title'];
+                                                    $product_img1 = $row_products['product_img1'];
+                                                    $sub_total = $only_price*$pro_qty;
+                                                    $_SESSION['pro_qty'] = $pro_qty;
+                                                    $total += $sub_total;
+                                                    
+                                                    $per_product = ($sub_total*2.25)/100;
+                                                    $per_product_price = $per_product+50+$sub_total;
+                                                    $tax = ($total*2.25)/100;
+                                                    $total_charge = $tax+50+$total;
+                                             
+
+                                                    echo "
+                                                    <div style='margin-bottom: 15px;' class='menu-cart-item'>
+                    <img class='preload-image' src='images/empty.png' data-src='../admin/product_images/$product_img1' alt='img'>
+                    <strong>$product_title</strong>
+                    <span>$only_price</span>
+                    <em class='color-green-dark'>$sub_total <del class='color-gray-light'>$pro_qty</del></em>
+                    <a href='#' class='color-red-dark'><i class='fa fa-times'></i> Remove item</a>
+                </div>
+
+                <div class='decoration bottom-1'></div>"
+                                                        
+                                                        ;
+                                                    
+                                                    
+                                                }}}
+function mCartm(){
+    
+    global $db;
+    
+    $ip_add = getRealUserIp();
+                        $select_cart = "SELECT * FROM cart WHERE ip_add='$ip_add'";
+                        $run_cart = mysqli_query($db, $select_cart);
+                        $count = mysqli_num_rows($run_cart);
+    $total = 0;
+                                        while($row_cart = mysqli_fetch_array($run_cart)){
+                                                $pro_id = $row_cart['p_id'];
+                                                $pro_size = $row_cart['size'];
+                                                $pro_qty = $row_cart['qty'];
+                                                $only_price = $row_cart['p_price'];
+                                            
+                                                $get_products = "select * from products where product_id='$pro_id'";
+                                                $run_products = mysqli_query($db,$get_products);
+                                                while($row_products = mysqli_fetch_array($run_products)){
+                                                    $product_title = $row_products['product_title'];
+                                                    $product_img1 = $row_products['product_img1'];
+                                                    $sub_total = $only_price*$pro_qty;
+                                                    $_SESSION['pro_qty'] = $pro_qty;
+                                                    $total += $sub_total;
+                                                    
+                                                    $per_product = ($sub_total*2.25)/100;
+                                                    $per_product_price = $per_product+50+$sub_total;
+                                                    $tax = ($total*2.25)/100;
+                                                    $total_charge = $tax+50+$total;
+                                             
+
+                                                    echo "
+                                                    <div class='store-cart-2'>
+                                                    
+                    <img class='preload-image' src='images/empty.png' data-src='../admin/product_images/$product_img1' alt='img'>
+                    <strong>$product_title</strong>
+                    <span>$only_price</span>
+                    <em class='color-green-dark'>$sub_total <del class='color-gray-light'>$pro_qty</del></em>
+                    
+                    <input type='text' value='$pro_qty'>
+                </div>
+                <div class='decoration bottom-1'></div>"
+                                                        
+                                                        ;
+                                                    
+                                                    
+                                                }}}
+    
+
 
 function getCategory(){
     
