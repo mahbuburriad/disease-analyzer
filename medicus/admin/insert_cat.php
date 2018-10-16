@@ -102,7 +102,7 @@ $insert_cat = "insert into categories (cat_title,cat_desc) values ('$cat_title',
 $run_cat = mysqli_query($con,$insert_cat);
 if($run_cat){
 echo "<script> alert('New Category Has Been Inserted')</script>";
-echo "<script> window.open('index.php?view_cat','_self') </script>";
+echo "<script> window.open('index.php?view_cats','_self') </script>";
 
 }
 

@@ -22,8 +22,8 @@ include("../assets/function/function.php");
     <div id="page-transitions" class="page-build light-skin highlight-blue">
         <link rel="stylesheet" type="text/css" href="styles/framework-store.css">
         <div id="menu-hider"></div>
-        <div id="menu-list" data-selected="menu-pages" data-load="menu-list.html" data-height="415" class="menu-box menu-load menu-bottom"></div>
-        <div id="menu-demo" data-load="menu-demo.html" data-height="210" class="menu-box menu-load menu-bottom"></div>
+        <div id="menu-list" data-selected="menu-pages" data-load="menu-list.php" data-height="415" class="menu-box menu-load menu-bottom"></div>
+        <div id="menu-demo" data-load="menu-demo.php" data-height="210" class="menu-box menu-load menu-bottom"></div>
         <div class="header header-scroll-effect">
             <div class="header-line-1 header-hidden header-logo-app">
                 <a href="pharmacy.php" class="back-button header-logo-title">Back to Store</a>
@@ -53,26 +53,73 @@ include("../assets/function/function.php");
                             <i class="fa fa-shopping-bag"></i>
                             checkout</a>
                         </button>
+                        <?php
+                        
+                        $ip_add = getRealUserIp();
+                        $select_cart = "SELECT * FROM cart WHERE ip_add='$ip_add'";
+                        $run_cart = mysqli_query($con, $select_cart);
+                        $count = mysqli_num_rows($run_cart);
+                        
+                        
+                        ?>
+                        
+                <?php mCartm(); ?>
         </div>
         
         <div class="page-content header-clear-medium">
             <div class="content">
-                <div class="checkout-total">
-                    <strong class="font-14 bold">Subtotal</strong>
-                    <span class="font-14">$1500</span>
+                <?php
+                                        
+                                        
+                                        $total = 0;
+                                        while($row_cart = mysqli_fetch_array($run_cart)){
+                                                $pro_id = $row_cart['p_id'];
+                                                $pro_size = $row_cart['size'];
+                                                $pro_qty = $row_cart['qty'];
+                                                $only_price = $row_cart['p_price'];
+                                            
+                                                $get_products = "select * from products where product_id='$pro_id'";
+                                                $run_products = mysqli_query($con,$get_products);
+                                                while($row_products = mysqli_fetch_array($run_products)){
+                                                    $product_title = $row_products['product_title'];
+                                                    $product_img1 = $row_products['product_img1'];
+                                                    $sub_total = $only_price*$pro_qty;
+                                                    $_SESSION['pro_qty'] = $pro_qty;
+                                                    $total += $sub_total;
+                                                    
+                                                    $per_product = ($sub_total*2.25)/100;
+                                                    $per_product_price = $per_product+50+$sub_total;
+                                                    $tax = ($total*2.25)/100;
+                                                    $total_charge = $tax+50+$total;
+                                        
+                                        ?>
+                                        <?php } } ?>
+             <div class="store-cart-total">
+                    <strong class="font-14">Subtotal</strong>
+                    <span class="font-14"><?php echo $total; ?></span>
                     <div class="clear"></div>
-                    <strong class="font-14 bold">15% Tax</strong>
-                    <span class="font-14">$225</span>
+                </div>
+                <div class="store-cart-total">
+                    <strong class="font-14">Shipping</strong>
+                    <span class="font-14">50.00</span>
                     <div class="clear"></div>
-                    <strong class="font-14 bold color-red-light">Discount</strong>
-                    <span class="font-14 color-red-light">-$225</span>
+                </div>
+                <div class="store-cart-total">
+                    <strong class="font-14 color-highlight">Tax(2.25%)</strong>
+                    <span class="font-14 color-highlight"><?php
+                                       if(empty($only_price)){
+                                               echo "0.00";
+                                               }
+                                               else{ echo "$tax"; } ?></span>
                     <div class="clear"></div>
-                    <strong class="font-14 bold">Shipping</strong>
-                    <span class="font-14">$300</span>
-                    <div class="clear"></div>
-                    <div class="decoration top-10 bottom-30"></div>
-                    <strong class="font-16 ultrabold">Grand Total </strong>
-                    <span class="font-16 ultrabold bottom-0">$1800</span>
+                </div>
+                
+                <div class="store-cart-total top-20 bottom-30">
+                    <strong class="font-16 uppercase ultrabold">Grand Total</strong>
+                    <span class="font-16 uppercase ultrabold"> <?php if(empty($only_price)){
+                                               echo "0.00";
+                                               }
+                                               else{ echo "$total_charge"; } ?></span>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -100,41 +147,4 @@ include("../assets/function/function.php");
                 
                 ?>
             </div>
-            <div class="footer">
-                <a href="#" class="footer-logo"></a>
-                <p class="footer-text">There's nothing that comes close to Apptastic<br> It's the best Mobile Template on Envato</p>
-                <div class="footer-socials">
-                    <a href="#" class="scale-hover icon icon-round no-border icon-xs bg-facebook border-teal-3d"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="scale-hover icon icon-round no-border icon-xs bg-twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="scale-hover icon icon-round no-border icon-xs bg-google"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="scale-hover icon icon-round no-border icon-xs bg-phone"><i class="fa fa-phone"></i></a>
-                    <a href="#" data-menu="menu-share" class="scale-hover icon icon-round no-border icon-xs bg-teal-dark"><i class="fa fa-retweet font-15"></i></a>
-                    <a href="#" class="scale-hover icon icon-round no-border icon-xs back-to-top bg-blue-dark"><i class="fa fa-angle-up font-16"></i></a>
-                </div>
-                <p class="footer-copyright">Copyright &copy; Enabled <span id="copyright-year">2017</span>. All Rights Reserved.</p>
-            </div>
-        </div>
-        <a href="#" class="back-to-top-badge back-to-top-small bg-highlight"><i class="fa fa-angle-up"></i>Back to Top</a>
-        <div id="menu-share" data-height="420" class="menu-box menu-bottom">
-            <div class="menu-title">
-                <span class="color-highlight">Just tap to share</span>
-                <h1>Sharing is Caring</h1>
-                <a href="#" class="menu-hide"><i class="fa fa-times"></i></a>
-            </div>
-            <div class="sheet-share-list">
-                <a href="#" class="shareToFacebook"><i class="fab fa-facebook-f bg-facebook"></i><span>Facebook</span><i class="fa fa-angle-right"></i></a>
-                <a href="#" class="shareToTwitter"><i class="fab fa-twitter bg-twitter"></i><span>Twitter</span><i class="fa fa-angle-right"></i></a>
-                <a href="#" class="shareToLinkedIn"><i class="fab fa-linkedin-in bg-linkedin"></i><span>LinkedIn</span><i class="fa fa-angle-right"></i></a>
-                <a href="#" class="shareToGooglePlus"><i class="fab fa-google-plus-g bg-google"></i><span>Google +</span><i class="fa fa-angle-right"></i></a>
-                <a href="#" class="shareToPinterest"><i class="fab fa-pinterest-p bg-pinterest"></i><span>Pinterest</span><i class="fa fa-angle-right"></i></a>
-                <a href="#" class="shareToWhatsApp"><i class="fab fa-whatsapp bg-whatsapp"></i><span>WhatsApp</span><i class="fa fa-angle-right"></i></a>
-                <a href="#" class="shareToMail no-border bottom-5"><i class="fas fa-envelope bg-mail"></i><span>Email</span><i class="fa fa-angle-right"></i></a>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript" src="scripts/jquery.js"></script>
-    <script type="text/javascript" src="scripts/plugins.js"></script>
-    <script type="text/javascript" src="scripts/custom.js"></script>
-</body>
-
-</html>
+      <?php include("footer.php"); ?>

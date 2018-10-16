@@ -111,7 +111,7 @@ if(isset($_POST['submit'])){
 
     if($run_p_cat){
             echo "<script>alert('New Product Category Has been Inserted')</script>";
-            echo "<script>window.open('index.php?view_p_cat','_self')</script>";
+            echo "<script>window.open('index.php?view_p_cats','_self')</script>";
 
 }
 

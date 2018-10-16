@@ -86,7 +86,7 @@ global $db;
     if(!isset($_GET['p_cat'])){
                         if(!isset($_GET['cat'])){
                             
-                            $per_page=24;
+                            $per_page=9;
                             if(isset($_GET['page'])){
                                 $page = $_GET['page'];
                             }
@@ -340,15 +340,11 @@ echo "<li class='next'><a title='' href='pharmacy.php?page=$total_pages";
 
 if(!empty($aPath)){ echo "&".$aPath; }
 
-echo "' >".'<i class="fa fa-angle-right"></i>'."</a></li>";
+echo "' >".'<i class="fa fa-angle-right"></i>'."</a>";
 
 /// getPaginator Function Code Ends ///
 
 }
-
-/// getPaginator Function Ends ///
-
-/// getPaginator Function Starts ///
 
 function getMobilePaginator(){
 
@@ -432,24 +428,28 @@ $total_records = mysqli_num_rows($result);
 
 $total_pages = ceil($total_records / $per_page);
 
-echo "<li class='page-item'><a class='prev-page' title='First Page' href=shop.php?page=1";
+echo "<a style='float: left' title='First Page' href=pharmacy.php?page=1";
 
 if(!empty($aPath)){ echo "&".$aPath; }
 
-echo "' >".'<i class="fa fa-angle-left"></i>'."</a></li>";
+echo "' >".'<i class="fa fa-angle-left"></i>'."</a>";
 
 for ($i=1; $i<=$total_pages; $i++){
 
-echo "<li class='page-item'><a href='shop.php?page=".$i.(!empty($aPath)?'&'.$aPath:'')."' >".$i."</a></li>";
+echo "<a class='no-border' href='pharmacy.php?page=".$i.(!empty($aPath)?'&'.$aPath:'')."' >".$i."</a>";
 
 };
 
-echo "<li class='page-item'><a title='' href='shop.php?page=$total_pages";
+echo "<li class='next'><a title='' href='pharmacy.php?page=$total_pages";
 
 if(!empty($aPath)){ echo "&".$aPath; }
 
-echo "' >".'<i class="fa fa-angle-right"></i>'."</a></li>";
-                    }
+echo "' >".'<i class="fa fa-angle-right"></i>'."</a>";
+
+/// getPaginator Function Code Ends ///
+
+}
+
         
 
 
@@ -546,6 +546,8 @@ function getcatpro(){
     
     
 }
+
+
 function add_cart(){
     global $db;
     
@@ -796,6 +798,52 @@ function getCategory(){
     
     
 }
+function getMCategory(){
+    
+    global $db;
+    
+    $get_cats = "SELECT * FROM categories LIMIT 0,4";
+    
+    $run_cats = mysqli_query($db, $get_cats);
+    while($row_cats = mysqli_fetch_array($run_cats))
+    {
+        $cat_id = $row_cats['cat_id'];
+        $cat_title = $row_cats['cat_title'];
+        
+        echo"
+        
+        <li><a  href='pharmacy.php?cat=$cat_id'><i class='fa fa-heart color-blue-dark'></i><span>$cat_title</span><i class='fa fa-angle-right'></i></a></li>
+        
+        
+        ";
+    }
+    
+    
+    
+}
+function getsCategory(){
+    
+    global $db;
+    
+    $get_cats = "SELECT * FROM categories LIMIT 0,4";
+    
+    $run_cats = mysqli_query($db, $get_cats);
+    while($row_cats = mysqli_fetch_array($run_cats))
+    {
+        $cat_id = $row_cats['cat_id'];
+        $cat_title = $row_cats['cat_title'];
+        
+        echo"
+        
+        <li><a  href='pharmacy.php?cat=$cat_id'>$cat_title</a></li>
+        
+        
+        ";
+    }
+    
+    
+    
+}
 
 
 function getProductCategory(){
@@ -855,6 +903,43 @@ function getProIndex(){
 									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Expand'><i class='arrow_expand_alt'></i></a>
 								</div>
 							</li>
+ 
+                                ";
+        
+    }
+}
+
+
+function getMIndex(){
+    global $db;
+    
+    $get_products = "SELECT * FROM products order by 1 DESC LIMIT 0,8";
+    
+    $run_products = mysqli_query($db, $get_products);
+    while($row_products = mysqli_fetch_array($run_products))
+    {
+        $pro_id = $row_products['product_id'];
+        $pro_title = $row_products['product_title'];
+        $pro_price = $row_products['product_price'];
+        $pro_img1 = $row_products['product_img1'];
+        
+        echo"
+                                
+                                    <div class='item'>
+                        <div>
+                            <div class='above-overlay above-overlay-bottom'>
+                                <div class='image-details bottom-20'>
+                                    <a href='#'><img src='images/preload-logo-small.png' alt='img'></a>
+                                    <a href='#'><i class='fa fa-heart color-red-dark'></i>$pro_price</a>
+                                </div>
+                            </div>
+                            <div class='overlay overlay-gradient'></div>
+                            <a href='#'><img src='../admin/product_images/$pro_img1' alt='img' class='responsive-image'></a>
+                        </div>
+                        <h4 class='bolder'>$pro_title</h4>
+                        <a href='details.php?pro_id=$pro_id'><i class='fa fa-shopping-cart color-highlight'></i></a>
+                        
+                    </div>
  
                                 ";
         

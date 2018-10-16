@@ -133,7 +133,7 @@ if($run_manufacturer){
 
 echo "<script>alert('New Manufacturer Has Been Inserted')</script>";
 
-echo "<script>window.open('index.php?view_manufacturers','_self')</script>";
+echo "<script>window.open('index.php?insert_manufacturer','_self')</script>";
 
 }
 
