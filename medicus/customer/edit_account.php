@@ -101,7 +101,7 @@ $customer_image = $row_customer['customer_image'];
         <div class="text-center">
 
 
-            <button name="update" class="btn btn-warning">
+            <button type="submit" name="update" class="btn btn-warning">
 
 <i class="fa fa-user-md" ></i> Update Now
 

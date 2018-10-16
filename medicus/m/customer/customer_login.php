@@ -1,6 +1,4 @@
-
-              
-                    <div class="page-login content-boxed content-boxed-padding top-0 bottom-0 bg-white">
+<div class="page-login content-boxed content-boxed-padding top-0 bottom-0 bg-white">
                         <img class="preload-image login-bg responsive-image bottom-0 shadow-small" src="images/pictures/medications-257336_640.jpg" data-src="images/pictures/medications-257336_640.jpg" alt="img">
                         <img class="preload-image login-image shadow-small" data-src="logos/rsz_1rsz_1logo.png" alt="img">
                         <h1 class="color-black ultrabold top-20 bottom-5 font-30">Login</h1>
@@ -69,9 +67,7 @@
 
                 }
                 else {
-
                 $_SESSION['customer_email']=$customer_email;
-
                 echo "<script>alert('You are Logged In')</script>";
 
                 echo "<script>window.open('checkout.php','_self')</script>";

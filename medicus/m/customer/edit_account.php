@@ -1,10 +1,39 @@
+
 <?php
 session_start();
-include("../assets/includes/connection.php");
-include("../assets/function/function.php");
 
-?>
-<!DOCTYPE HTML>
+if(!isset($_SESSION['customer_email'])){
+    echo "<script>alert('Please Login to go to your account. If you have not user account Please register and it is more fun to buy here. Thank you!')</script>";
+    echo "<script>window.open('../checkout.php', '_self')</script>";
+}
+else{    
+
+include("../../assets/includes/connection.php");
+include("../../assets/function/function.php");
+
+        $customer_session = $_SESSION['customer_email'];
+        $get_customer = "select * from customers where customer_email='$customer_session'";
+        $run_customer = mysqli_query($con,$get_customer);
+        $row_customer = mysqli_fetch_array($run_customer);
+        $customer_image = $row_customer['customer_image'];
+        $customer_name = $row_customer['customer_name'];
+        $customer_email = $row_customer['customer_email'];
+        $customer_country = $row_customer['customer_country'];
+        $customer_city = $row_customer['customer_city'];
+        $customer_gender = $row_customer['customer_gender'];
+        $customer_zipcode = $row_customer['customer_zipcode'];
+        $customer_address = $row_customer['customer_address'];
+        $customer_contact = $row_customer['customer_contact'];
+        if(!isset($_SESSION['customer_email'])){
+
+        }
+        else{
+  
+            
+        
+        ?>
+        
+       <!DOCTYPE HTML>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -46,12 +75,12 @@ include("../assets/function/function.php");
                        
                             <div class="page-login-field top-15">
 
-                                <input type="text" name="c_name" placeholder="Full Name" required>
+                                <input type="text" name="c_name" placeholder="Full Name" value="<?php echo $customer_name; ?>" required>
 
                             </div>
                             <div class="page-login-field top-15">
 
-                                <input type="email" name="c_email" placeholder="Email" required >
+                                <input type="email" name="c_email" value="<?php echo $customer_email; ?>" placeholder="Email" required >
                                                                                        
 
                             </div>
@@ -68,42 +97,21 @@ $regionss= $json['region_name'];
  $zip_codes = $json['zip'];
       ?>
 
-
-
-           
                                 <div class="page-login-field top-15">
 
-
-                                    <input type="password" id="pass" placeholder="Password" name="c_pass" required >
-                                </div>
-
-                                <div class="page-login-field top-15">
-
-                    
-                                    <input type="password" id="cpass" placeholder="Confirm Password" name="conf_pass" required >
-                                </div>
-
-
-
-
-
-
-
-                                <div class="page-login-field top-15">
-
-                                    <input type="text" class="form-control" placeholder="Country" value="<?php echo $countryip;?>" required >
+                                    <input type="text" class="form-control" placeholder="Country" value="<?php echo $customer_country; ?>" required >
 
                                 </div>
 
                                 <div class="page-login-field top-15">
-                                    <input type="text" class="form-control"  placeholder="City" value="<?php echo $cityss; ?>" required >
+                                    <input type="text" class="form-control"  placeholder="City" value="<?php echo $customer_city ?>" required >
                                 </div>
 
                             
  
                                 <div class="page-login-field top-15">
 
-                                    <input type="text"  name="c_contact" placeholder="Enter Mobile No" required >
+                                    <input type="text"  name="c_contact" placeholder="Enter Mobile No" value="<?php echo $customer_contact; ?>" required >
                                 </div>
                                 <!--<div class="col-md-6">
                                     <label for="">Gender</label>
@@ -113,11 +121,7 @@ $regionss= $json['region_name'];
 
                                 <div class="page-login-field top-15">
 
-                                    <select  name="c_gender">
-  <option>Male</option>
-  <option>Female</option>
-  <option>Other</option>
-</select>
+                                    <input type="text"  name="c_gender" value="<?php echo $customer_gender; ?>" required placeholder="Enter Your Gender">
 
                                 </div>
 
@@ -127,12 +131,13 @@ $regionss= $json['region_name'];
  
                                 <div class="page-login-field top-15">
 
-                                    <input type="text"  placeholder="Address" name="c_address" required >
+                                    <input type="text"  placeholder="Address" value="<?php echo $customer_address; ?>" name="c_address" required >
 
                                 </div>
                                 <div class="page-login-field top-15">
 
                                     <input type="file" placeholder="Image" name="c_image" required>
+
 
                                 </div>
 
@@ -140,9 +145,9 @@ $regionss= $json['region_name'];
 
 
                 
-                                <div class="page-login-field top-15">
+                                <div style="margin-top: 25px;" class="page-login-field top-15">
                     
-                                    <input type="text" placeholder="Zip Code" value="<?php echo $zip_codes; ?>" name="c_zipcode" required >
+                                    <input type="text" placeholder="Zip Code" value="<?php echo $customer_zipcode; ?>" name="c_zipcode" required >
                                 </div>
 
                                 
@@ -153,124 +158,46 @@ $regionss= $json['region_name'];
                          
 
                             <div style="margin-top: 20px;" class="text-center">
-                                <button id="submit" type="submit" name="register" class="button button-blue button-icon button-full button-sm shadow-small top-15 button-rounded uppercase ultrabold">
-                             <i class="fas fa-user-plus"></i> Sign Up
-                             
-                         </button>
+                           <button type="submit" name="update" class="button button-blue button-icon button-full button-sm shadow-small top-15 button-rounded uppercase ultrabold">
+
+<i class="fa fa-user-md" ></i> Update Now
+
+</button>
                             </div>
                     </form>
                     
-<?php
+ <?php
 
- if(isset($_POST['register'])){ $c_name = $_POST['c_name']; $c_email = $_POST['c_email']; $c_pass = $_POST['c_pass']; $c_country = $_POST['c_country']; $c_city = $_POST['c_city']; $c_contact = $_POST['c_contact']; $c_gender = $_POST['c_gender']; $c_address = $_POST['c_address']; $c_zipcode = $_POST['c_zipcode']; $c_image = $_FILES['c_image']['name']; $c_image_tmp =$_FILES['c_image']['tmp_name'];
+        if(isset($_POST['update'])){
 
-        $c_ip = getRealUserIp(); 
+            $update_id = $customer_id;
+            $c_name = $_POST['c_name'];
+            $c_email = $_POST['c_email'];
+            $c_country = $_POST['c_country'];
+            $c_city = $_POST['c_city'];
+            $c_zipcode = $_POST['c_zipcode'];
+            $c_gender = $_POST['c_gender'];
+            $c_contact = $_POST['c_contact'];
+            $c_address = $_POST['c_address'];
+            $c_image = $_FILES['c_image']['name'];
+            $c_image_tmp = $_FILES['c_image']['tmp_name'];
 
-        move_uploaded_file($c_image_tmp,"customer/customer_images/$c_image");
-                               
-                               $get_email = "SELECT * FROM customers WHERE customer_email='$c_email'";
-                               $run_email = mysqli_query($con, $get_email);
-                               $check_email = mysqli_num_rows($run_email);
-                               if($check_email == 1){
-                                   echo "<script>alert('This Email is already registered ! please choose another email')</script>";
-                                   exit();
-                                   
-                               }
-                               
-                               $customer_confirm_code = mt_rand();
-$subject = "Shopcart Email Confirmation Message";
-$from = "mahbubur.riad@gmail.com";
-$message = "
-<h2>
-Hey $c_name,
-</h2>
+            move_uploaded_file($c_image_tmp,"../../customer_images/$c_image");
 
+            $update_customer = "update customers set customer_name='$c_name',customer_email='$c_email',customer_country='$c_country',customer_city='$c_city',customer_contact='$c_contact',customer_address='$c_address',customer_zipcode='$c_zipcode', customer_gender='$c_gender',customer_image='$c_image' where customer_id='$update_id'";
 
-We received a request to set your email to $c_email. If this is correct, please confirm by clicking the button below. If you don’t know why you got this email, please tell us straight away so we can fix this for you.
+            $run_customer = mysqli_query($con,$update_customer);
+            if($run_customer){
+            echo "<script>alert('Your account has been updated please login again')</script>";
+            echo "<script>window.open('my_account.php','_self')</script>";
 
-<p>
-Information That save in our database
-</p>
+}
 
-<table style='border:2px solid black;'>
-  <tr>
-    <th>Name</th>
-    <td>$c_name</td>
-    </tr>
-    <tr>
-    <th>E-mail</th> 
-    <td>$c_email</td> 
-    </tr>
-    <tr>
-    <th>Pass</th>
-     <td>$c_pass</td> 
-    </tr>
-    <tr>
-    <th>Country</th>
-    <td>$c_country</td>
-    </tr>
-    <tr>
-    <th>City</th>
-    <td>$c_city</td>
-    </tr>
-    <tr>
-    <th>Contact</th>
-    <td>$c_contact</td>
-    </tr>
-    <tr>
-    <th>Zipcode</th>
-    <td>$c_zipcode</td>
-    </tr>
-    <tr>
-    <th>Gender</th>
-    <td>$c_gender</td>
-    </tr>
-    <tr>
-    <th>Address</th>
-    <td>$c_address</td>
-    </tr>
-    </tr>
-    
-
-</table>
-<br>
-<br>
-
-<a style='background-color: #af0c42; text-decoration: none; padding: 10px; font-size: 130%; color: white; margin-top:20px;' href='http://shopcartbd.cf/customer/my_account.php?$customer_confirm_code'>
-Click Here To Confirm Email
-</a>
-";
-$headers = "From: $from \r\n";
-$headers .= "Content-type: text/html\r\n";
-mail($c_email,$subject,$message,$headers);
-                               
-
-        $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_city,customer_contact,customer_gender,customer_zipcode,customer_address,customer_image,customer_ip, customer_confirm_code) values ('$c_name','$c_email','$c_pass','$c_country','$c_city','$c_contact', '$c_gender','$c_zipcode','$c_address','$c_image','$c_ip', '$customer_confirm_code')";
+}
 
 
-                $run_customer = mysqli_query($con,$insert_customer);
-                $sel_cart = "select * from cart where ip_add='$c_ip'";
-                $run_cart = mysqli_query($con,$sel_cart);
-                $check_cart = mysqli_num_rows($run_cart);
+?>
 
-                if($check_cart>0){
-                $_SESSION['customer_email']=$c_email;
-                echo "<script>alert('You have been Registered Successfully')</script>";
-                echo "<script>window.open('checkout.php','_self')</script>";
-                }
-
-                else{
-                $_SESSION['customer_email']=$c_email;
-                echo "<script>alert('You have been Registered Successfully')</script>";
-                echo "<script>window.open('customer/my_account.php?profile','_self')</script>";
-                }
-
-
-
-
-        }
-
-        ?>
                    <div class="footer">
 <a href="#" class="footer-logo"></a>
 <p class="footer-text">There's nothing that comes close to Apptastic<br> It's the best Mobile Template on Envato</p>
@@ -302,10 +229,13 @@ mail($c_email,$subject,$message,$headers);
 <a href="#" class="shareToMail no-border bottom-5"><i class="fas fa-envelope bg-mail"></i><span>Email</span><i class="fa fa-angle-right"></i></a>
 </div>
 </div>
-</div>
     </div>
+</div>
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 </body>
 </html>
+
+
+<?php }}?>
