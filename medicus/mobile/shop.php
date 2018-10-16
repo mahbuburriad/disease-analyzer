@@ -26,6 +26,11 @@ include("../assets/function/function.php");
       
       <ul class="shop_items">
       <?php
+
+                                add_cart();
+
+                                ?>
+      <?php
        if(!isset($_GET['p_cat'])){
                         if(!isset($_GET['cat'])){
                             
@@ -53,19 +58,21 @@ include("../assets/function/function.php");
                                 ?>
       
           <li>
-          <?php
-
-                                add_cart();
-
-                                ?>
+          
           <div class="shop_thumb"><a href="details.php?pro_id=<?php echo $pro_id;?>"><img src="../admin/product_images/<?php echo $pro_img1;?>" alt="" title="" /></a></div>
           <div class="shop_item_details">
           <h4><a href="details.php?pro_id=<?php echo $pro_id;?>"><?php echo $pro_title;?></a></h4>
           <div class="shop_item_price"><?php echo $pro_price;?></div>
           <div class="item_qnty_shop">
-                <form id="myform" method="post" action="details.php?pro_id=<?php echo $pro_id;?>">
-                    <button class="btn btn-success" id="addtocart">VIEW PORDUCT</button>
+          <?php
+                                add_cart();
+
+                                ?>
+          <form id="LoginForm" action="index.php" method="post">
+                    <input type="text" name="product_qty">
+                    <input type="submit" name="add_cart" class="form_submit" id="submit" value="Add To Cart" />
                 </form>
+
             </div>
           <a href="#" data-popup=".popup-social" class="open-popup shopfav"><img src="images/icons/black/love.png" alt="" title="" /></a>
           </div>
