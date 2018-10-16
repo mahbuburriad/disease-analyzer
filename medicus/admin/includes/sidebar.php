@@ -180,55 +180,67 @@
                                     <li>
                                         <div class="drop-title bg-primary text-white">
                                             <h4 class="m-b-0 m-t-5">4 New</h4>
-                                            <span class="font-light">Notifications</span>
+                                            <span class="font-light">Orders</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="message-center notifications">
+                                           <?php
+
+$i = 0;
+
+$get_orders = "select * from pending_orders";
+
+$run_orders = mysqli_query($con,$get_orders);
+
+while ($row_orders = mysqli_fetch_array($run_orders)) {
+
+$order_id = $row_orders['order_id'];
+
+$c_id = $row_orders['customer_id'];
+
+$invoice_no = $row_orders['invoice_no'];
+
+$product_id = $row_orders['product_id'];
+
+$qty = $row_orders['qty'];
+
+$size = $row_orders['size'];
+
+$order_status = $row_orders['order_status'];
+
+$get_products = "select * from products where product_id='$product_id'";
+
+$run_products = mysqli_query($con,$get_products);
+
+$row_products = mysqli_fetch_array($run_products);
+
+$product_title = $row_products['product_title'];
+    
+$get_customers = "select * from customers where customer_id='$c_id'";
+
+$run_customers = mysqli_query($con,$get_customers);
+
+$row_customers = mysqli_fetch_array($run_customers);
+
+$customer_name = $row_customers['customer_name'];
+$customer_image = $row_customers['customer_image'];
+
+$i++;
+
+?>
                                             <!-- Message -->
                                             <a href="javascript:void(0)" class="message-item">
                                                 <span class="btn btn-danger btn-circle">
                                                     <i class="fa fa-link"></i>
                                                 </span>
                                                 <div class="mail-contnet">
-                                                    <h5 class="message-title">Luanch Admin</h5>
-                                                    <span class="mail-desc">Just see the my new admin!</span>
-                                                    <span class="time">9:30 AM</span>
+                                                    <h5 class="message-title"><?php echo $product_title?></h5>
+                                                    <span class="mail-desc"><?php echo $customer_name;?> </span>
+                                                    <span class="time"><?php echo $invoice_no; ?></span>
                                                 </div>
                                             </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="message-item">
-                                                <span class="btn btn-success btn-circle">
-                                                    <i class="ti-calendar"></i>
-                                                </span>
-                                                <div class="mail-contnet">
-                                                    <h5 class="message-title">Event today</h5>
-                                                    <span class="mail-desc">Just a reminder that you have event</span>
-                                                    <span class="time">9:10 AM</span>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="message-item">
-                                                <span class="btn btn-info btn-circle">
-                                                    <i class="ti-settings"></i>
-                                                </span>
-                                                <div class="mail-contnet">
-                                                    <h5 class="message-title">Settings</h5>
-                                                    <span class="mail-desc">You can customize this template as you want</span>
-                                                    <span class="time">9:08 AM</span>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="message-item">
-                                                <span class="btn btn-primary btn-circle">
-                                                    <i class="ti-user"></i>
-                                                </span>
-                                                <div class="mail-contnet">
-                                                    <h5 class="message-title">Pavan kumar</h5>
-                                                    <span class="mail-desc">Just see the my admin!</span>
-                                                    <span class="time">9:02 AM</span>
-                                                </div>
-                                            </a>
+<?php } ?>
                                         </div>
                                     </li>
                                     <li>
