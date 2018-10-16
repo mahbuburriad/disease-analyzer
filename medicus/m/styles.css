@@ -1,0 +1,20 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project: Shield Theme
+Version:	1.0
+Assigned to: 23/06/2016
+Last change: 
+Primary use:	
+-------------------------------------------------------------------*/
+
+@import "libraries/lib.css";
+@import "css/plugins.css";
+@import "css/navigation-menu.css";
+@import "css/fonts.css";
+@import "css/style.css";
+@import "css/header.css";
+@import "css/footer.css";
+@import "css/shortcodes.css";
+@import "css/woocommerce.css";
+

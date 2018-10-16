@@ -77,6 +77,67 @@ global $db;
     
 
 }
+function getmProducts(){
+
+/// getProducts function Code Starts ///
+
+global $db;
+    
+    if(!isset($_GET['p_cat'])){
+                        if(!isset($_GET['cat'])){
+                            
+                            $per_page=24;
+                            if(isset($_GET['page'])){
+                                $page = $_GET['page'];
+                            }
+                            else
+                            {
+                                $page = 1;
+                                
+                            }
+                            
+                            $start_from = ($page-1) * $per_page;
+                            $get_products = "SELECT * FROM products order by 1 DESC LIMIT $start_from,$per_page";
+                            
+                            $run_products = mysqli_query($db, $get_products);
+                            
+                            while($row_products = mysqli_fetch_array($run_products)){
+                                $pro_id = $row_products['product_id'];
+                                $pro_title = $row_products['product_title'];
+                                $pro_price = $row_products['product_price'];
+                                $pro_img1 = $row_products['product_img1'];
+                                
+                                
+                                echo"
+    <li class='product' style='height: 120px; width: 80px;'>							
+								<a href='details.php?pro_id=$pro_id' title='$pro_title'>
+									<div class='product-img-box'>
+										<img alt='$pro_title' src='../admin/product_images/$pro_img1'/>
+									</div>
+									<div class='detail-box'>
+                                    
+										<h3>$pro_title</h3>
+										<span class='price'>
+											<span class='amount'>৳ $pro_price</span>
+										</span>
+									</div>
+								</a>
+								<a class='button product_type_simple add_to_cart_button' href='details.php?pro_id=$pro_id' title='Add To Cart'>Add to cart</a>
+								<div class='whishlist-btn'>
+									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Add to wishlist'><i class='icon_heart'></i></a>
+									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Expand'><i class='arrow_expand_alt'></i></a>
+								</div>
+							</li>
+ 
+                                ";
+                            }
+                            
+                        }
+                    }
+    
+    
+
+}
 
 function getMobileProduct(){
 
@@ -111,7 +172,7 @@ global $db;
                                 
                                 echo"
     <li>
-          <div class='shop_thumb'><a href='shop-item.html'><img src='../admin/product_images/$pro_img1' alt='' title='' /></a></div>
+          <div class='shop_thumb'><a href='shop-item.html'><img   src='../admin/product_images/$pro_img1' alt='' title='' /></a></div>
           <div class='shop_item_details'>
           <h4><a href='shop-item.html'>$pro_title</a></h4>
           <div class='shop_item_price'>$pro_price</div>
@@ -282,7 +343,6 @@ echo "' >".'<i class="fa fa-angle-right"></i>'."</a></li>";
 
 /// getPaginator Function Ends ///
 
-
 /// getPaginator Function Starts ///
 
 function getMobilePaginator(){
@@ -367,130 +427,26 @@ $total_records = mysqli_num_rows($result);
 
 $total_pages = ceil($total_records / $per_page);
 
-echo "<a class='prev-page' title='First Page' href=shop.php?page=1";
+echo "<li class='page-item'><a class='prev-page' title='First Page' href=shop.php?page=1";
 
 if(!empty($aPath)){ echo "&".$aPath; }
 
-echo "' >".'<i class="fa fa-angle-left"></i>'."</a>";
+echo "' >".'<i class="fa fa-angle-left"></i>'."</a></li>";
 
 for ($i=1; $i<=$total_pages; $i++){
 
-echo "<a href='shop.php?page=".$i.(!empty($aPath)?'&'.$aPath:'')."' >".$i."</a>";
+echo "<li class='page-item'><a href='shop.php?page=".$i.(!empty($aPath)?'&'.$aPath:'')."' >".$i."</a></li>";
 
 };
 
-echo "<a title='' href='shop.php?page=$total_pages";
+echo "<li class='page-item'><a title='' href='shop.php?page=$total_pages";
 
 if(!empty($aPath)){ echo "&".$aPath; }
 
-echo "' >".'<i class="fa fa-angle-right"></i>'."</a>";
-
-
-/// getPaginator Function Code Ends ///
-
-}
-
-/// getPaginator Function Ends ///
-
-
-
-
-
-
-function getpcatpro(){
-    
-    global $db;
-    
-    if(isset($_GET['p_cat'])){
-        
-        $p_cat_id = $_GET['p_cat'];
-        $get_p_cat = "SELECT * FROM product_categories WHERE p_cat_id = '$p_cat_id'";
-        $run_p_cat = mysqli_query($db, $get_p_cat);
-        $row_p_cat = mysqli_fetch_array($run_p_cat);
-        
-        $p_cat_title = $row_p_cat['p_cat_title'];
-        $p_cat_desc = $row_p_cat['p_cat_desc'];
-        
-       
-        
-        $get_products = "select * from products where p_cat_id='$p_cat_id'";
-        
-        $run_products = mysqli_query($db, $get_products);
-        
-        $count = mysqli_num_rows($run_products);
-        
-        if($count==0){
-            echo "
-            
-            <div class='box'>
-            
-            <h1>$p_cat_title</h1>
-            
-            <p>$p_cat_desc</p>
-            
-            <h1 class='bg-danger'> No Products Founds In this product category <i class='fas fa-frown'></i></h1>
-            
-            
-            </div>
-            
-            
-            ";
-        }
-        
-        else{
-            
-            echo "
-            
-            <div class='box'>
-            
-             <h1>$p_cat_title</h1>
-            
-            <p>$p_cat_desc</p>
-            
-            
-            </div>
-            
-            ";
-            
-        }
-        
-        while($row_products = mysqli_fetch_array($run_products)){
-            
-            $pro_id = $row_products['product_id'];
-                                $pro_title = $row_products['product_title'];
-                                $pro_price = $row_products['product_price'];
-                                $pro_img1 = $row_products['product_img1'];
-                                
-                                
-                                echo"
-                                
-                                    <li class='product'>							
-								<a href='details.php?pro_id=$pro_id' title='$pro_title'>
-									<div class='product-img-box'>
-										<img alt='$pro_title' src='admin/product_images/$pro_img1'/>
-									</div>
-									<div class='detail-box'>
-                                    
-										<h3>$pro_title</h3>
-										<span class='price'>
-											<span class='amount'>৳ $pro_price</span>
-										</span>
-									</div>
-								</a>
-								<a class='button product_type_simple add_to_cart_button' href='details.php?pro_id=$pro_id' title='Add To Cart'>Add to cart</a>
-								<div class='whishlist-btn'>
-									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Add to wishlist'><i class='icon_heart'></i></a>
-									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Expand'><i class='arrow_expand_alt'></i></a>
-								</div>
-							</li>
- 
-                                ";
+echo "' >".'<i class="fa fa-angle-right"></i>'."</a></li>";
                     }
         
-    }
-    
-    
-}
+
 
 function getcatpro(){
     
@@ -804,6 +760,102 @@ function getProIndex(){
                                 ";
         
     }
+}
+
+function getpcatpro(){
+    
+    global $db;
+    
+    if(isset($_GET['p_cat'])){
+        
+        $p_cat_id = $_GET['p_cat'];
+        $get_p_cat = "SELECT * FROM product_categories WHERE p_cat_id = '$p_cat_id'";
+        $run_p_cat = mysqli_query($db, $get_p_cat);
+        $row_p_cat = mysqli_fetch_array($run_p_cat);
+        
+        $p_cat_title = $row_p_cat['p_cat_title'];
+        $p_cat_desc = $row_p_cat['p_cat_desc'];
+        
+       
+        
+        $get_products = "select * from products where p_cat_id='$p_cat_id'";
+        
+        $run_products = mysqli_query($db, $get_products);
+        
+        $count = mysqli_num_rows($run_products);
+        
+        if($count==0){
+            echo "
+            
+            <div class='box'>
+            
+            <h1>$p_cat_title</h1>
+            
+            <p>$p_cat_desc</p>
+            
+            <h1 class='bg-danger'> No Products Founds In this product category <i class='fas fa-frown'></i></h1>
+            
+            
+            </div>
+            
+            
+            ";
+        }
+        
+        else{
+            
+            echo "
+            
+            <div class='box'>
+            
+            <h1>$p_cat_title</h1>
+            
+            <p>$p_cat_desc</p>
+            
+            
+            </div>
+            
+            ";
+            
+        }
+        
+        while($row_products = mysqli_fetch_array($run_products)){
+            
+            $pro_id = $row_products['product_id'];
+                                $pro_title = $row_products['product_title'];
+                                $pro_price = $row_products['product_price'];
+                                $pro_img1 = $row_products['product_img1'];
+                                
+                                
+                                echo"
+    <li class='product'>							
+								<a href='details.php?pro_id=$pro_id' title='$pro_title'>
+									<div class='product-img-box'>
+										<img alt='$pro_title' src='admin/product_images/$pro_img1'/>
+									</div>
+									<div class='detail-box'>
+                                    
+										<h3>$pro_title</h3>
+										<span class='price'>
+											<span class='amount'>৳ $pro_price</span>
+										</span>
+									</div>
+								</a>
+								<a class='button product_type_simple add_to_cart_button' href='details.php?pro_id=$pro_id' title='Add To Cart'>Add to cart</a>
+								<div class='whishlist-btn'>
+									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Add to wishlist'><i class='icon_heart'></i></a>
+									<a href='details.php?pro_id=$pro_id' data-toggle='tooltip' data-placement='bottom' title='Expand'><i class='arrow_expand_alt'></i></a>
+								</div>
+							</li>
+ 
+                                ";
+            
+            
+        }
+        
+    }
+    
+    
 }
 
 

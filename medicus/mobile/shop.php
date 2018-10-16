@@ -45,7 +45,7 @@ include("../assets/function/function.php");
                             }
                             
                             $start_from = ($page-1) * $per_page;
-                            $get_products = "SELECT * FROM products order by 1 DESC LIMIT $start_from,$per_page";
+                            $get_products = "SELECT * FROM products order by 1 DESC";
                             
                             $run_products = mysqli_query($con, $get_products);
                             
@@ -69,11 +69,14 @@ include("../assets/function/function.php");
 
                                 ?>
           <form id="LoginForm" action="index.php" method="post">
-                    <input type="text" name="product_qty">
-                    <input type="submit" name="add_cart" class="form_submit" id="submit" value="Add To Cart" />
+                    <input type="button" value="-" class="qntyminusshop" field="quantity2" />
+                    <input type="text" name="quantity2" value="1" class="qntyshop" />
+                    <input type="button" value="+" class="qntyplusshop" field="quantity2" />
+
                 </form>
 
             </div>
+          <a href="cart.html" id="addtocart">ADD TO CART</a>
           <a href="#" data-popup=".popup-social" class="open-popup shopfav"><img src="images/icons/black/love.png" alt="" title="" /></a>
           </div>
           </li> 
@@ -84,12 +87,16 @@ include("../assets/function/function.php");
           
       </ul>
       
-          <div class="shop_pagination">
-          <?php getMobilePaginator(); ?>
+      
+   <nav aria-label="Page navigation example">
+  <ul class="pagination">
+          <?php getPaginator(); ?>
+       </ul>
+        </nav>
           </div>
       
       
-      </div>
+
       
       </div>
       
