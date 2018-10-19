@@ -25,7 +25,7 @@ include("assets/function/function.php");
     <main>		
 		<!-- Map -->
 		<div class="map layout7">
-			<div id="map-canvas-contact7" class="map-canvas"  data-lat="-37.816279" data-lng="144.964246" data-string="5th Floor, ABC Building, 456 New Design Street Melbourne, Australia" data-zoom="12"></div>
+			<div id="map-canvas-contact7" class="map-canvas"  data-lat="23.8151079" data-lng="90.4233493" data-string="5th Floor, north South University, Bashundahra Baridhara" data-zoom="15"></div>
 		</div><!-- Map /- -->
 		
 		<!-- Contact2 Section  -->
@@ -51,15 +51,15 @@ include("assets/function/function.php");
 								<div class="contact2-infobox">
 									<span class="icon_pin_alt" aria-hidden="true"></span>
 									<h3>Address</h3>
-									<p>5th Floor, ABC Building, 456 New Design Street Melbourne, Australia</p>
+									<p>5th Floor, North South University</p>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-4 col-xs-6">
 								<div class="contact2-infobox">
 									<span class="icon_mail_alt" aria-hidden="true"></span>
 									<h3>Email</h3>
-									<a href="mailto:mail@example.com" title="support@example.com">support@example.com</a>
-									<a href="mailto:mail@example.com" title="hello@example.com">hello@example.com</a>
+									<a href="mailto:mail@example.com" title="support@example.com">support@medicus.ml</a>
+									<a href="mailto:mail@example.com" title="hello@example.com">info@medicus.ml</a>
 								</div>
 							</div>
 						</div>

@@ -61,8 +61,8 @@
                 <input type="hidden" name="cmd" value="_cart">
                 <input type="hidden" name="upload" value="1">
                 <input type="hidden" name="currency_code" value="USD">
-                <input type="hidden" name="return" value="http://localhost/virtualdoctor/medicus/m/paypal_order.php?c_id=<?php echo $customer_id;?>">
-                <input type="hidden" name="cance_return" value="http://localhost/virtualdoctor/medicus/m/index.php">
+                <input type="hidden" name="return" value="http://medicus.ml/mobile/paypal_order.php?c_id=<?php echo $customer_id;?>">
+                <input type="hidden" name="cance_return" value="http://medicus.ml/mobile/index.php">
 
                 <?php 
                 

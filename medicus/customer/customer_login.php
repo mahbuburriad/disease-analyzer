@@ -68,7 +68,7 @@
 
                 echo "<script>alert('You are Logged In')</script>";
 
-                echo "<script>window.open('my_account.php?profile','_self')</script>";
+                echo "<script>window.open('customer/my_account.php?profile','_self')</script>";
 
                 }
                 else {

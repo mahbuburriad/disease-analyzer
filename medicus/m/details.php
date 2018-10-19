@@ -14,6 +14,8 @@ include("../assets/function/function.php");
 
         $p_cat_id = $row_product['p_cat_id'];
         $cat_id = $row_product['cat_id'];
+        $manufacturer_id = $row_product['manufacturer_id'];
+ 
         $pro_title = $row_product['product_title'];
         $pro_price = $row_product['product_price'];
         $pro_desc = $row_product['product_desc'];
@@ -22,14 +24,20 @@ include("../assets/function/function.php");
         $pro_img3 = $row_product['product_img3'];
         $pro_desc = $row_product['product_desc'];
         $pro_features = $row_product['product_features'];
-        $get_p_cat = "select * from product_categories where p_cat_id='$p_cat_id'";
+        $get_p_cat = "select * from product_categories where p_manufacturer_id='$p_cat_id'";
         $run_p_cat = mysqli_query($con,$get_p_cat);
         $row_p_cat = mysqli_fetch_array($run_p_cat);
         $p_cat_title = $row_p_cat['p_cat_title'];
+        
         $get_cat = "select * from categories where cat_id='$cat_id'";
         $run_cat = mysqli_query($con,$get_cat);
         $row_cat = mysqli_fetch_array($run_cat);
         $cat_title = $row_p_cat['cat_title'];
+        
+        $get_manufacturer_id = "select * from manufacturers where manufacturer_id='$manufacturer_id'";
+        $run_manufacturer_id = mysqli_query($con,$get_manufacturer_id);
+        $row_manufacturer_id = mysqli_fetch_array($run_manufacturer_id);
+        $cat_manufacturer_title = $row_manufacturer_id['manufacturer_title'];
     }
 
 ?>
@@ -100,11 +108,12 @@ include("../assets/function/function.php");
             </div>
             <div class="content">
                 <div class="store-product">
+                   <h1>Company</h1>
                     <h2 class="store-product-title">
-                        <?php echo $pro_features;?>
+                        <?php echo $cat_manufacturer_title;?>
                     </h2>
                     <span class="store-product-price"><strong>
-                            <?php echo $pro_price;?></strong></span>
+                            <?php echo "৳ $pro_price" ;?></strong></span>
                 </div>
                 <div class="bottom-10 top-25">
                     <?php

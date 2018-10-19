@@ -88,6 +88,9 @@ include("../assets/function/function.php");
                     </div>
                 </div>
             </div>
+            <div class="decoration decoration-margins"></div>
+            
+
 
 
             <div class="decoration decoration-margins"></div>
@@ -102,6 +105,17 @@ include("../assets/function/function.php");
                 </ul>
             </div>
             <div class="decoration decoration-margins"></div>
+                        <div class="content-title bottom-20">
+                <span class="color-highlight">Meet Our Virtual Doctor</span>
+            </div>
+            
+            <div class="content">
+<div class="responsive-video">
+<iframe class="image-rounded" src="http://ec2-18-136-155-136.ap-southeast-1.compute.amazonaws.com/disease/disease.pl" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+          <div class="decoration decoration-margins"></div>
+           
             <div class="content-title bottom-20">
                 <span class="color-highlight">Only the Best</span>
                 <h1>Featured Mecicine</h1>

@@ -1,21 +1,21 @@
 <div class="menu-title">
-<span class="color-highlight">Find your Style</span>
+<span class="color-highlight">Problem with eyes?</span>
 <h1>Options</h1>
 <a href="#" class="menu-hide"><i class="fa fa-times"></i></a>
 </div>
 <div class="menu-page">
 <div class="toggle-options toggle-dark-mode">
 <h1 class="toggle-title bold font-14">Dark Mode</h1>
-<a href="#" class="toggle-2 toggle-trigger">
+<a href="#" style="margin-right: 40px;" class="toggle-2 toggle-trigger">
 <i class="bg-green-dark"></i>
 <span></span>
 <i class="bg-gray-light"></i>
 </a>
 </div>
-<!--<div class="decoration bottom-10"></div>-->
-<!--<div class="demo-colors">
+<!--<div class="decoration bottom-10"></div>
+<div class="demo-colors">
 <div class="demo-colors-title">
-<h1 class="font-14 bold left-20">Highlight Color</h1>
+<h1 class="font-14 bold left-20">Choose Color</h1>
 </div>
 <div class="demo-colors-select">
 <a href="#" class="demo-red color-red-dark"><i class="fa fa-circle"></i></a>

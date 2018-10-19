@@ -25,7 +25,7 @@ global $db;
     if(!isset($_GET['p_cat'])){
                         if(!isset($_GET['cat'])){
                             
-                            $per_page=6;
+                            $per_page=12;
                             if(isset($_GET['page'])){
                                 $page = $_GET['page'];
                             }
@@ -86,7 +86,7 @@ global $db;
     if(!isset($_GET['p_cat'])){
                         if(!isset($_GET['cat'])){
                             
-                            $per_page=9;
+                            $per_page=12;
                             if(isset($_GET['page'])){
                                 $page = $_GET['page'];
                             }
@@ -124,11 +124,11 @@ global $db;
                     <img class='preload-image' src='images/empty.png' data-src='../admin/product_images/$pro_img1' alt='img'>
                 </a>
                 <div class='store-slide-title'>
-                    <strong>$pro_title</strong>
+                    <strong><a href='details.php?pro_id=$pro_id'>$pro_title</a></strong>
                     <em class='color-gray-dark'>$p_cat_title</em>
                 </div>
                 <div class='store-slide-button'>
-                    <strong><del class='color-blue-light font-10'>Was $250</del> $pro_price</strong>
+                    <strong><del class='color-blue-light font-10'>Was $250</del>৳ $pro_price</strong>
                     <a href='details.php?pro_id=$pro_id'><i class='fa fa-shopping-cart color-highlight'></i></a>
                     <a href='details.php?pro_id=$pro_id'><i class='fa fa-heart color-red-dark'></i></a>
                 </div>
@@ -180,7 +180,7 @@ global $db;
           <div class='shop_thumb'><a href='shop-item.html'><img   src='../admin/product_images/$pro_img1' alt='' title='' /></a></div>
           <div class='shop_item_details'>
           <h4><a href='shop-item.html'>$pro_title</a></h4>
-          <div class='shop_item_price'>$pro_price</div>
+          <div class='shop_item_price'>৳ $pro_price</div>
           <a href='cart.html' id='addtocart'>ADD TO CART</a>
           <a href='#' data-popup='.popup-social' class='open-popup shopfav'><img src='images/icons/black/love.png' alt='' title='' /></a>
           </div>
@@ -228,7 +228,7 @@ global $db;
                                 echo"
     <div class='seller-box'>
 								<div class='product-img'><a href='details.php?pro_id=$pro_id' title='$pro_title'><img style='width: 77px; height: 98px;' src='admin/product_images/$pro_img1' alt='$pro_title' /></a></div>
-								<h4><a href='details.php?pro_id=$pro_id'>$pro_title</a> <span>$pro_price</span></h4>
+								<h4><a href='details.php?pro_id=$pro_id'>$pro_title</a> <span>৳ $pro_price</span></h4>
 							</div>
  
                                 ";
@@ -246,7 +246,7 @@ function getPaginator(){
 
 /// getPaginator Function Code Starts ///
 
-$per_page = 6;
+$per_page = 12;
 
 global $db;
 
@@ -350,7 +350,7 @@ function getMobilePaginator(){
 
 /// getPaginator Function Code Starts ///
 
-$per_page = 6;
+$per_page = 12;
 
 global $db;
 
@@ -930,7 +930,7 @@ function getMIndex(){
                             <div class='above-overlay above-overlay-bottom'>
                                 <div class='image-details bottom-20'>
                                     <a href='#'><img src='images/preload-logo-small.png' alt='img'></a>
-                                    <a href='#'><i class='fa fa-heart color-red-dark'></i>$pro_price</a>
+                                    <a href='#'><i class='fa fa-heart color-red-dark'></i>৳ $pro_price</a>
                                 </div>
                             </div>
                             <div class='overlay overlay-gradient'></div>
@@ -1103,7 +1103,7 @@ function getMpcatpro(){
       
                 </div>
                 <div class='store-slide-button'>
-                    <strong><del class='color-blue-light font-10'>Was $250</del> $pro_price</strong>
+                    <strong><del class='color-blue-light font-10'>Was $250</del>৳ $pro_price</strong>
                     <a href='details.php?pro_id=$pro_id'><i class='fa fa-shopping-cart color-highlight'></i></a>
                     <a href='details.php?pro_id=$pro_id'><i class='fa fa-heart color-red-dark'></i></a>
                 </div>
@@ -1196,7 +1196,7 @@ function getMcatpro(){
               
                 </div>
                 <div class='store-slide-button'>
-                    <strong><del class='color-blue-light font-10'>Was $250</del> $pro_price</strong>
+                    <strong><del class='color-blue-light font-10'>Was $250</del>৳ $pro_price</strong>
                     <a href='details.php?pro_id=$pro_id'><i class='fa fa-shopping-cart color-highlight'></i></a>
                     <a href='details.php?pro_id=$pro_id'><i class='fa fa-heart color-red-dark'></i></a>
                 </div>

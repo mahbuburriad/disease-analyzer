@@ -28,7 +28,7 @@ include("assets/function/function.php");
         $get_cat = "select * from categories where cat_id='$cat_id'";
         $run_cat = mysqli_query($con,$get_cat);
         $row_cat = mysqli_fetch_array($run_cat);
-        $cat_title = $row_p_cat['cat_title'];
+        $cat_title = $row_cat['cat_title'];
     }
 
 ?>
@@ -142,7 +142,7 @@ include("assets/function/function.php");
 </form><!-- form-horizontal Ends -->
 							<div class="product-content">
 								<p><span>sku: </span><?php echo $product_id*rand();?></p>
-								<p><span>Categories:</span> <a href="#"><?php echo $p_cat_title; ?></a>, <a href="#"><?php echo $cat_title; ?></a> </p>
+								<p><span>Categories:</span> <a href="pharmacy.php?cat=<?php echo $p_cat_id;?>"><?php echo $p_cat_title; ?></a> <a href="pharmacy.php?cat=<?php echo $cat_id;?>"><?php echo $cat_title; ?></a> </p>
 				
 								<div class="share">
 									<h4>Share:</h4>

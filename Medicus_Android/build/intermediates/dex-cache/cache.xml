@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\Medicus_Android\ParseStarterProject\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5b1c6cf97e5b67cbf25432a179131d486fb61dee">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_01d63c6959b7c4cfd4c1374a2e3afcc53fb75627\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Medicus_Android\ParseStarterProject\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_93aa4e167049795e4dae67211ac91cbd7677ae42\classes.dex" />
+    </item>
+
+</items>

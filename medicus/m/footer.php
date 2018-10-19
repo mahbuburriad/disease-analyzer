@@ -34,6 +34,4 @@
     <script type="text/javascript" src="scripts/custom.js"></script>
 </body>
 
-<!-- Mirrored from www.enableds.com/products/apptastic/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Oct 2018 06:50:15 GMT -->
-
 </html>

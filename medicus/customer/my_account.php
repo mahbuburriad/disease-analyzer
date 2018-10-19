@@ -1,7 +1,6 @@
 
 <?php
 session_start();
-
 if(!isset($_SESSION['customer_email'])){
     echo "<script>alert('Please Login to go to your account. If you have not user account Please register and it is more fun to buy here. Thank you!')</script>";
     echo "<script>window.open('../checkout.php', '_self')</script>";
@@ -108,7 +107,7 @@ include("assets/function/function.php");
     
     if(isset($_GET['send_email'])){
         
-        $subject = "Shopcart Email Confirmation Message";
+        $subject = "Medicus Email Confirmation Message";
 $from = "mahbubur.riad@gmail.com";
 $message = "
 <h2>
@@ -166,7 +165,7 @@ Information That save in our database
 <br>
 <br>
 
-<a style='background-color: #af0c42; text-decoration: none; padding: 10px; font-size: 130%; color: white; margin-top:20px;' href='http://shopcartbd.cf/customer/my_account.php?$customer_confirm_code'>
+<a style='background-color: #af0c42; text-decoration: none; padding: 10px; font-size: 130%; color: white; margin-top:20px;' href='http://medicus.ml/customer/my_account.php?$customer_confirm_code'>
 Click Here To Confirm Email
 </a>
 ";

@@ -178,7 +178,7 @@ $regionss= $json['region_name'];
                                }
                                
                                $customer_confirm_code = mt_rand();
-$subject = "Shopcart Email Confirmation Message";
+$subject = "Medicus Email Confirmation Message";
 $from = "mahbubur.riad@gmail.com";
 $message = "
 <h2>
@@ -236,7 +236,7 @@ Information That save in our database
 <br>
 <br>
 
-<a style='background-color: #af0c42; text-decoration: none; padding: 10px; font-size: 130%; color: white; margin-top:20px;' href='http://shopcartbd.cf/customer/my_account.php?$customer_confirm_code'>
+<a style='background-color: #af0c42; text-decoration: none; padding: 10px; font-size: 130%; color: white; margin-top:20px;' href='http://medicus.ml/mobile/customer/my_account.php?$customer_confirm_code'>
 Click Here To Confirm Email
 </a>
 ";

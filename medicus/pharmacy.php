@@ -89,17 +89,14 @@ include("assets/function/function.php");
 						
 						<ul class="products row">
 <?php getProducts(); ?>
-						</ul>
-						
-						                    <div class="row">
-
-                        <?php
+                    <?php
                         getpcatpro();
                         getcatpro();
                         
                         ?>
+						</ul>
 
-                    </div>
+                    
 						<!-- Pagination:: Layout2 -->
 						<div class="pagination-block layout layout2">
 							<!-- Ow Pagination -->

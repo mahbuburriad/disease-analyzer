@@ -1,19 +1,12 @@
-
-<?php
-session_start();
-
-if(isset($_SESSION['customer_email'])){
-    $c_email = $_SESSION['customer_email'];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <iframe src="http://virtualdoctor.ml/disease/disease.pl" frameborder="0"></iframe>
     
-    
-          echo "$c_email";
-}
-else
-{
-    echo "sorry";
-}
-       ?>
-       
-  
-       
-       
+</body>
+</html>

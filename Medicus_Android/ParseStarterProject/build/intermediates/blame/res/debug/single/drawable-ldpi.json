@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_shopping_cart_black_24dp.png",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_shopping_cart_black_24dp.png"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_place_black_24dp.png",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_place_black_24dp.png"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_add_alarm_black_24dp.png",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_add_alarm_black_24dp.png"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_search_black_24dp.png",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_search_black_24dp.png"
+    }
+]

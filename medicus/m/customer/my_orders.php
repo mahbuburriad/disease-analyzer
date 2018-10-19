@@ -66,6 +66,16 @@ include("../../assets/function/function.php");
 </div>
 </div>
 <div class="page-content header-clear-medium">
+<div id='notification-success' class='notification-fixed bg-green-dark'>
+<div class='notification-icon'>
+<em><i class='fa fa-bell'></i></em>
+<span>Medicus</span>
+<a href='#'><i class='fa fa-times-circle'></i></a>
+</div>
+<h1>Login Success</h1>
+<p>You can checkout your product now</p>
+</div>
+
 <div class="content">
 <p>
 Here is your order list that you did before. if you pay by bkash or other operator please comfirm us to give us the code

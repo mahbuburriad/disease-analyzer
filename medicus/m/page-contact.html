@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppTastic</title>
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="stylesheet" type="text/css" href="styles/framework.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+</head>
+<body>
+<div id="page-transitions" class="page-build light-skin highlight-blue">
+<div id="menu-hider"></div>
+<div id="menu-list" data-selected="menu-pages" data-load="menu-list.html" data-height="415" class="menu-box menu-load menu-bottom"></div>
+<div id="menu-demo" data-load="menu-demo.html" data-height="210" class="menu-box menu-load menu-bottom"></div>
+<div id="menu-find" data-load="menu-find.html" data-height="420" class="menu-box menu-load menu-bottom"></div>
+<div class="header header-scroll-effect">
+<div class="header-line-1 header-hidden header-logo-app">
+<a href="#" class="back-button header-logo-title">Back to Pages</a>
+<a href="#" class="back-button header-icon header-icon-1"><i class="fa fa-angle-left"></i></a>
+<a href="#" data-menu="menu-find" class="header-icon header-icon-3"><i class="fa fa-search"></i></a>
+<a href="#" data-menu="menu-list" class="header-icon header-icon-4"><i class="fa fa-bars"></i></a>
+<a href="#" data-menu="menu-demo" class="header-icon header-icon-2"><i class="fa fa-cog"></i></a>
+</div>
+<div class="header-line-2 header-scroll-effect">
+<a href="#" class="header-pretitle header-date color-highlight"></a>
+<a href="#" class="header-title">Contact Us</a>
+<a href="#" data-menu="menu-list" class="header-icon header-icon-1"><i class="fa fa-bars"></i></a>
+<a href="#" data-menu="menu-find" class="header-icon header-icon-2"><i class="fa fa-search"></i></a>
+<a href="#" data-menu="menu-demo" class="header-icon header-icon-3"><i class="fa fa-cog"></i></a>
+</div>
+</div>
+<div class="page-content header-clear-small">
+<div class="content-fullscreen">
+<iframe class="responsive-image maps shadow-medium bottom-0" src="https://maps.google.com/?ie=UTF8&amp;ll=47.595131,-122.330414&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed"></iframe>
+</div>
+<div class="content-title bottom-30 top-30">
+<span class="color-highlight">GET IN TOUCH</span>
+<h1>Send us a Message</h1>
+<p>Send us a message and we'll get back to you in the shortest possbile time. This is a demo form.</p>
+</div>
+<div class="content">
+<div class="container bottom-0">
+<div class="contact-form">
+<div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+<div class="notification-small notification-has-icon notification-green shadow-small">
+<div class="notification-icon"><i class="fa fa-check notification-icon"></i></div>
+<p>Message sent! We'll be in Touch!</p>
+<a href="#" class="close-notification"><i class="fa fa-times"></i></a>
+</div>
+</div>
+<form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+<fieldset>
+<div class="formValidationError bg-red-dark" id="contactNameFieldError">
+<p class="center-text color-white">Name is Required!</p>
+</div>
+<div class="formValidationError bg-red-dark" id="contactEmailFieldError">
+<p class="center-text color-white">Mail Address Required!</p>
+</div>
+<div class="formValidationError bg-red-dark" id="contactEmailFieldError2">
+<p class="center-text color-white">Mail Address Must be Valid!</p>
+</div>
+<div class="formValidationError bg-red-dark" id="contactMessageTextareaError">
+<p class="center-text color-white">Message Field is Empty!</p>
+</div>
+<div class="formFieldWrap">
+<label class="field-title contactNameField" for="contactNameField">Name:<span>(required)</span>
+</label>
+<input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField" />
+</div>
+<div class="formFieldWrap">
+<label class="field-title contactEmailField" for="contactEmailField">Email: <span>(required)</span>
+</label>
+<input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField" />
+</div>
+<div class="formTextareaWrap">
+<label class="field-title contactMessageTextarea" for="contactMessageTextarea">Message: <span>(required)</span>
+</label>
+<textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+</div>
+<div class="formSubmitButtonErrorsWrap contactFormButton">
+<input type="submit" class="buttonWrap button bg-highlight button-sm button-rounded uppercase ultrabold contactSubmitButton shadow-small top-30" id="contactSubmitButton" value="Send Message" data-formId="contactForm" />
+</div>
+</fieldset>
+</form>
+</div>
+</div>
+<div class="decoration"></div>
+</div>
+<div class="content-title bottom-30 top-30">
+<span class="color-highlight">More contacts</span>
+<h1>Contact Information</h1>
+<p>Reach us on any of the addresses or social networks below. We're always available for you.</p>
+</div>
+<div class="content">
+<div class="decoration"></div>
+<div class="contact-information last-column">
+<div class="container no-bottom">
+<p class="contact-information">
+<strong class="color-highlight">Postal Information</strong>
+<br> PO Box 22161 Street Collins East
+<br> PO Box 16122 Collins Street West
+<br> Victoria 8007 Australia
+</p>
+<p class="contact-information">
+<strong class="color-highlight">Envato Headquarters</strong>
+<br> 121 King Street, Melbourne
+<br> Victoria 3000 Australia
+</p>
+<p class="contact-information">
+<strong class="color-highlight">Contact Information:</strong>
+<br>
+<a href="tel: +123 456 7890"><i class="fa fa-phone-square color-green-dark"></i>+ 123 456 7890</a>
+<a href="mailto:name@domain.com"><i class="fa fa-envelope-square color-blue-dark"></i>mail@doamin.com</a>
+<a href="#"><i class="fab fa-facebook-square color-facebook"></i>enabled.labs</a>
+<a href="#"><i class="fab fa-twitter-square color-twitter"></i>@iEnabled</a>
+<a href="#"><i class="fab fa-google-plus-square color-google"></i>@iEnabled</a>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<a href="#" class="footer-logo"></a>
+<p class="footer-text">There's nothing that comes close to Apptastic<br> It's the best Mobile Template on Envato</p>
+<div class="footer-socials">
+<a href="#" class="scale-hover icon icon-round no-border icon-xs bg-facebook border-teal-3d"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="scale-hover icon icon-round no-border icon-xs bg-twitter"><i class="fab fa-twitter"></i></a>
+<a href="#" class="scale-hover icon icon-round no-border icon-xs bg-google"><i class="fab fa-google-plus-g"></i></a>
+<a href="#" class="scale-hover icon icon-round no-border icon-xs bg-phone"><i class="fa fa-phone"></i></a>
+<a href="#" data-menu="menu-share" class="scale-hover icon icon-round no-border icon-xs bg-teal-dark"><i class="fa fa-retweet font-15"></i></a>
+<a href="#" class="scale-hover icon icon-round no-border icon-xs back-to-top bg-blue-dark"><i class="fa fa-angle-up font-16"></i></a>
+</div>
+<p class="footer-copyright">Copyright &copy; Enabled <span id="copyright-year">2017</span>. All Rights Reserved.</p>
+</div>
+</div>
+<a href="#" class="back-to-top-badge back-to-top-small bg-highlight"><i class="fa fa-angle-up"></i>Back to Top</a>
+<div id="menu-share" data-height="420" class="menu-box menu-bottom">
+<div class="menu-title">
+<span class="color-highlight">Just tap to share</span>
+<h1>Sharing is Caring</h1>
+<a href="#" class="menu-hide"><i class="fa fa-times"></i></a>
+</div>
+<div class="sheet-share-list">
+<a href="#" class="shareToFacebook"><i class="fab fa-facebook-f bg-facebook"></i><span>Facebook</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToTwitter"><i class="fab fa-twitter bg-twitter"></i><span>Twitter</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToLinkedIn"><i class="fab fa-linkedin-in bg-linkedin"></i><span>LinkedIn</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToGooglePlus"><i class="fab fa-google-plus-g bg-google"></i><span>Google +</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToPinterest"><i class="fab fa-pinterest-p bg-pinterest"></i><span>Pinterest</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToWhatsApp"><i class="fab fa-whatsapp bg-whatsapp"></i><span>WhatsApp</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="shareToMail no-border bottom-5"><i class="fas fa-envelope bg-mail"></i><span>Email</span><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
+</html>
