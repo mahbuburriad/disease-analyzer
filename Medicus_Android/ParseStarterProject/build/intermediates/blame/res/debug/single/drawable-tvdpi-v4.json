@@ -16,12 +16,12 @@
         "source": "C:\\Users\\mahbu\\.android\\build-cache\\c9168dcc1b0967b41b6827a177342065e6b7dad8\\output\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
     },
     {
-        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
-        "source": "C:\\Users\\mahbu\\.android\\build-cache\\10cd1c59b6978fbb67aec544b6857b561e2b2f1c\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
-    },
-    {
         "merged": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
         "source": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.4.0\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\10cd1c59b6978fbb67aec544b6857b561e2b2f1c\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
     },
     {
         "merged": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",

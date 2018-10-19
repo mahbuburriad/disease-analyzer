@@ -64,7 +64,7 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Request");
         query.whereEqualTo("username", ParseUser.getCurrentUser().getUsername());
-        query.whereExists("driverUsername");
+        query.whereExists("doctorUsername");
 
         query.findInBackground(new FindCallback<ParseObject>() {
             @Override
@@ -76,7 +76,7 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
 
                     ParseQuery<ParseUser> query = ParseUser.getQuery();
 
-                    query.whereEqualTo("username", objects.get(0).getString("driverUsername"));
+                    query.whereEqualTo("username", objects.get(0).getString("doctorUsername"));
 
                     query.findInBackground(new FindCallback<ParseUser>() {
                         @Override

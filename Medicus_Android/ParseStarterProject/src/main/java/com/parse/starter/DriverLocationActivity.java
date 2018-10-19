@@ -49,7 +49,7 @@ public class DriverLocationActivity extends FragmentActivity implements OnMapRea
 
                         for (ParseObject object : objects) {
 
-                            object.put("driverUsername", ParseUser.getCurrentUser().getUsername());
+                            object.put("doctorUsername", ParseUser.getCurrentUser().getUsername());
 
                             object.saveInBackground(new SaveCallback() {
                                 @Override
@@ -58,7 +58,7 @@ public class DriverLocationActivity extends FragmentActivity implements OnMapRea
                                     if (e == null) {
 
                                         Intent directionsIntent = new Intent(android.content.Intent.ACTION_VIEW,
-                                                Uri.parse("http://maps.google.com/maps?saddr=" + intent.getDoubleExtra("driverLatitude", 0) + "," + intent.getDoubleExtra("driverLongitude", 0) + "&daddr=" + intent.getDoubleExtra("requestLatitude", 0) + "," + intent.getDoubleExtra("requestLongitude", 0)));
+                                                Uri.parse("http://maps.google.com/maps?saddr=" + intent.getDoubleExtra("doctorLatitude", 0) + "," + intent.getDoubleExtra("doctorLongitude", 0) + "&daddr=" + intent.getDoubleExtra("requestLatitude", 0) + "," + intent.getDoubleExtra("requestLongitude", 0)));
                                         startActivity(directionsIntent);
 
                                     }
@@ -97,7 +97,7 @@ public class DriverLocationActivity extends FragmentActivity implements OnMapRea
             @Override
             public void onGlobalLayout() {
 
-                LatLng driverLocation = new LatLng(intent.getDoubleExtra("driverLatitude", 0), intent.getDoubleExtra("driverLongitude", 0));
+                LatLng driverLocation = new LatLng(intent.getDoubleExtra("doctorLatitude", 0), intent.getDoubleExtra("doctorLongitude", 0));
 
                 LatLng requestLocation = new LatLng(intent.getDoubleExtra("requestLatitude", 0), intent.getDoubleExtra("requestLongitude", 0));
 

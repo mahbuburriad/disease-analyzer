@@ -36,20 +36,20 @@
         "source": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
-        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\layout\\notification_media_action.xml"
-    },
-    {
-        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_alert_dialog_material.xml"
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_powered_by_google.xml",
@@ -120,24 +120,24 @@
         "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\layout\\activity_driver_location.xml"
     },
     {
-        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
         "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
         "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_progress.xml",
         "source": "C:\\Users\\mahbu\\.android\\build-cache\\5a7325bf66252b5f7ef67081057c8992e617070c\\output\\res\\layout\\place_autocomplete_progress.xml"
     },
     {
-        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
-        "source": "C:\\Users\\mahbu\\.android\\build-cache\\bc13d1f6ac02ef1f1dbe9680432d98ab44a7f253\\output\\res\\layout\\design_navigation_menu.xml"
-    },
-    {
         "merged": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\bc13d1f6ac02ef1f1dbe9680432d98ab44a7f253\\output\\res\\layout\\design_navigation_menu.xml"
     },
     {
         "merged": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",

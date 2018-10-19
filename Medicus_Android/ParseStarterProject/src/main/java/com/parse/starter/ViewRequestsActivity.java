@@ -58,7 +58,7 @@ public class ViewRequestsActivity extends AppCompatActivity {
 
             query.whereNear("location", geoPointLocation);
 
-            query.whereDoesNotExist("driverUsername");
+            query.whereDoesNotExist("doctorUsername");
 
             query.setLimit(10);
 
@@ -173,8 +173,8 @@ public class ViewRequestsActivity extends AppCompatActivity {
 
                             intent.putExtra("requestLatitude", requestLatitudes.get(i));
                             intent.putExtra("requestLongitude", requestLongitudes.get(i));
-                            intent.putExtra("driverLatitude", lastKnownLocation.getLatitude());
-                            intent.putExtra("driverLongitude", lastKnownLocation.getLongitude());
+                            intent.putExtra("doctorLatitude", lastKnownLocation.getLatitude());
+                            intent.putExtra("doctorLongitude", lastKnownLocation.getLongitude());
                             intent.putExtra("username", usernames.get(i));
 
                             startActivity(intent);

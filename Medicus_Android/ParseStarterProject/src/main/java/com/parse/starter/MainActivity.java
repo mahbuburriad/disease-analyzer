@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
   public void redirectActivity() {
 
-    if (ParseUser.getCurrentUser().getString("riderOrDriver").equals("rider")) {
+    if (ParseUser.getCurrentUser().getString("patientOrDoctor").equals("patient")) {
 
         Intent intent = new Intent(getApplicationContext(), pharmacy.class);
         startActivity(intent);
@@ -47,15 +47,15 @@ public class MainActivity extends AppCompatActivity {
 
     Log.i("Switch value", String.valueOf(userTypeSwitch.isChecked()));
 
-    String userType = "rider";
+    String userType = "patient";
 
     if (userTypeSwitch.isChecked()) {
 
-      userType = "driver";
+      userType = "doctor";
 
     }
 
-    ParseUser.getCurrentUser().put("riderOrDriver", userType);
+    ParseUser.getCurrentUser().put("patientOrDoctor", userType);
 
       ParseUser.getCurrentUser().saveInBackground(new SaveCallback() {
           @Override
@@ -102,9 +102,9 @@ public class MainActivity extends AppCompatActivity {
 
     } else {
 
-      if (ParseUser.getCurrentUser().get("riderOrDriver") != null) {
+      if (ParseUser.getCurrentUser().get("patientOrDoctor") != null) {
 
-        Log.i("Info", "Redirecting as " + ParseUser.getCurrentUser().get("riderOrDriver"));
+        Log.i("Info", "Redirecting as " + ParseUser.getCurrentUser().get("patientOrDoctor"));
 
         redirectActivity();
 
