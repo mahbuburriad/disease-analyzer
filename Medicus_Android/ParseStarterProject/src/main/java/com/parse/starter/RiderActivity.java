@@ -187,10 +187,7 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
                     });
 
 
-
-
                 }
-
 
 
             }
@@ -321,7 +318,6 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
         if (driverActive == false) {
 
             LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
-
             mMap.clear();
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15));
             mMap.addMarker(new MarkerOptions().position(userLocation).title("Your Location"));
@@ -381,6 +377,7 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+
 
         locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
 

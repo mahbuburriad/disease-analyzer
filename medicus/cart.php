@@ -130,6 +130,10 @@ include("assets/function/function.php");
 																
 								</tbody>
 							</table>
+							<p class="label label-warning">You must upload your valid prescription as Image or PDF</p><br>
+							<input type="file" name="size" required>
+							
+							
 						</div>
 						<div>
 						<button class="btn btn-default" type="submit" name="update" value="Update Cart">

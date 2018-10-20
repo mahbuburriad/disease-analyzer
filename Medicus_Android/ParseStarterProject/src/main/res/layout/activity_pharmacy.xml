@@ -8,11 +8,22 @@
     tools:context="com.parse.starter.pharmacy">
 
 
-    <WebView
+    <android.support.v4.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/webViewId">
-    </WebView>
+        android:id="@+id/swipe"
+        >
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webViewId">
+        </WebView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"

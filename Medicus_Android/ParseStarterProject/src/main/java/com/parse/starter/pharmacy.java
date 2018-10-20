@@ -3,6 +3,7 @@ package com.parse.starter;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.webkit.WebViewClient;
 
 public class pharmacy extends AppCompatActivity {
     private WebView webView;
+    private SwipeRefreshLayout swipe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +21,17 @@ public class pharmacy extends AppCompatActivity {
         setContentView(R.layout.activity_pharmacy);
         getSupportActionBar().hide();
 
-        webView = (WebView) findViewById(R.id.webViewId);
+        swipe = (SwipeRefreshLayout)findViewById(R.id.swipe);
 
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
+        swipe.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                loadWeb();
+            }
+        });
+        loadWeb();
 
-        webView.setWebViewClient(new WebViewClient());
 
-        webView.loadUrl("http://medicus.ml/mobile");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +52,34 @@ public class pharmacy extends AppCompatActivity {
         });
 
     }
+
+    public void loadWeb(){
+        webView = (WebView) findViewById(R.id.webViewId);
+
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setAppCacheEnabled(true);
+        swipe.setRefreshing(true);
+        webView.loadUrl("http://medicus.ml/mobile");
+
+        webView.setWebViewClient(new WebViewClient(){
+
+            public void onReceivedError(WebView view, int errorcode, String description, String failingUrl){
+                webView.loadUrl("http://medicus.ml/mobile");
+            }
+
+            public void onPageFinished(WebView view, String url){
+                swipe.setRefreshing(false);
+            }
+
+        });
+
+
+
+
+    }
+
+
 
     @Override
     public void onBackPressed() {
