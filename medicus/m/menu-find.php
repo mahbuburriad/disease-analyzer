@@ -24,6 +24,10 @@ include("../assets/function/function.php");
 </ul>
 </div>
 
+<div class="search-results disabled-search-list bottom-10">
+
+<?php getsCategorySearch(); ?>
+
 </div>
 <script type="text/javascript">
         //Preload Image

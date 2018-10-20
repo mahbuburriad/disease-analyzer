@@ -845,6 +845,70 @@ function getsCategory(){
     
 }
 
+function getsCategorySearch(){
+    
+    global $db;
+    
+    $get_product = "select * from products";
+        $run_product = mysqli_query($db,$get_product);
+        while($row_product = mysqli_fetch_array($run_product)){
+            $p_cat_id = $row_product['p_cat_id'];
+        $cat_id = $row_product['cat_id'];
+        $pro_id = $row_product['product_id'];
+        $manufacturer_id = $row_product['manufacturer_id'];
+            
+            
+        $pro_title = $row_product['product_title'];
+        $pro_titles = $row_product['product_title'];
+            
+            $pro_title=strtolower($pro_title);
+        
+        $pro_price = $row_product['product_price'];
+        $pro_desc = $row_product['product_desc'];
+        $pro_img1 = $row_product['product_img1'];
+        $pro_img2 = $row_product['product_img2'];
+        $pro_img3 = $row_product['product_img3'];
+        $pro_desc = $row_product['product_desc'];
+        $pro_features = $row_product['product_features'];
+            
+        $get_p_cat = "select * from product_categories where p_cat_id='$p_cat_id'";
+        $run_p_cat = mysqli_query($db,$get_p_cat);
+        $row_p_cat = mysqli_fetch_array($run_p_cat);
+        $p_cat_title = $row_p_cat['p_cat_title'];
+            $p_cat_title=strtolower($p_cat_title);
+            
+            $get_manufacturer_id = "select * from manufacturers where manufacturer_id='$manufacturer_id'";
+        $run_manufacturer_id = mysqli_query($db,$get_manufacturer_id);
+        $row_manufacturer_id = mysqli_fetch_array($run_manufacturer_id);
+        $manufacturer_title = $row_manufacturer_id['manufacturer_title'];
+            $manufacturer_title=strtolower($manufacturer_title);
+            
+            
+        $get_cat = "select * from categories where cat_id='$cat_id'";
+        $run_cat = mysqli_query($db,$get_cat);
+        $row_cat = mysqli_fetch_array($run_cat);
+        $cat_title = $row_cat['cat_title'];
+            $cat_title=strtolower($cat_title);
+            
+            
+            echo"
+            
+            <div data-filter-item data-filter-name='all products $pro_title $p_cat_title $cat_title $manufacturer_title' class='search-result-list'>
+<img src='images/empty.png' class='preload-search-image' data-src='../admin/product_images/$pro_img1' alt='img'>
+<h1>$pro_titles</h1>
+<p>৳ $pro_price</p>
+<a href='details.php?pro_id=$pro_id' class='bg-highlight'>VIEW</a>
+</div>
+            ";
+            
+        }
+
+        
+    
+    
+    
+}
+
 
 function getProductCategory(){
     

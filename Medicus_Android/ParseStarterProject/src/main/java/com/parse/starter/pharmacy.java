@@ -61,21 +61,14 @@ public class pharmacy extends AppCompatActivity {
         webSettings.setAppCacheEnabled(true);
         swipe.setRefreshing(true);
         webView.loadUrl("http://medicus.ml/mobile");
-
         webView.setWebViewClient(new WebViewClient(){
-
             public void onReceivedError(WebView view, int errorcode, String description, String failingUrl){
-                webView.loadUrl("http://medicus.ml/mobile");
+                webView.loadUrl("file:///android_asset/www/index.html");
             }
-
             public void onPageFinished(WebView view, String url){
                 swipe.setRefreshing(false);
             }
-
         });
-
-
-
 
     }
 
