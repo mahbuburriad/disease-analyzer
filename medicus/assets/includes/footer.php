@@ -18,7 +18,7 @@
 						<div class="tags">
 						<?php
 
-$get_p_cats = "select * from product_categories";
+$get_p_cats = "select * from product_categories LIMIT 0, 4";
 
 $run_p_cats = mysqli_query($con,$get_p_cats);
 

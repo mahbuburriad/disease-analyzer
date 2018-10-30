@@ -120,7 +120,7 @@ include("assets/function/function.php");
 											<span><?php echo $only_price; ?> </span>
 										</td>										
 										<td data-title="Quantity" class="product-quantity">
-											<div class="quantity"><input type="text" title="remove" name="quantity" value="<?php echo $_SESSION['pro_qty']; ?>" data-product_id="<?php echo $pro_id; ?>" class="quantity form-control">"></div>
+											<div class="quantity"><input type="text" title="remove" name="quantity" value="<?php echo $_SESSION['pro_qty']; ?>" data-product_id="<?php echo $pro_id; ?>" class="quantity form-control"></div>
 										</td>
 										<td data-title="Total" class="product-price">
 											<span><?php echo $sub_total; ?></span>
@@ -137,7 +137,7 @@ include("assets/function/function.php");
 						</div>
 						<div>
 						<button class="btn btn-default" type="submit" name="update" value="Update Cart">
-                                  <i class="fas fa-retweet"></i> Delete Product
+                                  <i class="fa fa-retweet"></i> Delete Product
                                    
                                </button>
 

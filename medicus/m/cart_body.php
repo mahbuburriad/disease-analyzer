@@ -53,6 +53,7 @@ include("../assets/function/function.php");
                             <i class="fa fa-shopping-bag"></i>
                             Checkout</a>
                         </button>
+                   
         </div>
         
         <div class="page-content header-clear-medium">
@@ -75,7 +76,7 @@ include("../assets/function/function.php");
 								<form>
 									<input type="text" name="code" class="form-control" placeholder="Enter your code here !" />
 									
-									<input name="apply_coupon" type="submit" value="apply coupon"/>
+									<input name="apply_coupon" type="submit" class="button button-blue button-rounded button-full button-sm ultrabold uppercase shadow-small" value="apply coupon"/>
 									
 <!--									<button class="btn btn-default" type="submit" name="update" value="Update Cart">
                                   <i class="fas fa-retweet"></i> Delete Product
@@ -217,27 +218,6 @@ include("../assets/function/function.php");
                 	
                 <div class="decoration"></div>
                 <a href="checkout.php" class="button button-blue button-rounded button-full button-sm ultrabold uppercase shadow-small">Proceed to Checkout</a>
-                  <script>
-            $(document).ready(function(data) {
-                $(document).on('keyup', '.quantity', function() {
-                    var id = $(this).data("product_id");
-                    var quantity = $(this).val();
-                    if (quantity != '') {
-                        $.ajax({
-                            url: "change.php",
-                            method: "POST",
-                            data: {
-                                id: id,
-                                quantity: quantity
-                            },
-                            success: function(data) {
-                                $("body").load('cart_body.php');
-                            }
-                        });
-                    }
-                });
-            });
-
-        </script>
+                  
             </div>
             <?php include("footer.php"); ?>

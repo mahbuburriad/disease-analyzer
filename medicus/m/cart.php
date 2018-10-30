@@ -218,27 +218,6 @@ include("../assets/function/function.php");
                 	
                 <div class="decoration"></div>
                 <a href="checkout.php" class="button button-blue button-rounded button-full button-sm ultrabold uppercase shadow-small">Proceed to Checkout</a>
-                  <script>
-            $(document).ready(function(data) {
-                $(document).on('keyup', '.quantity', function() {
-                    var id = $(this).data("product_id");
-                    var quantity = $(this).val();
-                    if (quantity != '') {
-                        $.ajax({
-                            url: "change.php",
-                            method: "POST",
-                            data: {
-                                id: id,
-                                quantity: quantity
-                            },
-                            success: function(data) {
-                                $("body").load('cart_body.php');
-                            }
-                        });
-                    }
-                });
-            });
-
-        </script>
+                  
             </div>
             <?php include("footer.php"); ?>

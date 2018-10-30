@@ -30,6 +30,30 @@
         </div>
     </div>
     <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    
+    <script>
+            $(document).ready(function(data) {
+                $(document).on('keyup', '.quantity', function() {
+                    var id = $(this).data("product_id");
+                    var quantity = $(this).val();
+                    if (quantity != '') {
+                        $.ajax({
+                            url: "change.php",
+                            method: "POST",
+                            data: {
+                                id: id,
+                                quantity: quantity
+                            },
+                            success: function(data) {
+                                $("body").load('cart_body.php');
+                            }
+                        });
+                    }
+                });
+            });
+
+        </script>
     <script type="text/javascript" src="scripts/plugins.js"></script>
     <script type="text/javascript" src="scripts/custom.js"></script>
 </body>
