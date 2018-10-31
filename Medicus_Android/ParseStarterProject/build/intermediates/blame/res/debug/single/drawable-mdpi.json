@@ -32,12 +32,12 @@
         "source": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-mdpi\\ic_cast_on_0_light.png"
     },
     {
-        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_play_dark.png",
-        "source": "C:\\Users\\mahbu\\.android\\build-cache\\e2731934f97f2511f180f8206efdacbd8cc98caa\\output\\res\\drawable-mdpi\\ic_play_dark.png"
-    },
-    {
         "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_cast_on_0_light.png",
         "source": "C:\\Users\\mahbu\\.android\\build-cache\\e2731934f97f2511f180f8206efdacbd8cc98caa\\output\\res\\drawable-mdpi\\ic_cast_on_0_light.png"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_play_dark.png",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\e2731934f97f2511f180f8206efdacbd8cc98caa\\output\\res\\drawable-mdpi\\ic_play_dark.png"
     },
     {
         "merged": "D:\\Users\\robpercival\\AndroidStudioProjects\\Uber\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_media_route_off_mono_dark.png",

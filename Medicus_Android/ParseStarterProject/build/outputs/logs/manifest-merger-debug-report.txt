@@ -239,7 +239,7 @@ MERGED from [com.google.android.gms:play-services-wearable:9.4.0] C:\Users\mahbu
 MERGED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\mahbu\.android\build-cache\10cd1c59b6978fbb67aec544b6857b561e2b2f1c\output\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\mahbu\.android\build-cache\866a3c9bf1e71c3c8be0aa57c87065b6b2247a4b\output\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\mahbu\.android\build-cache\bbb027630a294f159677c421d08a06833f0dacee\output\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\mahbu\.android\build-cache\78e7b5c20f62ebc5585331cf641f52ef15e1112d\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:multidex:1.0.0] C:\Users\mahbu\.android\build-cache\de6f1694396a589fbace7c134fa2a3339bcded6c\output\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:design:23.4.0] C:\Users\mahbu\.android\build-cache\bc13d1f6ac02ef1f1dbe9680432d98ab44a7f253\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\mahbu\.android\build-cache\9717bc04bad4d5d55018e038ab81632871955237\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\mahbu\.android\build-cache\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\output\AndroidManifest.xml:21:5-23:78

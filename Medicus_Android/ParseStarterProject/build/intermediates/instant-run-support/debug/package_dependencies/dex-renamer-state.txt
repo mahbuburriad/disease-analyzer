@@ -1,4 +1,4 @@
-#Wed Oct 17 17:00:10 BDT 2018
+#Tue Oct 30 21:23:24 BDT 2018
 file.62=D\:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_cfb023f18c1cef6c8d0adfbf8a2cb810e9c80860\\classes.dex
 file.61=D\:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_9c0b6cbae10f6897d71b43e26d7188ba3baf03a0\\classes.dex
 file.60=D\:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7ee8c117d9b0927bee17a8e5769515e78f2bf56a\\classes.dex

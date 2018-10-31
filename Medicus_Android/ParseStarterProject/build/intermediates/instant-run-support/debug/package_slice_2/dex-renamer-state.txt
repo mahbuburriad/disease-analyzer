@@ -1,4 +1,4 @@
-#Sat Oct 20 19:27:05 BDT 2018
+#Tue Oct 30 21:23:24 BDT 2018
 base.0=D\:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2
 renamed.0=classes.dex
 file.0=D\:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2\\classes.dex
