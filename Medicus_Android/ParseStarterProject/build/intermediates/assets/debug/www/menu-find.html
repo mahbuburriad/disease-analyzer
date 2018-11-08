@@ -20,9 +20,13 @@ include("../assets/function/function.php");
 <h1>Trending</h1>
 <ul>
 <li><a href="pharmacy.php">All Products</a></li>
-connect with internet
+<?php getsCategory(); ?>
 </ul>
 </div>
+
+<div class="search-results disabled-search-list bottom-10">
+
+<?php getsCategorySearch(); ?>
 
 </div>
 <script type="text/javascript">
