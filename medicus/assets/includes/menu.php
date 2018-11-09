@@ -9,7 +9,7 @@
 
 
 <li class="dropdown mega-dropdown">
-    <a href="../../pharmacy.php" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Doctor Search</a>
+    <a href="pharmacy.php" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Doctor Search</a>
 </li>
 
 

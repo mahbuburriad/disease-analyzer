@@ -56,7 +56,14 @@ include("assets/function/function.php");
 	<link rel="stylesheet" type="text/css" href="css/woocommerce.css" />
 	
 	
+	
+	
 <!--	<link rel="stylesheet" type="text/css" href="m/styles/framework.css">-->
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
 
@@ -243,10 +250,85 @@ include("assets/function/function.php");
 					<!-- Search Box -->
 					<div class="search-box">
 						<button type="button" class="close"><i class="icon icon-arrows-circle-remove"></i></button>
-						<form>
-							<input type="Search" placeholder="Search" data-search>
-							<button type="submit" class="btn btn-primary">Search</button>
+						<form method="post">
+							<!--<input type="Search" placeholder="Search" data-search>-->
+							
+							    <script>
+  $( function() {
+    var availableTags = [
+        
+        <?php
+    
+    $get_product = "select * from products";
+        $run_product = mysqli_query($db,$get_product);
+        while($row_product = mysqli_fetch_array($run_product)){
+            $p_cat_id = $row_product['p_cat_id'];
+        $cat_id = $row_product['cat_id'];
+        $pro_id = $row_product['product_id'];
+        $manufacturer_id = $row_product['manufacturer_id'];
+            
+            
+        $pro_title = $row_product['product_title'];
+        $pro_titles = $row_product['product_title'];
+            
+            $pro_title=strtolower($pro_title);
+        
+        $pro_price = $row_product['product_price'];
+        $pro_desc = $row_product['product_desc'];
+        $pro_img1 = $row_product['product_img1'];
+        $pro_img2 = $row_product['product_img2'];
+        $pro_img3 = $row_product['product_img3'];
+        $pro_desc = $row_product['product_desc'];
+        $pro_features = $row_product['product_features'];
+            
+        $get_p_cat = "select * from product_categories where p_cat_id='$p_cat_id'";
+        $run_p_cat = mysqli_query($db,$get_p_cat);
+        $row_p_cat = mysqli_fetch_array($run_p_cat);
+        $p_cat_title = $row_p_cat['p_cat_title'];
+            $p_cat_title=strtolower($p_cat_title);
+            
+            $get_manufacturer_id = "select * from manufacturers where manufacturer_id='$manufacturer_id'";
+        $run_manufacturer_id = mysqli_query($db,$get_manufacturer_id);
+        $row_manufacturer_id = mysqli_fetch_array($run_manufacturer_id);
+        $manufacturer_title = $row_manufacturer_id['manufacturer_title'];
+            $manufacturer_title=strtolower($manufacturer_title);
+            
+            
+        $get_cat = "select * from categories where cat_id='$cat_id'";
+        $run_cat = mysqli_query($db,$get_cat);
+        $row_cat = mysqli_fetch_array($run_cat);
+        $cat_title = $row_cat['cat_title'];
+            $cat_title=strtolower($cat_title);
+                                
+    
+    echo "'$pro_title',";
+}
+
+    ?>
+     
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script> <?php echo"
+                                
+                               <input type='Search'  id='tags' name='prosearch'>";
+                               
+                              
+                            
+                            
+                            
+                            $prosearch=$_POST['prosearch'];
+                            echo"
+                             <button type='submit' class='btn btn-primary'><a href='pharmacy.php?prosearch='$prosearch''>Search</a></button>
+                            ";
+                           
+                            
+                            ?>
+							
 						</form>
+
 						
 					</div><!-- Search Box /- -->
 				</div><!-- Row /- -->
