@@ -80,7 +80,8 @@ echo "<a href='pharmacy.php?p_cat=$p_cat_id'> $p_cat_title </a>";
 		</footer>
 	</div>
 
-
+    <script type="text/javascript" src="m/scripts/plugins.js"></script>
+    <script type="text/javascript" src="m/scripts/custom.js"></script>
 	
 	<!-- JQuery v1.11.3 -->
 	<script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><!-- MailChimp -->

@@ -54,6 +54,9 @@ include("assets/function/function.php");
 	<link rel="stylesheet" type="text/css" href="css/shortcodes.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/woocommerce.css" />
+	
+	
+<!--	<link rel="stylesheet" type="text/css" href="m/styles/framework.css">-->
 
 
 
@@ -208,13 +211,24 @@ include("assets/function/function.php");
                             }
 
                                 ?>
+                                
+                                <!--<div id="menu-find" data-load="menu-find.php" data-height="420" class="menu-box menu-load menu-bottom"></div>-->
 
 
 
 
 							<div class="search">
-								<a href="#" id="search" title="Search"><i class="fa fa-search"></i></a>
+                    <a href="#" id="search" title="Search"><i class="fa fa-search"></i></a>
+								
+							<!--	<a href="#"  data-menu="menu-find" class="header-icon header-icon-3"><i class="fa fa-search"></i></a>-->
 							</div>
+							
+							
+							
+							
+                            
+                            
+                            
 
 
 						</div>
@@ -230,9 +244,10 @@ include("assets/function/function.php");
 					<div class="search-box">
 						<button type="button" class="close"><i class="icon icon-arrows-circle-remove"></i></button>
 						<form>
-							<input type="search" value="" placeholder="type keyword(s) here" />
+							<input type="Search" placeholder="Search" data-search>
 							<button type="submit" class="btn btn-primary">Search</button>
 						</form>
+						
 					</div><!-- Search Box /- -->
 				</div><!-- Row /- -->
 			</div><!-- Container /- -->
