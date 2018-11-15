@@ -49,10 +49,13 @@ include("../assets/function/function.php");
             <div class="content bottom-0">
      <?php  mCart();?>
             </div>
+            
              <button style="margin-top: 50px;" class="button button-blue button-icon button-full button-sm shadow-small top-15 button-rounded uppercase ultrabold"><a style="color: white" href="checkout.php">
                             <i class="fa fa-shopping-bag"></i>
                             checkout</a>
                         </button>
+                        
+                        
                         <?php
                         
                         $ip_add = getRealUserIp();
