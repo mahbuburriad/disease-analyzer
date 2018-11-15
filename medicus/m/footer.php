@@ -10,7 +10,8 @@
                     <a href="#" class="scale-hover icon icon-round no-border icon-xs back-to-top bg-blue-dark"><i class="fa fa-angle-up font-16"></i></a>
                 </div>
             </div>
-        </div>
+            </div>
+        
         <a href="#" class="back-to-top-badge back-to-top-small bg-highlight"><i class="fa fa-angle-up"></i>Back to Top</a>
         <div id="menu-share" data-height="420" class="menu-box menu-bottom">
             <div class="menu-title">
@@ -28,32 +29,14 @@
                 <a href="#" class="shareToMail no-border bottom-5"><i class="fas fa-envelope bg-mail"></i><span>Email</span><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
-    </div>
-    <script type="text/javascript" src="scripts/jquery.js"></script>
-    <script src="../js/jquery.min.js"></script>
-    
-    <script>
-            $(document).ready(function(data) {
-                $(document).on('keyup', '.quantity', function() {
-                    var id = $(this).data("product_id");
-                    var quantity = $(this).val();
-                    if (quantity != '') {
-                        $.ajax({
-                            url: "change.php",
-                            method: "POST",
-                            data: {
-                                id: id,
-                                quantity: quantity
-                            },
-                            success: function(data) {
-                                $("body").load('cart_body.php');
-                            }
-                        });
-                    }
-                });
-            });
+        </div>
+       
 
-        </script>
+ 
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    
+    
+ 
     <script type="text/javascript" src="scripts/plugins.js"></script>
     <script type="text/javascript" src="scripts/custom.js"></script>
 </body>
