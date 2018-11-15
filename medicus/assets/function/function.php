@@ -115,6 +115,9 @@ global $db;
                             $row_p_cat = mysqli_fetch_array($run_p_cat);
                             $p_cat_title = $row_p_cat['p_cat_title'];
                                 $price_before = $pro_price+rand(2,6);
+                                $price_before_500 = $pro_price+rand(10,20);
+                                $price_before_1000 = $pro_price+rand(20,50);
+                                $price_before_1500 = $pro_price+rand(40,70);
                                 
                                 
                                 
@@ -134,6 +137,15 @@ global $db;
                     if($pro_price>200){
                     echo "Was $$price_before";
                     }
+                                elseif($pro_price>600){
+                                    echo "Was $$price_before_500";
+                                }
+                                elseif($pro_price>1000){
+                                    echo "Was $$price_before_1000";
+                                }
+                                elseif($pro_price>1500){
+                                    echo "Was $$price_before_1500";
+                                }
                     else{
                     echo " ";
                     }
