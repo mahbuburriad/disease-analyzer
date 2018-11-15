@@ -930,9 +930,11 @@ function getsCategorySearch(){
             echo"
             
             <div data-filter-item data-filter-name='all products $pro_title $p_cat_title $cat_title $manufacturer_title' class='search-result-list'>
-<img src='images/empty.png' class='preload-search-image' data-src='../admin/product_images/$pro_img1' alt='img'>
+<img src='images/empty.png' class='preload-search-image' data-src='../admin/product_images/$pro_img1' alt='$pro_titles'>
 <h1>$pro_titles</h1>
 <p>৳ $pro_price</p>
+
+
 <a href='details.php?pro_id=$pro_id' class='bg-highlight'>VIEW</a>
 </div>
             ";
