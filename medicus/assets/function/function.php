@@ -114,6 +114,7 @@ global $db;
                             
                             $row_p_cat = mysqli_fetch_array($run_p_cat);
                             $p_cat_title = $row_p_cat['p_cat_title'];
+                                $price_before = $pro_price+rand(2,6);
                                 
                                 
                                 
@@ -128,7 +129,7 @@ global $db;
                     <em class='color-gray-dark'>$p_cat_title</em>
                 </div>
                 <div class='store-slide-button'>
-                    <strong><del class='color-blue-light font-10'>Was $250</del>৳ $pro_price</strong>
+                    <strong><del class='color-blue-light font-10'>Was $$price_before</del>৳ $pro_price</strong>
                     <a href='details.php?pro_id=$pro_id'><i class='fa fa-shopping-cart color-highlight'></i></a>
                     <a href='details.php?pro_id=$pro_id'><i class='fa fa-heart color-red-dark'></i></a>
                 </div>
