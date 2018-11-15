@@ -119,6 +119,7 @@ global $db;
                                 
                                 
                                 
+                                
                                 echo"
                         <div style='margin-bottom:15px;' class='store-slide-2'>
                 <a href='details.php?pro_id=$pro_id' class='store-slide-image'>
@@ -129,7 +130,16 @@ global $db;
                     <em class='color-gray-dark'>$p_cat_title</em>
                 </div>
                 <div class='store-slide-button'>
-                    <strong><del class='color-blue-light font-10'>Was $$price_before</del>৳ $pro_price</strong>
+                    <strong><del class='color-blue-light font-10'> ";
+                    if($pro_price>200){
+                    echo "Was $$price_before";
+                    }
+                    else{
+                    echo " ";
+                    }
+                                echo"
+                    
+                    </del>৳ $pro_price</strong>
                     <a href='details.php?pro_id=$pro_id'><i class='fa fa-shopping-cart color-highlight'></i></a>
                     <a href='details.php?pro_id=$pro_id'><i class='fa fa-heart color-red-dark'></i></a>
                 </div>
