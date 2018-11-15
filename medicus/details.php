@@ -25,6 +25,8 @@ include("assets/function/function.php");
         $run_p_cat = mysqli_query($con,$get_p_cat);
         $row_p_cat = mysqli_fetch_array($run_p_cat);
         $p_cat_title = $row_p_cat['p_cat_title'];
+        $p_cat_ids = $row_p_cat['p_cat_id'];
+        
         $get_cat = "select * from categories where cat_id='$cat_id'";
         $run_cat = mysqli_query($con,$get_cat);
         $row_cat = mysqli_fetch_array($run_cat);
@@ -190,7 +192,7 @@ include("assets/function/function.php");
 							<ul class="products row">
 								<?php
 
-                        $get_products = "SELECT * FROM products order by rand() LIMIT 0,2";
+                        $get_products = "SELECT * FROM products where p_cat_id = '$p_cat_ids' order by rand() LIMIT 0,12";
 
                         $run_products = mysqli_query($con, $get_products);
 
