@@ -575,7 +575,7 @@ include("assets/function/function.php");
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<div class="team-img-hover">
-							<img src="http://placehold.it/333x603" alt="team" width="330" height="607" />
+							<img src="images/Members/Mahbubur%20Riad.jpg" alt="team" width="330" height="607" />
 							<div class="team-content">
 								<h3>Mahbubur Riad</h3>
 								<h5>CEO</h5>
@@ -590,7 +590,7 @@ include("assets/function/function.php");
 
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<div class="team-img-hover">
-							<img src="http://placehold.it/333x603" alt="team" width="330" height="607" />
+							<img src="images/Members/41330039_2139425559401938_3408581518933622784_o.jpg" alt="team" width="330" height="607" />
 							<div class="team-content">
 								<h3>Mysha Rahman</h3>
 								<h5>Managing Director</h5>
