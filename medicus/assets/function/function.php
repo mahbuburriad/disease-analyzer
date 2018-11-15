@@ -936,7 +936,7 @@ function getProductCategory(){
 function getProIndex(){
     global $db;
     
-    $get_products = "SELECT * FROM products order by 1 DESC LIMIT 0,8";
+    $get_products = "SELECT * FROM products order by 1 DESC LIMIT 0,24";
     
     $run_products = mysqli_query($db, $get_products);
     while($row_products = mysqli_fetch_array($run_products))
@@ -948,10 +948,10 @@ function getProIndex(){
         
         echo"
                                 
-                                    <li class='product'>							
+                                    <li style='height: 200px; width:150px;' class='product'>							
 								<a href='details.php?pro_id=$pro_id' title='$pro_title'>
 									<div class='product-img-box'>
-										<img style='height: 200px; width:150px;' alt='$pro_title' src='admin/product_images/$pro_img1'/>
+										<img  alt='$pro_title' src='admin/product_images/$pro_img1'/>
 									</div>
 									<div class='detail-box'>
                                     
