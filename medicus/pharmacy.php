@@ -88,8 +88,7 @@ include("assets/function/function.php");
 						</form>-->
 						
 						<ul class="products row">
-<?php getProducts(); ?>
-                    <?php
+<?php getProducts(); 
                         getpcatpro();
                         getcatpro();
                         
