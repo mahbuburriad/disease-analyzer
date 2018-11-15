@@ -134,13 +134,13 @@ global $db;
                 </div>
                 <div class='store-slide-button'>
                     <strong><del class='color-blue-light font-10'> ";
-                    if($pro_price>200){
+                    if($pro_price>200 && $pro_price<599){
                     echo "Was $$price_before";
                     }
-                                elseif($pro_price>600){
+                                elseif($pro_price>600 && $pro_price<999){
                                     echo "Was $$price_before_500";
                                 }
-                                elseif($pro_price>1000){
+                                elseif($pro_price>1000 && $pro_price<1499){
                                     echo "Was $$price_before_1000";
                                 }
                                 elseif($pro_price>1500){
