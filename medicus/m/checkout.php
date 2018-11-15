@@ -63,7 +63,7 @@ include("../assets/function/function.php");
                         
                         ?>
                         
-                <?php mCartm(); ?>
+
         </div>
         
         <div class="page-content header-clear-medium">

@@ -739,9 +739,10 @@ function mCart(){
                                                     <div style='margin-bottom: 15px;' class='menu-cart-item'>
                     <img class='preload-image' src='images/empty.png' data-src='../admin/product_images/$product_img1' alt='img'>
                     <strong>$product_title</strong>
-                    <span>$only_price</span>
-                    <em class='color-green-dark'>$sub_total <del class='color-gray-light'>$pro_qty</del></em>
-                    <a href='#' class='color-red-dark'><i class='fa fa-times'></i> Remove item</a>
+                    <span>৳ $only_price * $pro_qty</span>
+        
+                    <em class='color-green-dark'>৳ $sub_total</em>
+                    <a href='delete_cart.php?delete_cart= $pro_id' class='color-red-dark'><i class='fa fa-times'></i> Remove item</a>
                 </div>
 
                 <div class='decoration bottom-1'></div>"
@@ -749,7 +750,19 @@ function mCart(){
                                                         ;
                                                     
                                                     
-                                                }}}
+                                                }}
+    echo"
+    <div class='menu-cart-item'>
+    
+   <strong>Total</strong>
+   <em class='color-red-dark'>৳ $total</em>
+    
+    </div>
+
+                <div class='decoration bottom-1'></div>
+    ";
+
+}
 function mCartm(){
     
     global $db;
