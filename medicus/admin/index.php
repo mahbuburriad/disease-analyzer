@@ -66,7 +66,7 @@ $count_pending_orders = mysqli_num_rows($run_pending_orders);
     <link href="assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=9hyiikt7d6xpz2xi1vn4w79kka7b6ft0y2fabowbbyns2zpq"></script>
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=cjd4zue31t94ss6yedsim4j36qsy4sjqietuoqigk8mexxum"></script>
   <script>tinymce.init({ selector:'#product_desc,#product_features' });</script>
    
    
