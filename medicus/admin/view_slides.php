@@ -19,7 +19,7 @@ else {
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-5 align-self-center">
-                <h4 class="page-title">Dashboard</h4>
+                <h4 class="page-title">View Slides</h4>
             </div>
             <div class="col-7 align-self-center">
                 <div class="d-flex align-items-center justify-content-end">
@@ -51,8 +51,7 @@ else {
                 <div class="card">
                     <div class="card-body">
                        <center>
-                        <h4 class="card-title">General Form</h4>
-                        <h6 class="card-subtitle"> All with bootstrap element classies </h6>
+                        
 
 
 <?php
