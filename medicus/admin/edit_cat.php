@@ -66,8 +66,8 @@ $c_desc = $row_edit['cat_desc'];
                 <div class="card">
                     <div class="card-body">
                        <center>
-                        <h4 class="card-title">General Form</h4>
-                        <h6 class="card-subtitle"> All with bootstrap element classies </h6>
+                        <h4 class="card-title">Edit Categories</h4>
+                      
  <form class="form-horizontal" action="" method="post">
 
 
