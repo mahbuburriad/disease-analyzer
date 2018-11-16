@@ -75,8 +75,8 @@ $about_desc = $row_about_us['about_desc'];
                 <div class="card">
                     <div class="card-body">
                        <center>
-                        <h4 class="card-title">General Form</h4>
-                        <h6 class="card-subtitle"> All with bootstrap element classies </h6>
+                        <h4 class="card-title">Edit About</h4>
+                        <h6 class="card-subtitle"> Edit about page that modifies some data </h6>
 
 <form method="post" class="form-horizontal"><!-- form-horizontal Starts -->
 
