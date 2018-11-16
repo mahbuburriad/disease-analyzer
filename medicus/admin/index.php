@@ -59,7 +59,7 @@ $count_pending_orders = mysqli_num_rows($run_pending_orders);
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/logos/logo.png">
-    <title>Medicus - A Health Care Center</title>
+    <title>Medicus | Live Life Happily</title>
     <!-- Custom CSS -->
     <link href="assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <link href="assets/extra-libs/c3/c3.min.css" rel="stylesheet">

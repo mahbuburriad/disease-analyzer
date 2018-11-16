@@ -47,56 +47,60 @@ else{
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                       <center>
-                        <h4 class="card-title">General Form</h4>
-                        <h6 class="card-subtitle"> All with bootstrap element classies </h6>
+                        <center>
+                            <h4 class="card-title">Insert Box</h4>
+                            <h6 class="card-subtitle"> Here you can insert the box area. and that will publish dynamically from Database </h6>
 
-<form class="form-horizontal" method="post" action=""><!-- form-horizontal Starts -->
+                            <form class="form-horizontal" method="post" action="">
+                                <!-- form-horizontal Starts -->
 
-<div class="form-group"><!-- 1 form-group Starts -->
+                                <div class="form-group">
+                                    <!-- 1 form-group Starts -->
 
-<label class="col-md-3 control-label">Box Title : </label>
+                                    <label class="col-md-3 control-label">Box Title : </label>
 
-<div class="col-md-6">
+                                    <div class="col-md-6">
 
-<input type="text" name="box_title" class="form-control">
+                                        <input type="text" name="box_title" class="form-control">
 
-</div>
+                                    </div>
 
-</div><!-- 1 form-group Ends -->
-
-
-<div class="form-group"><!-- 2 form-group Starts -->
-
-<label class="col-md-3 control-label">Box Description : </label>
-
-<div class="col-md-6">
-
-<textarea name="box_desc" class="form-control" rows="6" cols="19"> </textarea>
-
-</div>
-
-</div><!-- 2 form-group Ends -->
+                                </div><!-- 1 form-group Ends -->
 
 
-<div class="form-group"><!-- 3 form-group Starts -->
+                                <div class="form-group">
+                                    <!-- 2 form-group Starts -->
 
-<label class="col-md-3 control-label"></label>
+                                    <label class="col-md-3 control-label">Box Description : </label>
 
-<div class="col-md-6">
+                                    <div class="col-md-6">
 
-<input type="submit" name="submit" value="Insert Box" class="btn btn-primary form-control">
+                                        <textarea name="box_desc" class="form-control" rows="6" cols="19"> </textarea>
 
-</div>
+                                    </div>
 
-</div><!-- 3 form-group Ends -->
-
-</form><!-- form-horizontal Ends -->
-
+                                </div><!-- 2 form-group Ends -->
 
 
+                                <div class="form-group">
+                                    <!-- 3 form-group Starts -->
 
-<?php
+                                    <label class="col-md-3 control-label"></label>
+
+                                    <div class="col-md-6">
+
+                                        <input type="submit" name="submit" value="Insert Box" class="btn btn-primary form-control">
+
+                                    </div>
+
+                                </div><!-- 3 form-group Ends -->
+
+                            </form><!-- form-horizontal Ends -->
+
+
+
+
+                            <?php
 
 if(isset($_POST['submit'])){
 
@@ -116,6 +120,7 @@ echo "<script>window.open('index.php?view_boxes','_self')</script>";
 
 
 ?>
+
 
 
 
