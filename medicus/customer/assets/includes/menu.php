@@ -8,13 +8,19 @@
 </li>
 
 
-<li class="dropdown mega-dropdown">
-    <a href="../pharmacy.php" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Doctor Search</a>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Doctor</a>
+    <i class="ddl-switch fa fa-angle-down"></i>
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="../calladoctor.php">Call a doctor</a></li>
+        <li><a href="../virtualdoctor.php">Virtual Doctor</a></li>
+        <li><a href="../app.php">Apps</a></li>
+    </ul>
 </li>
 
 
 <li class="dropdown mega-dropdown">
-    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Doctor Appointment</a>
+    <a href="../primary-treatment.php" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Primary Treatment</a>
 </li>
 
 
