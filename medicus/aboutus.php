@@ -41,11 +41,30 @@ include("assets/function/function.php");
     </main>
 
     <div class="padding-100 container">
-        <div class="greycolor col-md-8 ">
-            Our main theme is for helping the people to get serve by doctor when they needed by sitting at home. They will be serve by doctor by our virtuL Doctor. It is an automated disease detector which will detect disease and serve an primary treatment for that disease.Even it will give the prascription
+        <div class="row">
+
+
+            <div class="greycolor col-md-8 ">
+                Our main theme is for helping the people to get serve by doctor when they needed by sitting at home. They will be serve by doctor by our VirtuaL Doctor. It is an automated disease detector which will detect disease and serve an primary treatment for that disease.Even it will give the prescription.
+                <br>
+                <p>
+                    Mission: Our aim is to make an machine based system which will be able to detect the disease by taking step by step information from the patient. Later which will be merged to pedict the real disease, which will be then checked to provide the patient a doctor.
+                </p>
+                <p>
+                    Vision: To include OCR and implementation of improved machine which can directly examine the patient. Implementation of virtual test report examiner and automatic prescriber where anyone can check there test report and evaluate the prescription that has been prescribe by the doctor.</p>
+            </div>
+
+            <div class="col-md-1">
+
+            </div>
+            <div class="greycolor col-md-3">
+
+                <div>
+                    Services We are committed to (i) Quality, (ii) Effectiveness, (iii) Integration, (iv) Caring for the Community, (v) Caring for our patiemt. Our number one priority is to provide our patients with high quality healthcare by avoiding the hazard of travelling. Some of the major services/facilities available in the application to provide patients with “better than the best” service are : a) Virtual Doctor n) Online Consultancy with Doctor b) Online Pharmacy
+
+                </div>
+            </div>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3"></div>
     </div>
 
     <?php include "assets/includes/footer.php"?>

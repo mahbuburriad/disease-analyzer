@@ -481,3 +481,8 @@ main {
 .greycolor {
     background-color: #F6F6F6;
 }
+
+.decoration {
+    float: left;
+    margin-left: 20px;
+}
