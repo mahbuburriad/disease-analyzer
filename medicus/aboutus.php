@@ -32,31 +32,20 @@ include("assets/function/function.php");
             <div class="container">
 
 
-                <h1>Shop By About Us</h1>
+                <h1>About Us</h1>
 
                 <p>Shopping with fun and Trust. Every product condition is good. we keep the value of customer's trust</p>
 
 
-            </div>
-        </div>
-        <!-- Page Breadcrumb /- -->
-        <div class="padding-100"></div>
-        <!-- Shop Section -->
-        <div id="product-section" class="product-section woocommerce container-fluid no-padding">
-            <!-- Container -->
-            <div class="container">
-
-
-
-
-
-
-
-            </div>
-            <!-- Container /- -->
-            <div class="padding-100"></div>
-        </div>
-        <!-- Shop Header /- -->
+                <!-- Shop Header /- -->
     </main>
+
+    <div class="padding-100 container">
+        <div class="greycolor col-md-8 ">
+            Our main theme is for helping the people to get serve by doctor when they needed by sitting at home. They will be serve by doctor by our virtuL Doctor. It is an automated disease detector which will detect disease and serve an primary treatment for that disease.Even it will give the prascription
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3"></div>
+    </div>
 
     <?php include "assets/includes/footer.php"?>
