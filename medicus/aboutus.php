@@ -32,7 +32,7 @@ include("assets/function/function.php");
             <div class="container">
 
 
-                <h1>Shop By Abouur us</h1>
+                <h1>Shop By About Us</h1>
 
                 <p>Shopping with fun and Trust. Every product condition is good. we keep the value of customer's trust</p>
 
