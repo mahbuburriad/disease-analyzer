@@ -43,8 +43,8 @@ include("../assets/function/function.php");
                 <a href="#" data-menu="menu-demo" class="header-icon header-icon-3"><i class="fa fa-cog"></i></a>
             </div>
         </div>
-        
-        
+
+
         <div class="page-content header-clear-large">
             <div class="content">
                 <img src="logos/logo.png" alt="img" class="preload-image center-item" width="120">
@@ -53,12 +53,11 @@ include("../assets/function/function.php");
                 <span class="color-highlight center-text">A few words about us</span>
                 <h1 class="center-text bottom-30 font-30">Who we Are</h1>
                 <p class="center-text">
-                    Our main theme is for helping the people to get serve by doctor when they needed by sitting at home. They will be serve by doctor by our virtuL Doctor. It is an automated disease detector which will detect disease and serve an primary treatment for that disease.Even it will give the prascription
+                    Our main theme is for helping the people to get serve by doctor when they needed by sitting at home. They will be serve by doctor by our virtuaL Doctor. It is an automated disease detector which will detect disease and serve an primary treatment for that disease.Even it will give the prascription
                 </p>
             </div>
-            
             <div class="simple-slider owl-carousel owl-no-dots top-30">
-               <div class="content call-to-action-1">
+                <div class="content call-to-action-1">
                     <div class="one-half">
                         <a href="tel:01711574805" class="shadow-small button button-s button-full button-rounded bg-highlight uppercase ultrabold">Call Now</a>
                     </div>
@@ -67,7 +66,6 @@ include("../assets/function/function.php");
                     </div>
                     <div class="clear"></div>
                 </div>
-                
                 <div class="content call-to-action-2">
                     <div class="call-to-action-socials">
                         <a href="#" class="shadow-small bg-facebook"><i class="fab fa-facebook-f"></i></a>
@@ -79,15 +77,15 @@ include("../assets/function/function.php");
                 <div class="content call-to-action-3">
                     <a href="pharmacy.php" class="shadow-small button button-s button-center-large button-rounded bg-highlight uppercase ultrabold">GET Medicine</a>
                 </div>
-                
+
             </div>
             <div class="decoration decoration-margins"></div>
             <div class="content">
                 <div class="icon-column icon-large">
                     <i class="fa fa-trophy color-yellow-dark"></i>
-                    <h1 class="bolder">Elite Author</h1>
+                    <h1 class="bolder">Services</h1>
                     <p class='bottom-0'>
-                        We became elite because of you, and we always give our customers the best! We treat our customers like our friends.
+                        Services We are committed to (i) Quality, (ii) Effectiveness, (iii) Integration, (iv) Caring for the Community, (v) Caring for our patiemt. Our number one priority is to provide our patients with high quality healthcare by avoiding the hazard of travelling. Some of the major services/facilities available in the application to provide patients with “better than the best” service are : a) Virtual Doctor n) Online Consultancy with Doctor b) Online Pharmacy.
                     </p>
                 </div>
             </div>
@@ -103,43 +101,19 @@ include("../assets/function/function.php");
             <div class="content">
                 <div class="icon-column icon-large">
                     <i class="fa fa-code color-teal-dark"></i>
-                    <h1 class="bolder">Easy, Custom Code</h1>
+                    <h1 class="bolder">Mission</h1>
                     <p class="bottom-0">
-                        Our custom code makes pages fast, and feature filled, unlike other heavy, clumsy frameworks.
+                        Our aim is to make an machine based system which will be able to detect the disease by taking step by step information from the patient. Later which will be merged to pedict the real disease, which will be then checked to provide the patient a doctor.
                     </p>
                 </div>
             </div>
             <div class="content">
                 <div class="icon-column icon-large">
                     <i class="fa fa-wrench color-orange-dark"></i>
-                    <h1 class="bolder">Always updated</h1>
+                    <h1 class="bolder">Vision</h1>
                     <p class="bottom-50">
-                        We make our code easy, and always compatible with the latest technologies.
+                        To include OCR and implementation of improved machine which can directly examine the patient. Implementation of virtual test report examiner and automatic prescriber where anyone can check there test report and evaluate the prescription that has been prescribe by the doctor.
                     </p>
                 </div>
             </div>
-            <div class="decoration decoration-margins"></div>
-            <div class="content-title bottom-20">
-                <span class="color-highlight">25k Customers</span>
-                <h1>Testimonials</h1>
-                <a href="#">See All</a>
-            </div>
-            <div class="quote-slider owl-carousel owl-no-dots">
-                <div class="blockquote-2">
-                    <img class="shadow-large" src="images/pictures/faces/1s.png">
-                    <p class="color-night-light">
-                        The code is always great with any Enabled template, but its the customer
-                        support that wins me over all the time.
-                    </p>
-                </div>
-                <div class="blockquote-2">
-                    <img class="shadow-large" src="images/pictures/faces/2s.png">
-                    <p class="color-night-light">
-                        The code is always great with any Enabled template, but its the customer
-                        support that wins me over all the time.
-                    </p>
-                </div>
-            </div>
-            
-            
-           <?php include ("footer.php"); ?>
+            <?php include ("footer.php"); ?>
