@@ -21,7 +21,7 @@
 
 (text-for-id 
    (id WelcomeMessage)
-   (text "Thanks for using our app, we are still upgrading our app. please choose first feel about your disease from the database the providing below. headache, temperature, vomiting, weakness, allergy, eyesbleeding, fascesbleeding, urinebleeding, nosebleeding, rashes, suddenfever, musclepain, sweating, jointswelling, abdominalpain, stomachpain, poorappetites"))
+   (text "Thanks for using our application, we are still upgrading our application. Please choose first symptoms of your disease from the database provided below: headache, temperature, vomiting, weakness, allergy, eyesbleeding, fascesbleeding, urinebleeding, nosebleeding, rashes, suddenfever, musclepain, sweating, joint swelling, abdominalpain, stomachpain, poorappetites"))
    
    (text-for-id 
    (id headache)
@@ -44,7 +44,7 @@
    
       (text-for-id 
    (id shivering)
-   (text "Do you feel Shivering?"))
+   (text "Are you Shivering?"))
    
    
       (text-for-id 
@@ -54,7 +54,7 @@
    
       (text-for-id 
    (id weakness)
-   (text "Do you feel weakness in any body area or full body?"))
+   (text "Do you feel weakness in any body parts or full body?"))
    
    
       (text-for-id 
@@ -74,22 +74,22 @@
    
       (text-for-id 
    (id nonstopbleeding)
-   (text "In your injured place not stoping bleeding?"))
+   (text "Is your injured place non-stoping bleeding?"))
    
    
       (text-for-id 
    (id nosebleeding)
-   (text "From your nose is it come any blood?"))
+   (text "Does your nose bleed?"))
    
    
       (text-for-id 
    (id fascesbleeding)
-   (text "Is there any blood comes from fasces?"))
+   (text "Is there any blood in your faeces?"))
    
    
       (text-for-id 
    (id urinebleeding)
-   (text "Is there any blood comes from your urine"))
+   (text "Is there any blood in your urine"))
    
    
       (text-for-id 
@@ -104,12 +104,12 @@
    
       (text-for-id 
    (id diarrhea)
-   (text "Do you feel loose-motion or Diarrhea?"))
+   (text "Do you have loose-motion or Diarrhea?"))
    
    
       (text-for-id 
    (id sweating)
-   (text "Do you more sweat than other time?"))
+   (text "Do you sweat more than other time?"))
    
    
       (text-for-id 
@@ -134,17 +134,17 @@
    
       (text-for-id 
    (id hurtburn)
-   (text "Do your hurts are burning from inside?"))
+   (text "Do your have burning sensation in your chest?"))
    
    
       (text-for-id 
    (id weightloss)
-   (text "Are you loss the weight"))
+   (text "Are you lossing weight"))
    
    
       (text-for-id 
    (id stomachpain)
-   (text "Do you feel pain with Empty stomach?"))
+   (text "Do you feel pain in empty stomach?"))
    
    
       (text-for-id 
@@ -154,20 +154,20 @@
    
       (text-for-id 
    (id dengue)
-   (text "Analyze Report: You are in Dengue"))
+   (text "Analyze Report: You have in Dengue"))
    
    (text-for-id 
    (id malaria)
-   (text "Analyze Report: You are in Malaria"))
+   (text "Analyze Report: You have in Malaria"))
    
    
       (text-for-id 
    (id chikungunya)
-   (text "Analyze Report: You are in Chikungunya"))
+   (text "Analyze Report: You have in Chikungunya"))
    
    (text-for-id 
    (id typhoid)
-   (text "Analyze Report: You are in Typhoid"))
+   (text "Analyze Report: You have in Typhoid"))
    
    
       (text-for-id 
@@ -180,6 +180,6 @@
    
     (text-for-id 
    (id sorry)
-   (text "We are very sorry we are not initial your disease, please go to doctor"))
+   (text "We are very sorry we can not initial your disease, please go to doctor"))
    
    
