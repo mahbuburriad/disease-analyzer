@@ -99,31 +99,33 @@
                                             
                                         
                                         ?>
-								<li class="mini_cart_item">
-									<a href="#" class="cart-item-image">
-										<img width="70" height="70" alt="poster_2_up" class="attachment-shop_thumbnail" style="height:70px; width:70px;" src="../admin/product_images/<?php echo $product_img1; ?>">
+                                        
+                                        <li class="mini_cart_item">
+									<a href="../details.php?pro_id=<?php echo $pro_id;?>" class="cart-item-image">
+										<img width="70" height="70" alt="poster_2_up" class="attachment-shop_thumbnail " style="height:70px; width:70px;" src="../admin/product_images/<?php echo $product_img1; ?>">
 									</a>
 									<div class="cart-detail">
-										<a href="#"><?php echo $product_title; ?></a>
-										<span class="quantity"><?php echo $sub_total; ?></span>
-										<a href="#" class="remove-cart"><i class="fa fa-trash" aria-hidden="true"></i></a>
+										<a href="../details.php?pro_id=<?php echo $pro_id;?>"><?php echo $product_title; ?></a>
+										<span class="quantity"> <?php echo "৳ $only_price * $pro_qty = ৳ $sub_total" ; ?></span>
+										<a href='../delete_cart.php?delete_cart=<?php echo $pro_id;?>' style="color: #c0392b!important;" class='color-red-dark'><i class='fa fa-times'></i> Remove item</a>
 									</div>
 								</li>
 								<?php } } ?>
-								
+
 								<li class="subtotal">
 									<h5>subtotal <span><?php
                                        if(empty($only_price)){
                                                echo "0.00";
                                                }
-                                               else{ echo "$total"; } ?></span></h5>
+                                               else{ echo "৳ $total"; } ?></span></h5>
 								</li>
 								<li class="button">
-									<a href="../cart.php" title="View Cart">View Cart</a>
-									<a href="../checkout.php" title="Check Out">Check out</a>
+									<a href="cart.php" title="View Cart">View Cart</a>
+									<a href="checkout.php" title="Check Out">Check out</a>
 								</li>
 							</ul>
 						</div>
+                            
 												<?php	
                             if(isset($_SESSION['customer_email'])){
     $customer_session = $_SESSION['customer_email'];

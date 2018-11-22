@@ -103,7 +103,7 @@ include("assets/function/function.php");
 						</div>
 						<div class="menu-icon">
 							<div class="cart">
-							<button aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" title="Cart" id="language" type="button" class="btn dropdown-toggle"><i class="fa fa-shopping-cart"></i></button>
+							<button aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" title="Cart" id="language" type="button" class="btn dropdown-toggle"> <i class="fa fa-shopping-cart"></i><sup><b><?php items() ?></b></sup></button>
 							<?php
 
                         $ip_add = getRealUserIp();
@@ -127,6 +127,7 @@ include("assets/function/function.php");
                                                 $get_products = "select * from products where product_id='$pro_id'";
                                                 $run_products = mysqli_query($con,$get_products);
                                                 while($row_products = mysqli_fetch_array($run_products)){
+                                                
                                                     $product_title = $row_products['product_title'];
                                                     $product_img1 = $row_products['product_img1'];
                                                     $sub_total = $only_price*$pro_qty;
@@ -141,13 +142,13 @@ include("assets/function/function.php");
 
                                         ?>
 								<li class="mini_cart_item">
-									<a href="#" class="cart-item-image">
-										<img width="70" height="70" alt="poster_2_up" class="attachment-shop_thumbnail" style="height:70px; width:70px;" src="admin/product_images/<?php echo $product_img1; ?>">
+									<a href="details.php?pro_id=<?php echo $pro_id;?>" class="cart-item-image">
+										<img width="70" height="70" alt="poster_2_up" class="attachment-shop_thumbnail " style="height:70px; width:70px;" src="admin/product_images/<?php echo $product_img1; ?>">
 									</a>
 									<div class="cart-detail">
-										<a href="#"><?php echo $product_title; ?></a>
-										<span class="quantity"><?php echo $sub_total; ?></span>
-				
+										<a href="details.php?pro_id=<?php echo $pro_id;?>"><?php echo $product_title; ?></a>
+										<span class="quantity"> <?php echo "৳ $only_price * $pro_qty = ৳ $sub_total" ; ?></span>
+										<a href='delete_cart.php?delete_cart=<?php echo $pro_id;?>' style="color: #c0392b!important;" class='color-red-dark'><i class='fa fa-times'></i> Remove item</a>
 									</div>
 								</li>
 								<?php } } ?>
@@ -157,7 +158,7 @@ include("assets/function/function.php");
                                        if(empty($only_price)){
                                                echo "0.00";
                                                }
-                                               else{ echo "$total"; } ?></span></h5>
+                                               else{ echo "৳ $total"; } ?></span></h5>
 								</li>
 								<li class="button">
 									<a href="cart.php" title="View Cart">View Cart</a>
