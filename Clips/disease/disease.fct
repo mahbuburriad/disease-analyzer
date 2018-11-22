@@ -2,7 +2,7 @@
 
 (text-for-id 
    (id AutoDemo)
-   (text "Virtual Doctor - Disease Analyzer"))
+   (text "Virtual Doctor"))
 (text-for-id 
    (id Next)
    (text "Next"))
@@ -21,7 +21,7 @@
 
 (text-for-id 
    (id WelcomeMessage)
-   (text "Thanks for using our application, we are still upgrading our application. Please choose first symptoms of your disease from the database provided below: headache, temperature, vomiting, weakness, allergy, eyesbleeding, fascesbleeding, urinebleeding, nosebleeding, rashes, suddenfever, musclepain, sweating, joint swelling, abdominalpain, stomachpain, poorappetites"))
+   (text "Thanks for using our application. Here you can Predic your disease and this doctor give you a prescription. follow and buy medicine from here"))
    
    (text-for-id 
    (id headache)
