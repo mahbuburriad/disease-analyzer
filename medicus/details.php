@@ -65,7 +65,7 @@ include("assets/function/function.php");
 <a href="index.php">Home</a>
 </li>
 
-<li><a href="pharmacy.php">Shop</a></li>
+<li><a href="pharmacy.php">Pharmacy</a></li>
 
 <li>
 
