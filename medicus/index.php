@@ -489,7 +489,7 @@ include("assets/function/function.php");
 			<div class="container">
 				<div class="col-md-8 col-sm-8 history-content">
 				<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="http://ec2-18-136-155-136.ap-southeast-1.compute.amazonaws.com/disease/disease.pl" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="//ec2-18-136-155-136.ap-southeast-1.compute.amazonaws.com/disease/disease.pl" allowfullscreen></iframe>
 </div>
 
 				</div>
