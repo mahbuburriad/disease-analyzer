@@ -38,6 +38,10 @@ Primary use:
 		- max-width: 479
 -------------------------------------------------------------------*/
 
+.color-red-dark{
+    color:#c0392b!important;
+}
+
 body {
     font-family: 'Droid Serif', serif;
     font-size: 14px;

@@ -737,12 +737,12 @@ function mCart(){
 
                                                     echo "
                                                     <div style='margin-bottom: 15px;' class='menu-cart-item'>
-                    <img class='preload-image' src='images/empty.png' data-src='../admin/product_images/$product_img1' alt='img'>
+                    <img class='preload-image' src='images/empty.png' data-src='../admin/product_images/$product_img1' alt='$product_title'>
                     <strong>$product_title</strong>
                     <span>৳ $only_price * $pro_qty</span>
         
                     <em class='color-green-dark'>৳ $sub_total</em>
-                    <a href='delete_cart.php?delete_cart= $pro_id' class='color-red-dark'><i class='fa fa-times'></i> Remove item</a>
+                    <a href='delete_cart.php?delete_cart=$pro_id' class='color-red-dark'><i class='fa fa-times'></i> Remove item</a>
                 </div>
 
                 <div class='decoration bottom-1'></div>"
