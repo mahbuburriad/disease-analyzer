@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\drawable-v21\\ic_menu_send.xml",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\drawable-v21\\ic_menu_camera.xml",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\drawable-v21\\ic_menu_manage.xml",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\drawable-v21\\ic_menu_share.xml",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\drawable-v21\\ic_menu_slideshow.xml",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\drawable-v21\\ic_menu_gallery.xml",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
+    }
+]

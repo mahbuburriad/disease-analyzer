@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 63,
+                        "endOffset": 114
+                    }
+                }
+            }
+        ]
+    }
+]

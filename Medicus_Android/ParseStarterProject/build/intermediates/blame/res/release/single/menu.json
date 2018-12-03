@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\menu\\share_menu.xml",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\menu\\share_menu.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\menu\\medicus.xml",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\menu\\medicus.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\menu\\activity_medicus_drawer.xml",
+        "source": "D:\\Medicus_Android\\ParseStarterProject\\src\\main\\res\\menu\\activity_medicus_drawer.xml"
+    }
+]

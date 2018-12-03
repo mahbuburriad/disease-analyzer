@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\713c46995b97334b880f4615960f5addab87ebd9\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\common_plus_signin_btn_text_light.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\10cd1c59b6978fbb67aec544b6857b561e2b2f1c\\output\\res\\color\\common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\10cd1c59b6978fbb67aec544b6857b561e2b2f1c\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\713c46995b97334b880f4615960f5addab87ebd9\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\10cd1c59b6978fbb67aec544b6857b561e2b2f1c\\output\\res\\color\\common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\10cd1c59b6978fbb67aec544b6857b561e2b2f1c\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "D:\\Medicus_Android\\ParseStarterProject\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\mahbu\\.android\\build-cache\\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+    }
+]

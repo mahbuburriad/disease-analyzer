@@ -3,12 +3,138 @@
 
     <item
         is-multidex="true"
-        jar="D:\Medicus_Android\ParseStarterProject\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\mahbu\.android\build-cache\9717bc04bad4d5d55018e038ab81632871955237\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="25dd1510ce058f1fffc25af84d39c85ad3d7bd74">
-        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_01d63c6959b7c4cfd4c1374a2e3afcc53fb75627\classes.dex" />
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1db3dc5265502fe5e97eaa5a05429c916b735856\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\bbb027630a294f159677c421d08a06833f0dacee\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_44e3675af50798aaa391156fcf608d14e9bd090a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\9f0d760f0a80db79282ca082d48ffdbbd21c7c35\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="670df81539ab71918d49b186598b7eff08ef6563">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a774f123b56048645c41b0e23936173ec0ba8f4a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\044e32e9c3e3b63b1d99956e45241081984711c3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="461e4257888c25ec05abcd91e758fe7f4949230a">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_45250b87af467aa6fcf8d8279137e320b69c6d7e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_45e1ccb0a77a184a018f277548bbde9fc6a0c121\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\5a7325bf66252b5f7ef67081057c8992e617070c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e35002351f2d415093a9b564652d4b56be6a0593">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5d1c23a38375e122d3ed21ec4d2149f39799c838\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\de6f1694396a589fbace7c134fa2a3339bcded6c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cfb023f18c1cef6c8d0adfbf8a2cb810e9c80860\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\263f3daa26aab44211ed372484d0bd5dc437085e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b7173b3df4c7029699919414400041f64519e34">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_546fa392b52f6115a765cc8b73f8677d2e284eff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\f1954fe8fb7642ee62cfbc525d575fe66ed87d18\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="59a16a4a42d25b2c243dd1e8aea87d06895b4a06">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9a7d70b2738610942c717609b4fafa17ec1b3749\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\bc13d1f6ac02ef1f1dbe9680432d98ab44a7f253\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0b9d9cd328c16da1eb1d733cf010906e28c6b4ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\2e71c7dc7fbb722daaae2c3ce3659c67680ac4e7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b15f898c9047f9d612a63000126b485dd024eaac">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4f2f907d240512103b3d3b517c0f30403388d353\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\8d868b41d90c0b89b8f1377105ad46b0889dde2d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ce5e7a4a146dddd1d9e66b09c714a6c149916d8">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2a23fa1df067d27eb8949357e3138b060e669603\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\d36f41aecea282799be9e486dae3d3d9c334df9a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ece40b09e9d4d488bc270cf6af5a9af73bc1cfa3">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c42c02cb61a9224f36360ccb6d47b8e662c8b63f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\d021b52bc42b0e04c348a932e6b6e430213d4a9f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_34684ea9c19e8231023a15c6e33c886a46bac00e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\a42cec0d9ede6a049e8b165091f6add25121f7aa\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c8f5d56f8f8a287c95e02c542baade138a378048">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2714d00912c63010f87238e2a87593f0a240cdcd\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +144,447 @@
         revision="25.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_93aa4e167049795e4dae67211ac91cbd7677ae42\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\81359612b34d65a442a6b2aff9f9b4d45f7b9112\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="72eacac37fc64e95d53abd2a041bf81a952d8615">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fcf3f1898b70487d3f4f404bd979483eeed3690e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\d0eca97721ad7a90dbb66caf40614cd7124fb842\output\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_a52d5da94da11e7f768e122d1707dfffc38ddf78\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\e1c18be91d5544d394d32b76b25a8a044be21902\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ad33eb600f3d80bdff5ce355c90d5533ade652a">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_36228de5cdff67a05d025cb69c1e9a29d3186ab5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\fe5c382817e0b6ad4476dc2360118b38c4a5f421\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c10df7344e31161852c20bb8143fc37319aa10ec">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2baeec7194fa05b580ad093b0155d53e1716b46d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\3b3c95d7f372acb6390b6cbaafd89f3555d832ca\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e454c414a069241ee08444d187f2dd3a702596b5">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9c0b6cbae10f6897d71b43e26d7188ba3baf03a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\c9168dcc1b0967b41b6827a177342065e6b7dad8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd51b31890731591729f046d7a09c4fe4e483ed1">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1c3b96a1e815c3705301430c3e699b2d9d86dd06\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\11bb1bd5ab25d04c57eca637f09a12a3cf0508db\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0e15f97f08772372416a9a1f61793d75ef227573\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\74247b339e7472f431d52ad51d12c3aa7e68e90a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98e97da89d4df8e2f6eba63498d3d46a587372f2">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f43e3343e87dc906e9cc29510ca358de3bd18bb7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\9e724dec11243b294edf54e0aa3065e7fb0dc2b5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="736d8893fb702f128a153c9d87c9c29724d37872">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fb7dc6d620b6b70a1a88b530359f31cf8acbb6a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\e2731934f97f2511f180f8206efdacbd8cc98caa\output\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_28326cbe3fe4f3c3fa085506b2d31eaba07655b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\d0eca97721ad7a90dbb66caf40614cd7124fb842\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_efcef6c3b6b56dc9c70af1f6617a689cd3460b74\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\aa571a219cee9d4d8d904d72fa4e167754b68e3e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7ee8c117d9b0927bee17a8e5769515e78f2bf56a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\9ae5254d23cb3b57e70dfeb70bc728bf4997780a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_217cf96b9ae00f52b34cb97054039b33d7d40be2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\9964a1dc4a436ce05bb8d3541baf034d9ec1bc49\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5e8e535d15834e824817bdf5370556f62b4b2a5">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3d8b2fa9b31833f677e56b82ee71d7a2963e49e9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\e69f820a4d93cfc6e5245e4831c04404503fcc46\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4348dd26d83b56c2058b768222c3271bce911724">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_379c56dbf78cbdf9bb02e8ce5cea37cdb4932e22\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\8f4c8b558e2600cb9efd6d362921ee83971ec3bf\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9d48baf96c7e187991a9befa833bebd181960a9">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5473291c58e523bd9ccb112b8f889703b692c3bf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\31c2c20cdc4609401370a0d14ae025b47e5250ad\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03829a2618892d438a1f59c6286699ca1f476e93">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0e04ba964b7722d5456bf89bd42a391c9972f4e0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\aec48589dc80e76e3ebd4cfd311e1314000c44d8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d463d8eec1e6c1feef2cec6675ccb47e37c12ee1">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_18d3edd52ae8ea590ed894b6c114f64a92b5e9d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_7ed924d7fe63efd41124f9b473fd5a7130d273f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\81178032d350088f5e5b530c1af49d2978b35ad1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="34762013d39dbe6c656050589c44e8b61b9a2c5d">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_25ff176bc0b1956721d05fe2d9b534d22a7e6deb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\f2d649236177d82f028e7e628aaa4ca00430ce4d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e04c0b3683ca45b343284d93e5594b5f9044551">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_22d28e45aac29914a17b05a3c343599602ea3663\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\e9f4d1ca38c321937dde6f76148e405c7b5a82ac\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_32bc7834c62a93068a75e69239d602510ee1747d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\9e944d0532cf27d69dd7dedb853044626c139a05\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c1b7433502b893ae9e62586360ca6df7638ea3af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\1c91150bf9bbea0985f96b9e35ba03065339085d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6fb37f3801847dff28094b0dda95b5c31c983597\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\38dc0f6a9bb5156090871bdc86f8c115120324ed\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7bc6ea2bcfd6de4b7085e0f3a01616c5c8e0e2ad">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d81174f5967ab29990795cd465b61bbf0c64be76\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_7b5d3a1f1efb51976af6fa52dfc8d23269da4cd4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\511859817ee5d83b2b4c95a9b984f72a3284fb8a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b6d9b70f93bbeb872d0948bc064ae3f3f2bcbac">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_486b433fe4cf0865362f944cc73167426c553510\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\3b36561f0e0e2f2c84f907f8bf08066477409154\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0b060160e7daee343f5315b3da91b0ff2d7eed89">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_96201ce73655bd477f8d28f9a4c26649120e79af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\fb721e59f101f0e97158c942565453d1ef52a14e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e6e2251f3d3abf4eecd6bf6919d41fc7af497852">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9c7487609bc20b52414822e671e45457c157b56d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\7be6f01dc3e485d3be4174cb382596fb60511017\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_90b3e7f04442834ecc49042d83cddc0976794c92\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\713c46995b97334b880f4615960f5addab87ebd9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="954697ee6ea7bdd596babf4f70e8b7a17ca7649e">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0d42b60d4bc44e4bb853d5909730680bcaf2e9f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\4ddb039c3436dde81fa7126b19219b60ada4316e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b1acf13f1b7d8232af78a30833f9a966d1394c84">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ee22ba5f03acc386cc04e1ff8f54e1bab1c3a50e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Medicus_Android\ParseStarterProject\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="25dd1510ce058f1fffc25af84d39c85ad3d7bd74">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_01d63c6959b7c4cfd4c1374a2e3afcc53fb75627\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\90602c3d82846af4473c74dbdec1a2cfae8bef1f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ba47b210d36301e237ccfea860eaada04590f12a">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_631f53c076a9f36026d5857a338cc1e4d2a28307\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\64cf6ff059b8088ccbd1325b6b68a93762c3db11\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d49118ba67a101c4895f0581f17142cba85b330b">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_71d9480e213b19e33f1276269dbc6052f47ff9c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\f8eb780ac42c297f4a56f84fd2ad74f2ffdc4272\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b08ccccb21e6c35e9b582b69e88e867d9760a14b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\a8637444f786d6dfb01d45fde829e6435c207b83\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dab6944860c986980dcc6002a5ca2f127b587317">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c977335c7eaee1dda68aa5bdd93391973324ad2e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\dafa78e048e8916782071322514941626a96a62e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="58c9f5ee817fdb8b658fd7455fadfb74119f7ee9">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f757c687227d73b0607f6c54efc0d3d71bec60ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\45dbb386d03733efaf3dd3a3af3e78ca6a0b938e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="147edbec6bcea71fd675ecc63cae3319637ec2b4">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_24cb67c5873cff7477e6aabae8ccaac39681ed31\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\5c902704a4453341ea3052f2c949a402880aef73\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8197651ce1af4d89b47f4545cc720bc4f8611e7d">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4457ec75d634649c75c3397f932433fdd833ad01\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\e2731934f97f2511f180f8206efdacbd8cc98caa\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7cc588fc7170fab24623b098b883b7db3429a02b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\92db703972ebd8207c9b168ef62647d6ff451521\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a432629397351d3ec7f27a23d258b229b81af08f">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c8a728ffa123b926533f6fbfbd9be2ac8fdc73bf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.13.0\58a7d54b6a4f28be11f0cecec93097eddf473e6f\parse-android-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\parse-android-1.13.0_92077be027c92336901350543fd7a86574f0434d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\b243f36bab7ef0666aa361e338d8a2fd1ee125f5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd763e0269f2854f5828ae62dd968b80bff6a0db">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9990186813f78b07f445a3fa00826bb7c05f6420\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\34281cd6d98143df53ab1e1febb067fc0559fb7b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7ea53c4458b80e8ea71f7fd6831fa184c501377b">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c2327b7ed2f8ce88a465001bb59972d1de1e893d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\0277ce292607128e810f2bf8f7c7ecbac1040332\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9687ad3bb51d49a4dd7c5f81b463d99488cd388f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\866a3c9bf1e71c3c8be0aa57c87065b6b2247a4b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fb432836d74631fcedcf76bb8ee29c5d906d8370\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\10cd1c59b6978fbb67aec544b6857b561e2b2f1c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ac7daf61f9235f41c21f79baf5e6f2fe5d452df8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\21e18d0cbc2a31aa2559b52401215c323feb2083\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\Medicus_Android\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_728bc43b1ee931151d61796984a319359492e10b\classes.dex" />
     </item>
 
 </items>
