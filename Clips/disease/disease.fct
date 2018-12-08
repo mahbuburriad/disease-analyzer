@@ -2,7 +2,7 @@
 
 (text-for-id 
    (id AutoDemo)
-   (text "Virtual Doctor-Disease Analyzer"))
+   (text "Disease Analyzer"))
 (text-for-id 
    (id Next)
    (text "Next"))
