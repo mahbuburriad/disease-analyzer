@@ -2,7 +2,7 @@
 
 (text-for-id 
    (id AutoDemo)
-   (text "Virtual Doctor"))
+   (text "Virtual Doctor-Disease Analyzer"))
 (text-for-id 
    (id Next)
    (text "Next"))
@@ -21,7 +21,7 @@
 
 (text-for-id 
    (id WelcomeMessage)
-   (text "Thanks for using our application. Here you can Predic your disease and this doctor give you a prescription. follow and buy medicine from here"))
+   (text "Here you can Predic your disease and this virtual doctor give you a prescription, follow and buy medicine from here"))
    
    (text-for-id 
    (id headache)
@@ -149,34 +149,34 @@
    
       (text-for-id 
    (id viralfever)
-   (text "Analyze Report: You have Viral Fever"))
+   (text "Analyze Report: You have Viral Fever ; Medicine: Napa; Test: CBC"))
    
    
       (text-for-id 
    (id dengue)
-   (text "Analyze Report: You have in Dengue"))
+   (text "Analyze Report: You have in Dengue; Test: IGM, IGC, CBC; Medicine: Paracetamol, Salicylates"))
    
    (text-for-id 
    (id malaria)
-   (text "Analyze Report: You have in Malaria"))
+   (text "Analyze Report: You have in Malaria: Go to the hospital and meet the doctor"))
    
    
       (text-for-id 
    (id chikungunya)
-   (text "Analyze Report: You have in Chikungunya"))
+   (text "Analyze Report: You have in Chikungunya; Test: IGh, IGM, CBC; Medicine: Paracetamol, Painkiller"))
    
    (text-for-id 
    (id typhoid)
-   (text "Analyze Report: You have in Typhoid"))
+   (text "Analyze Report: You have in Typhoid; Go to the hospital immidiately"))
    
    
       (text-for-id 
    (id peptic)
-   (text "Analyze Report: You have Peptic Ulcer"))
+   (text "Analyze Report: You have Peptic Ulcer; Medicine: omeprazole,	Aciphex "))
    
    (text-for-id 
    (id duodenal)
-   (text "Analyze Report: You have duodenal"))
+   (text "Analyze Report: You have duodenal; Medicine: omeprazole,	Aciphex;"))
    
     (text-for-id 
    (id sorry)
