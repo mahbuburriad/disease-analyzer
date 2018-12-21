@@ -1,0 +1,6 @@
+databaseURI: "mongodb://root:mOIusZCBU6mb@127.0.0.1:27017/bitnami_parse",
+    cloud: "./node_modules/parse-server/lib/cloud-code/Parse.Cloud.js",
+    appId: "130d3c8ece2ab0c6ea29c8b61fc2541ec63e26f6",
+    masterKey: "6090bc453daa189ff2c8151ad066466cfc19ebca",
+    fileKey: "4438ea56d1595f35522d7c47d5e024cb7a4bc3d6",
+    serverURL: "http://3.0.176.211:80/parse"

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mahbuburriad.medicus.medicus_new_version.Doctor">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipes">
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webVieawId"
+            >
+        </WebView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:backgroundTint="@android:color/white"
+            app:srcCompat="@drawable/ic_add_circle_outline_black_24dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_invisible"
+            android:layout_width="@dimen/fab_margin"
+            android:layout_height="@dimen/fab_margin"
+            android:layout_gravity="top|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:visibility="invisible"
+            app:layout_anchor="@id/fab"
+            app:layout_anchorGravity="top" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/home"
+            app:backgroundTint="@android:color/white"
+            app:layout_anchor="@id/fab_invisible"
+            app:layout_anchorGravity="top" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.constraint.ConstraintLayout>

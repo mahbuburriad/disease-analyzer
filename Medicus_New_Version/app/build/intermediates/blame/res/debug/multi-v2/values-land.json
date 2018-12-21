@@ -1,0 +1,72 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\b104937054b32de0690af3710044fc5b\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,130,208",
+                        "endColumns": "74,77,74",
+                        "endOffsets": "125,203,278"
+                    },
+                    "to": {
+                        "startLines": "11,12,13",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "774,849,927",
+                        "endColumns": "74,77,74",
+                        "endOffsets": "844,922,997"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\7f8d65f407f5c0bc3f2e6a921ff95669\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "14",
+                        "startColumns": "4",
+                        "startOffsets": "1002",
+                        "endLines": "17",
+                        "endColumns": "10",
+                        "endOffsets": "1169"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\values-land\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9",
+                        "startColumns": "0,0,0,0,0,0",
+                        "startOffsets": "183,264,344,414,483,578",
+                        "endColumns": "80,79,69,68,94,90",
+                        "endOffsets": "263,343,413,482,577,668"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "264,349,433,507,580,679",
+                        "endColumns": "84,83,73,72,98,94",
+                        "endOffsets": "344,428,502,575,674,769"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                }
+            ]
+        }
+    ]
+}

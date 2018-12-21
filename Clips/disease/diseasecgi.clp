@@ -7,7 +7,7 @@
 ;;;
 ;;;     CLIPS Version 6.3
 ;;;
-;;;     For use need iss, perl and clips for webversion
+;;;     For use need iis, perl and clips for webversion
 ;;;======================================================
 
 ;;;*****************

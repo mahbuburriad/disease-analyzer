@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top|end"
             android:layout_margin="@dimen/fab_margin"
-            android:src="@drawable/ic_layers_black_24dp"
+            app:srcCompat="@drawable/home"
             app:backgroundTint="@android:color/white"
             app:layout_anchor="@id/fab_invisible"
             app:layout_anchorGravity="top" />

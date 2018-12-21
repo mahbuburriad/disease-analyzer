@@ -30,15 +30,14 @@ public class StarterApplication extends Application {
 
     // Add your initialization code here
     Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
-            .applicationId("dfbe8df73c67f73f50ce96a8cfd9f5a3cb9cce73")
-            .clientKey("01e32ba6468da9efce61f5ab1957594081378145")
-            .server("http://54.169.94.105:80/parse/")
+            .applicationId("130d3c8ece2ab0c6ea29c8b61fc2541ec63e26f6")
+            .clientKey("6090bc453daa189ff2c8151ad066466cfc19ebca")
+            .server("http://ec2-3-0-176-211.ap-southeast-1.compute.amazonaws.com:80/parse")
             .build()
     );
 
 
     ParseUser.enableAutomaticUser();
-
     ParseACL defaultACL = new ParseACL();
     defaultACL.setPublicReadAccess(true);
     defaultACL.setPublicWriteAccess(true);

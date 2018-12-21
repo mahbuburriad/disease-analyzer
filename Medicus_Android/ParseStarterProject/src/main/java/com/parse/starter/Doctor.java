@@ -44,7 +44,7 @@ public class Doctor extends AppCompatActivity {
         fab_follow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Doctor.class);
+                Intent intent = new Intent(getApplicationContext(), Medicus.class);
                 startActivity(intent);
             }
         });

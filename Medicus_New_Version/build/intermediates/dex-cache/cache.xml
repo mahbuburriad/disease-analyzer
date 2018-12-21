@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\38dc0f6a9bb5156090871bdc86f8c115120324ed\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7bc6ea2bcfd6de4b7085e0f3a01616c5c8e0e2ad">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_d81174f5967ab29990795cd465b61bbf0c64be76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\81178032d350088f5e5b530c1af49d2978b35ad1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="34762013d39dbe6c656050589c44e8b61b9a2c5d">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_25ff176bc0b1956721d05fe2d9b534d22a7e6deb.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\f5d903e15e7730e662343c9c89353653eae1d570\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a346d3c9ecf065546b443ac5ecf3fca8759e7e3e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\9ed41489644c99e69f3c53208d6cd91677a3fa3b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_c7329e2fcf6f5beee6876739e25d67923900bceb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\31c2c20cdc4609401370a0d14ae025b47e5250ad\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03829a2618892d438a1f59c6286699ca1f476e93">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_0e04ba964b7722d5456bf89bd42a391c9972f4e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\e9f4d1ca38c321937dde6f76148e405c7b5a82ac\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_32bc7834c62a93068a75e69239d602510ee1747d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\bolts-tasks-1.4.0_7b5d3a1f1efb51976af6fa52dfc8d23269da4cd4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\511859817ee5d83b2b4c95a9b984f72a3284fb8a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b6d9b70f93bbeb872d0948bc064ae3f3f2bcbac">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_486b433fe4cf0865362f944cc73167426c553510.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\9e944d0532cf27d69dd7dedb853044626c139a05\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_c1b7433502b893ae9e62586360ca6df7638ea3af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\1c91150bf9bbea0985f96b9e35ba03065339085d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_6fb37f3801847dff28094b0dda95b5c31c983597.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\1dbb0cd94ec7b60bed82da8afeedd65851f630e9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_abc415cac27a71831fd80d5c1b76c2828b44d1a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\e69f820a4d93cfc6e5245e4831c04404503fcc46\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4348dd26d83b56c2058b768222c3271bce911724">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_379c56dbf78cbdf9bb02e8ce5cea37cdb4932e22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\3b36561f0e0e2f2c84f907f8bf08066477409154\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0b060160e7daee343f5315b3da91b0ff2d7eed89">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_96201ce73655bd477f8d28f9a4c26649120e79af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\e489f780f765f7f28cf2d66866e3ae07a1803491\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_265d3377f7f93ba717884fc56c7f561cd98096b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\fb721e59f101f0e97158c942565453d1ef52a14e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e6e2251f3d3abf4eecd6bf6919d41fc7af497852">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_9c7487609bc20b52414822e671e45457c157b56d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\4ddb039c3436dde81fa7126b19219b60ada4316e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b1acf13f1b7d8232af78a30833f9a966d1394c84">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_ee22ba5f03acc386cc04e1ff8f54e1bab1c3a50e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\769565d543d5aae9e3e7aa54971d3d0163d85b81\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\internal_impl-25.0.0_dd020bc4247f81a670c13bcc0175d48778d9a688.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\f2d649236177d82f028e7e628aaa4ca00430ce4d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e04c0b3683ca45b343284d93e5594b5f9044551">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_22d28e45aac29914a17b05a3c343599602ea3663.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\713c46995b97334b880f4615960f5addab87ebd9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="954697ee6ea7bdd596babf4f70e8b7a17ca7649e">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_0d42b60d4bc44e4bb853d5909730680bcaf2e9f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\a42cec0d9ede6a049e8b165091f6add25121f7aa\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c8f5d56f8f8a287c95e02c542baade138a378048">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_2714d00912c63010f87238e2a87593f0a240cdcd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\cfc18ee7c4c9998f37271c35ed938b9fd2c342cc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_bff93d8b2c4209307f2a70a208e89fb6b1d93603.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\8f4c8b558e2600cb9efd6d362921ee83971ec3bf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9d48baf96c7e187991a9befa833bebd181960a9">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_5473291c58e523bd9ccb112b8f889703b692c3bf.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\d7177188824cb0d8fa1a3940167e02086f9021eb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0e763d8815eed2e4c9178d2fe5ebdfc57aef627f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\b4e5dc9135152c69111ec0d86f2f3db2e98e905f\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\internal_impl-25.0.0_38bac48a7eccdfbf69c6c29a6d6ddc729c93160c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\64cf6ff059b8088ccbd1325b6b68a93762c3db11\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d49118ba67a101c4895f0581f17142cba85b330b">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_71d9480e213b19e33f1276269dbc6052f47ff9c4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\1dbb0cd94ec7b60bed82da8afeedd65851f630e9\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_5681c31a93e7f16af4165bcb01d05b7fc477a129\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\45dbb386d03733efaf3dd3a3af3e78ca6a0b938e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="147edbec6bcea71fd675ecc63cae3319637ec2b4">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_24cb67c5873cff7477e6aabae8ccaac39681ed31.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\4480bed1b403b3ab08f22b2f691486463b2cf1cf\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1ab9d7ad7b951120e87f84ca6aaf946f6faff709\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\0277ce292607128e810f2bf8f7c7ecbac1040332\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_9687ad3bb51d49a4dd7c5f81b463d99488cd388f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\5c902704a4453341ea3052f2c949a402880aef73\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8197651ce1af4d89b47f4545cc720bc4f8611e7d">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_4457ec75d634649c75c3397f932433fdd833ad01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\a8637444f786d6dfb01d45fde829e6435c207b83\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dab6944860c986980dcc6002a5ca2f127b587317">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_c977335c7eaee1dda68aa5bdd93391973324ad2e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\769565d543d5aae9e3e7aa54971d3d0163d85b81\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8c11e1a9fddc7e3dc9cff15e10baa72de2393ec9\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\242565aacff6c9f4756642f1e9e4961da31990ec\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_b9d05b89b70ecbc3047d141ab70fbe3fe5c21090.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\e2731934f97f2511f180f8206efdacbd8cc98caa\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_7cc588fc7170fab24623b098b883b7db3429a02b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\04f5f0856fe677e6dbcb0da6e31605d03bd3f567\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_fb6dcf278df6742a3cdb6c2bb4809edd78abdc11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\d7177188824cb0d8fa1a3940167e02086f9021eb\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\internal_impl-25.0.0_52777e8e77ff7c88ba6bd7c10529174be7045215.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\support-annotations-25.0.0_fbb2547090fe33c9a1f75712b15470457cacaa35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\34281cd6d98143df53ab1e1febb067fc0559fb7b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7ea53c4458b80e8ea71f7fd6831fa184c501377b">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_c2327b7ed2f8ce88a465001bb59972d1de1e893d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\b4e5dc9135152c69111ec0d86f2f3db2e98e905f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_3b1ee9e1de4090129c74feda646bfa7bbe33873d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\866a3c9bf1e71c3c8be0aa57c87065b6b2247a4b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_fb432836d74631fcedcf76bb8ee29c5d906d8370.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\92db703972ebd8207c9b168ef62647d6ff451521\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a432629397351d3ec7f27a23d258b229b81af08f">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_c8a728ffa123b926533f6fbfbd9be2ac8fdc73bf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\b243f36bab7ef0666aa361e338d8a2fd1ee125f5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd763e0269f2854f5828ae62dd968b80bff6a0db">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_9990186813f78b07f445a3fa00826bb7c05f6420.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\dafa78e048e8916782071322514941626a96a62e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="58c9f5ee817fdb8b658fd7455fadfb74119f7ee9">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_f757c687227d73b0607f6c54efc0d3d71bec60ed.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_730bdab7538aa46b3c130ea0e50c2f952dbe0669\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\77cc8c00889a6b85806e62a5975ec8180114a6cc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_eef5b9ed9b114ba3f0dd8c0aff13d758480c1113\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\04f5f0856fe677e6dbcb0da6e31605d03bd3f567\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\internal_impl-25.0.0_3fbef36ca5d28f314dc11e35246054f58efddd29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\constraint-layout-solver-1.0.2_45e1ccb0a77a184a018f277548bbde9fc6a0c121.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\10cd1c59b6978fbb67aec544b6857b561e2b2f1c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_ac7daf61f9235f41c21f79baf5e6f2fe5d452df8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\90602c3d82846af4473c74dbdec1a2cfae8bef1f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ba47b210d36301e237ccfea860eaada04590f12a">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_631f53c076a9f36026d5857a338cc1e4d2a28307.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.13.0\58a7d54b6a4f28be11f0cecec93097eddf473e6f\parse-android-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\parse-android-1.13.0_92077be027c92336901350543fd7a86574f0434d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\f5d903e15e7730e662343c9c89353653eae1d570\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_a346d3c9ecf065546b443ac5ecf3fca8759e7e3e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\9f0d760f0a80db79282ca082d48ffdbbd21c7c35\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="670df81539ab71918d49b186598b7eff08ef6563">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_a774f123b56048645c41b0e23936173ec0ba8f4a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\9ed41489644c99e69f3c53208d6cd91677a3fa3b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c7329e2fcf6f5beee6876739e25d67923900bceb\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\f1954fe8fb7642ee62cfbc525d575fe66ed87d18\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="59a16a4a42d25b2c243dd1e8aea87d06895b4a06">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_9a7d70b2738610942c717609b4fafa17ec1b3749.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\044e32e9c3e3b63b1d99956e45241081984711c3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="461e4257888c25ec05abcd91e758fe7f4949230a">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_45250b87af467aa6fcf8d8279137e320b69c6d7e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\1dbb0cd94ec7b60bed82da8afeedd65851f630e9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_abc415cac27a71831fd80d5c1b76c2828b44d1a1\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\de6f1694396a589fbace7c134fa2a3339bcded6c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_cfb023f18c1cef6c8d0adfbf8a2cb810e9c80860.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\263f3daa26aab44211ed372484d0bd5dc437085e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b7173b3df4c7029699919414400041f64519e34">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_546fa392b52f6115a765cc8b73f8677d2e284eff.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\cfc18ee7c4c9998f37271c35ed938b9fd2c342cc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bff93d8b2c4209307f2a70a208e89fb6b1d93603\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\5a7325bf66252b5f7ef67081057c8992e617070c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e35002351f2d415093a9b564652d4b56be6a0593">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_5d1c23a38375e122d3ed21ec4d2149f39799c838.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\2e71c7dc7fbb722daaae2c3ce3659c67680ac4e7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b15f898c9047f9d612a63000126b485dd024eaac">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_4f2f907d240512103b3d3b517c0f30403388d353.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\769565d543d5aae9e3e7aa54971d3d0163d85b81\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_dd020bc4247f81a670c13bcc0175d48778d9a688\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\e489f780f765f7f28cf2d66866e3ae07a1803491\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_265d3377f7f93ba717884fc56c7f561cd98096b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffb327cbe493ab4a95730715967520a0e8ee1b9a">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6879da7aa513f57a8c53bb3b877567c80c6f803a\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\8d868b41d90c0b89b8f1377105ad46b0889dde2d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ce5e7a4a146dddd1d9e66b09c714a6c149916d8">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_2a23fa1df067d27eb8949357e3138b060e669603.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\d36f41aecea282799be9e486dae3d3d9c334df9a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ece40b09e9d4d488bc270cf6af5a9af73bc1cfa3">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_c42c02cb61a9224f36360ccb6d47b8e662c8b63f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\81359612b34d65a442a6b2aff9f9b4d45f7b9112\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="72eacac37fc64e95d53abd2a041bf81a952d8615">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_fcf3f1898b70487d3f4f404bd979483eeed3690e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\b4e5dc9135152c69111ec0d86f2f3db2e98e905f\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_38bac48a7eccdfbf69c6c29a6d6ddc729c93160c\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\1dbb0cd94ec7b60bed82da8afeedd65851f630e9\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\internal_impl-25.0.0_5681c31a93e7f16af4165bcb01d05b7fc477a129.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\d021b52bc42b0e04c348a932e6b6e430213d4a9f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_34684ea9c19e8231023a15c6e33c886a46bac00e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\d7177188824cb0d8fa1a3940167e02086f9021eb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_0e763d8815eed2e4c9178d2fe5ebdfc57aef627f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\769565d543d5aae9e3e7aa54971d3d0163d85b81\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_8c11e1a9fddc7e3dc9cff15e10baa72de2393ec9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\c9168dcc1b0967b41b6827a177342065e6b7dad8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd51b31890731591729f046d7a09c4fe4e483ed1">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_1c3b96a1e815c3705301430c3e699b2d9d86dd06.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\242565aacff6c9f4756642f1e9e4961da31990ec\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b9d05b89b70ecbc3047d141ab70fbe3fe5c21090\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\fe5c382817e0b6ad4476dc2360118b38c4a5f421\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c10df7344e31161852c20bb8143fc37319aa10ec">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_2baeec7194fa05b580ad093b0155d53e1716b46d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\04f5f0856fe677e6dbcb0da6e31605d03bd3f567\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fb6dcf278df6742a3cdb6c2bb4809edd78abdc11\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\3b3c95d7f372acb6390b6cbaafd89f3555d832ca\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e454c414a069241ee08444d187f2dd3a702596b5">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_9c0b6cbae10f6897d71b43e26d7188ba3baf03a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\4480bed1b403b3ab08f22b2f691486463b2cf1cf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_1ab9d7ad7b951120e87f84ca6aaf946f6faff709.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\d7177188824cb0d8fa1a3940167e02086f9021eb\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_52777e8e77ff7c88ba6bd7c10529174be7045215\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\11bb1bd5ab25d04c57eca637f09a12a3cf0508db\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_0e15f97f08772372416a9a1f61793d75ef227573.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\e2731934f97f2511f180f8206efdacbd8cc98caa\output\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\internal_impl-23.0.0_28326cbe3fe4f3c3fa085506b2d31eaba07655b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\9ae5254d23cb3b57e70dfeb70bc728bf4997780a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_217cf96b9ae00f52b34cb97054039b33d7d40be2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\9964a1dc4a436ce05bb8d3541baf034d9ec1bc49\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5e8e535d15834e824817bdf5370556f62b4b2a5">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_3d8b2fa9b31833f677e56b82ee71d7a2963e49e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\77cc8c00889a6b85806e62a5975ec8180114a6cc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_eef5b9ed9b114ba3f0dd8c0aff13d758480c1113.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\74247b339e7472f431d52ad51d12c3aa7e68e90a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98e97da89d4df8e2f6eba63498d3d46a587372f2">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_f43e3343e87dc906e9cc29510ca358de3bd18bb7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\9e724dec11243b294edf54e0aa3065e7fb0dc2b5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="736d8893fb702f128a153c9d87c9c29724d37872">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_fb7dc6d620b6b70a1a88b530359f31cf8acbb6a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\e1c18be91d5544d394d32b76b25a8a044be21902\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ad33eb600f3d80bdff5ce355c90d5533ade652a">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_36228de5cdff67a05d025cb69c1e9a29d3186ab5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\b4e5dc9135152c69111ec0d86f2f3db2e98e905f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3b1ee9e1de4090129c74feda646bfa7bbe33873d\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\bbb027630a294f159677c421d08a06833f0dacee\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_44e3675af50798aaa391156fcf608d14e9bd090a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\aa571a219cee9d4d8d904d72fa4e167754b68e3e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_7ee8c117d9b0927bee17a8e5769515e78f2bf56a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mahbu\.android\build-cache\aec48589dc80e76e3ebd4cfd311e1314000c44d8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d463d8eec1e6c1feef2cec6675ccb47e37c12ee1">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\pre-dexed\release\classes_18d3edd52ae8ea590ed894b6c114f64a92b5e9d3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_fbb2547090fe33c9a1f75712b15470457cacaa35\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mahbu\.android\build-cache\04f5f0856fe677e6dbcb0da6e31605d03bd3f567\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\xampp\htdocs\virtualdoctor\Medicus_New_Version\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_3fbef36ca5d28f314dc11e35246054f58efddd29\classes.dex" />
+    </item>
+
+</items>

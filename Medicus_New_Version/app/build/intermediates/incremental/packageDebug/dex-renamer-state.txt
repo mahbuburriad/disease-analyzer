@@ -1,0 +1,7 @@
+#Sat Dec 22 03:23:45 BDT 2018
+base.0=C\:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_730bdab7538aa46b3c130ea0e50c2f952dbe0669
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6879da7aa513f57a8c53bb3b877567c80c6f803a\\classes.dex
+base.1=C\:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6879da7aa513f57a8c53bb3b877567c80c6f803a
+file.0=C\:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_730bdab7538aa46b3c130ea0e50c2f952dbe0669\\classes.dex
