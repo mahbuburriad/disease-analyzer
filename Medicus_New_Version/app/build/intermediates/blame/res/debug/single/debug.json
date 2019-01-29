@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_vol_type_speaker_group_light.png.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\b104937054b32de0690af3710044fc5b\\res\\drawable-xhdpi-v4\\ic_vol_type_speaker_group_light.png"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_vol_type_tv_dark.png.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\b104937054b32de0690af3710044fc5b\\res\\drawable-mdpi-v4\\ic_vol_type_tv_dark.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_vol_type_speaker_group_light.png.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\b104937054b32de0690af3710044fc5b\\res\\drawable-xhdpi-v4\\ic_vol_type_speaker_group_light.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_cast_ic_stop_circle_filled_white.png.flat",
@@ -16,12 +16,12 @@
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\drawable-xxxhdpi-v4\\quantum_ic_closed_caption_white_36.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -32,52 +32,52 @@
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\drawable-hdpi-v4\\quantum_ic_pause_white_24.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_skip_next_grey600_36.png.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\drawable-mdpi-v4\\quantum_ic_skip_next_grey600_36.png"
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_btn_state_list_anim.xml.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\7f8d65f407f5c0bc3f2e6a921ff95669\\res\\animator\\mtrl_btn_state_list_anim.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_06_dark.png.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\b104937054b32de0690af3710044fc5b\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_dark.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_btn_state_list_anim.xml.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\7f8d65f407f5c0bc3f2e6a921ff95669\\res\\animator\\mtrl_btn_state_list_anim.xml"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_title_item.xml.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\layout\\abc_action_bar_title_item.xml"
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_skip_next_grey600_36.png.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\drawable-mdpi-v4\\quantum_ic_skip_next_grey600_36.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_title_item.xml.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ff17d62ef826ddc1eee6a8419034fe0b\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_powered_by_google_dark.png.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\04e6948846d94d7f3fefb4c818c5f3b9\\res\\drawable-xxxhdpi-v4\\powered_by_google_dark.png"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_select_dialog_material.xml.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_select_dialog_material.xml.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\04e6948846d94d7f3fefb4c818c5f3b9\\res\\drawable-xxxhdpi-v4\\powered_by_google_dark.png"
+    },
+    {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_09_light.png.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\b104937054b32de0690af3710044fc5b\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_09_light.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_volume_up_white_36.png.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\drawable-hdpi-v4\\quantum_ic_volume_up_white_36.png"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_volume_up_white_36.png.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\drawable-hdpi-v4\\quantum_ic_volume_up_white_36.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_15_light.png.flat",
@@ -100,16 +100,16 @@
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\drawable-xhdpi-v4\\quantum_ic_volume_up_grey600_36.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_bigtop_updates_white_24.png.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\drawable-mdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ff17d62ef826ddc1eee6a8419034fe0b\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\color-v23\\abc_tint_switch_track.xml"
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_bigtop_updates_white_24.png.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\drawable-mdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_24_dark.png.flat",
@@ -216,12 +216,12 @@
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\89f39464ad095ff491b1a5709975101a\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_forward_30_white_24.png.flat",
@@ -236,12 +236,12 @@
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\drawable-xxxhdpi-v4\\quantum_ic_skip_next_grey600_36.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_collapse_spec.xml.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\7f8d65f407f5c0bc3f2e6a921ff95669\\res\\animator\\mtrl_fab_transformation_sheet_collapse_spec.xml"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_shopping_cart_black_24dp.png.flat",
         "source": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_shopping_cart_black_24dp.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_collapse_spec.xml.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\7f8d65f407f5c0bc3f2e6a921ff95669\\res\\animator\\mtrl_fab_transformation_sheet_collapse_spec.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_btn_checkable.xml.flat",
@@ -280,12 +280,12 @@
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\b104937054b32de0690af3710044fc5b\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_04.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_01_dark.png.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\b104937054b32de0690af3710044fc5b\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_01_dark.png"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_skip_previous_white_24.png.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\0e167d0f1b7b58a5bcfc7909af6c3ae5\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_24.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_01_dark.png.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\b104937054b32de0690af3710044fc5b\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_01_dark.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_13_dark.png.flat",
@@ -320,16 +320,16 @@
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\b104937054b32de0690af3710044fc5b\\res\\drawable\\mr_button_connected_dark.xml"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\7f8d65f407f5c0bc3f2e6a921ff95669\\res\\anim\\design_bottom_sheet_slide_in.xml"
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\1f3de28bcdfed45a4f70d4229cebc879\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_11_dark.png.flat",
         "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\b104937054b32de0690af3710044fc5b\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_11_dark.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\1f3de28bcdfed45a4f70d4229cebc879\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
+        "source": "C:\\Users\\mahbu\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\7f8d65f407f5c0bc3f2e6a921ff95669\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\virtualdoctor\\Medicus_New_Version\\app\\build\\intermediates\\res\\merged\\debug\\layout_mr_controller_volume_item.xml.flat",

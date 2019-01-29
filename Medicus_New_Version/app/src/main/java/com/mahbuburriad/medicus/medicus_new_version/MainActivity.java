@@ -28,27 +28,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         loadWebs();
-
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Doctor.class);
-                startActivity(intent);
-            }
-        });
-
-        FloatingActionButton fab_follow = (FloatingActionButton) findViewById(R.id.fab_follow);
-        fab_follow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
     }
 
 
@@ -58,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setAppCacheEnabled(true);
 
-        webView.loadUrl("http://medicus.ml/mobile");
+        webView.loadUrl("https://medicus.mahbuburriad.com/m/");
 
         webView.setWebViewClient(new WebViewClient(){
             public void onReceivedError(WebView view, int errorcode, String description, String failingUrl){

@@ -57,7 +57,7 @@ public class Doctor extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setAppCacheEnabled(true);
 
-        webView.loadUrl("http://ec2-18-136-155-136.ap-southeast-1.compute.amazonaws.com/disease/disease.pl");
+        webView.loadUrl("http://ec2-18-136-155-136.ap-southeast-1.compute.amazonaws.com/disease/diseases.pl");
 
         webView.setWebViewClient(new WebViewClient(){
             public void onReceivedError(WebView view, int errorcode, String description, String failingUrl){
